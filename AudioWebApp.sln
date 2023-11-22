@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioWebApp.Client", "AudioWebApp\Client\AudioWebApp.Client.csproj", "{5A22B688-A76F-4A39-A925-4F75E93944B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioWebApp", "AudioWebApp\Client\AudioWebApp.csproj", "{3677A976-30CE-4E05-AF31-68C3F00AB562}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioWebApp.Server", "AudioWebApp\Server\AudioWebApp.Server.csproj", "{81DBD773-7626-4F74-A273-AA755B0CF219}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioWebApp.Shared", "AudioWebApp\Shared\AudioWebApp.Shared.csproj", "{81240BF3-B028-4982-8652-9884E6350870}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A22B688-A76F-4A39-A925-4F75E93944B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A22B688-A76F-4A39-A925-4F75E93944B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A22B688-A76F-4A39-A925-4F75E93944B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A22B688-A76F-4A39-A925-4F75E93944B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3677A976-30CE-4E05-AF31-68C3F00AB562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3677A976-30CE-4E05-AF31-68C3F00AB562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3677A976-30CE-4E05-AF31-68C3F00AB562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3677A976-30CE-4E05-AF31-68C3F00AB562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DBD773-7626-4F74-A273-AA755B0CF219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DBD773-7626-4F74-A273-AA755B0CF219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DBD773-7626-4F74-A273-AA755B0CF219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DBD773-7626-4F74-A273-AA755B0CF219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81240BF3-B028-4982-8652-9884E6350870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81240BF3-B028-4982-8652-9884E6350870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81240BF3-B028-4982-8652-9884E6350870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81240BF3-B028-4982-8652-9884E6350870}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {443C666D-1C00-44E0-A8E3-861E655B27AF}
+	EndGlobalSection
+EndGlobal

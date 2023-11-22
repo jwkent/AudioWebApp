@@ -1,0 +1,37 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FBFCB9AE-A19C-4F9C-A143-F4D653D52775}") = "AudioWebApp.Server", "Server\AudioWebApp.Server.csproj", "{DA767D12-73F9-4B6E-A4FC-D544F6CACAF7}"
+EndProject
+Project("{FBFCB9AE-A19C-4F9C-A143-F4D653D52775}") = "AudioWebApp.Client", "Client\AudioWebApp.Client.csproj", "{843EE808-7834-4011-A26D-88B353EC5A98}"
+EndProject
+Project("{FBFCB9AE-A19C-4F9C-A143-F4D653D52775}") = "AudioWebApp.Shared", "Shared\AudioWebApp.Shared.csproj", "{0FA4F269-41CF-46C4-B034-7B7B2DBD1A48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA767D12-73F9-4B6E-A4FC-D544F6CACAF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA767D12-73F9-4B6E-A4FC-D544F6CACAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA767D12-73F9-4B6E-A4FC-D544F6CACAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA767D12-73F9-4B6E-A4FC-D544F6CACAF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{843EE808-7834-4011-A26D-88B353EC5A98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843EE808-7834-4011-A26D-88B353EC5A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843EE808-7834-4011-A26D-88B353EC5A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843EE808-7834-4011-A26D-88B353EC5A98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FA4F269-41CF-46C4-B034-7B7B2DBD1A48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA4F269-41CF-46C4-B034-7B7B2DBD1A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA4F269-41CF-46C4-B034-7B7B2DBD1A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA4F269-41CF-46C4-B034-7B7B2DBD1A48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92CA5F80-F108-4656-B9D9-8C47638B6A97}
+	EndGlobalSection
+EndGlobal
