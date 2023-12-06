@@ -1,16 +1,10 @@
-﻿<MudDialog>
+﻿<MudDialog Style="@($"background:{Colors.Cyan.Darken1};")">
     <DialogContent>
-        <MudCard>
-            <MudCardContent>
-                <MudText>Call into the Radio Program</MudText>
-                <MudText Typo="Typo.body2">Some info that is important</MudText>
-                <MudText Typo="Typo.body2">@telephoneNumber</MudText>
-            </MudCardContent>
-        </MudCard>
-        <MudIconButton Size="Size.Large" Icon="@Icons.Material.Filled.Phone" Href=@telephoneNumber></MudIconButton>
+         @telephoneNumber             
     </DialogContent>
     <DialogActions>
-        <MudButton OnClick="Cancel">Cancel</MudButton>  
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudIconButton Size="Size.Large" Icon="@Icons.Material.Filled.Phone" Href=@telephoneNumber></MudIconButton>
     </DialogActions>
 </MudDialog>
 

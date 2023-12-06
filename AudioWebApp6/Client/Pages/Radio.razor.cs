@@ -15,13 +15,16 @@ namespace AudioWebApp.Client.Pages
             _radioPlaying = !_radioPlaying;
         }
 
-        DialogOptions disableBackdropClick = new DialogOptions()
-        { DisableBackdropClick = true };
+        DialogOptions dialogOptions = new DialogOptions()
+        { DisableBackdropClick = true,
+            MaxWidth = MaxWidth.Medium,
+            FullWidth = true
+        };
         private void OpenDialog()
         {
             if (_radioPlaying) { _radioPlaying =  false; };
 
-            DialogService.Show<CallDialog>();
+            DialogService.Show<CallDialog>("Call Into Radio Program",dialogOptions);
         }
     }
 }
