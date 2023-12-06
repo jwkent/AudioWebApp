@@ -1,15 +1,23 @@
 ﻿@page "/"
-
+@inject NavigationManager NavigationManager
 <PageTitle>Index</PageTitle>
 
 <MudPaper Class="d-flex pa-2 justify-center">
     <MudText Typo="Typo.h3" GutterBottom="true"
-             Style="@($"color:{Colors.Cyan.Darken3};")">The Narrow Path</MudText>
+             Style="@($"color:{Colors.Cyan.Darken3}")">@appTitle</MudText>
 </MudPaper>
 
 <MudPaper Class="d-flex pa-4 justify-center"> 
-    <MudButton Variant="Variant.Filled" Style="@($"color:{Colors.Cyan.Lighten5}; background:{Colors.Cyan.Darken3};")">Listen Live</MudButton>
+    <MudButton Variant="Variant.Filled" 
+                Style="@($"color:{Colors.Cyan.Lighten5}; background:{Colors.Cyan.Darken3};")"
+                OnClick="NavToRadio" 
+                StartIcon="@Icons.Material.Filled.Radio">Listen Live</MudButton>
 </MudPaper>
 <MudPaper Class="d-flex pa-4 justify-center">
-    <MudButton Variant="Variant.Text" Style="@($"color:{Colors.Cyan.Darken3};")">Explore Content</MudButton>
+    <MudButton Variant="Variant.Text" Style="@($"color:{Colors.Cyan.Darken3}")"
+    OnClick="NavToExploreContent" >Explore Content</MudButton>
 </MudPaper>
+
+@code{
+   
+}
