@@ -11,17 +11,22 @@ namespace AudioWebApp.Server.Controllers
         [HttpGet("GetTopicals")]
         public IEnumerable<Topical> Get()
         {
-            string[] subTopicals = { "sub1", "sub2", "sub3" };
+            Subtopical subTopical1 = new Subtopical("sub1", "location of audio file");
+            Subtopical subTopical2 = new Subtopical("sub2", "location of audio file");
+            Subtopical subTopical3 = new Subtopical("sub3", "location of audio file");
+
+            Subtopical[] subTopicals = new Subtopical[] { subTopical1, subTopical2, subTopical3 };
+            
             Topical topical1 = new Topical("Topical1", subTopicals);
             Topical topical2 = new Topical("Topical2", subTopicals);
             Topical topical3 = new Topical("Topical3", subTopicals);
 
-            IEnumerable<Topical> x = new List<Topical>
+            IEnumerable<Topical> topicalData = new List<Topical>
              {
                  topical1, topical2, topical3
              };
 
-            return x;
+            return topicalData;
 
         }
         

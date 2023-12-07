@@ -3,9 +3,9 @@
     public class Topical
     {
         public string Name { get; set; }
-        public string[] Subtopical { get; set; }
+        public Subtopical[] Subtopical { get; set; }
 
-        public Topical(string name, string[] subtopical)
+        public Topical(string name, Subtopical[] subtopical)
         {
             Name = name;
             Subtopical = subtopical;
