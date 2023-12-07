@@ -4,7 +4,6 @@ using AudioWebApp.Shared;
 namespace AudioWebApp.Server.Controllers
 {
     [ApiController]
-    //[Route("[controller]")]
     [Route("api")]
     public class TopicalController : ControllerBase
     {
