@@ -1,14 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
-
-	<ItemGroup>
-	  <Content Remove="Components\BasicAudioPlayer.razor" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.7" />
@@ -18,18 +14,6 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Shared\AudioWebApp.Shared.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <UpToDateCheckInput Remove="Components\BasicAudioPlayer.razor" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <_ContentIncludedByDefault Remove="Components\BasicAudioPlayer.razor" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <None Include="Components\BasicAudioPlayer.razor" />
 	</ItemGroup>
 
 </Project>

@@ -2,16 +2,20 @@
 @using System.Threading.Channels
 @inject IDialogService DialogService
 
-<MudPaper Class="d-flex pa-4 justify-center">
-    <MudButton Variant="Variant.Filled" Style="@($"color:{Colors.Cyan.Lighten5}; background:{Colors.Cyan.Darken3};")"
-               OnClick="PlayRadio">Listen</MudButton>
-</MudPaper>
-<MudPaper Class="d-flex pa-4 justify-center">
-    <MudButton Variant="Variant.Filled"  
-               Style="@($"color:{Colors.Cyan.Darken3}")"
-               StartIcon="@Icons.Material.Filled.Phone"
-               OnClick="@((e) => OpenDialog())">Call In</MudButton>
-</MudPaper>
+<MudCardContent Class="mt-1">
+    <MudContainer>
+        <MudPaper Class="d-flex pa-4 justify-center">
+            <BasicAudioPlayer />
+        </MudPaper>
+        <MudPaper Class="d-flex pa-4 justify-center">
+            <MudButton Variant="Variant.Filled"
+                       Style="@($"color:{Colors.Cyan.Darken3}")"
+                       StartIcon="@Icons.Material.Filled.Phone"
+                       OnClick="@((e) => OpenDialog())">Call In</MudButton>
+        </MudPaper>
+    </MudContainer>
+</MudCardContent>
+
 
 
 

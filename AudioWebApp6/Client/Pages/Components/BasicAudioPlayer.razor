@@ -1,0 +1,36 @@
+﻿
+<MudCardContent>
+    <MudContainer>
+        <MudPaper Elevation="0" Class="d-flex justify-center align-center" Style="height:40px; color:darkgray">
+            <MudText Typo="Typo.h5">@AudioTitle</MudText>
+        </MudPaper>
+        <MudPaper Elevation="0" Class="d-flex justify-center align-center mt-4" Style="height:100px;  color:gray">
+            <MudIcon Style="height:100px; width:100px " Icon="@playStatusIcon" @onclick="@AudioPlay" />
+        </MudPaper>
+    </MudContainer>
+</MudCardContent>
+<audio id="audioplayer" src="@AudioSource"/>
+
+    @code {
+    [Parameter]
+    public string AudioTitle { get; set; } = "Audio Title (default)";
+    [Parameter]
+    public string AudioSource { get; set; } = "";
+
+    public bool isplaying = false;
+    private string playStatusIcon = Icons.Material.Filled.PlayCircleOutline;
+
+    public async Task AudioPlay()
+    {
+        if(isplaying == false)
+        {
+            playStatusIcon = Icons.Material.Filled.PauseCircleOutline;
+            isplaying = true;
+        }
+        else
+        {
+            playStatusIcon = Icons.Material.Filled.PlayCircleOutline;
+            isplaying = false;
+        }
+    }
+}
