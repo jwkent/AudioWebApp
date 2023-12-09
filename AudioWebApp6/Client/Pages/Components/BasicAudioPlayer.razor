@@ -12,6 +12,11 @@
 <audio id="audioplayer" src="@AudioSource"/>
 
     @code {
+
+    [Inject]
+    public IJSRuntime jsRuntime { get; set; }
+    private IJSObjectReference jsModule;
+
     [Parameter]
     public string AudioTitle { get; set; } = "Audio Title (default)";
     [Parameter]
@@ -20,17 +25,23 @@
     public bool isplaying = false;
     private string playStatusIcon = Icons.Material.Filled.PlayCircleOutline;
 
+    protected override async Task OnInitializedAsync()
+    {
+        jsModule = await jsRuntime.InvokeAsync<IJSObjectReference>("import", "../javascript/PremiumAudioPlayer.js");
+    }
     public async Task AudioPlay()
     {
         if(isplaying == false)
         {
             playStatusIcon = Icons.Material.Filled.PauseCircleOutline;
             isplaying = true;
+            await jsModule.InvokeAsync<string>("playbuttonaudio", isplaying);
         }
         else
         {
             playStatusIcon = Icons.Material.Filled.PlayCircleOutline;
             isplaying = false;
+            await jsModule.InvokeAsync<string>("playbuttonaudio", isplaying);
         }
     }
 }

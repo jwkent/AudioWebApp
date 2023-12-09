@@ -16,4 +16,8 @@
 		<ProjectReference Include="..\Shared\AudioWebApp.Shared.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="wwwroot\javascript\" />
+	</ItemGroup>
+
 </Project>
