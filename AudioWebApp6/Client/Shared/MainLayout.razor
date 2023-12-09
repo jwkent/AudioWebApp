@@ -5,11 +5,11 @@
 <MudSnackbarProvider />
 
 <MudLayout>
-    <MudAppBar Elevation="0" Style="@($"background:{Colors.Cyan.Darken3};")">
+    <MudAppBar Elevation="0" Style="@($"background:{Colors.Blue.Darken4};")">
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
         <MudSpacer />
-        <MudIconButton Icon="@Icons.Material.Filled.Book" Color="Color.Inherit" Link="https://thenarrowpath.com/" Target="_blank" />
-        <MudIconButton Icon="@Icons.Custom.Brands.YouTube" Color="Color.Inherit" Link="https://www.youtube.com/channel/UCxjboKtWGPrVVfzCfoMac7w" Target="_blank" />
+        <MudIconButton Href="/" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home" Color="Color.Inherit" />
+        <MudSpacer />
     </MudAppBar>
     
     <MudDrawer @bind-Open="_drawerOpen" Elevation="1">

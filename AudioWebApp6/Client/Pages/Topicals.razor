@@ -5,13 +5,13 @@
 <PageTitle>Topicals</PageTitle>
 
 <MudText Typo="Typo.h3" GutterBottom="true">Topicals</MudText>
-@if (topicals == null)
+@if (topicalData == null)
 {
     <MudProgressCircular Color="Color.Default" Indeterminate="true" />
 }
 else
 {
-    @topicals.Count()
+    @topicalData.Count()
 }
 
 

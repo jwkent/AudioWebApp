@@ -1,10 +1,13 @@
-﻿<MudNavMenu>
-    <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
-    @* <MudNavLink Href="counter" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Add">Counter</MudNavLink> *@
-    @* <MudNavLink Href="fetchdata" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Fetch data</MudNavLink> *@
-    <MudNavLink Href="radio" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Radio">Radio</MudNavLink>
-    <MudNavLink Href="topical" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Topic">Topical</MudNavLink>
-    <MudNavLink Href="verse" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.BookOnline">Verse by Verse</MudNavLink>
-    @* <MudNavLink Href="web" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Web">Web Site</MudNavLink> *@
-    @* <MudNavLink Href="youtube" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.YoutubeSearchedFor">YouTube channel</MudNavLink> *@
-</MudNavMenu>
+﻿<MudPaper Width="250px" Elevation="0" Class="py-3">
+    <MudNavMenu Bordered="true">
+        <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
+        <MudNavLink Href="radio" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Radio">Radio</MudNavLink>
+        <MudNavLink Href="topical" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Topic">Topical</MudNavLink>
+        <MudNavLink Href="verse" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.BookOnline">Verse by Verse</MudNavLink>
+        <MudNavGroup Title="Extras" Expanded="false">
+            <MudNavLink Href="https://www.youtube.com/channel/UCxjboKtWGPrVVfzCfoMac7w" Icon="@Icons.Custom.Brands.YouTube"  Target="_blank">YouTube</MudNavLink>
+            <MudNavLink Icon="@Icons.Material.Filled.Podcasts">Podcasts</MudNavLink>
+            <MudNavLink Href="https://www.thenarrowpath.com/" Icon="@Icons.Material.Filled.Circle" Target="_blank">The Narrow Path</MudNavLink>
+        </MudNavGroup>  
+    </MudNavMenu>
+</MudPaper>

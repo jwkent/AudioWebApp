@@ -5,11 +5,8 @@ namespace AudioWebApp.Client.Pages
 {
     public partial class Topicals
     {
-        private Topical[]? topicals;
+        public string[] topicalData = new string[] { "Topical1", "Topical2", "Topical3" };
 
-        protected override async Task OnInitializedAsync()
-        {
-            topicals = await Http.GetFromJsonAsync<Topical[]>("api/gettopicals");
-        }
+
     }
 }
