@@ -8,7 +8,7 @@ public class XmlController : Controller
 {
     private const int TimestampMaxLength = 14;
     
-    [HttpGet("get")]
+    [HttpGet]
     public string GetNewContent()
     {
         return XmlManager.GetXmlFileString();
@@ -21,7 +21,7 @@ public class XmlController : Controller
         return "XML file updated.";
     }
     
-    [HttpGet("is-new/{clientTimestampString}")]
+    [HttpGet("is-data-new-since/{clientTimestampString}")]
     public bool IsNewContentAvailable(string clientTimestampString)
     {
         if (clientTimestampString.Length > TimestampMaxLength)
