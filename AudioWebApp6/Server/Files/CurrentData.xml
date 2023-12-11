@@ -1,0 +1,1435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Configuration>
+    <LastUpdated dateTime="20231209170343" />
+    <Servers>
+      <Server name="theos" location="http://media.theos.org/Steve%20Gregg/" />
+      <Server name="tnp" location="http://www.thenarrowpath.com/" />
+      <Server name="unknown" location="-" />
+    </Servers>
+  </Configuration>
+  <Teaching>
+    <Topic name="Authority Of Scriptures" server="tnp">
+      <Item link="audio/topical-lectures/authority-of-scriptures/01_Knowledge_of_the_Truth_Part_1.mp3" name="01. Knowledge of the Truth • Part 1" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/02_Knowledge_of_the_Truth_Part_2.mp3" name="02. Knowledge of the Truth • Part 2" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/03_Testing_the_Bibles_Truth_Claims.mp3" name="03. Testing the Bibles Truth Claims" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/04_Science_and_the_Bible.mp3" name="04. Science and the Bible" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/05_Historical_Accuracy_of_the_Bible.mp3" name="05. Historical Accuracy of the Bible" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/06_Uniqueness_of_the_Bible.mp3" name="06. Uniqueness of the Bible" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/07_Alleged_Discrepancies_Part_1.mp3" name="07. Alleged Discrepancies • Part 1" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/08_Alleged_Discrepancies_Part_2.mp3" name="08. Alleged Discrepancies • Part 2" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/09_Supernatural_Evidence.mp3" name="09. Supernatural Evidence" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/10_The_Teachings_of_Christ.mp3" name="10. The Teachings of Christ" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/11_The_Law_of Moses_and_the_Christian.mp3" name="11. The Law of Moses and the Christian" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/12_The_Authority_of_Apastolic_Writings.mp3" name="12. The Authority of Apastolic Writings" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/13_The_Word_of_God_and_Its_Rivals_Part_1.mp3" name="13. The Word of God and Its Rivals • Part 1" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/14_The_Word_of_God_and_Its_Rivals_Part_2.mp3" name="14. The Word of God and Its Rivals • Part 2" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/15_Tools_for_Biblical_Studies.mp3" name="15. Tools for Biblical Studies" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/16_Three_Stage_Inductive_Bible_Study.mp3" name="16. Three Stage Inductive Bible Study" />
+    </Topic>
+    <Topic name="Beyond End Times" server="tnp">
+      <Item link="audio/topical-lectures/beyond-end-times/01_0000_The_Return_of_Christ.mp3" name="01. The Return of Christ" />
+      <Item link="audio/topical-lectures/beyond-end-times/02_0000_Final_Judgment_and_Rewards.mp3" name="02. Final Judgment and Rewards" />
+      <Item link="audio/topical-lectures/beyond-end-times/03_0000_Eternal_State_of_the_Saved.mp3" name="03. Eternal State of the Saved" />
+      <Item link="audio/topical-lectures/beyond-end-times/04_0000_Final_State_of_Unbelievers.mp3" name="04. Final State of Unbelievers" />
+    </Topic>
+    <Topic name="Biblical Counsel For A Change" server="tnp">
+      <Item link="audio/topical-lectures/biblical-counsel-for-a-change/01_0000_Sin_or_Sickness.mp3" name="01. Sin or Sickness" />
+      <Item link="audio/topical-lectures/biblical-counsel-for-a-change/02_Blind_Leading_the_Blind.mp3" name="02. Blind Leading the Blind" />
+      <Item link="audio/topical-lectures/biblical-counsel-for-a-change/03_Intregration_Part_1.mp3" name="03. Intregration • Part 1" />
+      <Item link="audio/topical-lectures/biblical-counsel-for-a-change/04_Intregration_Part_2.mp3" name="04. Intregration • Part 2" />
+      <Item link="audio/topical-lectures/biblical-counsel-for-a-change/05_Self_Image_and_Sanctification.mp3" name="05. Self Image and Sanctification" />
+      <Item link="audio/topical-lectures/biblical-counsel-for-a-change/06_Biblical_Teaching_on_Self.mp3" name="06. Biblical Teaching on Self" />
+      <Item link="audio/topical-lectures/biblical-counsel-for-a-change/07_Counsel_of_God_Part_1.mp3" name="07. Counsel of God • Part 1" />
+      <Item link="audio/topical-lectures/biblical-counsel-for-a-change/08_Counsel_of_God_Part_2.mp3" name="08. Counsel of God • Part 2" />
+    </Topic>
+    <Topic name="Charisma And Character" server="tnp">
+      <Item link="audio/topical-lectures/charisma-and-character/01_Introduction.mp3.mp3" name="01. Introduction" />
+      <Item link="audio/topical-lectures/charisma-and-character/02_Baptism_in_the_Holy_Spirit.mp3" name="02. Baptism in the Holy Spirit" />
+      <Item link="audio/topical-lectures/charisma-and-character/03_Intro_to_the_Gifts_of_the_Holy_Spirit_Part_1.mp3" name="03. Intro to the Gifts of the Holy Spirit • Part 1" />
+      <Item link="audio/topical-lectures/charisma-and-character/04_Intro_to_the_Gifts_of_the_Holy_Spirit_Part_2.mp3" name="04. Intro to the Gifts of the Holy Spirit • Part 2" />
+      <Item link="audio/topical-lectures/charisma-and-character/05_Tongues.mp3" name="05. Tongues" />
+      <Item link="audio/topical-lectures/charisma-and-character/06_Gift_of_Prophecy_Part_1.mp3" name="06. Gift of Prophecy • Part 1" />
+      <Item link="audio/topical-lectures/charisma-and-character/07_Gift_of_Prophecy_Part_2.mp3" name="07. Gift of Prophecy • Part 2" />
+      <Item link="audio/topical-lectures/charisma-and-character/08_Word_of_Knowledge,_Wisdom,_etc.mp3" name="08. Word of Knowledge, Wisdom, etc" />
+      <Item link="audio/topical-lectures/charisma-and-character/09_Non-Sensational_Gifts.mp3" name="09. Non - Sensational Gifts" />
+      <Item link="audio/topical-lectures/charisma-and-character/10_First_Love.mp3" name="10. First Love" />
+      <Item link="audio/topical-lectures/charisma-and-character/11_Joy_and_Peace.mp3" name="11. Joy and Peace" />
+      <Item link="audio/topical-lectures/charisma-and-character/12_Longsuffering_and_Endurance.mp3" name="12. Longsuffering and Endurance" />
+      <Item link="audio/topical-lectures/charisma-and-character/13_Kindness,_Goodness_and_Gentleness.mp3" name="13. Kindness, Goodness and Gentleness" />
+      <Item link="audio/topical-lectures/charisma-and-character/14_Purity_and_Self-control.mp3" name="14. Purity and Self - control" />
+      <Item link="audio/topical-lectures/charisma-and-character/15_Justice,_Mercy_and_Faith.mp3" name="15. Justice, Mercy and Faith" />
+      <Item link="audio/topical-lectures/charisma-and-character/16_Godliness_and_Humility.mp3.mp3" name="16. Godliness and Humility" />
+    </Topic>
+    <Topic name="Church History" server="tnp">
+      <Item link="audio/topical-lectures/church-history/01_Church_History_Introduction.mp3" name="01. Church History Introduction" />
+      <Item link="audio/topical-lectures/church-history/02_The_Very_Beginning.mp3" name="02. The Very Beginning" />
+      <Item link="audio/topical-lectures/church-history/03_Passing_the_Torch.mp3" name="03. Passing the Torch" />
+      <Item link="audio/topical-lectures/church-history/04_Persecution_and_Ecclesiastical_Development.mp3" name="04. Persecution and Ecclesiastical Development" />
+      <Item link="audio/topical-lectures/church-history/05_Early_Heresies.mp3" name="05. Early Heresies" />
+      <Item link="audio/topical-lectures/church-history/06_The_Canon_of_Scripture.mp3" name="06. The Canon of Scripture" />
+      <Item link="audio/topical-lectures/church-history/07_Early_Theologians.mp3" name="07. Early Theologians" />
+      <Item link="audio/topical-lectures/church-history/08_Romes_Truce_with_the_Church.mp3" name="08. Romes Truce with the Church" />
+      <Item link="audio/topical-lectures/church-history/09_Defining_Orthodoxy.mp3" name="09. Defining Orthodoxy" />
+      <Item link="audio/topical-lectures/church-history/10_Augustines_Influence_and_Contemporaries.mp3" name="10. Augustines Influence and Contemporaries" />
+      <Item link="audio/topical-lectures/church-history/11_How_Rome_became_Papal.mp3" name="11. How Rome became Papal" />
+      <Item link="audio/topical-lectures/church-history/12_Principal_Events_of_the_Middle_Ages_Part_1.mp3" name="12. Principal Events of the Middle Ages • Part 1" />
+      <Item link="audio/topical-lectures/church-history/13_Principal_Events_of_the_Middle_Ages_Part_2.mp3" name="13. Principal Events of the Middle Ages • Part 2" />
+      <Item link="audio/topical-lectures/church-history/14_Principal_Events_of_the_Middle_Ages_Part_3.mp3" name="14. Principal Events of the Middle Ages • Part 3" />
+      <Item link="audio/topical-lectures/church-history/15_The_Persecuted_Non-conformists_Part_1.mp3" name="15. The Persecuted Non - conformists • Part 1" />
+      <Item link="audio/topical-lectures/church-history/16_The_Persecuted_Non-conformists_Part_2.mp3" name="16. The Persecuted Non - conformists • Part 2" />
+      <Item link="audio/topical-lectures/church-history/17_Beginnings_of_the_Reformation,_Martin_Luther.mp3" name="17. Beginnings of the Reformation, Martin Luther" />
+      <Item link="audio/topical-lectures/church-history/18_The_Rise_of_the_Radical_Reformation.mp3" name="18. The Rise of the Radical Reformation" />
+      <Item link="audio/topical-lectures/church-history/19_The_Spread_of_Anabaptism_Part_1.mp3" name="19. The Spread of Anabaptism • Part 1" />
+      <Item link="audio/topical-lectures/church-history/20_The_Spread_of_Anabaptism_Part_2.mp3" name="20. The Spread of Anabaptism • Part 2" />
+      <Item link="audio/topical-lectures/church-history/21_The_Life_and_Legacy_of_John_Calvin.mp3" name="21. The Life and Legacy of John Calvin" />
+      <Item link="audio/topical-lectures/church-history/22_Reform_in_France_and_England.mp3" name="22. Reform in France and England" />
+      <Item link="audio/topical-lectures/church-history/23_Reformation_and_Counter_Reformation.mp3" name="23. Reformation and Counter Reformation" />
+      <Item link="audio/topical-lectures/church-history/24_From_Reform_to_Reason_1550_to_1650.mp3" name="24. From Reform to Reason to 1650" />
+      <Item link="audio/topical-lectures/church-history/25_Enlightenment_and_Enrichment_Part_1.mp3" name="25. Enlightenment and Enrichment • Part 1" />
+      <Item link="audio/topical-lectures/church-history/26_Enlightenment_and_Enrichment_Part_2.mp3" name="26. Enlightenment and Enrichment • Part 2" />
+      <Item link="audio/topical-lectures/church-history/27_Revivals_of_the_19th_Century.mp3" name="27. Revivals of the 19th Century" />
+      <Item link="audio/topical-lectures/church-history/28_The_Birth_of_Modern_Mission.mp3" name="28. The Birth of Modern Mission" />
+      <Item link="audio/topical-lectures/church-history/29_Liberalism_and_Fundamentalism.mp3" name="29. Liberalism and Fundamentalism" />
+      <Item link="audio/topical-lectures/church-history/30_Developments_in_the_20th_Century.mp3" name="30. Developments in the 20th Century" />
+    </Topic>
+    <Topic name="Content Of The Gospel" server="tnp">
+      <Item link="audio/topical-lectures/content-of-the-gospel/01_0000_The_Gospel_of_Jesus_Christ.mp3" name="01. The Gospel of Jesus Christ" />
+      <Item link="audio/topical-lectures/content-of-the-gospel/02_0000_The_Gospel_of_the_Kingdom_of_God.mp3" name="02. The Gospel of the Kingdom of God" />
+      <Item link="audio/topical-lectures/content-of-the-gospel/03_0000_The_Gospel_of_Salvation.mp3" name="03. The Gospel of Salvation" />
+      <Item link="audio/topical-lectures/content-of-the-gospel/04_0000_What_Must_I_Do_to_Be_Saved.mp3" name="04. What Must I Do to Be Saved" />
+      <Item link="audio/topical-lectures/content-of-the-gospel/05_0000_Eternal_Security.mp3" name="05. Eternal Security" />
+      <Item link="audio/topical-lectures/content-of-the-gospel/06_0000_Gospel_of_Grace.mp3" name="06. Gospel of Grace" />
+    </Topic>
+    <Topic name="Creation And Evolution" server="tnp">
+      <Item link="audio/topical-lectures/creation-and-evolution/01_0000_Science_or_Faith.mp3" name="01. Science or Faith" />
+      <Item link="audio/topical-lectures/creation-and-evolution/02_0000_Evidence_Against_Creation.mp3" name="02. Evidence Against Creation" />
+      <Item link="audio/topical-lectures/creation-and-evolution/03_0000_Evidence_Against_Evolution.mp3" name="03. Evidence Against Evolution" />
+      <Item link="audio/topical-lectures/creation-and-evolution/04_0000_Evidence_of_Creation.mp3" name="04. Evidence of Creation" />
+    </Topic>
+    <Topic name="Cultivating Christian Character" server="tnp">
+      <Item link="audio/topical-lectures/cultivating-christian-character/01_Holiness,_Gods_Character_in_Us.mp3" name="01. Holiness, Gods Character in Us" />
+      <Item link="audio/topical-lectures/cultivating-christian-character/02_Walking_as_Jesus_Walked.mp3" name="02. Walking as Jesus Walked" />
+      <Item link="audio/topical-lectures/cultivating-christian-character/03_Living_Peaceably_with_Your_Conscience.mp3" name="03. Living Peaceably with Your Conscience" />
+      <Item link="audio/topical-lectures/cultivating-christian-character/04_Gods_Word_at_Work_in_You.mp3" name="04. Gods Word at Work in You" />
+      <Item link="audio/topical-lectures/cultivating-christian-character/05_The_Principled_Life_Part_1.mp3" name="05. The Principled Life • Part 1" />
+      <Item link="audio/topical-lectures/cultivating-christian-character/06_The_Principled_Life_Part_2.mp3" name="06. The Principled Life • Part 2" />
+      <Item link="audio/topical-lectures/cultivating-christian-character/07_Beholding_the_Glory.mp3" name="07. Beholding the Glory" />
+      <Item link="audio/topical-lectures/cultivating-christian-character/08_Transformation_Through_Suffering_Part_1.mp3" name="08. Transformation Through Suffering • Part 1" />
+      <Item link="audio/topical-lectures/cultivating-christian-character/09_Transformation_Through_Suffering_Part_2.mp3" name="09. Transformation Through Suffering • Part 2" />
+    </Topic>
+    <Topic name="Evangelism" server="tnp">
+      <Item link="audio/topical-lectures/evangelism/01_0000_What_Evangelism_Is.mp3" name="01. What Evangelism Is" />
+      <Item link="audio/topical-lectures/evangelism/02-0000_What_the_Gospel_Really_Is.mp3" name="02. - What the Gospel Really Is" />
+      <Item link="audio/topical-lectures/evangelism/03_0000_Hindrances_to_Evangelism.mp3" name="03. Hindrances to Evangelism" />
+      <Item link="audio/topical-lectures/evangelism/04_0000_Penetrating_the_Culture.mp3" name="04. Penetrating the Culture" />
+      <Item link="audio/topical-lectures/evangelism/05_0000_Communication_Skills.mp3" name="05. Communication Skills" />
+      <Item link="audio/topical-lectures/evangelism/06_0000_The_Visible_Witness_of_the_Believer.mp3" name="06. The Visible Witness of the Believer" />
+    </Topic>
+    <Topic name="Foundations Of The Christian Faith" server="tnp">
+      <Item link="audio/topical-lectures/foundations-of-the-christian-faith/01_Introduction.mp3" name="01. Introduction" />
+      <Item link="audio/topical-lectures/foundations-of-the-christian-faith/02_Repentance_Part_1.mp3" name="02. Repentance • Part 1" />
+      <Item link="audio/topical-lectures/foundations-of-the-christian-faith/03_Repentance_Part_2.mp3" name="03. Repentance • Part 2" />
+      <Item link="audio/topical-lectures/foundations-of-the-christian-faith/04_Faith_Toward_God_Part_1.mp3" name="04. Faith Toward God • Part 1" />
+      <Item link="audio/topical-lectures/foundations-of-the-christian-faith/05_Faith_toward_God_Part_2.mp3" name="05. Faith toward God • Part 2" />
+      <Item link="audio/topical-lectures/foundations-of-the-christian-faith/06_Baptisms_Part_1.mp3" name="06. Baptisms • Part 1" />
+      <Item link="audio/topical-lectures/foundations-of-the-christian-faith/07_Baptisms_Part_2.mp3" name="07. Baptisms • Part 2" />
+      <Item link="audio/topical-lectures/foundations-of-the-christian-faith/08_Baptism_in_the_Holy_Spirit_Part_1.mp3" name="08. Baptism in the Holy Spirit • Part 1" />
+      <Item link="audio/topical-lectures/foundations-of-the-christian-faith/09_Baptism_in_the_Holy_Spirit_Part_2.mp3" name="09. Baptism in the Holy Spirit • Part 2" />
+      <Item link="audio/topical-lectures/foundations-of-the-christian-faith/10_Laying_on_of_Hands.mp3" name="10. Laying on of Hands" />
+      <Item link="audio/topical-lectures/foundations-of-the-christian-faith/11_Resurrection_of_the_Dead.mp3" name="11. Resurrection of the Dead" />
+      <Item link="audio/topical-lectures/foundations-of-the-christian-faith/12_Eternal_Judgment.mp3" name="12. Eternal Judgment" />
+    </Topic>
+    <Topic name="Genuinely Following Jesus" server="tnp">
+      <Item link="audio/topical-lectures/genuinely-following-jesus/01_0000_Who_Are_You_Calling_a_Christian.mp3" name="01. Who Are You Calling a Christian" />
+      <Item link="audio/topical-lectures/genuinely-following-jesus/02_0000_Disciples_and_the_Kingdom.mp3" name="02. Disciples and the Kingdom" />
+      <Item link="audio/topical-lectures/genuinely-following-jesus/03_0000_The_Call_to_Discipleship.mp3" name="03. The Call to Discipleship" />
+      <Item link="audio/topical-lectures/genuinely-following-jesus/04_0000_Answering_the_Call.mp3" name="04. Answering the Call" />
+      <Item link="audio/topical-lectures/genuinely-following-jesus/05_0000_The_Disciples_Values.mp3" name="05. The Disciples Values" />
+      <Item link="audio/topical-lectures/genuinely-following-jesus/06_0000_The_Disciples_Faith_and_Good_Works.mp3" name="06. The Disciples Faith and Good Works" />
+      <Item link="audio/topical-lectures/genuinely-following-jesus/07_0000_The_Disciples_Character.mp3" name="07. The Disciples Character" />
+      <Item link="audio/topical-lectures/genuinely-following-jesus/08_0000_The_Disciples_Impact.mp3" name="08. The Disciples Impact" />
+    </Topic>
+    <Topic name="Gods Sovereignty And Mans Salvation" server="tnp">
+      <Item link="audio/topical-lectures/gods-sovereignty-and-mans-salvation/01_2013_The_Distinctive_Points_of_Calvimism.mp3" name="01. The Distinctive Points of Calvimism" />
+      <Item link="audio/topical-lectures/gods-sovereignty-and-mans-salvation/02_2013_The_Sovereignty_of_God_in_Scripture_Part_1.mp3" name="02. The Sovereignty of God in Scripture • Part 1" />
+      <Item link="audio/topical-lectures/gods-sovereignty-and-mans-salvation/03_2013_The_Sovereignty_of_God_in_Scripture_Part_2.mp3" name="03. The Sovereignty of God in Scripture • Part 2" />
+      <Item link="audio/topical-lectures/gods-sovereignty-and-mans-salvation/04_2013_A_Defense_of_the_Five_Points_of_Calvinism.mp3" name="04. A Defense of the Five Points of Calvinism" />
+      <Item link="audio/topical-lectures/gods-sovereignty-and-mans-salvation/05_2013_Challenges_to_Total_Depravity_Part_1.mp3" name="05. Challenges to Total Depravity • Part 1" />
+      <Item link="audio/topical-lectures/gods-sovereignty-and-mans-salvation/06_2013_Challenges_to_Total_Depravity_Part_2.mp3" name="06. Challenges to Total Depravity • Part 2" />
+      <Item link="audio/topical-lectures/gods-sovereignty-and-mans-salvation/07_2013_Challenges_to_Uncondtional_Election_Part_1.mp3" name="07. Challenges to Uncondtional Election • Part 1" />
+      <Item link="audio/topical-lectures/gods-sovereignty-and-mans-salvation/08_2013_Challenges_to_Unconditional_Election_Part_2.mp3" name="08. Challenges to Unconditional Election • Part 2" />
+      <Item link="audio/topical-lectures/gods-sovereignty-and-mans-salvation/09_2013_Challenges_to_Limited_Atonement.mp3" name="09. Challenges to Limited Atonement" />
+      <Item link="audio/topical-lectures/gods-sovereignty-and-mans-salvation/10_2013_Challenges_to_Irresistible_Grace.mp3" name="10. Challenges to Irresistible Grace" />
+      <Item link="audio/topical-lectures/gods-sovereignty-and-mans-salvation/11_2013_Challenges_to_Perseverence_of_the_Saints.mp3" name="11. Challenges to Perseverence of the Saints" />
+      <Item link="audio/topical-lectures/gods-sovereignty-and-mans-salvation/12_2013_What_Does_it_Matter.mp3" name="12. What Does it Matter" />
+    </Topic>
+    <Topic name="How Can I Know That I Am Really Saved" server="tnp">
+      <Item link="audio/topical-lectures/how-can-i-know-that-i-am-really-saved/01_0000_How_can_I_know_that_I_am_really_saved_Part_1.mp3" name="01. How can I know that I am really saved • Part 1" />
+      <Item link="audio/topical-lectures/how-can-i-know-that-i-am-really-saved/02_0000_How_can_I_know_that_I_am_really_saved_Part_2.mp3" name="02. How can I know that I am really saved • Part 2" />
+      <Item link="audio/topical-lectures/how-can-i-know-that-i-am-really-saved/03_0000_How_can_I_know_that_I_am_really_saved_Part_3.mp3" name="03. How can I know that I am really saved • Part 3" />
+      <Item link="audio/topical-lectures/how-can-i-know-that-i-am-really-saved/04_0000_How_can_I_know_that_I_am_really_saved_Part_4.mp3" name="04. How can I know that I am really saved • Part 4" />
+    </Topic>
+    <Topic name="Introduction To The Life Of Christ 1993" server="tnp">
+      <Item link="audio/topical-lectures/introduction-to-the-life-of-christ-1993/01_1993_Introduction_to_the_Life_of_Christ_Part_1,_Why_Study_the_Life_of_Christ.mp3" name="01. Introduction to the Life of Christ • Part 1, Why Study the Life of Christ" />
+      <Item link="audio/topical-lectures/introduction-to-the-life-of-christ-1993/02_1993_Introduction_to_the_Life_of_Christ_Part_2,_NT_Historical_Background.mp3" name="02. Introduction to the Life of Christ • Part 2, NT Historical Background" />
+      <Item link="audio/topical-lectures/introduction-to-the-life-of-christ-1993/03_1993_Introduction_to_the_Life_of_Christ_Part_3,_Jewish_and_Pagan_Records.mp3" name="03. Introduction to the Life of Christ • Part 3, Jewish and Pagan Records" />
+      <Item link="audio/topical-lectures/introduction-to-the-life-of-christ-1993/04_1993_Introduction_to_the_Life_of_Christ_Part_4,_Introduction_to_Gospel_of_John.mp3" name="04. Introduction to the Life of Christ • Part 4, Introduction to Gospel of John" />
+    </Topic>
+    <Topic name="Isaiah A Topical Look At Isaiah" server="tnp">
+      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/01_Introduction.mp3" name="01. Introduction" />
+      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/02_Survey_1-23.mp3" name="02. Survey 1 - 23" />
+      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/03_Survey_24-66.mp3" name="03. Survey 24 - 66" />
+      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/04_Symbols_of_Nations.mp3" name="04. Symbols of Nations" />
+      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/05_Warfare,_Judgment,_Redemption.mp3" name="05. Warfare, Judgment, Redemption" />
+      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/06_Imagery_of_the_Exodus.mp3" name="06. Imagery of the Exodus" />
+      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/07_Fruitlessness.mp3" name="07. Fruitlessness" />
+      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/08_Gods_Complaint.mp3" name="08. Gods Complaint" />
+      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/09_Fall_of_Jerusalem_Part_1.mp3" name="09. Fall of Jerusalem • Part 1" />
+      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/10_Fall_of_Jerusalem_Part_2.mp3" name="10. Fall of Jerusalem • Part 2" />
+      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/11_The_Remnant.mp3" name="11. The Remnant" />
+      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/12_Restoration_Images.mp3" name="12. Restoration Images" />
+      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/13_The_Servant_of_Jehovah.mp3" name="13. The Servant of Jehovah" />
+      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/14_The_King_and_His_Kingdom.mp3" name="14. The King and His Kingdom" />
+      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/15_Gods_Sovereignty_and_Foreknowledge.mp3" name="15. Gods Sovereignty and Foreknowledge" />
+    </Topic>
+    <Topic name="Jewish Roots" server="tnp">
+      <Item link="audio/topical-lectures/jewish-roots/01_0000_Jewish_Roots_Part_1.mp3" name="01. Jewish Roots • Part 1" />
+      <Item link="audio/topical-lectures/jewish-roots/02_0000_Jewish_Roots_Part_2.mp3" name="02. Jewish Roots • Part 2" />
+      <Item link="audio/topical-lectures/jewish-roots/03_0000_Jewish_Roots_Part_3.mp3" name="03. Jewish Roots • Part 3" />
+      <Item link="audio/topical-lectures/jewish-roots/04_0000_Jewish_Roots_Part_4.mp3" name="04. Jewish Roots • Part 4" />
+      <Item link="audio/topical-lectures/jewish-roots/05_0000_Jewish_Roots_Part_5.mp3" name="05. Jewish Roots • Part 5" />
+      <Item link="audio/topical-lectures/jewish-roots/06_0000_Jewish_Roots_Part_6.mp3" name="06. Jewish Roots • Part 6" />
+    </Topic>
+    <Topic name="Kingdom Of God" server="tnp">
+      <Item link="audio/topical-lectures/kingdom-of-god/01_0000_Kingdom_of_God_Part_1.mp3" name="01. Kingdom of God • Part 1" />
+      <Item link="audio/topical-lectures/kingdom-of-god/02_0000_Kingdom_of_God_Part_2.mp3" name="02. Kingdom of God • Part 2" />
+      <Item link="audio/topical-lectures/kingdom-of-god/03_0000_Kingdom_of_God_Part_3.mp3" name="03. Kingdom of God • Part 3" />
+      <Item link="audio/topical-lectures/kingdom-of-god/04_0000_Kingdom_of_God_Part_4.mp3" name="04. Kingdom of God • Part 4" />
+      <Item link="audio/topical-lectures/kingdom-of-god/05_0000_Kingdom_of_God_Part_5.mp3" name="05. Kingdom of God • Part 5" />
+      <Item link="audio/topical-lectures/kingdom-of-god/06_0000_Kingdom_of_God_Part_6.mp3" name="06. Kingdom of God • Part 6" />
+      <Item link="audio/topical-lectures/kingdom-of-god/07_0000_Kingdom_of_God_Part_7.mp3" name="07. Kingdom of God • Part 7" />
+      <Item link="audio/topical-lectures/kingdom-of-god/08_0000_Kingdom_of_God_Part_8.mp3" name="08. Kingdom of God • Part 8" />
+    </Topic>
+    <Topic name="Knowing God" server="tnp">
+      <Item link="audio/topical-lectures/knowing-god/01_0000_Introduction_Part_1.mp3" name="01. Introduction • Part 1" />
+      <Item link="audio/topical-lectures/knowing-god/02_0000_Introduction_Part_2.mp3" name="02. Introduction • Part 2" />
+      <Item link="audio/topical-lectures/knowing-god/03_0000_Attributes_of_God.mp3" name="03. Attributes of God" />
+      <Item link="audio/topical-lectures/knowing-god/04_0000_The_Character_of_God.mp3" name="04. The Character of God" />
+      <Item link="audio/topical-lectures/knowing-god/05_0000_The_Trinity.mp3" name="05. The Trinity" />
+      <Item link="audio/topical-lectures/knowing-god/06_0000_The_Fatherhood_of_God.mp3" name="06. The Fatherhood of God" />
+      <Item link="audio/topical-lectures/knowing-god/07_0000_Deity_of_Christ_Part_1.mp3" name="07. Deity of Christ • Part 1" />
+      <Item link="audio/topical-lectures/knowing-god/08_0000_Deity_of_Christ_Part_2.mp3" name="08. Deity of Christ • Part 2" />
+      <Item link="audio/topical-lectures/knowing-god/09_0000_Holy_Spirit_and_His_Work.mp3" name="09. Holy Spirit and His Work" />
+      <Item link="audio/topical-lectures/knowing-god/10_0000_The_Fear_God.mp3" name="10. The Fear God" />
+      <Item link="audio/topical-lectures/knowing-god/11_0000_The_Loving_God.mp3" name="11. The Loving God" />
+      <Item link="audio/topical-lectures/knowing-god/12_0000_Fellowship_with_God_Part_1.mp3" name="12. Fellowship with God • Part 1" />
+      <Item link="audio/topical-lectures/knowing-god/13_0000_Fellowship_with_God_Part_2.mp3" name="13. Fellowship with God • Part 2" />
+      <Item link="audio/topical-lectures/knowing-god/14_0000_Fellowship_with_God_Part_3.mp3" name="14. Fellowship with God • Part 3" />
+      <Item link="audio/topical-lectures/knowing-god/15_0000_Hearing_God.mp3" name="15. Hearing God" />
+      <Item link="audio/topical-lectures/knowing-god/16_0000_Worship.mp3" name="16. Worship" />
+    </Topic>
+    <Topic name="Making Sense Out Of Suffering" server="tnp">
+      <Item link="audio/topical-lectures/making-sense-out-of-suffering/01_2019_How_Can_a_Good_and_Sovereign_God_Permit_Suffering.mp3" name="01. How Can a Good and Sovereign God Permit Suffering" />
+      <Item link="audio/topical-lectures/making-sense-out-of-suffering/02_2019_Glory_and_Suffering.mp3" name="02. Glory and Suffering" />
+      <Item link="audio/topical-lectures/making-sense-out-of-suffering/03_2019_The_Categories_and_Benefits_of_Suffering.mp3" name="03. The Categories and Benefits of Suffering" />
+      <Item link="audio/topical-lectures/making-sense-out-of-suffering/04_2019_Practical_Applications.mp3" name="04. Practical Applications" />
+    </Topic>
+    <Topic name="Message For The Young" server="tnp">
+      <Item link="audio/topical-lectures/message-for-the-young/01_0000_Starting_Young.mp3" name="01. Starting Young" />
+      <Item link="audio/topical-lectures/message-for-the-young/02_0000_Making_Faith_Personal.mp3" name="02. Making Faith Personal" />
+      <Item link="audio/topical-lectures/message-for-the-young/03_0000_Diligently_Considering_Gods_Word.mp3" name="03. Diligently Considering Gods Word" />
+      <Item link="audio/topical-lectures/message-for-the-young/04_0000_Departing_from_Iniquity.mp3" name="04. Departing from Iniquity" />
+      <Item link="audio/topical-lectures/message-for-the-young/05_0000_Rising_to_the_Standard.mp3" name="05. Rising to the Standard" />
+      <Item link="audio/topical-lectures/message-for-the-young/06_0000_In_Perilous_Times.mp3" name="06. In Perilous Times" />
+    </Topic>
+    <Topic name="Original Sin And Depravity" server="tnp">
+      <Item link="audio/topical-lectures/original-sin-and-depravity/01_2015_Original_Sin_and_Depravity_Part_1.mp3" name="01. Original Sin and Depravity • Part 1" />
+      <Item link="audio/topical-lectures/original-sin-and-depravity/02_2015_Original_Sin_and_Depravity_Part_2.mp3" name="02. Original Sin and Depravity • Part 2" />
+    </Topic>
+    <Topic name="Sermon On The Mount" server="tnp">
+      <Item link="audio/topical-lectures/sermon-on-the-mount/01_Introduction.mp3" name="01. Introduction" />
+      <Item link="audio/topical-lectures/sermon-on-the-mount/02_Beatitudes_1-4.mp3" name="02. Beatitudes 1 - 4" />
+      <Item link="audio/topical-lectures/sermon-on-the-mount/03_Beatitudes_5_and_6.mp3" name="03. Beatitudes 5 and 6" />
+      <Item link="audio/topical-lectures/sermon-on-the-mount/04_Beatitudes_7_and_8.mp3" name="04. Beatitudes 7 and 8" />
+      <Item link="audio/topical-lectures/sermon-on-the-mount/05_Salt_and_Light.mp3" name="05. Salt and Light" />
+      <Item link="audio/topical-lectures/sermon-on-the-mount/06_Law_and_Prophets_Part_1.mp3" name="06. Law and Prophets • Part 1" />
+      <Item link="audio/topical-lectures/sermon-on-the-mount/07_Law_and_Prophets_Part_2.mp3" name="07. Law and Prophets • Part 2" />
+      <Item link="audio/topical-lectures/sermon-on-the-mount/08_Murder_and_Adultery.mp3" name="08. Murder and Adultery" />
+      <Item link="audio/topical-lectures/sermon-on-the-mount/09_Adultery,_Divorce,_and_Oathes.mp3" name="09. Adultery, Divorce, and Oathes" />
+      <Item link="audio/topical-lectures/sermon-on-the-mount/10_Non-Resistance_to_Evil.mp3" name="10. Non - Resistance to Evil" />
+      <Item link="audio/topical-lectures/sermon-on-the-mount/11_Love_of_Enemies,_Hypocricy.mp3" name="11. Love of Enemies, Hypocricy" />
+      <Item link="audio/topical-lectures/sermon-on-the-mount/12_Charity,_Prayer,_and_Fasting.mp3" name="12. Charity, Prayer, and Fasting" />
+      <Item link="audio/topical-lectures/sermon-on-the-mount/13_God_or_Money.mp3" name="13. God or Money" />
+      <Item link="audio/topical-lectures/sermon-on-the-mount/14_Matthew_Chapter_7.mp3" name="14. Matthew Chapter 7" />
+    </Topic>
+    <Topic name="Some Assembly Required" server="tnp">
+      <Item link="audio/topical-lectures/some-assembly-required/01_0000_In_Search_of_the_Church.mp3" name="01. In Search of the Church" />
+      <Item link="audio/topical-lectures/some-assembly-required/02_0000_What_is_Right_About_the_Church.mp3" name="02. What is Right About the Church" />
+      <Item link="audio/topical-lectures/some-assembly-required/03_0000_Into_Babylon.mp3" name="03. Into Babylon" />
+      <Item link="audio/topical-lectures/some-assembly-required/04_0000_The_Way_Out_of_Babylon.mp3" name="04. The Way Out of Babylon" />
+      <Item link="audio/topical-lectures/some-assembly-required/05_0000_Who_Will_Lead_Us.mp3" name="05. Who Will Lead Us" />
+      <Item link="audio/topical-lectures/some-assembly-required/06_0000_Role_of_Women_in_the_Church.mp3" name="06. Role of Women in the Church" />
+    </Topic>
+    <Topic name="Spiritual Warfare" server="tnp">
+      <Item link="audio/topical-lectures/spiritual-warfare/01_0000_Introduction.mp3" name="01. Introduction" />
+      <Item link="audio/topical-lectures/spiritual-warfare/02_0000_Origin_of_Satan.mp3" name="02. Origin of Satan" />
+      <Item link="audio/topical-lectures/spiritual-warfare/03_0000_Satans_Allies_and_Activities.mp3" name="03. Satans Allies and Activities" />
+      <Item link="audio/topical-lectures/spiritual-warfare/04_0000_The_Continuing_Campaign.mp3" name="04. The Continuing Campaign" />
+      <Item link="audio/topical-lectures/spiritual-warfare/05_0000_The_Christians_Advantage.mp3" name="05. The Christians Advantage" />
+      <Item link="audio/topical-lectures/spiritual-warfare/06_0000_The_Armor_of_God.mp3" name="06. The Armor of God" />
+      <Item link="audio/topical-lectures/spiritual-warfare/07_0000_Recognizing_the_Devils_Devices.mp3" name="07. Recognizing the Devils Devices" />
+      <Item link="audio/topical-lectures/spiritual-warfare/08_0000_Resisting_Satans_Devices.mp3" name="08. Resisting Satans Devices" />
+      <Item link="audio/topical-lectures/spiritual-warfare/09_0000_Bondage_and_Deliverance_Part_1.mp3" name="09. Bondage and Deliverance • Part 1" />
+      <Item link="audio/topical-lectures/spiritual-warfare/10_0000_Bondage_and_Deliverance_Part_2.mp3" name="10. Bondage and Deliverance • Part 2" />
+      <Item link="audio/topical-lectures/spiritual-warfare/11_0000_Bondage_and_Deliverance_Part_3.mp3" name="11. Bondage and Deliverance • Part 3" />
+      <Item link="audio/topical-lectures/spiritual-warfare/12_0000_Spiritual_Aggression.mp3" name="12. Spiritual Aggression" />
+    </Topic>
+    <Topic name="Strategies For Unity" server="tnp">
+      <Item link="audio/topical-lectures/strategies-for-unity/01_2015_Strategies_for_Unity_Part_1.mp3" name="01. Strategies for Unity • Part 1" />
+      <Item link="audio/topical-lectures/strategies-for-unity/02_2015_Strategies_for_Unity_Part_2.mp3" name="02. Strategies for Unity • Part 2" />
+      <Item link="audio/topical-lectures/strategies-for-unity/03_2015_Strategies_for_Unity_Part_3.mp3" name="03. Strategies for Unity • Part 3" />
+      <Item link="audio/topical-lectures/strategies-for-unity/04_2015_Strategies_for_Unity_Part_4.mp3" name="04. Strategies for Unity • Part 4" />
+    </Topic>
+    <Topic name="Survey Of The Life Of Christ 1998" server="tnp">
+      <Item link="audio/topical-lectures/survey-of-the-life-of-christ-1998/01_1998_Survey_of_the_Life_of_Christ_-_Part_1,_Historical_Sources_and_Background_-_1.mp3" name="01. Survey of the Life of Christ  -  • Part 1, Historical Sources and Background  -  1" />
+      <Item link="audio/topical-lectures/survey-of-the-life-of-christ-1998/02_1998_Survey_of_the_Life_of_Christ_-_Part_2,_Historical_Sources_and_Background_-_2.mp3" name="02. Survey of the Life of Christ  -  • Part 2, Historical Sources and Background  -  2" />
+      <Item link="audio/topical-lectures/survey-of-the-life-of-christ-1998/03_1998_Survey_of_the_Life_of_Christ_-_Part_3,_Jesus_Teaching_Methods.mp3" name="03. Survey of the Life of Christ  -  • Part 3, Jesus Teaching Methods" />
+      <Item link="audio/topical-lectures/survey-of-the-life-of-christ-1998/04_1998_Survey_of_the_Life_of_Christ_-_Part_4,_Pre_existence_and_Birth_of _Christ.mp3" name="04. Survey of the Life of Christ  -  • Part 4, Pre existence and Birth of  Christ" />
+      <Item link="audio/topical-lectures/survey-of-the-life-of-christ-1998/05_1998_Survey_of_the_Life_of_Christ_-_Part_5,_Geneology_and_Early_Ministry.mp3" name="05. Survey of the Life of Christ  -  • Part 5, Geneology and Early Ministry" />
+      <Item link="audio/topical-lectures/survey-of-the-life-of-christ-1998/06_1998_Survey_of_the_Life_of_Christ_-_Part_6,_Year_of_Popularity.mp3" name="06. Survey of the Life of Christ  -  • Part 6, Year of Popularity" />
+      <Item link="audio/topical-lectures/survey-of-the-life-of-christ-1998/07_1998_Survey_of_the_Life_of_Christ_-_Part_7,_Year_of_Opposition.mp3" name="07. Survey of the Life of Christ  -  • Part 7, Year of Opposition" />
+      <Item link="audio/topical-lectures/survey-of-the-life-of-christ-1998/08_1998_Survey_of_the_Life_of_Christ_-_Part_8,_Perean_Ministry_and_Passion_Week.mp3" name="08. Survey of the Life of Christ  -  • Part 8, Perean Ministry and Passion Week" />
+      <Item link="audio/topical-lectures/survey-of-the-life-of-christ-1998/09_1998_Survey_of_the_Life_of_Christ_-_Part_9,_The_Crucifixion_and_Resurrection.mp3" name="09. Survey of the Life of Christ  -  • Part 9, The Crucifixion and Resurrection" />
+    </Topic>
+    <Topic name="The Beatitudes" server="tnp">
+      <Item link="audio/topical-lectures/the-beatitudes/01_0000_Introduction.mp3" name="01. Introduction" />
+      <Item link="audio/topical-lectures/the-beatitudes/02_0000_The_Poor_in_Spirit.mp3" name="02. The Poor in Spirit" />
+      <Item link="audio/topical-lectures/the-beatitudes/03_0000_They_That_Mourn.mp3" name="03. They That Mourn" />
+      <Item link="audio/topical-lectures/the-beatitudes/04_0000_The_Meek.mp3" name="04. The Meek" />
+      <Item link="audio/topical-lectures/the-beatitudes/05_0000_Those_Who_Hunger_and_Thirst.mp3" name="05. Those Who Hunger and Thirst" />
+      <Item link="audio/topical-lectures/the-beatitudes/06_0000_The_Merciful_Part_1.mp3" name="06. The Merciful • Part 1" />
+      <Item link="audio/topical-lectures/the-beatitudes/07_0000_The_Merciful_Part_2.mp3" name="07. The Merciful • Part 2" />
+      <Item link="audio/topical-lectures/the-beatitudes/08_0000_The_Pure_in_Heart.mp3" name="08. The Pure in Heart" />
+      <Item link="audio/topical-lectures/the-beatitudes/09_0000_The_Peacemakers.mp3" name="09. The Peacemakers" />
+      <Item link="audio/topical-lectures/the-beatitudes/10_0000_The_Persecuted.mp3" name="10. The Persecuted" />
+    </Topic>
+    <Topic name="The Holy Spirit" server="tnp">
+      <Item link="audio/topical-lectures/the-holy-spirit/01_2017_The_Holy_Spirit_Part_1.mp3" name="01. The Holy Spirit • Part 1" />
+      <Item link="audio/topical-lectures/the-holy-spirit/02_2017_The_Holy_Spirit_Part_2.mp3" name="02. The Holy Spirit • Part 2" />
+      <Item link="audio/topical-lectures/the-holy-spirit/03_2017_The_Holy_Spirit_Part_3.mp3" name="03. The Holy Spirit • Part 3" />
+      <Item link="audio/topical-lectures/the-holy-spirit/04_2017_The_Holy_Spirit_Part_4.mp3" name="04. The Holy Spirit • Part 4" />
+    </Topic>
+    <Topic name="The Tabernacle" server="tnp">
+      <Item link="audio/topical-lectures/the-tabernacle/01_0000_Introduction.mp3" name="01. Introduction" />
+      <Item link="audio/topical-lectures/the-tabernacle/02_0000_Ark_and_Mercy_Seat.mp3" name="02. Ark and Mercy Seat" />
+      <Item link="audio/topical-lectures/the-tabernacle/03_0000_Showbread_and_Lampstand.mp3" name="03. Showbread and Lampstand" />
+      <Item link="audio/topical-lectures/the-tabernacle/04_0000_The_Structure_Part_1.mp3" name="04. The Structure • Part 1" />
+      <Item link="audio/topical-lectures/the-tabernacle/05_0000_The_Structure_Part_2.mp3" name="05. The Structure • Part 2" />
+      <Item link="audio/topical-lectures/the-tabernacle/06_0000_The_Altar_and_the_Laver.mp3" name="06. The Altar and the Laver" />
+      <Item link="audio/topical-lectures/the-tabernacle/07_0000_Golden_Altar_and_Insence_Altar.mp3" name="07. Golden Altar and Insence Altar" />
+      <Item link="audio/topical-lectures/the-tabernacle/08_0000_Construction_and_Gods_Presence.mp3" name="08. Construction and Gods Presence" />
+      <Item link="audio/topical-lectures/the-tabernacle/09_0000_Garments_of_Priests.mp3" name="09. Garments of Priests" />
+      <Item link="audio/topical-lectures/the-tabernacle/10_0000_Consecration_of_Priests.mp3" name="10. Consecration of Priests" />
+    </Topic>
+    <Topic name="The Ten Commandments" server="tnp">
+      <Item link="audio/topical-lectures/the-ten-commandments/01_0000_The_First_and_Second_Commandments.mp3" name="01. The First and Second Commandments" />
+      <Item link="audio/topical-lectures/the-ten-commandments/02_0000_The_Third_Commandment.mp3" name="02. The Third Commandment" />
+      <Item link="audio/topical-lectures/the-ten-commandments/03_0000_The_Fourth_Commandment.mp3" name="03. The Fourth Commandment" />
+      <Item link="audio/topical-lectures/the-ten-commandments/04_0000_The_Fifth_Commandment_Part_1.mp3" name="04. The Fifth Commandment • Part 1" />
+      <Item link="audio/topical-lectures/the-ten-commandments/05_0000_The_Fifth_Commandment_Part_2.mp3" name="05. The Fifth Commandment • Part 2" />
+      <Item link="audio/topical-lectures/the-ten-commandments/06_0000_The_Sixth_Commandment.mp3" name="06. The Sixth Commandment" />
+      <Item link="audio/topical-lectures/the-ten-commandments/07_0000_The_Seventh_Commandment_Part_1.mp3" name="07. The Seventh Commandment • Part 1" />
+      <Item link="audio/topical-lectures/the-ten-commandments/08_0000_The_Seventh_Commandment_Part_2.mp3" name="08. The Seventh Commandment • Part 2" />
+      <Item link="audio/topical-lectures/the-ten-commandments/09_0000_The_Eigth_Commandment_Part_1.mp3" name="09. The Eigth Commandment • Part 1" />
+      <Item link="audio/topical-lectures/the-ten-commandments/10_0000_The_Eigth_Commandment_Part_2.mp3" name="10. The Eigth Commandment • Part 2" />
+      <Item link="audio/topical-lectures/the-ten-commandments/11_0000_The_Ninth_Commandment.mp3" name="11. The Ninth Commandment" />
+      <Item link="audio/topical-lectures/the-ten-commandments/12_0000_The_Tenth_Commandment.mp3" name="12. The Tenth Commandment" />
+    </Topic>
+    <Topic name="Three Views Of Hell" server="tnp">
+      <Item link="audio/topical-lectures/three-views-of-hell/01_Three_Views_of_Hell_Part_1.mp3" name="01. Three Views of Hell • Part 1" />
+      <Item link="audio/topical-lectures/three-views-of-hell/02_Three_Views_of_Hell_Part_2.mp3" name="02. Three Views of Hell • Part 2" />
+    </Topic>
+    <Topic name="Torah Observance" server="tnp">
+      <Item link="audio/topical-lectures/torah-observance/01_2019_Torah_Observance_Part_1.mp3" name="01. Torah Observance • Part 1" />
+      <Item link="audio/topical-lectures/torah-observance/02_2019_Torah_Observance_Part_2.mp3" name="02. Torah Observance • Part 2" />
+      <Item link="audio/topical-lectures/torah-observance/03_2019_Torah_Observance_Part_3.mp3" name="03. Torah Observance • Part 3" />
+      <Item link="audio/topical-lectures/torah-observance/04_2019_Torah_Observance_Part_4,_Q_And_A.mp3" name="04. Torah Observance • Part 4, Q And A" />
+    </Topic>
+    <Topic name="Toward A Radically Christian Counterculture" server="tnp">
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/01_0000_Introduction.mp3" name="01. Introduction" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/02_0000_Legalism_Part_1.mp3" name="02. Legalism • Part 1" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/03_0000_Legalism_Part_2.mp3" name="03. Legalism • Part 2" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/04_0000_Worldview.mp3" name="04. Worldview" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/05_0000_Worldview_and_Values.mp3" name="05. Worldview and Values" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/06_0000_Cultures_of_Life_and_Death.mp3" name="06. Cultures of Life and Death" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/07_0000_War_vs_Peace_Part_1.mp3" name="07. War vs Peace • Part 1" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/08_0000_War_vs_Peace_Part_2.mp3" name="08. War vs Peace • Part 2" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/09_0000_Self_Love_vs_Self_Denial.mp3" name="09. Self Love vs Self Denial" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/10_0000_Families_vs_Individuals_Part_1.mp3" name="10. Families vs Individuals • Part 1" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/11_0000_Families_vs_Individuals_Part_2.mp3" name="11. Families vs Individuals • Part 2" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/12_0000_Families_vs_Individuals_Part_3.mp3" name="12. Families vs Individuals • Part 3" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/13_0000_Families_vs_Individuals_Part_4.mp3" name="13. Families vs Individuals • Part 4" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/14_0000_Divorce_and_Remarriage_Part_1.mp3" name="14. Divorce and Remarriage • Part 1" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/15_0000_Divorce_and_Remarriage_Part_2.mp3" name="15. Divorce and Remarriage • Part 2" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/16_0000_Approaching_Marriage.mp3" name="16. Approaching Marriage" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/17_0000_Home_Insteading.mp3" name="17. Home Insteading" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/18_0000_Purity_Part_1.mp3" name="18. Purity • Part 1" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/19_0000_Purity_Part_2.mp3" name="19. Purity • Part 2" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/20_0000_Purity_Part_3.mp3" name="20. Purity • Part 3" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/21_0000_Wealth_Part_1.mp3" name="21. Wealth • Part 1" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/22_0000_Wealth_Part_2.mp3" name="22. Wealth • Part 2" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/23_0000_Wealth_Part_3.mp3" name="23. Wealth • Part 3" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/24_0000_Wealth_Part_4.mp3" name="24. Wealth • Part 4" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/25_2008_Toward_a_Radically_Christian_Counter_-_Culture_Part_1_-_2008.mp3" name="25. Toward a Radically Christian Counter  -  Culture • Part 1  -  2008" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/26_2008_Toward_a_Radically_Christian_Counter_-_Culture_Part_2_-_2008.mp3" name="26. Toward a Radically Christian Counter  -  Culture • Part 2  -  2008" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/27_2008_Toward_a_Radically_Christian_Counter_-_Culture_Part_3_-_2008.mp3" name="27. Toward a Radically Christian Counter  -  Culture • Part 3  -  2008" />
+      <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/28_2008_Toward_a_Radically_Christian_Counter_-_Culture_Part_4_-_2008.mp3" name="28. Toward a Radically Christian Counter  -  Culture • Part 4  -  2008" />
+    </Topic>
+    <Topic name="What Are We To Make Of Israel" server="tnp">
+      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/01_2015_What_is_Replacement_Theology.mp3" name="01. What is Replacement Theology" />
+      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/02_2015_Abrahamic_Covenant_Part_1.mp3" name="02. Abrahamic Covenant • Part 1" />
+      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/03_2015_Abrahamic_Covenant_Part_2.mp3" name="03. Abrahamic Covenant • Part 2" />
+      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/04_2015_The_Sinaitic_Covenant.mp3" name="04. The Sinaitic Covenant" />
+      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/05_2015_The_Davidic_Covenant.mp3" name="05. The Davidic Covenant" />
+      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/06_2015_The Future_of_Israel_Part_1.mp3" name="06. The Future of Israel • Part 1" />
+      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/07_2015_The Future_of_Israel_Part_2.mp3" name="07. The Future of Israel • Part 2" />
+      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/08_2015_The Future_of_Israel_Part_3.mp3" name="08. The Future of Israel • Part 3" />
+      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/09_2015_The_70_Weeks_of_Daniel_Part_1.mp3" name="09. The 70 Weeks of Daniel • Part 1" />
+      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/10_2015_The_70_Weeks_of_Daniel_Part_2.mp3" name="10. The 70 Weeks of Daniel • Part 2" />
+      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/11_2015_The_Modern_State_of_Israel_Part_1.mp3" name="11. The Modern State of Israel • Part 1" />
+      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/12_2015_The_Modern_State_of_Israel_Part_2.mp3" name="12. The Modern State of Israel • Part 2" />
+    </Topic>
+    <Topic name="What You Absolutely Need To Know Before You Get Married" server="tnp">
+      <Item link="audio/topical-lectures/what-you-absolutely-need-to-know-before-you-get-married/0000_01_What_You_Absolutely_Need_to_Know_Before_You_Get_Married_Part_1.mp3" name="01. What You Absolutely Need to Know Before You Get Married • Part 1" />
+      <Item link="audio/topical-lectures/what-you-absolutely-need-to-know-before-you-get-married/0000_02_What_You_Absolutely_Need_to_Know_Before_You_Get_Married_Part_2.mp3" name="02. What You Absolutely Need to Know Before You Get Married • Part 2" />
+      <Item link="audio/topical-lectures/what-you-absolutely-need-to-know-before-you-get-married/0000_03_What_You_Absolutely_Need_to_Know_Before_You_Get_Married_Part_3.mp3" name="03. What You Absolutely Need to Know Before You Get Married • Part 3" />
+    </Topic>
+    <Topic name="When Shall These Things Be" server="tnp">
+      <Item link="audio/topical-lectures/when-shall-these-things-be/01_0000_Introduction_and_Definitions.mp3" name="01. Introduction and Definitions" />
+      <Item link="audio/topical-lectures/when-shall-these-things-be/02_0000_Methods_of_Interpretation.mp3" name="02. Methods of Interpretation" />
+      <Item link="audio/topical-lectures/when-shall-these-things-be/03_0000_The_Millenium_as_the_Fulfillment_of_Israels_Hope.mp3" name="03. The Millenium as the Fulfillment of Israels Hope" />
+      <Item link="audio/topical-lectures/when-shall-these-things-be/04_0000_The_Millinum_in_Revelation.mp3" name="04. The Millinum in Revelation" />
+      <Item link="audio/topical-lectures/when-shall-these-things-be/05_0000_Revelation_20.4_and_the_History_of_Millennial_Thinking.mp3" name="05. Revelation 20:4 and the History of Millennial Thinking" />
+      <Item link="audio/topical-lectures/when-shall-these-things-be/06_0000_When_Will_the_Rapture_Be.mp3" name="06. When Will the Rapture Be" />
+      <Item link="audio/topical-lectures/when-shall-these-things-be/07_0000_The_Pretrib_Rapture_Defended.mp3" name="07. The Pretrib Rapture Defended" />
+      <Item link="audio/topical-lectures/when-shall-these-things-be/08_0000_The_Pretrib_Rapture_Refuted.mp3" name="08. The Pretrib Rapture Refuted" />
+      <Item link="audio/topical-lectures/when-shall-these-things-be/09_0000_Is_the_Future_Pretrib_Rapture_Taught_in_Scripture_Part_1.mp3" name="09. Is the Future Pretrib Rapture Taught in Scripture • Part 1" />
+      <Item link="audio/topical-lectures/when-shall-these-things-be/10_0000_Is_ the_Future_Pretrib_Rapture_Taught_in_Scripture.mp3" name="10. Is  the Future Pretrib Rapture Taught in Scripture" />
+      <Item link="audio/topical-lectures/when-shall-these-things-be/11_0000_The_Olivet_Discourse_Part_I.mp3" name="11. The Olivet Discourse • Part I" />
+      <Item link="audio/topical-lectures/when-shall-these-things-be/12_0000_The_Olivet_Discourse_Part 2.mp3" name="12. The Olivet Discourse • Part 2" />
+      <Item link="audio/topical-lectures/when-shall-these-things-be/13_0000_The_Future_of_the_Church_Part_I.mp3" name="13. The Future of the Church • Part I" />
+      <Item link="audio/topical-lectures/when-shall-these-things-be/14_0000_The_Future_of_the_Church_Part_2.mp3" name="14. The Future of the Church • Part 2" />
+    </Topic>
+    <Topic name="Wisdom Literature" server="tnp">
+      <Item link="audio/topical-lectures/wisdom-literature/01_2022_Wisdom_Literature_Part_1.mp3" name="01. Wisdom Literature • Part 1" />
+      <Item link="audio/topical-lectures/wisdom-literature/02_2023_Wisdom_Literature_Part_2.mp3" name="02. Wisdom Literature • Part 2" />
+      <Item link="audio/topical-lectures/wisdom-literature/03_2023_Wisdom_Literature_Part_3.mp3" name="03. Wisdom Literature • Part 3" />
+      <Item link="audio/topical-lectures/wisdom-literature/04_2023_Wisdom_Literature_Part_4.mp3" name="04. Wisdom Literature • Part 4" />
+      <Item link="audio/topical-lectures/wisdom-literature/05_2023_Wisdom_Literature_Part_5.mp3" name="05. Wisdom Literature • Part 5" />
+      <Item link="audio/topical-lectures/wisdom-literature/06_2023_Wisdom_Literature_Part_6.mp3" name="06. Wisdom Literature • Part 6" />
+      <Item link="audio/topical-lectures/wisdom-literature/07_2023_Wisdom_Literature_Part_7.mp3" name="07. Wisdom Literature • Part 7" />
+      <Item link="audio/topical-lectures/wisdom-literature/08_2023_Wisdom_Literature_Part_8.mp3" name="08. Wisdom Literature • Part 8" />
+    </Topic>
+    <Topic name="Word Of Faith" server="tnp">
+      <Item link="audio/topical-lectures/word-of-faith/01_0000_Introduction.mp3" name="01. Introduction" />
+      <Item link="audio/topical-lectures/word-of-faith/02_0000_Is_Healing_in_the_Atonement.mp3" name="02. Is Healing in the Atonement" />
+      <Item link="audio/topical-lectures/word-of-faith/03_0000_Healing_on_Demand.mp3" name="03. Healing on Demand" />
+      <Item link="audio/topical-lectures/word-of-faith/04_0000_Prosperity.mp3" name="04. Prosperity" />
+    </Topic>
+  </Teaching>
+  <Teaching>
+    <Book name="Genesis" server="tnp">
+      <Item link="audio/verse-by-verse/genesis/01_2010_Canon_of_Scripture.mp3" name="01. Canon of Scripture" />
+      <Item link="audio/verse-by-verse/genesis/02_2010_Bible_Survey.mp3" name="02. Bible Survey" />
+      <Item link="audio/verse-by-verse/genesis/03_2010_Introduction_to_Penteteuch.mp3" name="03. Introduction to Penteteuch" />
+      <Item link="audio/verse-by-verse/genesis/04_2010_Genesis_Introduction.mp3" name="04. Genesis Introduction" />
+      <Item link="audio/verse-by-verse/genesis/05_2010_Genesis_1_Part_1.mp3" name="05. Genesis 1 • Part 1" />
+      <Item link="audio/verse-by-verse/genesis/06_2010_Genesis_1_Part_2.mp3" name="06. Genesis 1 • Part 2" />
+      <Item link="audio/verse-by-verse/genesis/07_2010_Genesis_1_Part_3.mp3" name="07. Genesis 1 • Part 3" />
+      <Item link="audio/verse-by-verse/genesis/08_2010_Genesis_1_Spiritual_Application.mp3" name="08. Genesis 1 Spiritual Application" />
+      <Item link="audio/verse-by-verse/genesis/09_2010_Genesis_2.1-2.3.mp3" name="09. Genesis 2:1 - 2:3" />
+      <Item link="audio/verse-by-verse/genesis/10_2010_Genesis_2.4-2.20.mp3" name="10. Genesis 2:4 - 2:20" />
+      <Item link="audio/verse-by-verse/genesis/11_2010_Genesis_2.21-2.25.mp3" name="11. Genesis 2:21 - 2:25" />
+      <Item link="audio/verse-by-verse/genesis/12_2010_Genesis_3.1-3.6.mp3" name="12. Genesis 3:1 - 3:6" />
+      <Item link="audio/verse-by-verse/genesis/13_2010_Genesis_3.7-3.15.mp3" name="13. Genesis 3:7 - 3:15" />
+      <Item link="audio/verse-by-verse/genesis/14_2010_Genesis_3.16-3.24.mp3" name="14. Genesis 3:16 - 3:24" />
+      <Item link="audio/verse-by-verse/genesis/15_2010_Genesis_4.1_4.17.mp3" name="15. Genesis 4:1 4:17" />
+      <Item link="audio/verse-by-verse/genesis/16_2010_Genesis_4.18-5.32.mp3" name="16. Genesis 4:18 - 5:32" />
+      <Item link="audio/verse-by-verse/genesis/17_2010_Genesis_6.1-6.8.mp3" name="17. Genesis 6:1 - 6:8" />
+      <Item link="audio/verse-by-verse/genesis/18_2010_Genesis_6.9-8.22.mp3" name="18. Genesis 6:9 - 8:22" />
+      <Item link="audio/verse-by-verse/genesis/19_2010_Genesis_9.1-9.7.mp3" name="19. Genesis 9:1 - 9:7" />
+      <Item link="audio/verse-by-verse/genesis/20_2010_Genesis_9.8-10.32.mp3" name="20. Genesis 9:8 - 10:32" />
+      <Item link="audio/verse-by-verse/genesis/21_2010_Genesis_11.mp3" name="21. Genesis 11" />
+      <Item link="audio/verse-by-verse/genesis/22_2010_Genesis_12.1-12.9.mp3" name="22. Genesis 12:1 - 12:9" />
+      <Item link="audio/verse-by-verse/genesis/23_2010_Genesis_12.10-13.18.mp3" name="23. Genesis 12:10 - 13:18" />
+      <Item link="audio/verse-by-verse/genesis/24_2010_Genesis_14.mp3" name="24. Genesis 14" />
+      <Item link="audio/verse-by-verse/genesis/25_2010_Genesis_15.1-17.8.mp3" name="25. Genesis 15:1 - 17:8" />
+      <Item link="audio/verse-by-verse/genesis/26_2010_Genesis_17.9-18.33.mp3" name="26. Genesis 17:9 - 18:33" />
+      <Item link="audio/verse-by-verse/genesis/27_2010_Genesis_19-20.mp3" name="27. Genesis 19 - 20" />
+      <Item link="audio/verse-by-verse/genesis/28_2010_Genesis_21-22.1.mp3" name="28. Genesis 21 - 22:1" />
+      <Item link="audio/verse-by-verse/genesis/29_2010_Genesis_23-24.mp3" name="29. Genesis 23 - 24" />
+      <Item link="audio/verse-by-verse/genesis/30_2010_Genesis_25.mp3" name="30. Genesis 25" />
+      <Item link="audio/verse-by-verse/genesis/31_2010_Genesis_26-27.mp3" name="31. Genesis 26 - 27" />
+      <Item link="audio/verse-by-verse/genesis/32_2010_Genesis_28.1-29.30.mp3" name="32. Genesis 28:1 - 29:30" />
+      <Item link="audio/verse-by-verse/genesis/33_2010_Genesis_29.31-31.16.mp3" name="33. Genesis 29:31 - 31:16" />
+      <Item link="audio/verse-by-verse/genesis/34_2010_Genesis_31.17-31.55.mp3" name="34. Genesis 31:17 - 31:55" />
+      <Item link="audio/verse-by-verse/genesis/35_2010_Genesis_32-34.mp3" name="35. Genesis 32 - 34" />
+      <Item link="audio/verse-by-verse/genesis/36_2010_Genesis_35-37.mp3" name="36. Genesis 35 - 37" />
+      <Item link="audio/verse-by-verse/genesis/37_2010_Genesis_38-39.mp3" name="37. Genesis 38 - 39" />
+      <Item link="audio/verse-by-verse/genesis/38_2010_Genesis_40-42.mp3" name="38. Genesis 40 - 42" />
+      <Item link="audio/verse-by-verse/genesis/39_2010_Genesis_43-47.mp3" name="39. Genesis 43 - 47" />
+      <Item link="audio/verse-by-verse/genesis/40_2010_Genesis_48-50.mp3" name="40. Genesis 48 - 50" />
+    </Book>
+    <Book name="Exodus" server="tnp">
+      <Item link="audio/verse-by-verse/exodus/01_2010_Exodus_Introduction_Part_1.mp3" name="01. Exodus Introduction • Part 1" />
+      <Item link="audio/verse-by-verse/exodus/02_2010_Exodus_Introduction_Part_2.mp3" name="02. Exodus Introduction • Part 2" />
+      <Item link="audio/verse-by-verse/exodus/03_2010_Exodus_1-3.mp3" name="03. Exodus 1 - 3" />
+      <Item link="audio/verse-by-verse/exodus/04_2010_Exodus_4.mp3" name="04. Exodus 4" />
+      <Item link="audio/verse-by-verse/exodus/05_2010_Exodus_5.1-7.7.mp3" name="05. Exodus 5:1 - 7:7" />
+      <Item link="audio/verse-by-verse/exodus/06_2010_Exodus_7.8-8.32.mp3" name="06. Exodus 7:8 - 8:32" />
+      <Item link="audio/verse-by-verse/exodus/07_2010_Exodus_9-10.mp3" name="07. Exodus 9 - 10" />
+      <Item link="audio/verse-by-verse/exodus/08_2010_Exodus_11-12.mp3" name="08. Exodus 11 - 12" />
+      <Item link="audio/verse-by-verse/exodus/09_2010_Exodus_13-14.mp3" name="09. Exodus 13 - 14" />
+      <Item link="audio/verse-by-verse/exodus/10_2010_Exodus_15.1-16.3.mp3" name="10. Exodus 15:1 - 16:3" />
+      <Item link="audio/verse-by-verse/exodus/11_2010_Exodus_16.4-17.16.mp3" name="11. Exodus 16:4 - 17:16" />
+      <Item link="audio/verse-by-verse/exodus/12_2010_Exodus_18-19.mp3" name="12. Exodus 18 - 19" />
+      <Item link="audio/verse-by-verse/exodus/13_2010_Exodus_Introduction_to_the_Law.mp3" name="13. Exodus Introduction to the Law" />
+      <Item link="audio/verse-by-verse/exodus/14_2010_Exodus_20.1-20.12_Commandments_1-4.mp3" name="14. Exodus 20:1 - 20:12 Commandments 1 - 4" />
+      <Item link="audio/verse-by-verse/exodus/15_2010_Exodus_20.13-20.17_Commandments_6-10.mp3" name="15. Exodus 20:13 - 20:17 Commandments 6 - 10" />
+      <Item link="audio/verse-by-verse/exodus/16_2010_Exodus_20.18-21.11.mp3" name="16. Exodus 20:18 - 21:11" />
+      <Item link="audio/verse-by-verse/exodus/17_2010_Exodus_21.12-22.31.mp3" name="17. Exodus 21:12 - 22:31" />
+      <Item link="audio/verse-by-verse/exodus/18_2010_Exodus_23-24.mp3" name="18. Exodus 23 - 24" />
+      <Item link="audio/verse-by-verse/exodus/19_2010_Exodus_32.mp3" name="19. Exodus 32" />
+      <Item link="audio/verse-by-verse/exodus/20_2010_Exodus_33-34.mp3" name="20. Exodus 33 - 34" />
+      <Item link="audio/verse-by-verse/exodus/21_2010_Exodus_Tabernacle_Overview.mp3" name="21. Exodus Tabernacle Overview" />
+      <Item link="audio/verse-by-verse/exodus/22_2010_Exodus_Tabernacle_Meaning_Part_1.mp3" name="22. Exodus Tabernacle Meaning • Part 1" />
+      <Item link="audio/verse-by-verse/exodus/23_2010_Exodus_Tabernacle_Meaning_Part_2.mp3" name="23. Exodus Tabernacle Meaning • Part 2" />
+      <Item link="audio/verse-by-verse/exodus/24_2010_Exodus_Offerings.mp3" name="24. Exodus Offerings" />
+      <Item link="audio/verse-by-verse/exodus/25_2010_Exodus_Priests.mp3" name="25. Exodus Priests" />
+    </Book>
+    <Book name="Leviticus" server="tnp">
+      <Item link="audio/verse-by-verse/leviticus/01_2010_Leviticus_Introduction.mp3" name="01. Leviticus Introduction" />
+      <Item link="audio/verse-by-verse/leviticus/02_2010_Leviticus_1-7_Part_1.mp3" name="02. Leviticus 1 - 7 • Part 1" />
+      <Item link="audio/verse-by-verse/leviticus/03_2010_Leviticus_1-7_Part_2.mp3" name="03. Leviticus 1 - 7 • Part 2" />
+      <Item link="audio/verse-by-verse/leviticus/04_2010_Leviticus_8-10.mp3" name="04. Leviticus 8 - 10" />
+      <Item link="audio/verse-by-verse/leviticus/05_2010_Leviticus_11-12.mp3" name="05. Leviticus 11 - 12" />
+      <Item link="audio/verse-by-verse/leviticus/06_2010_Leviticus_13-15.mp3" name="06. Leviticus 13 - 15" />
+      <Item link="audio/verse-by-verse/leviticus/07_2010_Leviticus_16-17.mp3" name="07. Leviticus 16 - 17" />
+      <Item link="audio/verse-by-verse/leviticus/08_2010_Leviticus_18-20.mp3" name="08. Leviticus 18 - 20" />
+      <Item link="audio/verse-by-verse/leviticus/09_2010_Leviticus_21-22.mp3" name="09. Leviticus 21 - 22" />
+      <Item link="audio/verse-by-verse/leviticus/10_2010_Leviticus_23.mp3" name="10. Leviticus 23" />
+      <Item link="audio/verse-by-verse/leviticus/11_2010_Leviticus_24-25.mp3" name="11. Leviticus 24 - 25" />
+      <Item link="audio/verse-by-verse/leviticus/12_2010_Leviticus_26-27.mp3" name="12. Leviticus 26 - 27" />
+    </Book>
+    <Book name="Numbers" server="tnp">
+      <Item link="audio/verse-by-verse/numbers/01_2010_Numbers_Introduction.mp3" name="01. Numbers Introduction" />
+      <Item link="audio/verse-by-verse/numbers/02_2010_Numbers_1-4.mp3" name="02. Numbers 1 - 4" />
+      <Item link="audio/verse-by-verse/numbers/03_2010_Numbers_5-7.mp3" name="03. Numbers 5 - 7" />
+      <Item link="audio/verse-by-verse/numbers/04_2010_Numbers_8-9.mp3" name="04. Numbers 8 - 9" />
+      <Item link="audio/verse-by-verse/numbers/05_2010_Numbers_10-12.mp3" name="05. Numbers 10 - 12" />
+      <Item link="audio/verse-by-verse/numbers/06_2010_Numbers_13-15.mp3" name="06. Numbers 13 - 15" />
+      <Item link="audio/verse-by-verse/numbers/07_2010_Numbers_16-17.mp3" name="07. Numbers 16 - 17" />
+      <Item link="audio/verse-by-verse/numbers/08_2010_Numbers_18-20.mp3" name="08. Numbers 18 - 20" />
+      <Item link="audio/verse-by-verse/numbers/09_2010_Numbers_21-22.mp3" name="09. Numbers 21 - 22" />
+      <Item link="audio/verse-by-verse/numbers/10_2010_Numbers_23-24.mp3" name="10. Numbers 23 - 24" />
+      <Item link="audio/verse-by-verse/numbers/11_2010_Numbers_25-27.mp3" name="11. Numbers 25 - 27" />
+      <Item link="audio/verse-by-verse/numbers/12_2010_Numbers_28-30.mp3" name="12. Numbers 28 - 30" />
+      <Item link="audio/verse-by-verse/numbers/13_2010_Numbers_31-32.mp3" name="13. Numbers 31 - 32" />
+      <Item link="audio/verse-by-verse/numbers/14_2010_Numbers_33-36.mp3" name="14. Numbers 33 - 36" />
+    </Book>
+    <Book name="Deuteronomy" server="tnp">
+      <Item link="audio/verse-by-verse/deuteronomy/01_2010_Deuteronomy_Introduction.mp3" name="01. Deuteronomy Introduction" />
+      <Item link="audio/verse-by-verse/deuteronomy/02_2010_Deuteronomy_1-3.mp3" name="02. Deuteronomy 1 - 3" />
+      <Item link="audio/verse-by-verse/deuteronomy/03_2010_Deuteronomy_4.mp3" name="03. Deuteronomy 4" />
+      <Item link="audio/verse-by-verse/deuteronomy/04_2010_Deuteronomy_5-6.mp3" name="04. Deuteronomy 5 - 6" />
+      <Item link="audio/verse-by-verse/deuteronomy/05_2010_Deuteronomy_7-9.mp3" name="05. Deuteronomy 7 - 9" />
+      <Item link="audio/verse-by-verse/deuteronomy/06_2010_Deuteronomy_10-12.mp3" name="06. Deuteronomy 10 - 12" />
+      <Item link="audio/verse-by-verse/deuteronomy/07_2010_Deuteronomy_13-15.mp3" name="07. Deuteronomy 13 - 15" />
+      <Item link="audio/verse-by-verse/deuteronomy/08_2010_Deuteronomy_16-18.mp3" name="08. Deuteronomy 16 - 18" />
+      <Item link="audio/verse-by-verse/deuteronomy/09_2010_Deuteronomy_19-21.mp3" name="09. Deuteronomy 19 - 21" />
+      <Item link="audio/verse-by-verse/deuteronomy/10_2010_Deuteronomy_22-23.mp3" name="10. Deuteronomy 22 - 23" />
+      <Item link="audio/verse-by-verse/deuteronomy/11_2010_Deuteronomy_24-26.mp3" name="11. Deuteronomy 24 - 26" />
+      <Item link="audio/verse-by-verse/deuteronomy/12_2010_Deuteronomy_27-28.mp3" name="12. Deuteronomy 27 - 28" />
+      <Item link="audio/verse-by-verse/deuteronomy/13_2010_Deuteronomy_29-30.mp3" name="13. Deuteronomy 29 - 30" />
+      <Item link="audio/verse-by-verse/deuteronomy/14_2010_Deuteronomy_31-32.mp3" name="14. Deuteronomy 31 - 32" />
+      <Item link="audio/verse-by-verse/deuteronomy/15_2010_Deuteronomy_33-34.mp3" name="15. Deuteronomy 33 - 34" />
+    </Book>
+    <Book name="Joshua" server="tnp">
+      <Item link="audio/verse-by-verse/joshua/01_2011_Historical_Books_Introduction_Part_1.mp3" name="01. Historical Books Introduction • Part 1" />
+      <Item link="audio/verse-by-verse/joshua/02_2011_Historical_Books_Introduction_Part_2.mp3" name="02. Historical Books Introduction • Part 2" />
+      <Item link="audio/verse-by-verse/joshua/03_2011_Joshua_Introduction_Part_1.mp3" name="03. Joshua Introduction • Part 1" />
+      <Item link="audio/verse-by-verse/joshua/04_2011_Joshua_Introduction_Part_2.mp3" name="04. Joshua Introduction • Part 2" />
+      <Item link="audio/verse-by-verse/joshua/05_2011_Joshua_1.mp3" name="05. Joshua 1" />
+      <Item link="audio/verse-by-verse/joshua/06_2011_Joshua_2-3.mp3" name="06. Joshua 2 - 3" />
+      <Item link="audio/verse-by-verse/joshua/07_2011_Joshua_4-6.mp3" name="07. Joshua 4 - 6" />
+      <Item link="audio/verse-by-verse/joshua/08_2011_Joshua_7-8.mp3" name="08. Joshua 7 - 8" />
+      <Item link="audio/verse-by-verse/joshua/09_2011_Joshua_9.mp3" name="09. Joshua 9" />
+      <Item link="audio/verse-by-verse/joshua/10_2011_Joshua_10-11.mp3" name="10. Joshua 10 - 11" />
+      <Item link="audio/verse-by-verse/joshua/11_2011_Joshua_12-15.mp3" name="11. Joshua 12 - 15" />
+      <Item link="audio/verse-by-verse/joshua/12_2011_Joshua_16-22.mp3" name="12. Joshua 16 - 22" />
+      <Item link="audio/verse-by-verse/joshua/13_2011_Joshua_23-24.mp3" name="13. Joshua 23 - 24" />
+    </Book>
+    <Book name="Judges" server="tnp">
+      <Item link="audio/verse-by-verse/judges/01_2011_Judges_Introduction.mp3" name="01. Judges Introduction" />
+      <Item link="audio/verse-by-verse/judges/02_2011_Judges_1.1-2.5.mp3" name="02. Judges 1:1 - 2:5" />
+      <Item link="audio/verse-by-verse/judges/03_2011_Judges_2.6-3.30.mp3" name="03. Judges 2:6 - 3:30" />
+      <Item link="audio/verse-by-verse/judges/04_2011_Judges_4-5.mp3" name="04. Judges 4 - 5" />
+      <Item link="audio/verse-by-verse/judges/05_2011_Judges_6-7.mp3" name="05. Judges 6 - 7" />
+      <Item link="audio/verse-by-verse/judges/06_2011_Judges_8-9.mp3" name="06. Judges 8 - 9" />
+      <Item link="audio/verse-by-verse/judges/07_2011_Judges_10-11.mp3" name="07. Judges 10 - 11" />
+      <Item link="audio/verse-by-verse/judges/08_2011_Judges_12-14.mp3" name="08. Judges 12 - 14" />
+      <Item link="audio/verse-by-verse/judges/09_2011_Judges_15-16.mp3" name="09. Judges 15 - 16" />
+      <Item link="audio/verse-by-verse/judges/10_2011_Judges_17-18.mp3" name="10. Judges 17 - 18" />
+      <Item link="audio/verse-by-verse/judges/11_2011_Judges_19-21.mp3" name="11. Judges 19 - 21" />
+    </Book>
+    <Book name="Ruth" server="tnp">
+      <Item link="audio/verse-by-verse/ruth/01_2011_Ruth_1.mp3" name="01. Ruth 1" />
+      <Item link="audio/verse-by-verse/ruth/02_2011_Ruth_2-4.mp3" name="02. Ruth 2 - 4" />
+    </Book>
+    <Book name="1st Samuel" server="tnp">
+      <Item link="audio/verse-by-verse/1st-samuel/01_2011_Samuel_and_Chronicles_-_Introduction.mp3" name="01. Samuel and Chronicles  -  Introduction" />
+      <Item link="audio/verse-by-verse/1st-samuel/02_2011_1st_Samuel_1-2.mp3" name="02. 1st Samuel 1 - 2" />
+      <Item link="audio/verse-by-verse/1st-samuel/03_2011_1st_Samuel_3-4.mp3" name="03. 1st Samuel 3 - 4" />
+      <Item link="audio/verse-by-verse/1st-samuel/04_2011_1st_Samuel_5-8.mp3" name="04. 1st Samuel 5 - 8" />
+      <Item link="audio/verse-by-verse/1st-samuel/05_2011_1st_Samuel_9.01-10.8.mp3" name="05. 1st Samuel 9:01 - 10:8" />
+      <Item link="audio/verse-by-verse/1st-samuel/06_2011_1st_Samuel_10.9-12.25.mp3" name="06. 1st Samuel 10:9 - 12:25" />
+      <Item link="audio/verse-by-verse/1st-samuel/07_2011_1st_Samuel_13-14.mp3" name="07. 1st Samuel 13 - 14" />
+      <Item link="audio/verse-by-verse/1st-samuel/08_2011_1st_Samuel_15.mp3" name="08. 1st Samuel 15" />
+      <Item link="audio/verse-by-verse/1st-samuel/09_2011_1st_Samuel_16.mp3" name="09. 1st Samuel 16" />
+      <Item link="audio/verse-by-verse/1st-samuel/10_2011_1st_Samuel_17.mp3" name="10. 1st Samuel 17" />
+      <Item link="audio/verse-by-verse/1st-samuel/11_2011_1st_Samuel_18-20.mp3" name="11. 1st Samuel 18 - 20" />
+      <Item link="audio/verse-by-verse/1st-samuel/12_2011_1st_Samuel_21-22.mp3" name="12. 1st Samuel 21 - 22" />
+      <Item link="audio/verse-by-verse/1st-samuel/13_2011_1st_Samuel_23-25.mp3" name="13. 1st Samuel 23 - 25" />
+      <Item link="audio/verse-by-verse/1st-samuel/14_2011_1st_Samuel_26-28.mp3" name="14. 1st Samuel 26 - 28" />
+      <Item link="audio/verse-by-verse/1st-samuel/15_2011_1st_Samuel_29-31.mp3" name="15. 1st Samuel 29 - 31" />
+    </Book>
+    <Book name="2nd Samuel" server="tnp">
+      <Item link="audio/verse-by-verse/2nd-samuel/01_2011_2nd_Samuel_1-2.mp3" name="01. 2nd Samuel 1 - 2" />
+      <Item link="audio/verse-by-verse/2nd-samuel/02_2011_2nd_Samuel_3.mp3" name="02. 2nd Samuel 3" />
+      <Item link="audio/verse-by-verse/2nd-samuel/03_2011_2nd_Samuel_4-6.mp3" name="03. 2nd Samuel 4 - 6" />
+      <Item link="audio/verse-by-verse/2nd-samuel/04_2011_2nd_Samuel_7.1-7.17.mp3" name="04. 2nd Samuel 7:1 - 7:17" />
+      <Item link="audio/verse-by-verse/2nd-samuel/05_2011_2nd_Samuel_7.18-9.13.mp3" name="05. 2nd Samuel 7:18 - 9:13" />
+      <Item link="audio/verse-by-verse/2nd-samuel/06_2011_2nd_Samuel_10-12.mp3" name="06. 2nd Samuel 10 - 12" />
+      <Item link="audio/verse-by-verse/2nd-samuel/07_2011_2nd_Samuel_13-14.mp3" name="07. 2nd Samuel 13 - 14" />
+      <Item link="audio/verse-by-verse/2nd-samuel/08_2011_2nd_Samuel_15-16.mp3" name="08. 2nd Samuel 15 - 16" />
+      <Item link="audio/verse-by-verse/2nd-samuel/09_2011_2nd_Samuel_17-19.mp3" name="09. 2nd Samuel 17 - 19" />
+      <Item link="audio/verse-by-verse/2nd-samuel/10_2011_2nd_Samuel_20-22.mp3" name="10. 2nd Samuel 20 - 22" />
+      <Item link="audio/verse-by-verse/2nd-samuel/11_2011_2nd_Samuel_23-24.mp3" name="11. 2nd Samuel 23 - 24" />
+    </Book>
+    <Book name="1st Kings" server="tnp">
+      <Item link="audio/verse-by-verse/1st-kings/01_2011_1_and_2_Kings_Introduction.mp3" name="01. 1 and 2 Kings Introduction" />
+      <Item link="audio/verse-by-verse/1st-kings/02_2011_1_Kings_1-2.mp3" name="02. 1 Kings 1 - 2" />
+      <Item link="audio/verse-by-verse/1st-kings/03_2011_1_Kings_3-4.mp3" name="03. 1 Kings 3 - 4" />
+      <Item link="audio/verse-by-verse/1st-kings/04_2011_1_Kings_5-6.mp3" name="04. 1 Kings 5 - 6" />
+      <Item link="audio/verse-by-verse/1st-kings/05_2011_1_Kings_7-8.mp3" name="05. 1 Kings 7 - 8" />
+      <Item link="audio/verse-by-verse/1st-kings/06_2011_1_Kings_9-10.mp3" name="06. 1 Kings 9 - 10" />
+      <Item link="audio/verse-by-verse/1st-kings/07_2011_1_Kings_11-12.mp3" name="07. 1 Kings 11 - 12" />
+      <Item link="audio/verse-by-verse/1st-kings/08_2011_1_Kings_13-14.mp3" name="08. 1 Kings 13 - 14" />
+      <Item link="audio/verse-by-verse/1st-kings/09_2011_1_Kings_15-16.mp3" name="09. 1 Kings 15 - 16" />
+      <Item link="audio/verse-by-verse/1st-kings/10_2011_1_Kings_17-18.mp3" name="10. 1 Kings 17 - 18" />
+      <Item link="audio/verse-by-verse/1st-kings/11_2011_1_Kings_19-20.mp3" name="11. 1 Kings 19 - 20" />
+      <Item link="audio/verse-by-verse/1st-kings/12_2011_1_Kings_21-22.mp3" name="12. 1 Kings 21 - 22" />
+    </Book>
+    <Book name="2nd Kings" server="tnp">
+      <Item link="audio/verse-by-verse/2nd-kings/01_2011_2_Kings_1-2.mp3" name="01. 2 Kings 1 - 2" />
+      <Item link="audio/verse-by-verse/2nd-kings/02_2011_2_Kings_3-4.mp3" name="02. 2 Kings 3 - 4" />
+      <Item link="audio/verse-by-verse/2nd-kings/03_2011_2_Kings_5-6.mp3" name="03. 2 Kings 5 - 6" />
+      <Item link="audio/verse-by-verse/2nd-kings/04_2011_2_Kings_7-9.mp3" name="04. 2 Kings 7 - 9" />
+      <Item link="audio/verse-by-verse/2nd-kings/05_2011_2_Kings_10-12.mp3" name="05. 2 Kings 10 - 12" />
+      <Item link="audio/verse-by-verse/2nd-kings/06_2011_2_Kings_13-14.mp3" name="06. 2 Kings 13 - 14" />
+      <Item link="audio/verse-by-verse/2nd-kings/07_2011_2_Kings_15-16.mp3" name="07. 2 Kings 15 - 16" />
+      <Item link="audio/verse-by-verse/2nd-kings/08_2011_2_Kings_17-18.mp3" name="08. 2 Kings 17 - 18" />
+      <Item link="audio/verse-by-verse/2nd-kings/09_2011_2_Kings_19-20.mp3" name="09. 2 Kings 19 - 20" />
+      <Item link="audio/verse-by-verse/2nd-kings/10_2011_2_Kings_21-22.mp3" name="10. 2 Kings 21 - 22" />
+      <Item link="audio/verse-by-verse/2nd-kings/11_2011_2_Kings_23-24.mp3" name="11. 2 Kings 23 - 24" />
+      <Item link="audio/verse-by-verse/2nd-kings/12_2011_2_Kings_25.mp3" name="12. 2 Kings 25" />
+    </Book>
+    <Book name="Ezra" server="tnp">
+      <Item link="audio/verse-by-verse/ezra/01_2011_Ezra_1-3.mp3" name="01. Ezra 1 - 3" />
+      <Item link="audio/verse-by-verse/ezra/02_2011_Ezra_4-6.mp3" name="02. Ezra 4 - 6" />
+      <Item link="audio/verse-by-verse/ezra/03_2011_Ezra_7-8.mp3" name="03. Ezra 7 - 8" />
+      <Item link="audio/verse-by-verse/ezra/04_2011_Ezra_9-10.mp3" name="04. Ezra 9 - 10" />
+    </Book>
+    <Book name="Nehemiah" server="tnp">
+      <Item link="audio/verse-by-verse/nehemiah/01_2011_Nehemiah_Overview.mp3" name="01. Nehemiah Overview" />
+      <Item link="audio/verse-by-verse/nehemiah/02_2011_Nehemiah_1-2.mp3" name="02. Nehemiah 1 - 2" />
+      <Item link="audio/verse-by-verse/nehemiah/03_2011_Nehemiah_3-8.mp3" name="03. Nehemiah 3 - 8" />
+      <Item link="audio/verse-by-verse/nehemiah/04_2011_Nehemiah_9-13.mp3" name="04. Nehemiah 9 - 13" />
+    </Book>
+    <Book name="Esther" server="tnp">
+      <Item link="audio/verse-by-verse/esther/01_2011_Esther_1-6.mp3" name="01. Esther 1 - 6" />
+      <Item link="audio/verse-by-verse/esther/02_2011_Esther_7-10.mp3" name="02. Esther 7 - 10" />
+    </Book>
+    <Book name="Job" server="tnp">
+      <Item link="audio/verse-by-verse/job/01_2010_Job_Introduction_Part_1.mp3" name="01. Job Introduction • Part 1" />
+      <Item link="audio/verse-by-verse/job/02_2010_Job_Introduction_Part_2.mp3" name="02. Job Introduction • Part 2" />
+      <Item link="audio/verse-by-verse/job/03_2010_Job_1-2.mp3" name="03. Job 1 - 2" />
+      <Item link="audio/verse-by-verse/job/04_2010_Job_3-5.mp3" name="04. Job 3 - 5" />
+      <Item link="audio/verse-by-verse/job/05_2010_Job_6-10.mp3" name="05. Job 6 - 10" />
+      <Item link="audio/verse-by-verse/job/06_2010_Job_11-17.mp3" name="06. Job 11 - 17" />
+      <Item link="audio/verse-by-verse/job/07_2010_Job_18-22.mp3" name="07. Job 18 - 22" />
+      <Item link="audio/verse-by-verse/job/08_2010_Job_23-28.mp3" name="08. Job 23 - 28" />
+      <Item link="audio/verse-by-verse/job/09_2010_Job_29-31.mp3" name="09. Job 29 - 31" />
+      <Item link="audio/verse-by-verse/job/10_2010_Job_32-37.mp3" name="10. Job 32 - 37" />
+      <Item link="audio/verse-by-verse/job/11_2010_Job_38-42.mp3" name="11. Job 38 - 42" />
+    </Book>
+    <Book name="Psalms" server="tnp">
+      <Item link="audio/verse-by-verse/psalms/01_0000_Psalms_Introduction.mp3" name="01. Psalms Introduction" />
+      <Item link="audio/verse-by-verse/psalms/02_0000_Psalm_1.mp3" name="02. Psalm 1" />
+      <Item link="audio/verse-by-verse/psalms/03_0000_Psalms_2,_45,_72,_110.mp3" name="03. Psalms 2, 45, 72, 110" />
+      <Item link="audio/verse-by-verse/psalms/04_0000_Psalm_19.mp3" name="04. Psalm 19" />
+      <Item link="audio/verse-by-verse/psalms/05_0000_Psalm_119.mp3" name="05. Psalm 119" />
+      <Item link="audio/verse-by-verse/psalms/06_0000_Psalms_22,_23,_24,_15.mp3" name="06. Psalms 22, 23, 24, 15" />
+      <Item link="audio/verse-by-verse/psalms/07_0000_Psalms_16,_40,_41.mp3" name="07. Psalms 16, 40, 41" />
+      <Item link="audio/verse-by-verse/psalms/08_0000_Psalms_3,_4,_5,_13,_7,_8,_9.mp3" name="08. Psalms 3, 4, 5, 13, 7, 8, 9" />
+      <Item link="audio/verse-by-verse/psalms/09_0000_Psalms_51,_32.mp3" name="09. Psalms 51, 32" />
+      <Item link="audio/verse-by-verse/psalms/10_0000_Psalms_6,_143,_38,_102,_130.mp3" name="10. Psalms 6, 143, 38, 102, 130" />
+      <Item link="audio/verse-by-verse/psalms/11_0000_Psalms_10,_11,_12,_14,_53,_17.mp3" name="11. Psalms 10, 11, 12, 14, 53, 17" />
+      <Item link="audio/verse-by-verse/psalms/12_0000_Psalms_18,_20,_21.mp3" name="12. Psalms 18, 20, 21" />
+      <Item link="audio/verse-by-verse/psalms/13_0000_Psalms_25-31.mp3" name="13. Psalms 25 - 31" />
+      <Item link="audio/verse-by-verse/psalms/14_0000_Psalms_33,_36,_37.mp3" name="14. Psalms 33, 36, 37" />
+      <Item link="audio/verse-by-verse/psalms/15_0000_Psalms_56,_34,_57,_142,_108,_60.mp3" name="15. Psalms 56, 34, 57, 142, 108, 60" />
+      <Item link="audio/verse-by-verse/psalms/16_0000_Psalms_83,_137,_79,_129,_149.mp3" name="16. Psalms 83, 137, 79, 129, 149" />
+      <Item link="audio/verse-by-verse/psalms/17_0000_Psalms_35,_58,_59,_69,_109.mp3" name="17. Psalms 35, 58, 59, 69, 109" />
+      <Item link="audio/verse-by-verse/psalms/18_0000_Psalms_39,_42_-_44,_46.mp3" name="18. Psalms 39, 42  -  44, 46" />
+      <Item link="audio/verse-by-verse/psalms/19_0000_Psalms_47,_48,_49,_50,_52,_54,_55.mp3" name="19. Psalms 47, 48, 49, 50, 52, 54, 55" />
+      <Item link="audio/verse-by-verse/psalms/20_0000_Psalm_61-68.mp3" name="20. Psalm 61 - 68" />
+      <Item link="audio/verse-by-verse/psalms/21_0000_Psalms_70,_71,_73_-_76.mp3" name="21. Psalms 70, 71, 73  -  76" />
+      <Item link="audio/verse-by-verse/psalms/22_0000_Psalms_77-82.mp3" name="22. Psalms 77 - 82" />
+      <Item link="audio/verse-by-verse/psalms/23_0000_Psalms_84-89.mp3" name="23. Psalms 84 - 89" />
+      <Item link="audio/verse-by-verse/psalms/26_0000_Psalms_98-101,_103,_104.mp3" name="26. Psalms 98 - 101, 103, 104" />
+      <Item link="audio/verse-by-verse/psalms/27_0000_Psalms_105,_106.mp3" name="27. Psalms 105, 106" />
+      <Item link="audio/verse-by-verse/psalms/28_0000_Psalms_107,_108,_111_-_113.mp3" name="28. Psalms 107, 108, 111  -  113" />
+      <Item link="audio/verse-by-verse/psalms/29_0000_Psalms_114_-_117.mp3" name="29. Psalms 114  -  117" />
+      <Item link="audio/verse-by-verse/psalms/30_0000_Psalms_120_-_122.mp3" name="30. Psalms 120  -  122" />
+      <Item link="audio/verse-by-verse/psalms/31_0000_Psalms_123_-_127.mp3" name="31. Psalms 123  -  127" />
+      <Item link="audio/verse-by-verse/psalms/32_0000_Psalms_128_-_134.mp3" name="32. Psalms 128  -  134" />
+      <Item link="audio/verse-by-verse/psalms/33_0000_Psalms_135_-_140.mp3" name="33. Psalms 135  -  140" />
+      <Item link="audio/verse-by-verse/psalms/34_0000_Psalms_141,_144_-_150.mp3" name="34. Psalms 141, 144  -  150" />
+    </Book>
+    <Book name="Proverbs" server="tnp">
+      <Item link="audio/verse-by-verse/proverbs/01_2011_Proverbs_Introduction_Part_1.mp3" name="01. Proverbs Introduction • Part 1" />
+      <Item link="audio/verse-by-verse/proverbs/02_2011_Proverbs_Introduction_Part_2.mp3" name="02. Proverbs Introduction • Part 2" />
+      <Item link="audio/verse-by-verse/proverbs/03_2011_Proverbs_Introduction_Part_3.mp3" name="03. Proverbs Introduction • Part 3" />
+      <Item link="audio/verse-by-verse/proverbs/04_2011_Proverbs_Introduction_Part_4.mp3" name="04. Proverbs Introduction • Part 4" />
+      <Item link="audio/verse-by-verse/proverbs/05_2011_Proverbs_1-2_Survey.mp3" name="05. Proverbs 1 - 2 Survey" />
+      <Item link="audio/verse-by-verse/proverbs/06_2011_Proverbs_3_Survey.mp3" name="06. Proverbs 3 Survey" />
+      <Item link="audio/verse-by-verse/proverbs/07_2011_Proverbs_4-5_Survey.mp3" name="07. Proverbs 4 - 5 Survey" />
+      <Item link="audio/verse-by-verse/proverbs/08_2011_Proverbs_6.1-6.19_Survey.mp3" name="08. Proverbs 6:1 - 6:19 Survey" />
+      <Item link="audio/verse-by-verse/proverbs/09_2011_Proverbs_6.20-7.27_Survey.mp3" name="09. Proverbs 6:20 - 7:27 Survey" />
+      <Item link="audio/verse-by-verse/proverbs/10_2011_Proverbs_8-9 Survey.mp3" name="10. Proverbs 8 - 9 Survey" />
+      <Item link="audio/verse-by-verse/proverbs/11_2011_Proverbs_10-30 Survey.mp3" name="11. Proverbs 10 - 30 Survey" />
+      <Item link="audio/verse-by-verse/proverbs/12_2011_Proverbs_31.mp3" name="12. Proverbs 31" />
+      <Item link="audio/verse-by-verse/proverbs/13_2011_Proverbs_God_Conscious_Living_Part_1.mp3" name="13. Proverbs God Conscious Living • Part 1" />
+      <Item link="audio/verse-by-verse/proverbs/14_2011_Proverbs_God_Conscious_Living_Part_2.mp3" name="14. Proverbs God Conscious Living • Part 2" />
+      <Item link="audio/verse-by-verse/proverbs/15_2011_Proverbs_God_Conscious_Living_Part_3.mp3" name="15. Proverbs God Conscious Living • Part 3" />
+      <Item link="audio/verse-by-verse/proverbs/16_2011_Proverbs_Matters_of_Heart_Part_1.mp3" name="16. Proverbs Matters of Heart • Part 1" />
+      <Item link="audio/verse-by-verse/proverbs/17_2011_Proverbs_Matters_of_Heart_Part_2.mp3" name="17. Proverbs Matters of Heart • Part 2" />
+      <Item link="audio/verse-by-verse/proverbs/18_2011_Proverbs_Matters_of_Heart_Part_3.mp3" name="18. Proverbs Matters of Heart • Part 3" />
+      <Item link="audio/verse-by-verse/proverbs/19_2011_Proverbs_Matters_of_Heart_Part_4.mp3" name="19. Proverbs Matters of Heart • Part 4" />
+      <Item link="audio/verse-by-verse/proverbs/20_2011_Proverbs_Parent-Child.mp3" name="20. Proverbs Parent - Child" />
+      <Item link="audio/verse-by-verse/proverbs/21_2011_Proverbs_Wives.mp3" name="21. Proverbs Wives" />
+      <Item link="audio/verse-by-verse/proverbs/22_2011_Proverbs_Husbands_and_Strife.mp3" name="22. Proverbs Husbands and Strife" />
+      <Item link="audio/verse-by-verse/proverbs/23_2011_Proverbs_Servants_and_Masters.mp3" name="23. Proverbs Servants and Masters" />
+      <Item link="audio/verse-by-verse/proverbs/24_2011_Proverbs_Rulers_and_Subjects.mp3" name="24. Proverbs Rulers and Subjects" />
+      <Item link="audio/verse-by-verse/proverbs/25_2011_Proverbs_Friends_and_Enemies.mp3" name="25. Proverbs Friends and Enemies" />
+      <Item link="audio/verse-by-verse/proverbs/26_2011_Proverbs_Neighbors.mp3" name="26. Proverbs Neighbors" />
+      <Item link="audio/verse-by-verse/proverbs/27_2011_Proverbs_Food_and_Wine.mp3" name="27. Proverbs Food and Wine" />
+      <Item link="audio/verse-by-verse/proverbs/28_2011_Proverbs_Sexual_Immorality.mp3" name="28. Proverbs Sexual Immorality" />
+      <Item link="audio/verse-by-verse/proverbs/29_2011_Proverbs_Money_Part_1.mp3" name="29. Proverbs Money • Part 1" />
+      <Item link="audio/verse-by-verse/proverbs/30_2011_Proverbs_Money_Part_2.mp3" name="30. Proverbs Money • Part 2" />
+      <Item link="audio/verse-by-verse/proverbs/31_2011_Proverbs_Money_Part_3.mp3" name="31. Proverbs Money • Part 3" />
+      <Item link="audio/verse-by-verse/proverbs/32_2011_Proverbs_Pride_Part_1.mp3" name="32. Proverbs Pride • Part 1" />
+      <Item link="audio/verse-by-verse/proverbs/33_2011_Proverbs_Pride_Part_2.mp3" name="33. Proverbs Pride • Part 2" />
+      <Item link="audio/verse-by-verse/proverbs/34_2011_Proverbs_The_Tongue.mp3" name="34. Proverbs The Tongue" />
+    </Book>
+    <Book name="Ecclesiastes" server="tnp">
+      <Item link="audio/verse-by-verse/ecclesiastes/01_2011_Ecclesiastes_Introduction.mp3" name="01. Ecclesiastes Introduction" />
+      <Item link="audio/verse-by-verse/ecclesiastes/02_2011_Ecclesiastes_1-4.mp3" name="02. Ecclesiastes 1 - 4" />
+      <Item link="audio/verse-by-verse/ecclesiastes/03_2011_Ecclesiastes_5-7.mp3" name="03. Ecclesiastes 5 - 7" />
+      <Item link="audio/verse-by-verse/ecclesiastes/04_2011_Ecclesiastes_8-12.mp3" name="04. Ecclesiastes 8 - 12" />
+    </Book>
+    <Book name="Song Of Songs" server="tnp">
+      <Item link="audio/verse-by-verse/song-of-songs/01_2011_Song_of_Songs_Introduction.mp3" name="01. Song of Songs Introduction" />
+      <Item link="audio/verse-by-verse/song-of-songs/02_2011_Song_of_Songs_1-8.mp3" name="02. Song of Songs 1 - 8" />
+    </Book>
+    <Book name="Isaiah" server="tnp">
+      <Item link="audio/verse-by-verse/isaiah/01_2012_Isaiah_Introduction_to_the_Prophets_Part_1.mp3" name="01. Isaiah Introduction to the Prophets • Part 1" />
+      <Item link="audio/verse-by-verse/isaiah/02_2012_Isaiah_Introduction_to_the_Prophets_Part_2.mp3" name="02. Isaiah Introduction to the Prophets • Part 2" />
+      <Item link="audio/verse-by-verse/isaiah/03_2012_Isaiah_Introduction_Part_1.mp3" name="03. Isaiah Introduction • Part 1" />
+      <Item link="audio/verse-by-verse/isaiah/04_2012_Isaiah_Introduction_Part_2_Authorship.mp3" name="04. Isaiah Introduction • Part 2 Authorship" />
+      <Item link="audio/verse-by-verse/isaiah/05_2012_Isaiah_Symbolic_Depiction_of_Nations.mp3" name="05. Isaiah Symbolic Depiction of Nations" />
+      <Item link="audio/verse-by-verse/isaiah/06_2012_Isaiah_Spiritual_Zion.mp3" name="06. Isaiah Spiritual Zion" />
+      <Item link="audio/verse-by-verse/isaiah/07_2012_Isaiah_Warfare_and_Judgment.mp3" name="07. Isaiah Warfare and Judgment" />
+      <Item link="audio/verse-by-verse/isaiah/08_2012_Isaiah_Redemption.mp3" name="08. Isaiah Redemption" />
+      <Item link="audio/verse-by-verse/isaiah/09_2012_Isaiah_The_Second_Exodus.mp3" name="09. Isaiah The Second Exodus" />
+      <Item link="audio/verse-by-verse/isaiah/10_2012_Isaiah_Return_from_Exile.mp3" name="10. Isaiah Return from Exile" />
+      <Item link="audio/verse-by-verse/isaiah/11_2012_Isaiah_Barrenness_and_Fruitfulness.mp3" name="11. Isaiah Barrenness and Fruitfulness" />
+      <Item link="audio/verse-by-verse/isaiah/12_2012_Isaiah_Blossoming_Desert_and_Birth_of_a_Nation.mp3" name="12. Isaiah Blossoming Desert and Birth of a Nation" />
+      <Item link="audio/verse-by-verse/isaiah/13_2012_Isaiah_The_Servant_of_Yahweh.mp3" name="13. Isaiah The Servant of Yahweh" />
+      <Item link="audio/verse-by-verse/isaiah/14_2012_Isaiah_The_Kingdoms_King.mp3" name="14. Isaiah The Kingdoms King" />
+      <Item link="audio/verse-by-verse/isaiah/15_2012_Isaiah_The_Kings_Kingdom.mp3" name="15. Isaiah The Kings Kingdom" />
+      <Item link="audio/verse-by-verse/isaiah/16_2012_Isaiah_1-2.mp3" name="16. Isaiah 1 - 2" />
+      <Item link="audio/verse-by-verse/isaiah/17_2012_Isaiah_3-6.mp3" name="17. Isaiah 3 - 6" />
+      <Item link="audio/verse-by-verse/isaiah/18_2012_Isaiah_7-8.mp3" name="18. Isaiah 7 - 8" />
+      <Item link="audio/verse-by-verse/isaiah/19_2012_Isaiah_9-10.mp3" name="19. Isaiah 9 - 10" />
+      <Item link="audio/verse-by-verse/isaiah/20_2012_Isaiah_11-14.mp3" name="20. Isaiah 11 - 14" />
+      <Item link="audio/verse-by-verse/isaiah/21_2012_Isaiah_15-23.mp3" name="21. Isaiah 15 - 23" />
+      <Item link="audio/verse-by-verse/isaiah/22_2012_Isaiah_24-27.mp3" name="22. Isaiah 24 - 27" />
+      <Item link="audio/verse-by-verse/isaiah/23_2012_Isaiah_28-29.mp3" name="23. Isaiah 28 - 29" />
+      <Item link="audio/verse-by-verse/isaiah/24_2012_Isaiah_30-33.mp3" name="24. Isaiah 30 - 33" />
+      <Item link="audio/verse-by-verse/isaiah/25_2012_Isaiah_34-35.mp3" name="25. Isaiah 34 - 35" />
+      <Item link="audio/verse-by-verse/isaiah/26_2012_Isaiah_36-39.mp3" name="26. Isaiah 36 - 39" />
+      <Item link="audio/verse-by-verse/isaiah/27_2012_Isaiah_40-41.mp3" name="27. Isaiah 40 - 41" />
+      <Item link="audio/verse-by-verse/isaiah/28_2012_Isaiah_42-48.mp3" name="28. Isaiah 42 - 48" />
+      <Item link="audio/verse-by-verse/isaiah/29_2012_Isaiah_49.1-52.12.mp3" name="29. Isaiah 49:1 - 52:12" />
+      <Item link="audio/verse-by-verse/isaiah/30_2012_Isaiah_52.13-57.21.mp3" name="30. Isaiah 52:13 - 57:21" />
+      <Item link="audio/verse-by-verse/isaiah/31_2012_Isaiah_58-60.mp3" name="31. Isaiah 58 - 60" />
+      <Item link="audio/verse-by-verse/isaiah/32_2012_Isaiah_61-66.mp3" name="32. Isaiah 61 - 66" />
+    </Book>
+    <Book name="Jeremiah" server="tnp">
+      <Item link="audio/verse-by-verse/jeremiah/01_2012 _Jeremiah_Introduction.mp3" name="01. 2012  Jeremiah Introduction" />
+      <Item link="audio/verse-by-verse/jeremiah/02_2012_Jeremiah_1-3.mp3" name="02. Jeremiah 1 - 3" />
+      <Item link="audio/verse-by-verse/jeremiah/03_2012_Jeremiah_4-5.mp3" name="03. Jeremiah 4 - 5" />
+      <Item link="audio/verse-by-verse/jeremiah/04_2012_Jeremiah_6-8.mp3" name="04. Jeremiah 6 - 8" />
+      <Item link="audio/verse-by-verse/jeremiah/05_2012_Jeremiah_9-10.mp3" name="05. Jeremiah 9 - 10" />
+      <Item link="audio/verse-by-verse/jeremiah/06_2012_Jeremiah_11-13.mp3" name="06. Jeremiah 11 - 13" />
+      <Item link="audio/verse-by-verse/jeremiah/07_2012_Jeremiah_14-16.mp3" name="07. Jeremiah 14 - 16" />
+      <Item link="audio/verse-by-verse/jeremiah/08_2012_Jeremiah_17-20.mp3" name="08. Jeremiah 17 - 20" />
+      <Item link="audio/verse-by-verse/jeremiah/09_2012_Jeremiah_21-23.mp3" name="09. Jeremiah 21 - 23" />
+      <Item link="audio/verse-by-verse/jeremiah/10_2012_Jeremiah_24-28.mp3" name="10. Jeremiah 24 - 28" />
+      <Item link="audio/verse-by-verse/jeremiah/11_2012_Jeremiah_29.1-31.22.mp3" name="11. Jeremiah 29:1 - 31:22" />
+      <Item link="audio/verse-by-verse/jeremiah/12_2012_Jeremiah_31.23-32.44.mp3" name="12. Jeremiah 31:23 - 32:44" />
+      <Item link="audio/verse-by-verse/jeremiah/13_2012_Jeremiah_33-36.mp3" name="13. Jeremiah 33 - 36" />
+      <Item link="audio/verse-by-verse/jeremiah/14_2012_Jeremiah_37-44.mp3" name="14. Jeremiah 37 - 44" />
+      <Item link="audio/verse-by-verse/jeremiah/15_2012_Jeremiah_45-49.mp3" name="15. Jeremiah 45 - 49" />
+      <Item link="audio/verse-by-verse/jeremiah/16_2012_Jeremiah_50-52.mp3" name="16. Jeremiah 50 - 52" />
+    </Book>
+    <Book name="Lamentations" server="tnp">
+      <Item link="audio/verse-by-verse/lamentations/01_0000_Lamentations.mp3" name="01. Lamentations" />
+    </Book>
+    <Book name="Ezekiel" server="tnp">
+      <Item link="audio/verse-by-verse/ezekiel/01_0000_Ezekiel_1_-_3_(Intro,_Call,_1st_Vision).mp3" name="01. Ezekiel 1  -  3 (Intro, Call, 1st Vision)" />
+      <Item link="audio/verse-by-verse/ezekiel/02_0000_Ezekiel_4-5,_12,_24,_37_(Enacted_Parables).mp3" name="02. Ezekiel 4 - 5, 12, 24, 37 (Enacted Parables)" />
+      <Item link="audio/verse-by-verse/ezekiel/03_0000_Ezekiel_8-11_(2nd_Vision).mp3" name="03. Ezekiel 8 - 11 (2nd Vision)" />
+      <Item link="audio/verse-by-verse/ezekiel/04_0000_Ezekiel_15-17,_19,_23-24_(Spoken_Parables).mp3" name="04. Ezekiel 15 - 17, 19, 23 - 24 (Spoken Parables)" />
+      <Item link="audio/verse-by-verse/ezekiel/05_0000_Ezekiel_6-7,_13-14,_18,_20-22.mp3" name="05. Ezekiel 6 - 7, 13 - 14, 18, 20 - 22" />
+      <Item link="audio/verse-by-verse/ezekiel/06_0000_Ezekiel_25-32,_35_(Heathen_Nations).mp3" name="06. Ezekiel 25 - 32, 35 (Heathen Nations)" />
+      <Item link="audio/verse-by-verse/ezekiel/07_0000_Ezekiel_33-34,_36-37_(Restoration).mp3" name="07. Ezekiel 33 - 34, 36 - 37 (Restoration)" />
+      <Item link="audio/verse-by-verse/ezekiel/08_0000_Ezekiel_38-39_(God_and_Magog).mp3" name="08. Ezekiel 38 - 39 (God and Magog)" />
+      <Item link="audio/verse-by-verse/ezekiel/09_0000_Ezekiel_40-48_(Potential_New_Temple).mp3" name="09. Ezekiel 40 - 48 (Potential New Temple)" />
+    </Book>
+    <Book name="Daniel" server="tnp">
+      <Item link="audio/verse-by-verse/daniel/01_2012_Daniel_Introduction.mp3" name="01. Daniel Introduction" />
+      <Item link="audio/verse-by-verse/daniel/02_2012_Daniel_1-2.mp3" name="02. Daniel 1 - 2" />
+      <Item link="audio/verse-by-verse/daniel/03_2012_Daniel_3-4.mp3" name="03. Daniel 3 - 4" />
+      <Item link="audio/verse-by-verse/daniel/04_2012_Daniel_5-6.mp3" name="04. Daniel 5 - 6" />
+      <Item link="audio/verse-by-verse/daniel/05_2012_Daniel_7.mp3" name="05. Daniel 7" />
+      <Item link="audio/verse-by-verse/daniel/06_2012_Daniel_8.1-9.23.mp3" name="06. Daniel 8:1 - 9:23" />
+      <Item link="audio/verse-by-verse/daniel/07_2012_Daniel_9.24-9.27.mp3" name="07. Daniel 9:24 - 9:27" />
+      <Item link="audio/verse-by-verse/daniel/08_2012_Daniel_10.mp3" name="08. Daniel 10" />
+      <Item link="audio/verse-by-verse/daniel/09_2012_Daniel_11-12.mp3" name="09. Daniel 11 - 12" />
+    </Book>
+    <Book name="Hosea" server="tnp">
+      <Item link="audio/verse-by-verse/hosea/01_0000_Hosea_1-3.mp3" name="01. Hosea 1 - 3" />
+      <Item link="audio/verse-by-verse/hosea/02_0000_Hosea_4-9.mp3" name="02. Hosea 4 - 9" />
+      <Item link="audio/verse-by-verse/hosea/03_0000_Hosea_10-14.mp3" name="03. Hosea 10 - 14" />
+    </Book>
+    <Book name="Joel" server="tnp">
+      <Item link="audio/verse-by-verse/joel/01_0000_Joel_Full_Book.mp3" name="01. Joel • Full Book" />
+    </Book>
+    <Book name="Amos" server="tnp">
+      <Item link="audio/verse-by-verse/amos/01_0000_Amos_1-2.mp3" name="01. Amos 1 - 2" />
+      <Item link="audio/verse-by-verse/amos/02_0000_Amos_3-9.mp3" name="02. Amos 3 - 9" />
+    </Book>
+    <Book name="Obadiah" server="tnp">
+      <Item link="audio/verse-by-verse/obadiah/01_2020_Obadiah.mp3" name="01. Obadiah" />
+    </Book>
+    <Book name="Jonah" server="tnp">
+      <Item link="audio/verse-by-verse/jonah/01_2020_Jonah.mp3" name="01. Jonah" />
+    </Book>
+    <Book name="Micah" server="tnp">
+      <Item link="audio/verse-by-verse/micah/01_0000_Micah_Full_Book.mp3" name="01. Micah • Full Book" />
+    </Book>
+    <Book name="Nahum" server="tnp">
+      <Item link="audio/verse-by-verse/nahum/01_2020_Nahum.mp3" name="01. Nahum" />
+    </Book>
+    <Book name="Habakkuk" server="tnp">
+      <Item link="audio/verse-by-verse/habakkuk/01_Habakkuk_-_Full Book.mp3" name="01. Habakkuk  -  • Full Book" />
+    </Book>
+    <Book name="Zephaniah" server="tnp">
+      <Item link="audio/verse-by-verse/zephaniah/01_Zephaniah_-_Full_Book.mp3" name="01. Zephaniah  -  • Full Book" />
+    </Book>
+    <Book name="Haggai" server="tnp">
+      <Item link="audio/verse-by-verse/haggai/01_0000_Haggai_Full_Book.mp3.mp3" name="01. Haggai • Full Book" />
+    </Book>
+    <Book name="Zechariah" server="tnp">
+      <Item link="audio/verse-by-verse/zechariah/01_2015_Zechariah_Introduction.mp3" name="01. Zechariah Introduction" />
+      <Item link="audio/verse-by-verse/zechariah/02_2015_Zechariah_1-2.mp3" name="02. Zechariah 1 - 2" />
+      <Item link="audio/verse-by-verse/zechariah/03_2015_Zechariah_ 3-4.mp3" name="03. Zechariah  3 - 4" />
+      <Item link="audio/verse-by-verse/zechariah/04_2015_Zechariah_5-6.mp3" name="04. Zechariah 5 - 6" />
+      <Item link="audio/verse-by-verse/zechariah/05_2015_Zechariah_7-8.mp3" name="05. Zechariah 7 - 8" />
+      <Item link="audio/verse-by-verse/zechariah/06_2015_Zechariah_9-10.mp3" name="06. Zechariah 9 - 10" />
+      <Item link="audio/verse-by-verse/zechariah/07_2015_Zechariah_11.mp3" name="07. Zechariah 11" />
+      <Item link="audio/verse-by-verse/zechariah/08_2015_Zechariah_12-13.mp3" name="08. Zechariah 12 - 13" />
+      <Item link="audio/verse-by-verse/zechariah/09_2015_Zechariah_14.1-5.mp3" name="09. Zechariah 14:1 - 5" />
+      <Item link="audio/verse-by-verse/zechariah/10_2015_Zechariah_14.6-21.mp3" name="10. Zechariah 14:6 - 21" />
+    </Book>
+    <Book name="Malachi" server="tnp">
+      <Item link="audio/verse-by-verse/malachi/01_0000_Malachi_Full_Book.mp3" name="01. Malachi • Full Book" />
+    </Book>
+    <Book name="Matthew" server="tnp">
+      <Item link="audio/verse-by-verse/matthew/001_Matthew_Introduction_Part_1.mp3" name="001. Matthew Introduction • Part 1" />
+      <Item link="audio/verse-by-verse/matthew/002_Matthew_Introduction_Part_2.mp3" name="002. Matthew Introduction • Part 2" />
+      <Item link="audio/verse-by-verse/matthew/003_Matthew_Introduction_Part_3.mp3" name="003. Matthew Introduction • Part 3" />
+      <Item link="audio/verse-by-verse/matthew/004_Matthew_1.1-1.17.mp3" name="004. Matthew 1:1 - 1:17" />
+      <Item link="audio/verse-by-verse/matthew/005_Matthew_1.18-1.25.mp3" name="005. Matthew 1:18 - 1:25" />
+      <Item link="audio/verse-by-verse/matthew/006_Matthew_2.1-2.3.mp3" name="006. Matthew 2:1 - 2:3" />
+      <Item link="audio/verse-by-verse/matthew/007_Matthew_2.4-2.15.mp3" name="007. Matthew 2:4 - 2:15" />
+      <Item link="audio/verse-by-verse/matthew/008_Matthew_2.16-2.23.mp3" name="008. Matthew 2:16 - 2:23" />
+      <Item link="audio/verse-by-verse/matthew/009_Matthew_3.1-3.6.mp3" name="009. Matthew 3:1 - 3:6" />
+      <Item link="audio/verse-by-verse/matthew/010_Matthew_3.7-3.12.mp3" name="010. Matthew 3:7 - 3:12" />
+      <Item link="audio/verse-by-verse/matthew/011_Matthew_3.13-3.17.mp3" name="011. Matthew 3:13 - 3:17" />
+      <Item link="audio/verse-by-verse/matthew/012_Matthew_4.1-4.11_Introduction.mp3" name="012. Matthew 4:1 - 4:11 Introduction" />
+      <Item link="audio/verse-by-verse/matthew/013_Matthew_4.1-4.17.mp3" name="013. Matthew 4:1 - 4:17" />
+      <Item link="audio/verse-by-verse/matthew/014_Matthew_4.18-4.25.mp3" name="014. Matthew 4:18 - 4:25" />
+      <Item link="audio/verse-by-verse/matthew/015_Matthew_5.1-5.2_Sermon_on_the_Mount_Introduction.mp3" name="015. Matthew 5:1 - 5:2 Sermon on the Mount Introduction" />
+      <Item link="audio/verse-by-verse/matthew/016_Matthew_5.3_The_1st_Beatitude.mp3" name="016. Matthew 5:3 The 1st Beatitude" />
+      <Item link="audio/verse-by-verse/matthew/017_Matthew_5.4_The_2nd_Beatitude.mp3" name="017. Matthew 5:4 The 2nd Beatitude" />
+      <Item link="audio/verse-by-verse/matthew/018_Matthew_5.5_The_3rd_Beatitude.mp3" name="018. Matthew 5:5 The 3rd Beatitude" />
+      <Item link="audio/verse-by-verse/matthew/019_Matthew_5.6_The_4th_Beatitude.mp3" name="019. Matthew 5:6 The 4th Beatitude" />
+      <Item link="audio/verse-by-verse/matthew/020_Matthew_5.7_The_5th_Beatitude.mp3" name="020. Matthew 5:7 The 5th Beatitude" />
+      <Item link="audio/verse-by-verse/matthew/021_Matthew_5.8_The_6th_Beatitude.mp3" name="021. Matthew 5:8 The 6th Beatitude" />
+      <Item link="audio/verse-by-verse/matthew/022_Matthew_5.9_The_7th_Beatitude.mp3" name="022. Matthew 5:9 The 7th Beatitude" />
+      <Item link="audio/verse-by-verse/matthew/023_Matthew_5.10_The_8th_Beatitude.mp3" name="023. Matthew 5:10 The 8th Beatitude" />
+      <Item link="audio/verse-by-verse/matthew/024_Matthew_5.11-5.13.mp3" name="024. Matthew 5:11 - 5:13" />
+      <Item link="audio/verse-by-verse/matthew/025_Matthew_5.14-5.16.mp3" name="025. Matthew 5:14 - 5:16" />
+      <Item link="audio/verse-by-verse/matthew/026_Matthew_5.17-5.20_Part_1.mp3" name="026. Matthew 5:17 - 5:20 • Part 1" />
+      <Item link="audio/verse-by-verse/matthew/027_Matthew_5.17-5.20_Part_2.mp3" name="027. Matthew 5:17 - 5:20 • Part 2" />
+      <Item link="audio/verse-by-verse/matthew/028_Matthew_5.17-5.20_Part_3.mp3" name="028. Matthew 5:17 - 5:20 • Part 3" />
+      <Item link="audio/verse-by-verse/matthew/029_Matthew_5.21-5.26.mp3" name="029. Matthew 5:21 - 5:26" />
+      <Item link="audio/verse-by-verse/matthew/030_Matthew_5.27-5.30.mp3" name="030. Matthew 5:27 - 5:30" />
+      <Item link="audio/verse-by-verse/matthew/031_Matthew_5.21-5.30_Review_Part_1.mp3" name="031. Matthew 5:21 - 5:30 Review • Part 1" />
+      <Item link="audio/verse-by-verse/matthew/032_Matthew_5.21-5.30_Review_Part_2.mp3" name="032. Matthew 5:21 - 5:30 Review • Part 2" />
+      <Item link="audio/verse-by-verse/matthew/033_Matthew_5.31-5.32.mp3" name="033. Matthew 5:31 - 5:32" />
+      <Item link="audio/verse-by-verse/matthew/034_Matthew_5.34-5.37.mp3" name="034. Matthew 5:34 - 5:37" />
+      <Item link="audio/verse-by-verse/matthew/035_Matthew_5.38-5.42.mp3" name="035. Matthew 5:38 - 5:42" />
+      <Item link="audio/verse-by-verse/matthew/036_Matthew_5.43-5.48.mp3" name="036. Matthew 5:43 - 5:48" />
+      <Item link="audio/verse-by-verse/matthew/037_Matthew_6.1-6.4_Introduction.mp3" name="037. Matthew 6:1 - 6:4 Introduction" />
+      <Item link="audio/verse-by-verse/matthew/038_Matthew_6.1-6.4.mp3" name="038. Matthew 6:1 - 6:4" />
+      <Item link="audio/verse-by-verse/matthew/039_Matthew_6.5-6.8.mp3" name="039. Matthew 6:5 - 6:8" />
+      <Item link="audio/verse-by-verse/matthew/040_Matthew_6.9-6.13_Part_1.mp3" name="040. Matthew 6:9 - 6:13 • Part 1" />
+      <Item link="audio/verse-by-verse/matthew/041_Matthew_6.9-6.13_Part_2.mp3" name="041. Matthew 6:9 - 6:13 • Part 2" />
+      <Item link="audio/verse-by-verse/matthew/042_Matthew_6.9-6.13_Part_3.mp3" name="042. Matthew 6:9 - 6:13 • Part 3" />
+      <Item link="audio/verse-by-verse/matthew/043_Matthew_6.9-6.10_Part_4.mp3" name="043. Matthew 6:9 - 6:10 • Part 4" />
+      <Item link="audio/verse-by-verse/matthew/044_Matthew_6.11-6.12_Part_5.mp3" name="044. Matthew 6:11 - 6:12 • Part 5" />
+      <Item link="audio/verse-by-verse/matthew/045_Matthew_6.13-6.15_Part_6.mp3" name="045. Matthew 6:13 - 6:15 • Part 6" />
+      <Item link="audio/verse-by-verse/matthew/046_Matthew_6.16-6.18.mp3" name="046. Matthew 6:16 - 6:18" />
+      <Item link="audio/verse-by-verse/matthew/047_Matthew_6.19-6.21_Part_1.mp3" name="047. Matthew 6:19 - 6:21 • Part 1" />
+      <Item link="audio/verse-by-verse/matthew/048_Matthew_6.19-6.21_Part_2.mp3" name="048. Matthew 6:19 - 6:21 • Part 2" />
+      <Item link="audio/verse-by-verse/matthew/049_Matthew_6.21-6.24.mp3" name="049. Matthew 6:21 - 6:24" />
+      <Item link="audio/verse-by-verse/matthew/050_Matthew_6.25-6.34.mp3" name="050. Matthew 6:25 - 6:34" />
+      <Item link="audio/verse-by-verse/matthew/051_Matthew_7.1-7.5.mp3" name="051. Matthew 7:1 - 7:5" />
+      <Item link="audio/verse-by-verse/matthew/052_Matthew_7.6.mp3" name="052. Matthew 7:6" />
+      <Item link="audio/verse-by-verse/matthew/053_Matthew_7.7-7.12.mp3" name="053. Matthew 7:7 - 7:12" />
+      <Item link="audio/verse-by-verse/matthew/054_Matthew_7.13-7.14.mp3" name="054. Matthew 7:13 - 7:14" />
+      <Item link="audio/verse-by-verse/matthew/055_Matthew_7.15-7.20.mp3" name="055. Matthew 7:15 - 7:20" />
+      <Item link="audio/verse-by-verse/matthew/056_Matthew_7.21-7.23.mp3" name="056. Matthew 7:21 - 7:23" />
+      <Item link="audio/verse-by-verse/matthew/057_Matthew_7.24-7.29.mp3" name="057. Matthew 7:24 - 7:29" />
+      <Item link="audio/verse-by-verse/matthew/058_Matthew_8.1-8.4.mp3" name="058. Matthew 8:1 - 8:4" />
+      <Item link="audio/verse-by-verse/matthew/059_Matthew_8.5-8.13.mp3" name="059. Matthew 8:5 - 8:13" />
+      <Item link="audio/verse-by-verse/matthew/060_Matthew_8.14-8.17.mp3" name="060. Matthew 8:14 - 8:17" />
+      <Item link="audio/verse-by-verse/matthew/061_Matthew_8.18-8.22.mp3" name="061. Matthew 8:18 - 8:22" />
+      <Item link="audio/verse-by-verse/matthew/062_Matthew_8.23-8.27.mp3" name="062. Matthew 8:23 - 8:27" />
+      <Item link="audio/verse-by-verse/matthew/063_Matthew_8.28-8.34.mp3" name="063. Matthew 8:28 - 8:34" />
+      <Item link="audio/verse-by-verse/matthew/064_Matthew_9.1-9.8.mp3" name="064. Matthew 9:1 - 9:8" />
+      <Item link="audio/verse-by-verse/matthew/065_Matthew_9.9-9.13.mp3" name="065. Matthew 9:9 - 9:13" />
+      <Item link="audio/verse-by-verse/matthew/066_Matthew_9.14-9.15.mp3" name="066. Matthew 9:14 - 9:15" />
+      <Item link="audio/verse-by-verse/matthew/067_Matthew_9.16-9.17.mp3" name="067. Matthew 9:16 - 9:17" />
+      <Item link="audio/verse-by-verse/matthew/068_Matthew_9.18-9.26.mp3" name="068. Matthew 9:18 - 9:26" />
+      <Item link="audio/verse-by-verse/matthew/069_Matthew_9.27-9.34.mp3" name="069. Matthew 9:27 - 9:34" />
+      <Item link="audio/verse-by-verse/matthew/070_Matthew_9.35-9.38.mp3" name="070. Matthew 9:35 - 9:38" />
+      <Item link="audio/verse-by-verse/matthew/071_Matthew_10.1-10.4.mp3" name="071. Matthew 10:1 - 10:4" />
+      <Item link="audio/verse-by-verse/matthew/072_Matthew_10.5-10.10.mp3" name="072. Matthew 10:5 - 10:10" />
+      <Item link="audio/verse-by-verse/matthew/073_Matthew_10.11-10.15.mp3" name="073. Matthew 10:11 - 10:15" />
+      <Item link="audio/verse-by-verse/matthew/074_Matthew_10.16-10.20_Part_1.mp3" name="074. Matthew 10:16 - 10:20 • Part 1" />
+      <Item link="audio/verse-by-verse/matthew/075_Matthew_10.16-10.20_Part_2.mp3" name="075. Matthew 10:16 - 10:20 • Part 2" />
+      <Item link="audio/verse-by-verse/matthew/076_Matthew_10.21-10.25.mp3" name="076. Matthew 10:21 - 10:25" />
+      <Item link="audio/verse-by-verse/matthew/077_Matthew_10.26-10.31.mp3" name="077. Matthew 10:26 - 10:31" />
+      <Item link="audio/verse-by-verse/matthew/078_Matthew_10.32-10.33.mp3" name="078. Matthew 10:32 - 10:33" />
+      <Item link="audio/verse-by-verse/matthew/079_Matthew_10.34-10.39.mp3" name="079. Matthew 10:34 - 10:39" />
+      <Item link="audio/verse-by-verse/matthew/080_Matthew_10.40-10.42.mp3" name="080. Matthew 10:40 - 10:42" />
+      <Item link="audio/verse-by-verse/matthew/081_Matthew_11.1-11.6_John_the_Baptist.mp3" name="081. Matthew 11:1 - 11:6 John the Baptist" />
+      <Item link="audio/verse-by-verse/matthew/082_Matthew_11.7-11.10.mp3" name="082. Matthew 11:7 - 11:10" />
+      <Item link="audio/verse-by-verse/matthew/083_Matthew_11.11.mp3" name="083. Matthew 11:11" />
+      <Item link="audio/verse-by-verse/matthew/084_Matthew_11.12.mp3" name="084. Matthew 11:12" />
+      <Item link="audio/verse-by-verse/matthew/085_Matthew_11.12-11.15.mp3" name="085. Matthew 11:12 - 11:15" />
+      <Item link="audio/verse-by-verse/matthew/086_Matthew_11.16-11.19.mp3" name="086. Matthew 11:16 - 11:19" />
+      <Item link="audio/verse-by-verse/matthew/087_Matthew_11.20-11.24.mp3" name="087. Matthew 11:20 - 11:24" />
+      <Item link="audio/verse-by-verse/matthew/088_Matthew_11.25-11.27.mp3" name="088. Matthew 11:25 - 11:27" />
+      <Item link="audio/verse-by-verse/matthew/089_Matthew_11.28-11.30.mp3" name="089. Matthew 11:28 - 11:30" />
+      <Item link="audio/verse-by-verse/matthew/090_Matthew_12.1-12.8.mp3" name="090. Matthew 12:1 - 12:8" />
+      <Item link="audio/verse-by-verse/matthew/091_Matthew_12.9-12.14.mp3" name="091. Matthew 12:9 - 12:14" />
+      <Item link="audio/verse-by-verse/matthew/092_Matthew_12.15-12.21.mp3" name="092. Matthew 12:15 - 12:21" />
+      <Item link="audio/verse-by-verse/matthew/093_Matthew_12.22.mp3" name="093. Matthew 12:22" />
+      <Item link="audio/verse-by-verse/matthew/094_Matthew_12.22-12.28.mp3" name="094. Matthew 12:22 - 12:28" />
+      <Item link="audio/verse-by-verse/matthew/095_Matthew_12.29-12.30.mp3" name="095. Matthew 12:29 - 12:30" />
+      <Item link="audio/verse-by-verse/matthew/096_Matthew_12.31-12.32.mp3" name="096. Matthew 12:31 - 12:32" />
+      <Item link="audio/verse-by-verse/matthew/097_Matthew_12.33-12.37.mp3" name="097. Matthew 12:33 - 12:37" />
+      <Item link="audio/verse-by-verse/matthew/098_Matthew_12.38-12.42.mp3" name="098. Matthew 12:38 - 12:42" />
+      <Item link="audio/verse-by-verse/matthew/099_Matthew_12.43-12.45.mp3" name="099. Matthew 12:43 - 12:45" />
+      <Item link="audio/verse-by-verse/matthew/100_Matthew_12.46-12.50.mp3" name="100. Matthew 12:46 - 12:50" />
+      <Item link="audio/verse-by-verse/matthew/101_Matthew_13.1-13.9.mp3" name="101. Matthew 13:1 - 13:9" />
+      <Item link="audio/verse-by-verse/matthew/102_Matthew_13.10-13.17.mp3" name="102. Matthew 13:10 - 13:17" />
+      <Item link="audio/verse-by-verse/matthew/103_Matthew_13.18-13.23.mp3" name="103. Matthew 13:18 - 13:23" />
+      <Item link="audio/verse-by-verse/matthew/104_Matthew_13.24-13.30_and_13.36-13.43.mp3" name="104. Matthew 13:24 - 13:30 and 13:36 - 13:43" />
+      <Item link="audio/verse-by-verse/matthew/105_Matthew_13.31-13.33.mp3" name="105. Matthew 13:31 - 13:33" />
+      <Item link="audio/verse-by-verse/matthew/106_Matthew_13.44-13.46.mp3" name="106. Matthew 13:44 - 13:46" />
+      <Item link="audio/verse-by-verse/matthew/107_Matthew_13.47-13.52.mp3" name="107. Matthew 13:47 - 13:52" />
+      <Item link="audio/verse-by-verse/matthew/108_Matthew_13.53-13.58.mp3" name="108. Matthew 13:53 - 13:58" />
+      <Item link="audio/verse-by-verse/matthew/109_Matthew_14.1-14.12.mp3" name="109. Matthew 14:1 - 14:12" />
+      <Item link="audio/verse-by-verse/matthew/110_Matthew_14.13-14.21.mp3" name="110. Matthew 14:13 - 14:21" />
+      <Item link="audio/verse-by-verse/matthew/111_Matthew_14.22-14.33.mp3" name="111. Matthew 14:22 - 14:33" />
+      <Item link="audio/verse-by-verse/matthew/112_Matthew_14.34-14.36.mp3" name="112. Matthew 14:34 - 14:36" />
+      <Item link="audio/verse-by-verse/matthew/113_Matthew_15.1-15.9.mp3" name="113. Matthew 15:1 - 15:9" />
+      <Item link="audio/verse-by-verse/matthew/114_Matthew_15.10-15.20.mp3" name="114. Matthew 15:10 - 15:20" />
+      <Item link="audio/verse-by-verse/matthew/115_Matthew_15.21-15.28.mp3" name="115. Matthew 15:21 - 15:28" />
+      <Item link="audio/verse-by-verse/matthew/116_Matthew_15.29-15.39.mp3" name="116. Matthew 15:29 - 15:39" />
+      <Item link="audio/verse-by-verse/matthew/117_Matthew_16.1-16.12.mp3" name="117. Matthew 16:1 - 16:12" />
+      <Item link="audio/verse-by-verse/matthew/118_Matthew_16.13-16.26.mp3" name="118. Matthew 16:13 - 16:26" />
+      <Item link="audio/verse-by-verse/matthew/119_Matthew_16.13-16.20_and_16.27-16.28.mp3" name="119. Matthew 16:13 - 16:20 and 16:27 - 16:28" />
+      <Item link="audio/verse-by-verse/matthew/120_Matthew_16.1-16.8_and_16.21-16.26.mp3" name="120. Matthew 16:1 - 16:8 and 16:21 - 16:26" />
+      <Item link="audio/verse-by-verse/matthew/121_Matthew_16.9-16.13_and_16.27-16.28.mp3" name="121. Matthew 16:9 - 16:13 and 16:27 - 16:28" />
+      <Item link="audio/verse-by-verse/matthew/122_Matthew_17.1-17.8_and_17.14-17.21.mp3" name="122. Matthew 17:1 - 17:8 and 17:14 - 17:21" />
+      <Item link="audio/verse-by-verse/matthew/123_Matthew_17.9-17.13.mp3" name="123. Matthew 17:9 - 17:13" />
+      <Item link="audio/verse-by-verse/matthew/124_Matthew_17.14-17.21.mp3" name="124. Matthew 17:14 - 17:21" />
+      <Item link="audio/verse-by-verse/matthew/125_Matthew_17.22-17.23.mp3" name="125. Matthew 17:22 - 17:23" />
+      <Item link="audio/verse-by-verse/matthew/126_Matthew_17.24-17.27.mp3" name="126. Matthew 17:24 - 17:27" />
+      <Item link="audio/verse-by-verse/matthew/127_Matthew_18.1-18.5_Part_1.mp3" name="127. Matthew 18:1 - 18:5 • Part 1" />
+      <Item link="audio/verse-by-verse/matthew/128_Matthew_18.1-18.5_Part_2.mp3" name="128. Matthew 18:1 - 18:5 • Part 2" />
+      <Item link="audio/verse-by-verse/matthew/129_Matthew_18.6-18.10.mp3" name="129. Matthew 18:6 - 18:10" />
+      <Item link="audio/verse-by-verse/matthew/130_Matthew_18.11-18.14.mp3" name="130. Matthew 18:11 - 18:14" />
+      <Item link="audio/verse-by-verse/matthew/131_Matthew_18.15-18.17.mp3" name="131. Matthew 18:15 - 18:17" />
+      <Item link="audio/verse-by-verse/matthew/132_Matthew_18.18.mp3" name="132. Matthew 18:18" />
+      <Item link="audio/verse-by-verse/matthew/133_Matthew_18.19-18.20.mp3" name="133. Matthew 18:19 - 18:20" />
+      <Item link="audio/verse-by-verse/matthew/134_Matthew_18.21-18.35.mp3" name="134. Matthew 18:21 - 18:35" />
+      <Item link="audio/verse-by-verse/matthew/135_Matthew_19.1-19.9.mp3" name="135. Matthew 19:1 - 19:9" />
+      <Item link="audio/verse-by-verse/matthew/136_Matthew_19.10-19.12.mp3" name="136. Matthew 19:10 - 19:12" />
+      <Item link="audio/verse-by-verse/matthew/137_Matthew_19.13-19.15.mp3" name="137. Matthew 19:13 - 19:15" />
+      <Item link="audio/verse-by-verse/matthew/138_Matthew_19.16-19.22.mp3" name="138. Matthew 19:16 - 19:22" />
+      <Item link="audio/verse-by-verse/matthew/139_Matthew_19.23-19.26.mp3" name="139. Matthew 19:23 - 19:26" />
+      <Item link="audio/verse-by-verse/matthew/140_Matthew_19.27-19.30.mp3" name="140. Matthew 19:27 - 19:30" />
+      <Item link="audio/verse-by-verse/matthew/141_Matthew_20.1-20.16.mp3" name="141. Matthew 20:1 - 20:16" />
+      <Item link="audio/verse-by-verse/matthew/142_Matthew_20.17-20.23.mp3" name="142. Matthew 20:17 - 20:23" />
+      <Item link="audio/verse-by-verse/matthew/143_Matthew_20.24-20.28.mp3" name="143. Matthew 20:24 - 20:28" />
+      <Item link="audio/verse-by-verse/matthew/144_Matthew_20.29-20.34.mp3" name="144. Matthew 20:29 - 20:34" />
+      <Item link="audio/verse-by-verse/matthew/145_Matthew_21.1-21.9.mp3" name="145. Matthew 21:1 - 21:9" />
+      <Item link="audio/verse-by-verse/matthew/146_Matthew_21.10-21.14.mp3" name="146. Matthew 21:10 - 21:14" />
+      <Item link="audio/verse-by-verse/matthew/147_Matthew_21.15-21.19.mp3" name="147. Matthew 21:15 - 21:19" />
+      <Item link="audio/verse-by-verse/matthew/148_Matthew_21.20-21.22.mp3" name="148. Matthew 21:20 - 21:22" />
+      <Item link="audio/verse-by-verse/matthew/149_Matthew_21.23-21.27.mp3" name="149. Matthew 21:23 - 21:27" />
+      <Item link="audio/verse-by-verse/matthew/150_Matthew_21.28-21.48.mp3" name="150. Matthew 21:28 - 21:48" />
+      <Item link="audio/verse-by-verse/matthew/151_Matthew_22.1-22.14.mp3" name="151. Matthew 22:1 - 22:14" />
+      <Item link="audio/verse-by-verse/matthew/152_Matthew_22.15-22.22.mp3" name="152. Matthew 22:15 - 22:22" />
+      <Item link="audio/verse-by-verse/matthew/153_Matthew_22.23-22.33.mp3" name="153. Matthew 22:23 - 22:33" />
+      <Item link="audio/verse-by-verse/matthew/154_Matthew_22.34-22.40.mp3" name="154. Matthew 22:34 - 22:40" />
+      <Item link="audio/verse-by-verse/matthew/155_Matthew_22.41-22.46.mp3" name="155. Matthew 22:41 - 22:46" />
+      <Item link="audio/verse-by-verse/matthew/156_Matthew_23.1-23.4.mp3" name="156. Matthew 23:1 - 23:4" />
+      <Item link="audio/verse-by-verse/matthew/157_Matthew_23.5.mp3" name="157. Matthew 23:5" />
+      <Item link="audio/verse-by-verse/matthew/158_Matthew_23.6-23.10.mp3" name="158. Matthew 23:6 - 23:10" />
+      <Item link="audio/verse-by-verse/matthew/159_Matthew_23.11-23.14.mp3" name="159. Matthew 23:11 - 23:14" />
+      <Item link="audio/verse-by-verse/matthew/160_Matthew_23.15-23.22.mp3" name="160. Matthew 23:15 - 23:22" />
+      <Item link="audio/verse-by-verse/matthew/161_Matthew_23.23-23.24.mp3" name="161. Matthew 23:23 - 23:24" />
+      <Item link="audio/verse-by-verse/matthew/162_Matthew_23.25-23.28.mp3" name="162. Matthew 23:25 - 23:28" />
+      <Item link="audio/verse-by-verse/matthew/163_Matthew_23.29-23.33.mp3" name="163. Matthew 23:29 - 23:33" />
+      <Item link="audio/verse-by-verse/matthew/164_Matthew_23.34-23.39.mp3" name="164. Matthew 23:34 - 23:39" />
+      <Item link="audio/verse-by-verse/matthew/165_Matthew_24.1-24.3.mp3" name="165. Matthew 24:1 - 24:3" />
+      <Item link="audio/verse-by-verse/matthew/166_Matthew_24.4-24.13.mp3" name="166. Matthew 24:4 - 24:13" />
+      <Item link="audio/verse-by-verse/matthew/167_Matthew_24.14-24.15.mp3" name="167. Matthew 24:14 - 24:15" />
+      <Item link="audio/verse-by-verse/matthew/168_Matthew_24.15-24.22.mp3" name="168. Matthew 24:15 - 24:22" />
+      <Item link="audio/verse-by-verse/matthew/169_Matthew_24.15_and_24.21-24.22_and_24.34_Terminology.mp3" name="169. Matthew 24:15 and 24:21 - 24:22 and 24:34 Terminology" />
+      <Item link="audio/verse-by-verse/matthew/170_Matthew_24.32-24.28.mp3" name="170. Matthew 24:32 - 24:28" />
+      <Item link="audio/verse-by-verse/matthew/171_Matthew_24.29-24.31_Part_1.mp3" name="171. Matthew 24:29 - 24:31 • Part 1" />
+      <Item link="audio/verse-by-verse/matthew/172_Matthew_24.29-24.31_Part_2.mp3" name="172. Matthew 24:29 - 24:31 • Part 2" />
+      <Item link="audio/verse-by-verse/matthew/173_Matthew_24.32-24.34.mp3" name="173. Matthew 24:32 - 24:34" />
+      <Item link="audio/verse-by-verse/matthew/174_Matthew_24.35-24.44.mp3" name="174. Matthew 24:35 - 24:44" />
+      <Item link="audio/verse-by-verse/matthew/175_Matthew_24.45-24.51.mp3" name="175. Matthew 24:45 - 24:51" />
+      <Item link="audio/verse-by-verse/matthew/176_Matthew_25.1-25.13.mp3" name="176. Matthew 25:1 - 25:13" />
+      <Item link="audio/verse-by-verse/matthew/177_Matthew_25.14-25.30.mp3" name="177. Matthew 25:14 - 25:30" />
+      <Item link="audio/verse-by-verse/matthew/178_Matthew_25.31-25.46.mp3" name="178. Matthew 25:31 - 25:46" />
+      <Item link="audio/verse-by-verse/matthew/179_Matthew_26.1-26.13.mp3" name="179. Matthew 26:1 - 26:13" />
+      <Item link="audio/verse-by-verse/matthew/180_Matthew_26.14-26.16.mp3" name="180. Matthew 26:14 - 26:16" />
+      <Item link="audio/verse-by-verse/matthew/181_Matthew_26.17-26.25.mp3" name="181. Matthew 26:17 - 26:25" />
+      <Item link="audio/verse-by-verse/matthew/182_Matthew_26.26-26.30.mp3" name="182. Matthew 26:26 - 26:30" />
+      <Item link="audio/verse-by-verse/matthew/183_Matthew_26.31-26.46.mp3" name="183. Matthew 26:31 - 26:46" />
+      <Item link="audio/verse-by-verse/matthew/184_Matthew_26.47-26.56.mp3" name="184. Matthew 26:47 - 26:56" />
+      <Item link="audio/verse-by-verse/matthew/185_Matthew_26.57-26.75.mp3" name="185. Matthew 26:57 - 26:75" />
+      <Item link="audio/verse-by-verse/matthew/186_Matthew_27.1-27.8.mp3" name="186. Matthew 27:1 - 27:8" />
+      <Item link="audio/verse-by-verse/matthew/187_Matthew_27.9-27.10.mp3" name="187. Matthew 27:9 - 27:10" />
+      <Item link="audio/verse-by-verse/matthew/188_Matthew_27.11-27.14.mp3" name="188. Matthew 27:11 - 27:14" />
+      <Item link="audio/verse-by-verse/matthew/189_Matthew_27.15-27.26.mp3" name="189. Matthew 27:15 - 27:26" />
+      <Item link="audio/verse-by-verse/matthew/190_Matthew_27.27-27.44.mp3" name="190. Matthew 27:27 - 27:44" />
+      <Item link="audio/verse-by-verse/matthew/191_Matthew_27.45-27.46.mp3" name="191. Matthew 27:45 - 27:46" />
+      <Item link="audio/verse-by-verse/matthew/192_Matthew_27.46-27.53.mp3" name="192. Matthew 27:46 - 27:53" />
+      <Item link="audio/verse-by-verse/matthew/193_Matthew_27.54-27.66.mp3" name="193. Matthew 27:54 - 27:66" />
+      <Item link="audio/verse-by-verse/matthew/194_Matthew_28.1-28.10.mp3" name="194. Matthew 28:1 - 28:10" />
+      <Item link="audio/verse-by-verse/matthew/195_Matthew_28.11-28.15.mp3" name="195. Matthew 28:11 - 28:15" />
+      <Item link="audio/verse-by-verse/matthew/196_Matthew_28.16-28.20.mp3" name="196. Matthew 28:16 - 28:20" />
+      <Item link="audio/verse-by-verse/matthew/197_Matthew_28.18-28.20.mp3" name="197. Matthew 28:18 - 28:20" />
+    </Book>
+    <Book name="Mark" server="tnp">
+      <Item link="audio/verse-by-verse/mark/01_2010_Mark_1.1-1.11.mp3" name="01. Mark 1:1 - 1:11" />
+      <Item link="audio/verse-by-verse/mark/02_2010_Mark_1.12-1.20.mp3" name="02. Mark 1:12 - 1:20" />
+      <Item link="audio/verse-by-verse/mark/03_2010_Mark_1.21-1.39.mp3" name="03. Mark 1:21 - 1:39" />
+      <Item link="audio/verse-by-verse/mark/04_2010_Mark_1.40-2.12.mp3" name="04. Mark 1:40 - 2:12" />
+      <Item link="audio/verse-by-verse/mark/05_2010_Mark_2.13-2.28.mp3" name="05. Mark 2:13 - 2:28" />
+      <Item link="audio/verse-by-verse/mark/06_2010_Mark_3.1-3.19.mp3" name="06. Mark 3:1 - 3:19" />
+      <Item link="audio/verse-by-verse/mark/07_2010_Mark_3.20-3.33.mp3" name="07. Mark 3:20 - 3:33" />
+      <Item link="audio/verse-by-verse/mark/08_2010_Mark_4.1-4.34.mp3" name="08. Mark 4:1 - 4:34" />
+      <Item link="audio/verse-by-verse/mark/09_2010_Mark_4.35-5.20.mp3" name="09. Mark 4:35 - 5:20" />
+      <Item link="audio/verse-by-verse/mark/10_2010_Mark_5.21-5.43.mp3" name="10. Mark 5:21 - 5:43" />
+      <Item link="audio/verse-by-verse/mark/11_2010_Mark_6.1-6.29.mp3" name="11. Mark 6:1 - 6:29" />
+      <Item link="audio/verse-by-verse/mark/12_2010_Mark_6.30-7.16.mp3" name="12. Mark 6:30 - 7:16" />
+      <Item link="audio/verse-by-verse/mark/13_2010_Mark_7.17-7.37.mp3" name="13. Mark 7:17 - 7:37" />
+      <Item link="audio/verse-by-verse/mark/14_2010_Mark_8.1-8.26.mp3" name="14. Mark 8:1 - 8:26" />
+      <Item link="audio/verse-by-verse/mark/15_2010_Mark 8.27-8.38.mp3" name="15. Mark 8:27 - 8:38" />
+      <Item link="audio/verse-by-verse/mark/16_2010_Mark_9.1-9.13.mp3" name="16. Mark 9:1 - 9:13" />
+      <Item link="audio/verse-by-verse/mark/17_2010_Mark_9.14-9.50.mp3" name="17. Mark 9:14 - 9:50" />
+      <Item link="audio/verse-by-verse/mark/18_2010_Mark_10.1-10.16.mp3" name="18. Mark 10:1 - 10:16" />
+      <Item link="audio/verse-by-verse/mark/19_2010_Mark_10.17-10.31.mp3" name="19. Mark 10:17 - 10:31" />
+      <Item link="audio/verse-by-verse/mark/20_2010_Mark_10.32-11.11.mp3" name="20. Mark 10:32 - 11:11" />
+      <Item link="audio/verse-by-verse/mark/21_2010_Mark_11.12-11.33.mp3" name="21. Mark 11:12 - 11:33" />
+      <Item link="audio/verse-by-verse/mark/22_2010_Mark_12.1-12.27.mp3" name="22. Mark 12:1 - 12:27" />
+      <Item link="audio/verse-by-verse/mark/23_2010_Mark_12.28-12.44.mp3" name="23. Mark 12:28 - 12:44" />
+      <Item link="audio/verse-by-verse/mark/24_2010_Mark_13_Part_1.mp3" name="24. Mark 13 • Part 1" />
+      <Item link="audio/verse-by-verse/mark/25_2010_Mark_13_Part_2.mp3" name="25. Mark 13 • Part 2" />
+      <Item link="audio/verse-by-verse/mark/26_2010_Mark_14.1-14.31.mp3" name="26. Mark 14:1 - 14:31" />
+      <Item link="audio/verse-by-verse/mark/27_2010_Mark_14.32-14.72.mp3" name="27. Mark 14:32 - 14:72" />
+      <Item link="audio/verse-by-verse/mark/28_2010_Mark_15.1-32.mp3" name="28. Mark 15:1 - 32" />
+      <Item link="audio/verse-by-verse/mark/29_2010_Mark_15.33-47.mp3" name="29. Mark 15:33 - 47" />
+      <Item link="audio/verse-by-verse/mark/30_2010_Mark_16.mp3" name="30. Mark 16" />
+    </Book>
+    <Book name="Luke" server="tnp">
+      <Item link="audio/verse-by-verse/luke/01_2014_Luke_Introduction.mp3" name="01. Luke Introduction" />
+      <Item link="audio/verse-by-verse/luke/02_2014_Luke_1.1-25.mp3" name="02. Luke 1:1 - 25" />
+      <Item link="audio/verse-by-verse/luke/03_2014_Luke_1.26-80.mp3" name="03. Luke 1:26 - 80" />
+      <Item link="audio/verse-by-verse/luke/04_2014_Luke_2.mp3" name="04. Luke 2" />
+      <Item link="audio/verse-by-verse/luke/05_2014_Luke_3.mp3" name="05. Luke 3" />
+      <Item link="audio/verse-by-verse/luke/06_2014_Luke_4.1-30.mp3" name="06. Luke 4:1 - 30" />
+      <Item link="audio/verse-by-verse/luke/07_2014_Luke_4.31-5.11.mp3" name="07. Luke 4:31 - 5:11" />
+      <Item link="audio/verse-by-verse/luke/08_2014_Luke_5.12-39.mp3" name="08. Luke 5:12 - 39" />
+      <Item link="audio/verse-by-verse/luke/09_2014_Luke_6.1-19.mp3" name="09. Luke 6:1 - 19" />
+      <Item link="audio/verse-by-verse/luke/10_2014_Luke_6.20-49.mp3" name="10. Luke 6:20 - 49" />
+      <Item link="audio/verse-by-verse/luke/11_2014_Luke_7.mp3" name="11. Luke 7" />
+      <Item link="audio/verse-by-verse/luke/12_2014_Luke_8.mp3" name="12. Luke 8" />
+      <Item link="audio/verse-by-verse/luke/13_2014_Luke_9.1-48.mp3" name="13. Luke 9:1 - 48" />
+      <Item link="audio/verse-by-verse/luke/14_2014_Luke_9.49-10.20.mp3" name="14. Luke 9:49 - 10:20" />
+      <Item link="audio/verse-by-verse/luke/15_2014_Luke_10.21-11.13.mp3" name="15. Luke 10:21 - 11:13" />
+      <Item link="audio/verse-by-verse/luke/16_2014_Luke_11.14-54.mp3" name="16. Luke 11:14 - 54" />
+      <Item link="audio/verse-by-verse/luke/17_2014_Luke_12.1-34.mp3" name="17. Luke 12:1 - 34" />
+      <Item link="audio/verse-by-verse/luke/18_2014_Luke_12.35-13.17.mp3" name="18. Luke 12:35 - 13:17" />
+      <Item link="audio/verse-by-verse/luke/19_2014_Luke_13.18-14.35.mp3" name="19. Luke 13:18 - 14:35" />
+      <Item link="audio/verse-by-verse/luke/20_2014_Luke_15.mp3" name="20. Luke 15" />
+      <Item link="audio/verse-by-verse/luke/21_2014_Luke_16.1-18.mp3" name="21. Luke 16:1 - 18" />
+      <Item link="audio/verse-by-verse/luke/22_2014_Luke_16.19-31.mp3" name="22. Luke 16:19 - 31" />
+      <Item link="audio/verse-by-verse/luke/23_2014_Luke_17.mp3" name="23. Luke 17" />
+      <Item link="audio/verse-by-verse/luke/24_2014_Luke_18.1-23.mp3" name="24. Luke 18:1 - 23" />
+      <Item link="audio/verse-by-verse/luke/25_2014_Luke_18.24-19.27.mp3" name="25. Luke 18:24 - 19:27" />
+      <Item link="audio/verse-by-verse/luke/26_2014_Luke_19.28-20.19.mp3" name="26. Luke 19:28 - 20:19" />
+      <Item link="audio/verse-by-verse/luke/27_2014_Luke_20.20-47.mp3" name="27. Luke 20:20 - 47" />
+      <Item link="audio/verse-by-verse/luke/28_2014_Luke_21.mp3" name="28. Luke 21" />
+      <Item link="audio/verse-by-verse/luke/29_2014_Luke_22.1-38.mp3" name="29. Luke 22:1 - 38" />
+      <Item link="audio/verse-by-verse/luke/30_2014_Luke_22.39-71.mp3" name="30. Luke 22:39 - 71" />
+      <Item link="audio/verse-by-verse/luke/31_2014_Luke_23.mp3" name="31. Luke 23" />
+      <Item link="audio/verse-by-verse/luke/32_2014_Luke_24.mp3" name="32. Luke 24" />
+    </Book>
+    <Book name="John" server="tnp">
+      <Item link="audio/verse-by-verse/john/01_2011_John_Introduction.mp3" name="01. John Introduction" />
+      <Item link="audio/verse-by-verse/john/02_2011_John_1-1.9.mp3" name="02. John 1 - 1:9" />
+      <Item link="audio/verse-by-verse/john/03_2011_John_1.10-1.18.mp3" name="03. John 1:10 - 1:18" />
+      <Item link="audio/verse-by-verse/john/04_2011_John_1.19-1.51.mp3" name="04. John 1:19 - 1:51" />
+      <Item link="audio/verse-by-verse/john/05_2011_John_2.1-2.12.mp3" name="05. John 2:1 - 2:12" />
+      <Item link="audio/verse-by-verse/john/06_2011_John_2.13-2.25.mp3" name="06. John 2:13 - 2:25" />
+      <Item link="audio/verse-by-verse/john/07_2011_John_3.1-3.12.mp3" name="07. John 3:1 - 3:12" />
+      <Item link="audio/verse-by-verse/john/08_2011_John_3.13-3.36.mp3" name="08. John 3:13 - 3:36" />
+      <Item link="audio/verse-by-verse/john/09_2011_John_4.1-4.26.mp3" name="09. John 4:1 - 4:26" />
+      <Item link="audio/verse-by-verse/john/10_2011_John_4.27-4.42.mp3" name="10. John 4:27 - 4:42" />
+      <Item link="audio/verse-by-verse/john/11_2011_John_4.43-5.23.mp3" name="11. John 4:43 - 5:23" />
+      <Item link="audio/verse-by-verse/john/12_2011_John_5.17-5.47.mp3" name="12. John 5:17 - 5:47" />
+      <Item link="audio/verse-by-verse/john/13_2011_John_6.1-6.21.mp3" name="13. John 6:1 - 6:21" />
+      <Item link="audio/verse-by-verse/john/14_2011_John_6.22-6.45.mp3" name="14. John 6:22 - 6:45" />
+      <Item link="audio/verse-by-verse/john/15_2011_John_6.46-6.71.mp3" name="15. John 6:46 - 6:71" />
+      <Item link="audio/verse-by-verse/john/16_2011_John_7.1-7.31.mp3" name="16. John 7:1 - 7:31" />
+      <Item link="audio/verse-by-verse/john/17_2011_John_7.32-7.53.mp3" name="17. John 7:32 - 7:53" />
+      <Item link="audio/verse-by-verse/john/18_2011_John_8.1-8.11.mp3" name="18. John 8:1 - 8:11" />
+      <Item link="audio/verse-by-verse/john/19_2011_John_8.12-8.59.mp3" name="19. John 8:12 - 8:59" />
+      <Item link="audio/verse-by-verse/john/20_2011_John_9.mp3" name="20. John 9" />
+      <Item link="audio/verse-by-verse/john/21_2011_John_10.1-10.21.mp3" name="21. John 10:1 - 10:21" />
+      <Item link="audio/verse-by-verse/john/22_2011_John_10.22-10.42.mp3" name="22. John 10:22 - 10:42" />
+      <Item link="audio/verse-by-verse/john/23_2011_John_11.1-11.44.mp3" name="23. John 11:1 - 11:44" />
+      <Item link="audio/verse-by-verse/john/24_2011_John_11.45-12.19.mp3" name="24. John 11:45 - 12:19" />
+      <Item link="audio/verse-by-verse/john/25_2011_John_12.20-12.50.mp3" name="25. John 12:20 - 12:50" />
+      <Item link="audio/verse-by-verse/john/26_2011_John_13.1-13.17.mp3" name="26. John 13:1 - 13:17" />
+      <Item link="audio/verse-by-verse/john/27_2011_John_13.18-13.38.mp3" name="27. John 13:18 - 13:38" />
+      <Item link="audio/verse-by-verse/john/28_2011_John_14.1-14.6.mp3" name="28. John 14:1 - 14:6" />
+      <Item link="audio/verse-by-verse/john/29_2011_John_14.7-14.14.mp3" name="29. John 14:7 - 14:14" />
+      <Item link="audio/verse-by-verse/john/30_2011_John_14.15-14.31.mp3" name="30. John 14:15 - 14:31" />
+      <Item link="audio/verse-by-verse/john/31_2011_John_15.1-15.8.mp3" name="31. John 15:1 - 15:8" />
+      <Item link="audio/verse-by-verse/john/32_2011_John_15.9-15.27.mp3" name="32. John 15:9 - 15:27" />
+      <Item link="audio/verse-by-verse/john/33_2011_John_16.mp3" name="33. John 16" />
+      <Item link="audio/verse-by-verse/john/34_2011_John_17.mp3" name="34. John 17" />
+      <Item link="audio/verse-by-verse/john/35_2011_John_18.mp3" name="35. John 18" />
+      <Item link="audio/verse-by-verse/john/36_2011_John_19.mp3" name="36. John 19" />
+      <Item link="audio/verse-by-verse/john/37_2011_John_20.mp3" name="37. John 20" />
+      <Item link="audio/verse-by-verse/john/38_2011_John_21.mp3" name="38. John 21" />
+    </Book>
+    <Book name="Acts" server="tnp">
+      <Item link="audio/verse-by-verse/acts/01_2019_Acts_Introduction.mp3" name="01. Acts Introduction" />
+      <Item link="audio/verse-by-verse/acts/02_2019_Acts_1.1-1.8.mp3" name="02. Acts 1:1 - 1:8" />
+      <Item link="audio/verse-by-verse/acts/03_2019_Acts_1.9-1.26.mp3" name="03. Acts 1:9 - 1:26" />
+      <Item link="audio/verse-by-verse/acts/04_2019_Acts_2.1-2.4.mp3" name="04. Acts 2:1 - 2:4" />
+      <Item link="audio/verse-by-verse/acts/05_2019_Acts_2.5-2.39.mp3" name="05. Acts 2:5 - 2:39" />
+      <Item link="audio/verse-by-verse/acts/06_2019_Acts_2.40-2.47.mp3" name="06. Acts 2:40 - 2:47" />
+      <Item link="audio/verse-by-verse/acts/07_2019_Acts_3.mp3" name="07. Acts 3" />
+      <Item link="audio/verse-by-verse/acts/08_2019_Acts_4.mp3" name="08. Acts 4" />
+      <Item link="audio/verse-by-verse/acts/09_2019_Acts_5.mp3" name="09. Acts 5" />
+      <Item link="audio/verse-by-verse/acts/10_2019_Acts_6.1-7.60.mp3" name="10. Acts 6:1 - 7:60" />
+      <Item link="audio/verse-by-verse/acts/11_2019_Acts_8.1-8.25.mp3" name="11. Acts 8:1 - 8:25" />
+      <Item link="audio/verse-by-verse/acts/12_2019_Acts_8.26-8.40.mp3" name="12. Acts 8:26 - 8:40" />
+      <Item link="audio/verse-by-verse/acts/13_2019_Acts_9.1-9.25.mp3" name="13. Acts 9:1 - 9:25" />
+      <Item link="audio/verse-by-verse/acts/14_2019_Acts_9.26-9.43.mp3" name="14. Acts 9:26 - 9:43" />
+      <Item link="audio/verse-by-verse/acts/15_2019_Acts_10.mp3" name="15. Acts 10" />
+      <Item link="audio/verse-by-verse/acts/16_2019_Acts_11.mp3" name="16. Acts 11" />
+      <Item link="audio/verse-by-verse/acts/17_2019_Acts_12.mp3" name="17. Acts 12" />
+      <Item link="audio/verse-by-verse/acts/18_2019_Acts_13.1-13.41.mp3" name="18. Acts 13:1 - 13:41" />
+      <Item link="audio/verse-by-verse/acts/19_2019_Acts_13.42-14.28.mp3" name="19. Acts 13:42 - 14:28" />
+      <Item link="audio/verse-by-verse/acts/20_2019_Acts_15.1-15.35.mp3" name="20. Acts 15:1 - 15:35" />
+      <Item link="audio/verse-by-verse/acts/21_2019_Acts_15.36-16.24.mp3" name="21. Acts 15:36 - 16:24" />
+      <Item link="audio/verse-by-verse/acts/22_2019_Acts_16.25-17.34.mp3" name="22. Acts 16:25 - 17:34" />
+      <Item link="audio/verse-by-verse/acts/23_2019_Acts_18.1-19.7.mp3" name="23. Acts 18:1 - 19:7" />
+      <Item link="audio/verse-by-verse/acts/24_2019_Acts_19.8-19.41.mp3" name="24. Acts 19:8 - 19:41" />
+      <Item link="audio/verse-by-verse/acts/25_2019_Acts_20.mp3" name="25. Acts 20" />
+      <Item link="audio/verse-by-verse/acts/26_2019_Acts_21.1-22.21.mp3" name="26. Acts 21:1 - 22:21" />
+      <Item link="audio/verse-by-verse/acts/27_2019_Acts_22.22-24.27.mp3" name="27. Acts 22:22 - 24:27" />
+      <Item link="audio/verse-by-verse/acts/28_2019_Acts_25.1-26.32.mp3" name="28. Acts 25:1 - 26:32" />
+      <Item link="audio/verse-by-verse/acts/29_2019_Acts_27.1-28.10.mp3" name="29. Acts 27:1 - 28:10" />
+      <Item link="audio/verse-by-verse/acts/30_2019_Acts_28.11-28.31.mp3" name="30. Acts 28:11 - 28:31" />
+    </Book>
+    <Book name="Romans" server="tnp">
+      <Item link="audio/verse-by-verse/romans/01_2015_Romans_Intro_Part_1.mp3" name="01. Romans Intro • Part 1" />
+      <Item link="audio/verse-by-verse/romans/02_2015_Romans_Intro_Part_2.mp3" name="02. Romans Intro • Part 2" />
+      <Item link="audio/verse-by-verse/romans/03_2015_Romans_Intro_part_3_Outlines.mp3" name="03. Romans Intro part 3 Outlines" />
+      <Item link="audio/verse-by-verse/romans/04_2015_Romans_1_part_1.mp3" name="04. Romans 1 part 1" />
+      <Item link="audio/verse-by-verse/romans/05_2015_Romans_1_part_2.mp3" name="05. Romans 1 part 2" />
+      <Item link="audio/verse-by-verse/romans/06_2015_Romans_1_part_3.mp3" name="06. Romans 1 part 3" />
+      <Item link="audio/verse-by-verse/romans/07_2015_Romans_2.1-10.mp3" name="07. Romans 2:1 - 10" />
+      <Item link="audio/verse-by-verse/romans/08_2015_Romans_2.11-29.mp3" name="08. Romans 2:11 - 29" />
+      <Item link="audio/verse-by-verse/romans/09_2015_Romans_3.1-20.mp3" name="09. Romans 3:1 - 20" />
+      <Item link="audio/verse-by-verse/romans/10_2015_Romans_3.21-26.mp3" name="10. Romans 3:21 - 26" />
+      <Item link="audio/verse-by-verse/romans/11_2015_Romans_3.27-4.25.mp3" name="11. Romans 3:27 - 4:25" />
+      <Item link="audio/verse-by-verse/romans/12_2015_Romans_5.1-11.mp3" name="12. Romans 5:1 - 11" />
+      <Item link="audio/verse-by-verse/romans/13_2015_Romans_5.12-21_part_1.mp3" name="13. Romans 5:12 - 21 part 1" />
+      <Item link="audio/verse-by-verse/romans/14_2015_Romans_5.12-21_part_2.mp3" name="14. Romans 5:12 - 21 part 2" />
+      <Item link="audio/verse-by-verse/romans/15_2015_Romans_6.1-14.mp3" name="15. Romans 6:1 - 14" />
+      <Item link="audio/verse-by-verse/romans/16_2015_Romans_6.15-23.mp3" name="16. Romans 6:15 - 23" />
+      <Item link="audio/verse-by-verse/romans/17_2015_Romans_7.1-12.mp3" name="17. Romans 7:1 - 12" />
+      <Item link="audio/verse-by-verse/romans/18_2015_Romans_7.13-25.mp3" name="18. Romans 7:13 - 25" />
+      <Item link="audio/verse-by-verse/romans/19_2015_Romans_8.1-14.mp3" name="19. Romans 8:1 - 14" />
+      <Item link="audio/verse-by-verse/romans/20_2015_Romans_8.15-8.39.mp3" name="20. Romans 8:15 - 8:39" />
+      <Item link="audio/verse-by-verse/romans/21_2015_Romans_9.1-9.13.mp3" name="21. Romans 9:1 - 9:13" />
+      <Item link="audio/verse-by-verse/romans/22_2015_Romans_9.14-9.24.mp3" name="22. Romans 9:14 - 9:24" />
+      <Item link="audio/verse-by-verse/romans/23_2015_Romans_9.25-10.21.mp3" name="23. Romans 9:25 - 10:21" />
+      <Item link="audio/verse-by-verse/romans/24_2015_Romans_11.mp3" name="24. Romans 11" />
+      <Item link="audio/verse-by-verse/romans/25_2015_Romans_12.1-12.8.mp3" name="25. Romans 12:1 - 12:8" />
+      <Item link="audio/verse-by-verse/romans/26_2015_Romans_12.9-12.21.mp3" name="26. Romans 12:9 - 12:21" />
+      <Item link="audio/verse-by-verse/romans/27_2015_Romans_13.mp3" name="27. Romans 13" />
+      <Item link="audio/verse-by-verse/romans/28_2015_Romans_14.mp3" name="28. Romans 14" />
+      <Item link="audio/verse-by-verse/romans/29_2015_Romans_15-16.mp3" name="29. Romans 15 - 16" />
+    </Book>
+    <Book name="1st Corinthians" server="tnp">
+      <Item link="audio/verse-by-verse/1st-corinthians/01_0000_1st_Corinthians_1.1-1.9.mp3" name="01. 1st Corinthians 1:1 - 1:9" />
+      <Item link="audio/verse-by-verse/1st-corinthians/02_0000_1st_Corinthians_1.10-1.31.mp3" name="02. 1st Corinthians 1:10 - 1:31" />
+      <Item link="audio/verse-by-verse/1st-corinthians/03_0000_1st_Corinthians_2.1-2.13.mp3" name="03. 1st Corinthians 2:1 - 2:13" />
+      <Item link="audio/verse-by-verse/1st-corinthians/04_0000_1st_Corinthians_2.14-4.7.mp3" name="04. 1st Corinthians 2:14 - 4:7" />
+      <Item link="audio/verse-by-verse/1st-corinthians/05_0000_1st_Corinthians_4.8-4.21.mp3" name="05. 1st Corinthians 4:8 - 4:21" />
+      <Item link="audio/verse-by-verse/1st-corinthians/06_0000_1st_Corinthians_5.mp3" name="06. 1st Corinthians 5" />
+      <Item link="audio/verse-by-verse/1st-corinthians/07_0000_1st_Corinthians_6.1-6.18.mp3" name="07. 1st Corinthians 6:1 - 6:18" />
+      <Item link="audio/verse-by-verse/1st-corinthians/08_0000_1st_Corinthians_7.mp3" name="08. 1st Corinthians 7" />
+      <Item link="audio/verse-by-verse/1st-corinthians/09_0000_1st_Corinthians_8.1-9.15.mp3" name="09. 1st Corinthians 8:1 - 9:15" />
+      <Item link="audio/verse-by-verse/1st-corinthians/10_0000_1st_Corinthians_ 9.16-10.33.mp3" name="10. 1st Corinthians  9:16 - 10:33" />
+      <Item link="audio/verse-by-verse/1st-corinthians/11_0000_1st_Corinthians_11.1-11.16.mp3" name="11. 1st Corinthians 11:1 - 11:16" />
+      <Item link="audio/verse-by-verse/1st-corinthians/12_0000_1st_Corinthians_11.14-11.34.mp3" name="12. 1st Corinthians 11:14 - 11:34" />
+      <Item link="audio/verse-by-verse/1st-corinthians/13_0000_1st_Corinthians_12.1-12.10.mp3" name="13. 1st Corinthians 12:1 - 12:10" />
+      <Item link="audio/verse-by-verse/1st-corinthians/14_0000_1st_Corinthians_12.10-12.31.mp3" name="14. 1st Corinthians 12:10 - 12:31" />
+      <Item link="audio/verse-by-verse/1st-corinthians/15_0000_1st_Corinthians_13.1-14.19.mp3" name="15. 1st Corinthians 13:1 - 14:19" />
+      <Item link="audio/verse-by-verse/1st-corinthians/16_0000_1st_Corinthians_14.20-14.37.mp3" name="16. 1st Corinthians 14:20 - 14:37" />
+      <Item link="audio/verse-by-verse/1st-corinthians/17_0000_1st_Corinthians_15.1-16.24.mp3" name="17. 1st Corinthians 15:1 - 16:24" />
+    </Book>
+    <Book name="2nd Corinthians" server="tnp">
+      <Item link="audio/verse-by-verse/2nd-corinthians/01_0000_2nd_Corinthians_Introduction.mp3" name="01. 2nd Corinthians Introduction" />
+      <Item link="audio/verse-by-verse/2nd-corinthians/02_0000_2nd_Corinthians_1.1-2.17.mp3" name="02. 2nd Corinthians 1:1 - 2:17" />
+      <Item link="audio/verse-by-verse/2nd-corinthians/03_0000_2nd_Corinthians_3.mp3" name="03. 2nd Corinthians 3" />
+      <Item link="audio/verse-by-verse/2nd-corinthians/04_0000_2nd_Corinthians_4.mp3" name="04. 2nd Corinthians 4" />
+      <Item link="audio/verse-by-verse/2nd-corinthians/05_0000_2nd_Corinthians_5.mp3" name="05. 2nd Corinthians 5" />
+      <Item link="audio/verse-by-verse/2nd-corinthians/06_0000_2nd_Corinthians_5_and_6.mp3" name="06. 2nd Corinthians 5 and 6" />
+      <Item link="audio/verse-by-verse/2nd-corinthians/07_0000_2nd_Corinthians_7-9.mp3" name="07. 2nd Corinthians 7 - 9" />
+      <Item link="audio/verse-by-verse/2nd-corinthians/08_0000_2nd_Corinthians_10-11.mp3" name="08. 2nd Corinthians 10 - 11" />
+      <Item link="audio/verse-by-verse/2nd-corinthians/09_0000_2nd_Corinthians_12-13.mp3" name="09. 2nd Corinthians 12 - 13" />
+    </Book>
+    <Book name="Galatians" server="tnp">
+      <Item link="audio/verse-by-verse/galatians/01_0000_Galatians_Intro_and_1.1-1.10.mp3" name="01. Galatians Intro and 1:1 - 1:10" />
+      <Item link="audio/verse-by-verse/galatians/02_0000_Galatians_1.11-2.21.mp3" name="02. Galatians 1:11 - 2:21" />
+      <Item link="audio/verse-by-verse/galatians/03_0000_Galatians_3.1-18.mp3" name="03. Galatians 3:1 - 18" />
+      <Item link="audio/verse-by-verse/galatians/04_0000_Galatians_3.19-4.7.mp3" name="04. Galatians 3:19 - 4:7" />
+      <Item link="audio/verse-by-verse/galatians/05_0000_Galatians_4.8-5.12.mp3" name="05. Galatians 4:8 - 5:12" />
+      <Item link="audio/verse-by-verse/galatians/06_Galatians_5.13-6.18.mp3" name="06. Galatians 5:13 - 6:18" />
+    </Book>
+    <Book name="Ephesians" server="tnp">
+      <Item link="audio/verse-by-verse/ephesians/01_0000_Ephesians_Intro_and_1.1-1.6.mp3" name="01. Ephesians Intro and 1:1 - 1:6" />
+      <Item link="audio/verse-by-verse/ephesians/02_0000_Ephesians_1.6-1.23.mp3" name="02. Ephesians 1:6 - 1:23" />
+      <Item link="audio/verse-by-verse/ephesians/03_0000_Ephesians_2.mp3" name="03. Ephesians 2" />
+      <Item link="audio/verse-by-verse/ephesians/04_0000_Ephesians_3.mp3" name="04. Ephesians 3" />
+      <Item link="audio/verse-by-verse/ephesians/05_0000_Ephesians_4.1-4.11.mp3" name="05. Ephesians 4:1 - 4:11" />
+      <Item link="audio/verse-by-verse/ephesians/06_0000_Ephesians_4.11-4.32.mp3" name="06. Ephesians 4:11 - 4:32" />
+      <Item link="audio/verse-by-verse/ephesians/07_0000_Ephesians_5.1-5.21.mp3" name="07. Ephesians 5:1 - 5:21" />
+      <Item link="audio/verse-by-verse/ephesians/08_0000_Ephesians_5.18-5.33.mp3" name="08. Ephesians 5:18 - 5:33" />
+      <Item link="audio/verse-by-verse/ephesians/09_0000_Ephesians_6.1-6.9.mp3" name="09. Ephesians 6:1 - 6:9" />
+      <Item link="audio/verse-by-verse/ephesians/10_0000_Ephesians_6.10-6.24.mp3" name="10. Ephesians 6:10 - 6:24" />
+    </Book>
+    <Book name="Philippians" server="tnp">
+      <Item link="audio/verse-by-verse/philippians/01_Philippians_Introduction_and_1.1-2.30.mp3" name="01. Philippians Introduction and 1:1 - 2:30" />
+      <Item link="audio/verse-by-verse/philippians/02_Philippians_3-4.mp3" name="02. Philippians 3 - 4" />
+    </Book>
+    <Book name="Colossians" server="tnp">
+      <Item link="audio/verse-by-verse/colossians/01_0000_Colossians_Introduction_and_1.1-1.5.mp3" name="01. Colossians Introduction and 1:1 - 1:5" />
+      <Item link="audio/verse-by-verse/colossians/02_0000_Colossians_1.5-1.15.mp3" name="02. Colossians 1:5 - 1:15" />
+      <Item link="audio/verse-by-verse/colossians/03_0000_Colossians_1.15-1.20.mp3" name="03. Colossians 1:15 - 1:20" />
+      <Item link="audio/verse-by-verse/colossians/04_0000_Colossians_1.21-1.29.mp3" name="04. Colossians 1:21 - 1:29" />
+      <Item link="audio/verse-by-verse/colossians/05_0000_Colossians_2.mp3" name="05. Colossians 2" />
+      <Item link="audio/verse-by-verse/colossians/06_0000_Colossians_3.1-3.5.mp3" name="06. Colossians 3:1 - 3:5" />
+      <Item link="audio/verse-by-verse/colossians/07_0000_Colossians_3.5-3.17.mp3" name="07. Colossians 3:5 - 3:17" />
+      <Item link="audio/verse-by-verse/colossians/08_0000_Colossians_3.18-4.18.mp3" name="08. Colossians 3:18 - 4:18" />
+    </Book>
+    <Book name="1st Thessalonians" server="tnp">
+      <Item link="audio/verse-by-verse/1st-thessalonians/01_0000_1st_Thessalonians_1_-_3.mp3" name="01. 1st Thessalonians 1  -  3" />
+      <Item link="audio/verse-by-verse/1st-thessalonians/02_0000_1st_Thessalonians_4.mp3" name="02. 1st Thessalonians 4" />
+      <Item link="audio/verse-by-verse/1st-thessalonians/03_0000_1st_Thessalonians_5.mp3" name="03. 1st Thessalonians 5" />
+    </Book>
+    <Book name="2nd Thessalonians" server="tnp">
+      <Item link="audio/verse-by-verse/2nd-thessalonians/01_0000_2nd_Thessalonians_1-2.mp3" name="01. 2nd Thessalonians 1 - 2" />
+      <Item link="audio/verse-by-verse/2nd-thessalonians/02_0000_2nd_Thessalonians_2-3.mp3" name="02. 2nd Thessalonians 2 - 3" />
+    </Book>
+    <Book name="1st Timothy" server="tnp">
+      <Item link="audio/verse-by-verse/1st-timothy/01_0000_1st_Timothy_and_Titus_Introduction_Part_1.mp3" name="01. 1st Timothy and Titus Introduction • Part 1" />
+      <Item link="audio/verse-by-verse/1st-timothy/02_0000_1st_Timothy_and_Titus_Introduction_Part_2.mp3" name="02. 1st Timothy and Titus Introduction • Part 2" />
+      <Item link="audio/verse-by-verse/1st-timothy/03_0000_1st_Timothy_1.mp3" name="03. 1st Timothy 1" />
+      <Item link="audio/verse-by-verse/1st-timothy/04_0000_1st_Timothy_2.1-2.14.mp3" name="04. 1st Timothy 2:1 - 2:14" />
+      <Item link="audio/verse-by-verse/1st-timothy/05_0000_1st_Timothy_2.14-3.3.mp3" name="05. 1st Timothy 2:14 - 3:3" />
+      <Item link="audio/verse-by-verse/1st-timothy/06_0000_1st_Timothy_3.3-4.4.mp3" name="06. 1st Timothy 3:3 - 4:4" />
+      <Item link="audio/verse-by-verse/1st-timothy/07_0000_1st_Timothy_4.5-5.18.mp3" name="07. 1st Timothy 4:5 - 5:18" />
+      <Item link="audio/verse-by-verse/1st-timothy/08_0000_1st_Timothy_5.19-6.19.mp3" name="08. 1st Timothy 5:19 - 6:19" />
+    </Book>
+    <Book name="2nd Timothy" server="tnp">
+      <Item link="audio/verse-by-verse/2nd-timothy/01_2nd_Timothy_Part_1.mp3" name="01. 2nd Timothy • Part 1" />
+      <Item link="audio/verse-by-verse/2nd-timothy/02_2nd_Timothy_Part_2.mp3" name="02. 2nd Timothy • Part 2" />
+      <Item link="audio/verse-by-verse/2nd-timothy/03_2nd_Timothy_Part_3.mp3" name="03. 2nd Timothy • Part 3" />
+      <Item link="audio/verse-by-verse/2nd-timothy/04_2nd_Timothy_Part_4.mp3" name="04. 2nd Timothy • Part 4" />
+      <Item link="audio/verse-by-verse/2nd-timothy/05_2nd_Timothy_Part_5.mp3" name="05. 2nd Timothy • Part 5" />
+    </Book>
+    <Book name="Titus" server="tnp">
+      <Item link="audio/verse-by-verse/titus/01_0000_Titus_Part_1.mp3" name="01. Titus • Part 1" />
+      <Item link="audio/verse-by-verse/titus/02_0000_Titus_Part_2.mp3" name="02. Titus • Part 2" />
+      <Item link="audio/verse-by-verse/titus/03_0000_Titus_Part_3.mp3" name="03. Titus • Part 3" />
+      <Item link="audio/verse-by-verse/titus/04_0000_Titus_Part_4.mp3" name="04. Titus • Part 4" />
+    </Book>
+    <Book name="Philemon" server="tnp">
+      <Item link="audio/verse-by-verse/philemon/01_0000_Philemon_Full_Book.mp3" name="01. Philemon • Full Book" />
+    </Book>
+    <Book name="Hebrews" server="tnp">
+      <Item link="audio/verse-by-verse/hebrews/01_2013_Hebrews_Introduction_Part_1.mp3" name="01. Hebrews Introduction • Part 1" />
+      <Item link="audio/verse-by-verse/hebrews/02_2013_Hebrews_Introduction_Part_2.mp3" name="02. Hebrews Introduction • Part 2" />
+      <Item link="audio/verse-by-verse/hebrews/03_2013_Hebrews_1.mp3" name="03. Hebrews 1" />
+      <Item link="audio/verse-by-verse/hebrews/04_2013_Hebrews_2.mp3" name="04. Hebrews 2" />
+      <Item link="audio/verse-by-verse/hebrews/05_2013_Hebrews_3.mp3" name="05. Hebrews 3" />
+      <Item link="audio/verse-by-verse/hebrews/06_2013_Hebrews_4.mp3" name="06. Hebrews 4" />
+      <Item link="audio/verse-by-verse/hebrews/07_2013_Hebrews_5.mp3" name="07. Hebrews 5" />
+      <Item link="audio/verse-by-verse/hebrews/08_2013_Hebrews_6.mp3" name="08. Hebrews 6" />
+      <Item link="audio/verse-by-verse/hebrews/09_2013_Hebrews_7.mp3" name="09. Hebrews 7" />
+      <Item link="audio/verse-by-verse/hebrews/10_2013_Hebrews_8.mp3" name="10. Hebrews 8" />
+      <Item link="audio/verse-by-verse/hebrews/11_2013_Hebrews_9.mp3" name="11. Hebrews 9" />
+      <Item link="audio/verse-by-verse/hebrews/12_2013_Hebrews_10.mp3" name="12. Hebrews 10" />
+      <Item link="audio/verse-by-verse/hebrews/13_2013_Hebrews_11.mp3" name="13. Hebrews 11" />
+      <Item link="audio/verse-by-verse/hebrews/14_2013_Hebrews_12.1-12.17.mp3" name="14. Hebrews 12:1 - 12:17" />
+      <Item link="audio/verse-by-verse/hebrews/15_2013_Hebrews_12.18-13.25.mp3" name="15. Hebrews 12:18 - 13:25" />
+    </Book>
+    <Book name="James" server="tnp">
+      <Item link="audio/verse-by-verse/james/01_0000_James_Introduction_and_1.1-1.8.mp3" name="01. James Introduction and 1:1 - 1:8" />
+      <Item link="audio/verse-by-verse/james/02_0000_James_1.9-2.7.mp3" name="02. James 1:9 - 2:7" />
+      <Item link="audio/verse-by-verse/james/03_0000_James_2.8-3.12.mp3" name="03. James 2:8 - 3:12" />
+      <Item link="audio/verse-by-verse/james/04_0000_James_3.13-4.4.mp3" name="04. James 3:13 - 4:4" />
+      <Item link="audio/verse-by-verse/james/05_0000_James_4.5-5.20.mp3" name="05. James 4:5 - 5:20" />
+    </Book>
+    <Book name="1st Peter" server="tnp">
+      <Item link="audio/verse-by-verse/1st-peter/01_2013_1st_Peter_Introduction_Part_1.mp3" name="01. 1st Peter Introduction • Part 1" />
+      <Item link="audio/verse-by-verse/1st-peter/02_2013_1st_Peter_Introduction_Part_2.mp3" name="02. 1st Peter Introduction • Part 2" />
+      <Item link="audio/verse-by-verse/1st-peter/03_2013_1st_Peter_1.1-1.2.mp3" name="03. 1st Peter 1:1 - 1:2" />
+      <Item link="audio/verse-by-verse/1st-peter/04_2013_1st_Peter_1.3-1.12.mp3" name="04. 1st Peter 1:3 - 1:12" />
+      <Item link="audio/verse-by-verse/1st-peter/05_2013_1st_Peter_1.13-1.17.mp3" name="05. 1st Peter 1:13 - 1:17" />
+      <Item link="audio/verse-by-verse/1st-peter/06_2013_1st_Peter_1.18-1.25.mp3" name="06. 1st Peter 1:18 - 1:25" />
+      <Item link="audio/verse-by-verse/1st-peter/07_2013_1st_Peter_2.1-2.10.mp3" name="07. 1st Peter 2:1 - 2:10" />
+      <Item link="audio/verse-by-verse/1st-peter/08_2013_1st_Peter_2.11-2.23.mp3" name="08. 1st Peter 2:11 - 2:23" />
+      <Item link="audio/verse-by-verse/1st-peter/09_2013_1st_Peter_2.24-3.7.mp3" name="09. 1st Peter 2:24 - 3:7" />
+      <Item link="audio/verse-by-verse/1st-peter/10_2013_1st_Peter_3.8-3.22.mp3" name="10. 1st Peter 3:8 - 3:22" />
+      <Item link="audio/verse-by-verse/1st-peter/11_2013_1st_Peter_4.1-4.11.mp3" name="11. 1st Peter 4:1 - 4:11" />
+      <Item link="audio/verse-by-verse/1st-peter/12_2013_1st_Peter_4.12-5.14.mp3" name="12. 1st Peter 4:12 - 5:14" />
+    </Book>
+    <Book name="2nd Peter" server="tnp">
+      <Item link="audio/verse-by-verse/2nd-peter/01_2013_2nd_Peter_and_Jude_Introduction.mp3" name="01. 2nd Peter and Jude Introduction" />
+      <Item link="audio/verse-by-verse/2nd-peter/02_2013_2nd_Peter_1.1-1.15.mp3" name="02. 2nd Peter 1:1 - 1:15" />
+      <Item link="audio/verse-by-verse/2nd-peter/03_2013_2nd_Peter_1.16-21.mp3" name="03. 2nd Peter 1:16 - 21" />
+      <Item link="audio/verse-by-verse/2nd-peter/04_2013_2nd_Peter_2.1-2.17.mp3" name="04. 2nd Peter 2:1 - 2:17" />
+      <Item link="audio/verse-by-verse/2nd-peter/05_2013_2nd_Peter_2.18-3.9.mp3" name="05. 2nd Peter 2:18 - 3:9" />
+      <Item link="audio/verse-by-verse/2nd-peter/06_2013_2nd_Peter_3.10-3.18.mp3" name="06. 2nd Peter 3:10 - 3:18" />
+    </Book>
+    <Book name="1st John" server="tnp">
+      <Item link="audio/verse-by-verse/1st-john/01_2014_1st_John_Introduction.mp3" name="01. 1st John Introduction" />
+      <Item link="audio/verse-by-verse/1st-john/02_2014_1st_John_1.mp3" name="02. 1st John 1" />
+      <Item link="audio/verse-by-verse/1st-john/03_2014_1st_John_2.1-2.17.mp3" name="03. 1st John 2:1 - 2:17" />
+      <Item link="audio/verse-by-verse/1st-john/04_2014_1st_John_2.18-2.29.mp3" name="04. 1st John 2:18 - 2:29" />
+      <Item link="audio/verse-by-verse/1st-john/05_2014_1st_John_3.mp3" name="05. 1st John 3" />
+      <Item link="audio/verse-by-verse/1st-john/06_2014_1st_John_4.mp3" name="06. 1st John 4" />
+      <Item link="audio/verse-by-verse/1st-john/07_2014_1st_John_5.mp3" name="07. 1st John 5" />
+    </Book>
+    <Book name="2nd John" server="tnp">
+      <Item link="audio/verse-by-verse/2nd-john/01_2014_2nd_John.mp3" name="01. 2nd John" />
+    </Book>
+    <Book name="3rd John" server="tnp">
+      <Item link="audio/verse-by-verse/3rd-john/01_2014_3rd_John.mp3" name="01. 3rd John" />
+    </Book>
+    <Book name="Jude" server="tnp">
+      <Item link="audio/verse-by-verse/jude/01_2013_Jude_Full_Book.mp3" name="01. Jude • Full Book" />
+    </Book>
+    <Book name="Revelation" server="tnp">
+      <Item link="audio/verse-by-verse/revelation/01_2012_Revelation_Introduction_Part_1_Overview_and_Authorship.mp3" name="01. Revelation Introduction • Part 1 Overview and Authorship" />
+      <Item link="audio/verse-by-verse/revelation/02_2012_Revelation_Introduction_Part_2_Symbols_and_Images.mp3" name="02. Revelation Introduction • Part 2 Symbols and Images" />
+      <Item link="audio/verse-by-verse/revelation/03_2012_Revelation_Introduction_Part_3_Dating_Revelation.mp3" name="03. Revelation Introduction • Part 3 Dating Revelation" />
+      <Item link="audio/verse-by-verse/revelation/04_2012_Revelation_Introduction_Part_4_Four_Views.2.mp3" name="04. Revelation Introduction • Part 4 Four Views:2" />
+      <Item link="audio/verse-by-verse/revelation/05_2012_Revelation_1.mp3" name="05. Revelation 1" />
+      <Item link="audio/verse-by-verse/revelation/06_2012_Revelation_2.mp3" name="06. Revelation 2" />
+      <Item link="audio/verse-by-verse/revelation/07_2012_Revelation_3.mp3" name="07. Revelation 3" />
+      <Item link="audio/verse-by-verse/revelation/08_2012_Revelation_4-5.mp3" name="08. Revelation 4 - 5" />
+      <Item link="audio/verse-by-verse/revelation/09_2012_Revelation_6.mp3" name="09. Revelation 6" />
+      <Item link="audio/verse-by-verse/revelation/10_2012_Revelation_7-8.mp3" name="10. Revelation 7 - 8" />
+      <Item link="audio/verse-by-verse/revelation/11_2012_Revelation_9-10.mp3" name="11. Revelation 9 - 10" />
+      <Item link="audio/verse-by-verse/revelation/12_2012_Revelation_11.mp3" name="12. Revelation 11" />
+      <Item link="audio/verse-by-verse/revelation/13_2012_Revelation_12.mp3" name="13. Revelation 12" />
+      <Item link="audio/verse-by-verse/revelation/14_2012_Revelation_13.mp3" name="14. Revelation 13" />
+      <Item link="audio/verse-by-verse/revelation/15_2012_Revelation_14-16.mp3" name="15. Revelation 14 - 16" />
+      <Item link="audio/verse-by-verse/revelation/16_2012_Revelation_17-18.mp3" name="16. Revelation 17 - 18" />
+      <Item link="audio/verse-by-verse/revelation/17_2012_Revelation_19.mp3" name="17. Revelation 19" />
+      <Item link="audio/verse-by-verse/revelation/18_2012_Revelation_20.mp3" name="18. Revelation 20" />
+      <Item link="audio/verse-by-verse/revelation/19_2012_Revelation_21-22.mp3" name="19. Revelation 21 - 22" />
+    </Book>
+  </Teaching>
+</Data>
