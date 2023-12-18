@@ -8,6 +8,7 @@
 ::deep .mud-paper {
     background: rgb(246,246,246);
     background: linear-gradient(0deg, rgba(246,246,246,1) 0%, rgba(216,230,254,1) 100%);
+
 }
 ::deep .mud-nav-item, ::deep .mud-nav-link {
     color: #0840AA; 

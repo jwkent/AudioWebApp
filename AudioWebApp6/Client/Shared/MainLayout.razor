@@ -5,7 +5,8 @@
 <MudSnackbarProvider />
 
 <MudLayout>
-    <MudAppBar Elevation="0" Style="@($"background:{Colors.Blue.Darken4};")">
+    <div>
+    <MudAppBar Elevation="0">
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
         <MudSpacer />
         <MudIconButton Href="/" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home" Color="Color.Inherit" />
@@ -20,7 +21,7 @@
         <NavMenu />
         
     </MudDrawer>
-    
+    </div>
     <MudMainContent>
         <MudContainer MaxWidth="MaxWidth.Large" Class="my-4 pt-4">
             @Body
