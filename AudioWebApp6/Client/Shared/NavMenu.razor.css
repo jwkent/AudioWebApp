@@ -1,15 +1,17 @@
-﻿.mud-paper{
-    background: rgb(246,246,246);
-    background: linear-gradient(0deg, rgba(246,246,246,1) 0%, rgba(216,230,254,1) 100%);
-}
-.mud-nav-item, mud-nav-group{
-    color: rgb(8,64,170);
-}
+﻿
 ::deep .mud-paper {
-    background: rgb(246,246,246);
-    background: linear-gradient(0deg, rgba(246,246,246,1) 0%, rgba(216,230,254,1) 100%);
-
+    background: transparent;
 }
-::deep .mud-nav-item, ::deep .mud-nav-link {
-    color: #0840AA; 
+::deep .mud-nav-item, 
+::deep .mud-nav-link{
+    color: #0840AA;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+::deep .mud-navmenu.mud-navmenu-default .mud-nav-link.active:not(.mud-nav-link-disabled) {
+    color: #5F76A6;
+    font-stretch:expanded;
+}
+::deep .mud-nav-link:not(.mud-nav-link-disabled) .mud-nav-link-icon.mud-nav-link-icon-default {
+    color: #0840AA;
 }
