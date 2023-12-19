@@ -17,3 +17,6 @@
     background-color: transparent;
     height:100px;
 }
+::deep .mud-paper.sub-logo-text{
+    height: calc(100vh - 480px);
+}

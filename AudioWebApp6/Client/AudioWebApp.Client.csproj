@@ -20,4 +20,10 @@
 	  <Folder Include="wwwroot\javascript\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Content Update="wwwroot\images\Asset2.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
 </Project>
