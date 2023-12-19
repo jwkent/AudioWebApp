@@ -1,20 +1,20 @@
 ﻿@page "/"
 @inject NavigationManager NavigationManager
 <PageTitle>Index</PageTitle>
-
-<MudPaper Class="d-flex pa-2 justify-center">
-    <MudText Typo="Typo.h3" GutterBottom="true"
-             Style="@($"color:{Colors.Blue.Accent1}")">@appTitle</MudText>
+<div>
+    
+ <MudPaper Class="d-flex flex-grow-1 justify-center logo-image" Elevation="0" >
+    <MudText Typo="Typo.h5">placeholder</MudText>
+</MudPaper>
+ 
+<MudPaper Class="d-flex flex-grow-1 justify-center" Elevation="0">
+    <MudText Class="logo-text">@appTitle</MudText>
 </MudPaper>
 
-<MudPaper Class="d-flex pa-4 justify-center"> 
-    <MudButton Variant="Variant.Filled" 
-                Style="@($"color:{Colors.Blue.Darken4}; background:{Colors.Blue.Accent1};")"
-                OnClick="NavToRadio" 
-                StartIcon="@Icons.Material.Filled.Radio">Listen Live</MudButton>
-</MudPaper>
-<MudPaper Class="d-flex pa-4 justify-center">
-    <MudButton Variant="Variant.Text" Style="@($"color:{Colors.Blue.Darken4}")"
-    OnClick="NavToExploreContent" >Explore Content</MudButton>
-</MudPaper>
+  <MudPaper Class="d-flex flex-grow-1 justify-center" Elevation="0">
+      <MudText Class="caption-text">Powered By The Narrow Path</MudText>
+  </MudPaper>
+  
+</div>
+
   
