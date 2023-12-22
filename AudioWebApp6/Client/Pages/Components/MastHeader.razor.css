@@ -1,7 +1,6 @@
 ﻿::deep .mud-paper.header {
     background-color: transparent;
     height: 60px;
-    z-index:0;
 }
 
 ::deep p {
@@ -9,6 +8,5 @@
     color: #5F76A6;
     position: absolute;
     top:70px;
-    left:100px;
-    z-index:1;
+    left:110px;
 }
