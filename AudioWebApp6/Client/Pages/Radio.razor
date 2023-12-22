@@ -1,19 +1,21 @@
 ﻿@page "/radio"
 @using System.Threading.Channels
 @inject IDialogService DialogService
+
 <div>
-<MudPaper Class="d-flex justified-center header" Elevation=0 >
-    <img src="./images/Asset4.png"/>
-    <p>Radio</p>
-</MudPaper>
+<MastHeader headerText="Radio"/>
+
 <MudPaper Class="d-flex pa-4 justify-center" Style="background-color: transparent;" Elevation="0">
+    
     <MudButton Variant="Variant.Filled"
                        Style="@($"color:{Colors.Blue.Darken4}; background:{Colors.Blue.Accent1};")"
                        StartIcon="@Icons.Material.Filled.Phone"
-                       OnClick="@((e) => OpenDialog())">
-                       Call In
-    </MudButton>
+                       OnClick="@((e) => OpenDialog())">Call In </MudButton>
 </MudPaper>
+
+
+
+
 </div>
     
 
