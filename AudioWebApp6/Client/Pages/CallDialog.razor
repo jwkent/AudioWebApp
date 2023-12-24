@@ -1,10 +1,11 @@
-﻿<MudDialog Style="@($"background:{Colors.Cyan.Darken1};")">
-    <DialogContent>
+﻿<div>
+    <MudDialog Style="background-color:#0840AA; color:#D8E6FE;">
+    <DialogContent >
          @telephoneNumber             
     </DialogContent>
     <DialogActions>
-        <MudButton OnClick="Cancel">Cancel</MudButton>
-        <MudIconButton Size="Size.Large" Icon="@Icons.Material.Filled.Phone" Href=@telephoneNumber></MudIconButton>
+            <MudButton Style="color:#D8E6FE; " OnClick="Cancel">Cancel</MudButton>
+            <MudIconButton Style="color:#D8E6FE;" Size="Size.Large" Icon="@Icons.Material.Filled.Phone" Href=@telephoneNumber></MudIconButton>
     </DialogActions>
 </MudDialog>
-
+</div>
