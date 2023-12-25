@@ -8,7 +8,8 @@ namespace AudioWebApp.Client.Pages
 {
     public partial class Radio : Microsoft.AspNetCore.Components.ComponentBase
     {
-        bool _radioPlaying;
+        public string cardContent { get; set; } = "Card Content Title";
+        public bool _radioPlaying { get; set; }
         
         private void PlayRadio()
         {

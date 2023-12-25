@@ -1,0 +1,11 @@
+﻿::deep .mud-paper{
+    background-color: transparent;
+}
+::deep .mud-button {
+    color: #D8E6FE;
+    background-color: #5F76A6;
+}
+::deep .mud-icon-root{
+    color:#D8E6FE !important;
+}
+

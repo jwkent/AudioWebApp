@@ -5,11 +5,28 @@
 <div>
 <MastHead headerText="Radio"/>
 
+<MudContainer Class="d-flex justify-center align-center">
+    <MudCard Class="d-inline-flex pa-2 justify-center" Elevation="0">
+    @cardContent
+    Radio is @(_radioPlaying ? "On" : "Off")
+    </MudCard>
+    <MudCard Class="d-inline-flex pa-4 justify-center" Elevation="0">
+        <MudToggleIconButton
+            @bind-Toggled="@_radioPlaying"
+            Icon="@Icons.Material.Filled.PlayCircleOutline"
+            Color="@Color.Success" Title="off"
+            Size="@Size.Large"
+            ToggledIcon="@Icons.Material.Sharp.Equalizer"
+            ToggledColor="@Color.Error" 
+            ToggledTitle="On"
+            ToggledSize="@Size.Large"/>
+    </MudCard>
+</MudContainer>
+    
 
-<MudPaper Class="d-flex pa-4 justify-center" Style="background-color: transparent;" Elevation="0">
+<MudPaper Class="d-flex pa-4 justify-center" Elevation="0">
     
     <MudButton Variant="Variant.Filled"
-                       Style="@($"color:{Colors.Blue.Darken4}; background:{Colors.Blue.Accent1};")"
                        StartIcon="@Icons.Material.Filled.Phone"
                        OnClick="@((e) => OpenDialog())">Call In </MudButton>
 </MudPaper>
