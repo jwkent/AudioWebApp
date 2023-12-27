@@ -10,7 +10,7 @@ namespace AudioWebApp.Client.Pages
     {
         public string cardContent { get; set; } = "Card Content Title";
         public bool _radioPlaying { get; set; }
-        
+        public bool radioPlaying;
         private void PlayRadio()
         {
             _radioPlaying = !_radioPlaying;

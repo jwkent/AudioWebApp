@@ -5,24 +5,8 @@
 <div>
 <MastHead headerText="Radio"/>
 
-<MudContainer Class="d-flex justify-center align-center">
-    <MudCard Class="d-inline-flex pa-2 justify-center" Elevation="0">
-    @cardContent
-    Radio is @(_radioPlaying ? "On" : "Off")
-    </MudCard>
-    <MudCard Class="d-inline-flex pa-4 justify-center" Elevation="0">
-        <MudToggleIconButton
-            @bind-Toggled="@_radioPlaying"
-            Icon="@Icons.Material.Filled.PlayCircleOutline"
-            Color="@Color.Success" Title="off"
-            Size="@Size.Large"
-            ToggledIcon="@Icons.Material.Sharp.Equalizer"
-            ToggledColor="@Color.Error" 
-            ToggledTitle="On"
-            ToggledSize="@Size.Large"/>
-    </MudCard>
-</MudContainer>
-    
+<AudioCard AudioTitle="Test title" RadioPlayingEventChanged="PlayRadio"
+    RadioPlaying=_radioPlaying />
 
 <MudPaper Class="d-flex pa-4 justify-center" Elevation="0">
     
@@ -32,6 +16,7 @@
 </MudPaper>
 
 </div>
+
     
 
 

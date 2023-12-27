@@ -1,0 +1,37 @@
+﻿
+<MudContainer Class="d-flex justify-center align-center" Style="height:100px;">
+    <MudCard Class="d-inline-flex pa-2 justify-center" Elevation="0">
+        @AudioTitle
+    </MudCard>
+    <MudCard Class="d-inline-flex pa-4 justify-center" Elevation="0">
+        <MudToggleIconButton
+            @bind-Toggled="@RadioPlaying"
+            Icon="@Icons.Material.Filled.PlayCircleOutline"
+            Color="@Color.Success" Title="off"
+            Size="@Size.Large"
+            ToggledIcon="@Icons.Material.Sharp.Equalizer"
+            ToggledColor="@Color.Error"
+            ToggledTitle="On"
+            ToggledSize="@Size.Large" />
+    </MudCard>
+</MudContainer>
+
+@code {
+    [Parameter]
+    public string AudioTitle { get; set; } = "Audio Title";
+    public bool _playing;
+    [Parameter]
+    public bool RadioPlaying 
+    { 
+        get => _playing;
+        set
+        {
+            if (_playing == value) return;
+            _playing = value;
+            RadioPlayingEventChanged.InvokeAsync(value);
+        } }
+
+    [Parameter]
+    public EventCallback<bool> RadioPlayingEventChanged { get; set; }
+
+}
