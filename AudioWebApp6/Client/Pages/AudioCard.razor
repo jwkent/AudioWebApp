@@ -19,19 +19,30 @@
 @code {
     [Parameter]
     public string AudioTitle { get; set; } = "Audio Title";
-    public bool _playing;
+    private bool _playing;
     [Parameter]
     public bool RadioPlaying 
     { 
         get => _playing;
         set
         {
-            if (_playing == value) return;
-            _playing = value;
-            RadioPlayingEventChanged.InvokeAsync(value);
+            if (_playing == value)
+            {
+                return;
+            }
+            else
+            {
+                _playing = value;
+                RadioPlayingEventChanged.InvokeAsync(value);
+            }
+
         } }
 
     [Parameter]
     public EventCallback<bool> RadioPlayingEventChanged { get; set; }
+    public void ClosePlayer()
+    {
+         RadioPlaying = false;
+    }
 
 }
