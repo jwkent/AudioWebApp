@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Components;
-using MudBlazor;
-using System.Diagnostics;
-using static MudBlazor.CategoryTypes;
+﻿using MudBlazor;
 
 namespace AudioWebApp.Client.Pages
 {
