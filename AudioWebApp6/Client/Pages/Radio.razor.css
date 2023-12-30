@@ -8,4 +8,18 @@
 ::deep .mud-icon-root{
     color:#D8E6FE !important;
 }
+::deep div .stickyfooter{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:100px;
+    background-color: rgba(0,0,0,0.86);
+}
+::deep .mud-card-content{
+    background-color: transparent;
+    height:100%;
+    width:auto; 
+    padding:0px;
+    overflow:hidden;
+}
 

@@ -8,9 +8,7 @@
     <div>
     <MudAppBar Elevation="0">
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
-        <MudSpacer />
-        <MudIconButton Href="/" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home" />
-        <MudSpacer />
+
     </MudAppBar>
     
     <MudDrawer @bind-Open="_drawerOpen" Elevation="1">
