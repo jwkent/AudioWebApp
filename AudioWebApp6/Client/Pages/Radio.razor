@@ -3,6 +3,7 @@
 @inject IDialogService DialogService
 
 <div>
+<MudCardContent Style="background-color:transparent; height:100%; width:auto; padding:0px; overflow:hidden;">
 <MastHead headerText="Radio"/>
 
     <AudioCard AudioTitle="Test title" RadioPlayingEventChanged="PlayRadio"
@@ -16,7 +17,7 @@
                        OnClick="@((e) => OpenDialog())">Call In </MudButton>
 </MudPaper>
 <MudText Typo="Typo.caption">@_radioPlaying</MudText>
-
+        </MudCardContent>
 </div>
 @if (_radioPlaying == true)
 {
@@ -29,6 +30,7 @@
         </div>
     </div>
 }
+
 
     
 
