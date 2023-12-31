@@ -1,0 +1,18 @@
+﻿::deep .mud-drawer {
+    background: rgb(246,246,246);
+    background: linear-gradient(0deg, rgba(246,246,246,1) 50%, rgba(216,230,254,1) 100%);
+
+}
+::deep .mud-typography {
+    color: #0840AA;
+}
+::deep .mud-toolbar{
+    background-color: #D8E6FE;
+}
+::deep .mud-icon-root{
+    color: #0840AA;
+}
+::deep .mud-main-content {
+    background: rgb(216,230,254);
+    background: linear-gradient(0deg, rgba(216,230,254,1) 10%, rgba(8,64,170,1) 100%);
+}

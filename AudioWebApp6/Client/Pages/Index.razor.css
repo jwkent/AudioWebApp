@@ -1,0 +1,22 @@
+﻿::deep .mud-typography.caption-text {
+    color: #0840AA;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::deep .mud-typography.logo-text {
+    color: rgb(95 118 166 / 40%) ;
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 50px;
+}
+::deep .mud-paper.logo-image{
+    background-color: transparent;
+    height: 380px;
+}
+::deep .mud-paper{
+    background-color: transparent;
+    height:100px;
+}
+::deep .mud-paper.sub-logo-text{
+    height: calc(100vh - 480px);
+}

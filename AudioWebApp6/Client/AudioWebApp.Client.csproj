@@ -1,10 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Remove="Pages\Components\AudioCard.razor" />
+	</ItemGroup>
+
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.7" />
@@ -14,6 +19,34 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Shared\AudioWebApp.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="wwwroot\javascript\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Update="wwwroot\images\Asset5.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="wwwroot\images\Asset2.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="wwwroot\images\Asset3.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <UpToDateCheckInput Remove="Pages\Components\AudioCard.razor" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <_ContentIncludedByDefault Remove="Pages\Components\AudioCard.razor" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Pages\AudioCard.razor" />
 	</ItemGroup>
 
 </Project>

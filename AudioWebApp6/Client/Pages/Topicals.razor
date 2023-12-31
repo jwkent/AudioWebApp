@@ -1,0 +1,37 @@
+﻿@page "/topical"
+@inject HttpClient Http
+@using AudioWebApp.Shared
+
+<PageTitle>Topicals</PageTitle>
+<MastHead headerText="Topical"/>
+
+@if (topicalData == null)
+{
+    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+}
+else
+{
+    <MudPaper Width="100%" Style="background-color: transparent;">
+        <MudList Clickable="true">
+            <MudListItem >
+                @topicalData[0]
+            </MudListItem>
+            <MudListItem >
+                @topicalData[1]
+            </MudListItem>
+            <MudListItem Text="@topicalData[2]" InitiallyExpanded="true">
+                <NestedList>
+                    <MudListItem >
+                        subtopical 0
+                    </MudListItem>
+                    <MudListItem >
+                        subtopical 1
+                    </MudListItem>
+                </NestedList>
+            </MudListItem>
+        </MudList>
+    </MudPaper>
+}
+
+
+

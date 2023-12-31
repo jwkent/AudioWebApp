@@ -1,0 +1,17 @@
+﻿
+::deep .mud-paper {
+    background: transparent;
+}
+::deep .mud-nav-item, 
+::deep .mud-nav-link{
+    color: #0840AA;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+::deep .mud-navmenu.mud-navmenu-default .mud-nav-link.active:not(.mud-nav-link-disabled) {
+    color: #5F76A6;
+    font-stretch:expanded;
+}
+::deep .mud-nav-link:not(.mud-nav-link-disabled) .mud-nav-link-icon.mud-nav-link-icon-default {
+    color: #0840AA;
+}
