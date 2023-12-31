@@ -11,7 +11,26 @@
 }
 else
 {
-    @topicalData.Count()
+    <MudPaper Width="100%" Style="background-color: transparent;">
+        <MudList Clickable="true">
+            <MudListItem >
+                @topicalData[0]
+            </MudListItem>
+            <MudListItem >
+                @topicalData[1]
+            </MudListItem>
+            <MudListItem Text="@topicalData[2]" InitiallyExpanded="true">
+                <NestedList>
+                    <MudListItem >
+                        subtopical 0
+                    </MudListItem>
+                    <MudListItem >
+                        subtopical 1
+                    </MudListItem>
+                </NestedList>
+            </MudListItem>
+        </MudList>
+    </MudPaper>
 }
 
 
