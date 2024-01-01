@@ -1,5 +1,4 @@
 ﻿using System.Collections.ObjectModel;
-using System.Net.Http.Json;
 using System.Xml.Linq;
 using AudioWebApp.Client.Models;
 using Microsoft.JSInterop;
@@ -8,15 +7,9 @@ namespace AudioWebApp.Client.Services;
 
 public class ApiService
 {
-    //const string ServerDomain = "http://tnp.wvss.biz";
-    const string ServerDomain = "http://localhost:5000";
     const string ServerVersion = "api/v1";
-    private const string BaseAddress = $"{ServerDomain}/{ServerVersion}";
-    //private const string updatedContentCheckUrl = $"{BaseAddress}/data/get";
-    private const string updatedContentCheckUrl = $"{BaseAddress}/data";
-    //private const string updatedContentCheckUrl = "data/get";
-    private const string isNewContentCheckUrl = $"{BaseAddress}/data/is-new";
-    //private const string isNewContentCheckUrl = "data/is-new";
+    private const string updatedContentCheckUrl = $"{ServerVersion}/data";
+    private const string isNewContentCheckUrl = $"{ServerVersion}/data/is-data-new-since";
 
     private HttpClient _httpClient;
 
@@ -26,16 +19,18 @@ public class ApiService
 
     private readonly IJSRuntime jSRuntime;
 
-    public ApiService(IJSRuntime JSRuntime)
+    public ApiService(IJSRuntime JSRuntime, HttpClient httpClient)
     {
         jSRuntime = JSRuntime;
+
+        _httpClient = httpClient;
+        _httpClient.Timeout = TimeSpan.FromSeconds(5);
     }
 
     public async Task LoadData()
     {
-        _httpClient = new HttpClient() { Timeout = TimeSpan.FromSeconds(5) };
-        Console.WriteLine("hi");
-        
+        // Don't load data if it's already been done.
+        if (Servers != null && Topics != null && Books != null ) { return; }
 
         // Continue with is used to synchronously load XML data into data model, if necessary.
         await LoadXmlDataAsync()
@@ -44,19 +39,9 @@ public class ApiService
                 Servers = XmlReader.ReadServers(arg.Result);
                 Topics = XmlReader.ReadTopics(arg.Result);
                 Books = XmlReader.ReadBooks(arg.Result);
-                //IsSeriesReady = true;
-                //System.Diagnostics.Debug.WriteLine("VM back from LoadXmlDataAsync in continue with.");
             });
-        
     }
-
    
-
-    //public async Task<IEnumerable<Customer>> GetCustomersAsync()
-    //{
-    //    return await _httpClient.GetFromJsonAsync<IEnumerable<Customer>>("https://yourapi.com/customers");
-    //}
-
     /// <summary>
     /// Loads the xml data async.
     /// </summary>
@@ -71,7 +56,7 @@ public class ApiService
         {
             try
             {
-                Console.WriteLine($"About to get some content {updatedContentCheckUrl}");
+                Console.WriteLine($"Time to get some newer content {updatedContentCheckUrl}");
                 // Download new XML content.
             await _httpClient.GetStringAsync(updatedContentCheckUrl)
                 .ContinueWith((Task<string> arg) => 
@@ -111,10 +96,14 @@ public class ApiService
     {
         try
         {
+            Console.WriteLine($"IsNewContentAvailable {isNewContentCheckUrl}");
+
             var data = await GetItemAsync("xmlString");
             if (!string.IsNullOrEmpty(data))
             // Read the local XML file timestamp and send it to the web service to see if there is any new content available.
             {
+                Console.WriteLine("xmlString not empty so let's get the timestamp.");
+
                 var doc = await LoadLocalXmlFile();
                 var localDataTimestamp = doc
                     .Descendants("Configuration")
