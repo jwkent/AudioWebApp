@@ -1,11 +1,13 @@
 ﻿@page "/topical"
 @inject HttpClient Http
+@inject ApiService apiService
+@using AudioWebApp.Client.Services
 @using AudioWebApp.Shared
 
 <PageTitle>Topicals</PageTitle>
 <MastHead headerText="Topical"/>
 
-@if (topicalData == null)
+@if (topics == null)
 {
     <MudProgressCircular Color="Color.Default" Indeterminate="true" />
 }
@@ -14,12 +16,12 @@ else
     <MudPaper Width="100%" Style="background-color: transparent;">
         <MudList Clickable="true">
             <MudListItem >
-                @topicalData[0]
+                Topical1
             </MudListItem>
             <MudListItem >
-                @topicalData[1]
+                Topical2
             </MudListItem>
-            <MudListItem Text="@topicalData[2]" InitiallyExpanded="true">
+            <MudListItem Text="Topical3" InitiallyExpanded="true">
                 <NestedList>
                     <MudListItem >
                         subtopical 0

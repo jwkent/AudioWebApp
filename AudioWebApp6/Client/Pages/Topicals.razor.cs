@@ -1,12 +1,18 @@
-using AudioWebApp.Shared;
-using System.Net.Http.Json;
+
+using System.Collections.ObjectModel;
+using AudioWebApp.Client.Models;
+
 
 namespace AudioWebApp.Client.Pages
 {
     public partial class Topicals
     {
-        public string[] topicalData = new string[] { "Topical1", "Topical2", "Topical3" };
-
-
+       
+        private ObservableCollection<Series>? topics;
+        protected override async Task OnInitializedAsync()
+        {
+            await apiService.LoadData();
+            topics = apiService.Topics;
+        }
     }
 }
