@@ -1,11 +1,9 @@
 ﻿using AudioWebApp.Server.Utilities;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AudioWebApp.Server.Controllers;
 
 [Route("api/v1/data")]
-[EnableCors("MyAllowSpecificOrigins")] // Applying specific CORS policy
 public class XmlController : Controller
 {
     private const int TimestampMaxLength = 14;
