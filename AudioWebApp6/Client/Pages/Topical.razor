@@ -1,0 +1,41 @@
+﻿@page "/topical"
+@using AudioWebApp.Client.Services
+
+@inject ApiService apiService
+
+<PageTitle>Topical</PageTitle>
+<MastHead headerText="Topical"/>
+
+@if (dataReady == null)
+{
+    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+}
+else
+{
+    <MudPaper Width="100%" Style="background-color: transparent;">
+        <MudList Clickable="true">
+            @foreach (var topic in apiService.Topics)
+            {
+                <MudListItem Text="@topic.Name">
+                    <NestedList>
+                        @foreach (var msg in topic.Messages)
+                        {
+                            <MudListItem Text="@msg.Name"/>
+                        }
+                    </NestedList>
+                </MudListItem>
+            }
+        </MudList>
+    </MudPaper>
+}
+
+@code
+{
+    string? dataReady;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await apiService.LoadData();
+        dataReady = "dataLoaded";
+    }
+}

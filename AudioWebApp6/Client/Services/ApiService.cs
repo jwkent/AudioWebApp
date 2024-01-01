@@ -29,9 +29,6 @@ public class ApiService
 
     public async Task LoadData()
     {
-        // Don't load data if it's already been done.
-        if (Servers != null && Topics != null && Books != null ) { return; }
-
         // Continue with is used to synchronously load XML data into data model, if necessary.
         await LoadXmlDataAsync()
             .ContinueWith((arg) =>
@@ -82,7 +79,6 @@ public class ApiService
                 throw;
             }
         }
-        //System.Diagnostics.Debug.WriteLine("isNewContentAvailable finished");
 
         // Load local file which may have recently been updated with new content.
         return await LoadLocalXmlFile();
