@@ -9,17 +9,6 @@ StaticWebAssetsLoader.UseStaticWebAssets(builder.Environment, builder.Configurat
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy(name: "MyAllowSpecificOrigins",
-                      builder =>
-                      {
-                          builder.WithOrigins("http://localhost:5000") // Specify the origin you want to allow
-                                 .AllowAnyHeader()
-                                 .AllowAnyMethod();
-                      });
-});
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -40,7 +29,6 @@ app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseCors("MyAllowSpecificOrigins"); // Use the CORS policy
 
 app.MapRazorPages();
 app.MapControllers();
