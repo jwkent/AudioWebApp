@@ -1,9 +1,9 @@
 ﻿
-<MudContainer Class="d-flex justify-center align-center" Style="height:100px;">
-    <MudCard Class="d-inline-flex pa-2 justify-center" Elevation="0">
+<MudContainer Class="d-flex flex-grow-1 gap-1" Style="height:100px;">
+    <MudCard Class="flex-auto d-flex py-4" Width="auto"  Elevation="0">
         @AudioTitle
     </MudCard>
-    <MudCard Class="d-inline-flex pa-4 justify-center" Elevation="0">
+    <MudCard Class="flex-none d-flex py-4" Width="50px"  Elevation="0">
         <MudToggleIconButton
             @bind-Toggled="@RadioPlaying"
             Icon="@Icons.Material.Filled.PlayCircleOutline"

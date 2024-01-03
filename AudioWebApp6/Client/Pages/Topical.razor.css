@@ -1,0 +1,25 @@
+﻿::deep .mud-list-item {
+    background: rgb(216,230,254);
+    background: linear-gradient(90deg, rgba(216,230,254,1) 51%, rgba(213,216,229,1) 100%);
+}
+::deep .mud-list{
+    padding-top: 0px;
+}
+::deep .mud-paper {
+    width:100%;
+    background-color:transparent;
+}
+::deep .mud-container {
+    background: rgb(213,216,229);
+    background: linear-gradient(90deg, rgba(213,216,229,1) 0%, rgba(95,118,166,1) 80%);
+}
+::deep .mud-icon-root.mud-svg-icon {
+    color: #9396A1;
+}
+::deep .mud-card-content {
+    background-color: transparent;
+    height: 100%;
+    width: auto;
+    padding: 0px;
+    overflow: hidden;
+}
