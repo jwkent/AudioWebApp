@@ -44,9 +44,4 @@
 	<ItemGroup>
 	  <_ContentIncludedByDefault Remove="Pages\Components\AudioCard.razor" />
 	</ItemGroup>
-
-	<ItemGroup>
-	  <None Include="Pages\AudioCard.razor" />
-	</ItemGroup>
-
 </Project>

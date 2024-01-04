@@ -1,6 +1,7 @@
 ﻿@page "/topical"
 @using AudioWebApp.Client.Services
-
+@inject NavigationManager NavigationManager
+@inject SharedDataService SharedDataService
 @inject ApiService apiService
 
 <PageTitle>Topical</PageTitle>
@@ -22,8 +23,7 @@
                             <NestedList>
                                 @foreach (var msg in topic.Messages)
                                 {
-                                    @* <MudListItem Text="@msg.Name"/> *@
-                                    <AudioCard AudioTitle="@msg.Name" />
+                                    <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link)" />
                                 }
                             </NestedList>
                         </MudListItem>
@@ -42,4 +42,12 @@
         await apiService.LoadData();
         dataReady = "dataLoaded";
     }
+
+    public void OpenAudio(object audioName, object audioLink)
+    {
+        SharedDataService.AudioTitle = audioName.ToString();
+        SharedDataService.AudioLink = audioLink.ToString(); 
+        NavigationManager.NavigateTo("/audio");
+    }
+    
 }

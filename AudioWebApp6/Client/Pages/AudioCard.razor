@@ -1,7 +1,7 @@
 ﻿
 <MudContainer Class="d-flex flex-grow-1 gap-1" Style="height:100px;">
     <MudCard Class="flex-auto d-flex py-4" Width="auto"  Elevation="0">
-        @AudioTitle
+        @AudioTitle : @_playing
     </MudCard>
     <MudCard Class="flex-none d-flex py-4" Width="50px"  Elevation="0">
         <MudToggleIconButton
@@ -14,6 +14,7 @@
             ToggledTitle="On"
             ToggledSize="@Size.Large" />
     </MudCard>
+    
 </MudContainer>
 
 @code {
