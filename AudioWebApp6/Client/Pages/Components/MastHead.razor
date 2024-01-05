@@ -1,10 +1,40 @@
-﻿<div> 
-    <img src="./images/Asset4.png" alt="background"/>
-    <p>@headerText</p>
+﻿@inject NavigationManager NavigationManager
+<div> 
+    <img src="./images/Asset4.png" alt="background"/>  
+        <p>@CurrentPageTitle</p>
 </div>
 
 
 @code {
-    [Parameter]
-    public string headerText { get; set; } = "HeaderText";
+    public string? CurrentPageTitle ;
+    protected override void OnInitialized()
+    {
+        NavigationManager.LocationChanged += HandleLocationChanged;
+        UpdatePageTitle(NavigationManager.Uri);
+
+    }
+    private void HandleLocationChanged(object sender, LocationChangedEventArgs e)
+    {
+        UpdatePageTitle(e.Location);
+    }
+    private void UpdatePageTitle(string uri)
+    {
+        CurrentPageTitle = GetPageTitleFromUri(uri);
+        Console.WriteLine(CurrentPageTitle);
+        StateHasChanged();
+    }
+    private string GetPageTitleFromUri(string uri)
+    {
+        var segments = uri.Split('/');
+        string? substring = segments.LastOrDefault();
+        if(substring == null || substring == "")
+        {
+            return string.Empty;
+        }
+        else
+        {
+            return substring.Substring(0, 1).ToUpper() + substring.Substring(1);
+        }
+        
+    }
 }

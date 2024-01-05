@@ -1,16 +1,15 @@
 ﻿div{
     position:relative;
     background-color:transparent;
-    height: 59px;
-    /*margin:auto;*/
-    text-align:center;  
+    height: 60px;
+    align-content:center;  
 }
 
 div p {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 10%;
     transform: translate(-50%,-50%);
-    font-size: 36px;
+    font-size: 32px;
     color:#5F76A6; 
 }
