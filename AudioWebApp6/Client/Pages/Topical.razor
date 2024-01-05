@@ -46,8 +46,8 @@
     public void OpenAudio(object audioName, object audioLink)
     {
         SharedDataService.AudioTitle = audioName.ToString();
-        SharedDataService.AudioLink = audioLink.ToString(); 
-        NavigationManager.NavigateTo("/audio");
+        SharedDataService.AudioLink = audioLink.ToString();
+        SharedDataService.TogglePlayer();
     }
     
 }
