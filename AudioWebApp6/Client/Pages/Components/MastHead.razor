@@ -1,16 +1,18 @@
 ﻿@inject NavigationManager NavigationManager
-<div> 
-    <img src="./images/Asset4.png" alt="background"/>  
-        <p>@CurrentPageTitle</p>
-</div>
 
+<MudPaper Class="d-flex " Elevation="0" Height="100%">
+    <MudImage Class="z-10" Fluid="true"  Src="./images/Asset4.png" Alt="beautiful abstract background"/>
+    <MudText Typo="Typo.body1" Class="z-20 mast-text"
+             Style="position:absolute; padding-top:1%; font-size:30px; color: #5F76A6">@CurrentPageTitle</MudText>
+</MudPaper>
 
-@code {
+    @code {
     public string? CurrentPageTitle ;
     protected override void OnInitialized()
     {
         NavigationManager.LocationChanged += HandleLocationChanged;
         UpdatePageTitle(NavigationManager.Uri);
+        
 
     }
     private void HandleLocationChanged(object sender, LocationChangedEventArgs e)
@@ -35,6 +37,6 @@
         {
             return substring.Substring(0, 1).ToUpper() + substring.Substring(1);
         }
-        
+
     }
 }

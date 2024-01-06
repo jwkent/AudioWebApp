@@ -1,15 +1,7 @@
-﻿div{
-    position:relative;
-    background-color:transparent;
-    height: 60px;
-    align-content:center;  
-}
-
-div p {
+﻿
+::deep p.mud-typography.mud-typography-body1.z-20.mast-text {
     position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-50%,-50%);
-    font-size: 32px;
-    color:#5F76A6; 
+    padding-top: 1%;
+    font-size: 30px;
+    color: #5F76A6;
 }
