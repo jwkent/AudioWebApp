@@ -8,6 +8,7 @@
 }
 ::deep .mud-toolbar{
     background-color: #D8E6FE;
+    padding-right: 0px;
 }
 ::deep .mud-icon-root{
     color: #0840AA;

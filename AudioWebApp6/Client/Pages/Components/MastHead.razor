@@ -1,10 +1,13 @@
 ﻿@inject NavigationManager NavigationManager
 
-<MudPaper Class="d-flex " Elevation="0" Height="100%">
-    <MudImage Class="z-10" Fluid="true"  Src="./images/Asset4.png" Alt="beautiful abstract background"/>
-    <MudText Typo="Typo.body1" Class="z-20 mast-text"
-             Style="position:absolute; padding-top:1%; font-size:30px; color: #5F76A6">@CurrentPageTitle</MudText>
+<MudPaper Class="d-flex" Elevation="0" Height="100%" Width="50%" Style=" justify-content:right;">
+    <span Class="masthead-text"> @CurrentPageTitle </span>
 </MudPaper>
+<MudPaper Class="d-flex" Elevation="0" Height="100%" Width="50%" Style="justify-content:right; ">
+    <MudImage Src="./images/Asset6@4x.png" Fluid="true" Alt="beautiful abstract background"/> 
+</MudPaper>
+
+
 
     @code {
     public string? CurrentPageTitle ;

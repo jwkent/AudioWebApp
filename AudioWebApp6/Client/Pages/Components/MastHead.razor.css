@@ -1,7 +1,8 @@
 ﻿
-::deep p.mud-typography.mud-typography-body1.z-20.mast-text {
-    position: absolute;
-    padding-top: 1%;
+span.masthead-text {
+    font-family: 'Segoe UI',Tahoma,Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 2%;
     font-size: 30px;
     color: #5F76A6;
+    z-index: 20;
 }
