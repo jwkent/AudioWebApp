@@ -27,7 +27,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        jsModule = await jsRuntime.InvokeAsync<IJSObjectReference>("import", "../javascript/PremiumAudioPlayer.js");
+        jsModule = await jsRuntime.InvokeAsync<IJSObjectReference>("import", "../javascript/BasicAudioPlayer.js");
     }
     public async Task AudioPlay()
     {
