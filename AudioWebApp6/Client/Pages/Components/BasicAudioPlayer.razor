@@ -1,11 +1,11 @@
 ﻿
-<MudCardContent>
+<MudCardContent Style="padding:0px;">
     <MudContainer>
-        <MudPaper Elevation="0" Class="d-flex justify-center align-center" Style="height:40px; color:darkgray">
-            <MudText Typo="Typo.h5">@AudioTitle</MudText>
-        </MudPaper>
-        <MudPaper Elevation="0" Class="d-flex justify-center align-center mt-4" Style="height:100px;  color:gray">
-            <MudIcon Style="height:100px; width:100px " Icon="@playStatusIcon" @onclick="@AudioPlay" />
+        @* <MudPaper Elevation="0" Class="d-flex justify-center align-center" Style="height:14px; color:darkgray">
+            <MudText Style="font-size:14px; color:darkgray;">@AudioTitle</MudText>
+        </MudPaper> *@
+        <MudPaper Elevation="0" Class="d-flex justify-center align-center mt-1" >
+            <MudIcon Style="height:50px; width:50px; color:#0840AA; " Icon="@playStatusIcon" @onclick="@AudioPlay" />
         </MudPaper>
     </MudContainer>
 </MudCardContent>
@@ -17,8 +17,8 @@
     public IJSRuntime jsRuntime { get; set; }
     private IJSObjectReference jsModule;
 
-    [Parameter]
-    public string AudioTitle { get; set; } = "Audio Title (default)";
+    // [Parameter]
+    // public string AudioTitle { get; set; } = "Audio Title (default)";
     [Parameter]
     public string AudioSource { get; set; } = "";
 
