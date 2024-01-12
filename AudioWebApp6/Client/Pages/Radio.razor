@@ -5,9 +5,9 @@
 <div>
 <MudCardContent >
 
-    <AudioCard AudioTitle="Test title" RadioPlayingEventChanged="PlayRadio"
-        RadioPlaying=_radioPlaying 
-        @ref="AudioCardControl" />
+    <MudPaper>
+        <MudText Typo="Typo.h6" @onclick="(e) => OpenAudio()">Listen</MudText>
+    </MudPaper>
 
 <MudPaper Class="d-flex pa-4 justify-center" Elevation="0">
     
@@ -16,18 +16,6 @@
                        OnClick="@((e) => OpenDialog())">Call In </MudButton>
 </MudPaper>
  
-
-@if (_radioPlaying == true)
-{
-    <div class="stickyfooter" >
-        <div style="width:100%; text-align:right; align-content:center; padding-right:50px; padding-top:10px;">
-            <button @onclick="CloseAudioPlayer" style="color:gray;">Close</button>
-        </div>
-        <div style="width:100%; height:80px; align-content:center;">
-            <a style="color:lightblue">premi</a>
-        </div>
-    </div>
-}
 </MudCardContent>
 </div>
 

@@ -1,22 +1,10 @@
-﻿using MudBlazor;
+﻿using AudioWebApp.Client.Services;
+using MudBlazor;
 
 namespace AudioWebApp.Client.Pages
 {
     public partial class Radio : Microsoft.AspNetCore.Components.ComponentBase
     {
-        AudioCard? AudioCardControl;
-        public void CloseAudioPlayer()
-        {
-            AudioCardControl?.ClosePlayer();
-        }
-        public string cardContent { get; set; } = "Card Content Title";
-        private bool _radioPlaying { get; set; }
-        
-        private void PlayRadio()
-        {
-            _radioPlaying = !_radioPlaying;   
-        }
-        
         DialogOptions dialogOptions = new DialogOptions()
         { DisableBackdropClick = true,
             MaxWidth = MaxWidth.Medium,
@@ -24,9 +12,17 @@ namespace AudioWebApp.Client.Pages
         };
         private void OpenDialog()
         {
-            if (_radioPlaying == true) { CloseAudioPlayer(); };
-
             DialogService.Show<CallDialog>("Call Into Radio Program",dialogOptions);
+        }
+        
+        // Change when actual values are being used. 
+        // Alter method click event on frontend UI
+        // public void OpenAudio(object audioName, object audioLink){}
+        public void OpenAudio()
+        {
+            //SharedDataService.AudioLink = @fakeAudioLink;
+            //SharedDataService.AudioTitle = @fakeAudioName;
+            //SharedDataService.TogglePlayer();
         }
     }
 }
