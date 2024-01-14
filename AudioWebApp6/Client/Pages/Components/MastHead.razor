@@ -1,10 +1,45 @@
-﻿<div> 
-    <img src="./images/Asset4.png" alt="background"/>
-    <p>@headerText</p>
-</div>
+﻿@inject NavigationManager NavigationManager
+
+<MudPaper Class="d-flex" Elevation="0" Height="100%" Width="50%" Style=" justify-content:right;">
+    <span Class="masthead-text"> @CurrentPageTitle </span>
+</MudPaper>
+<MudPaper Class="d-flex" Elevation="0" Height="100%" Width="50%" Style="justify-content:right; ">
+    <MudImage Src="./images/Asset6@4x.png" Fluid="true" Alt="beautiful abstract background"/> 
+</MudPaper>
 
 
-@code {
-    [Parameter]
-    public string headerText { get; set; } = "HeaderText";
+
+    @code {
+    public string? CurrentPageTitle ;
+    protected override void OnInitialized()
+    {
+        NavigationManager.LocationChanged += HandleLocationChanged;
+        UpdatePageTitle(NavigationManager.Uri);
+        
+
+    }
+    private void HandleLocationChanged(object sender, LocationChangedEventArgs e)
+    {
+        UpdatePageTitle(e.Location);
+    }
+    private void UpdatePageTitle(string uri)
+    {
+        CurrentPageTitle = GetPageTitleFromUri(uri);
+        Console.WriteLine(CurrentPageTitle);
+        StateHasChanged();
+    }
+    private string GetPageTitleFromUri(string uri)
+    {
+        var segments = uri.Split('/');
+        string? substring = segments.LastOrDefault();
+        if(substring == null || substring == "")
+        {
+            return string.Empty;
+        }
+        else
+        {
+            return substring.Substring(0, 1).ToUpper() + substring.Substring(1);
+        }
+
+    }
 }

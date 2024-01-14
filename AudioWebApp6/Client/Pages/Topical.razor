@@ -1,34 +1,37 @@
 ﻿@page "/topical"
 @using AudioWebApp.Client.Services
-
+@inject NavigationManager NavigationManager
+@inject SharedDataService SharedDataService
 @inject ApiService apiService
 
 <PageTitle>Topical</PageTitle>
-<MastHead headerText="Topical"/>
-
-@if (dataReady == null)
-{
-    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
-}
-else
-{
-    <MudPaper Width="100%" Style="background-color: transparent;">
-        <MudList Clickable="true">
-            @foreach (var topic in apiService.Topics)
-            {
-                <MudListItem Text="@topic.Name">
-                    <NestedList>
-                        @foreach (var msg in topic.Messages)
-                        {
-                            <MudListItem Text="@msg.Name"/>
-                        }
-                    </NestedList>
-                </MudListItem>
-            }
-        </MudList>
-    </MudPaper>
-}
-
+<div>
+    <MudCardContent>
+        
+        @if (dataReady == null)
+        {
+            <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+        }
+        else
+        {
+            <MudPaper>
+                <MudList Clickable="true">
+                    @foreach (var topic in apiService.Topics)
+                    {
+                        <MudListItem Text="@topic.Name">
+                            <NestedList>
+                                @foreach (var msg in topic.Messages)
+                                {
+                                    <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link)" />
+                                }
+                            </NestedList>
+                        </MudListItem>
+                    }
+                </MudList>
+            </MudPaper>  
+        }
+        </MudCardContent>
+</div>
 @code
 {
     string? dataReady;
@@ -38,4 +41,12 @@ else
         await apiService.LoadData();
         dataReady = "dataLoaded";
     }
+
+    public void OpenAudio(object audioName, object audioLink)
+    {
+        SharedDataService.AudioTitle = audioName.ToString();
+        SharedDataService.AudioLink = audioLink.ToString();
+        SharedDataService.TogglePlayer();
+    }
+    
 }

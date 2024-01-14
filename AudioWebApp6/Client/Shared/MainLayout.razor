@@ -1,5 +1,6 @@
-﻿@inherits LayoutComponentBase
-
+﻿@using AudioWebApp.Client.Services
+@inherits LayoutComponentBase
+@inject SharedDataService SharedDataService
 <MudThemeProvider />
 <MudDialogProvider />
 <MudSnackbarProvider />
@@ -7,14 +8,12 @@
 <MudLayout>
     <div>
     <MudAppBar Elevation="0">
-        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
-
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" 
+        Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+            <MastHead />
     </MudAppBar>
     
-    <MudDrawer @bind-Open="_drawerOpen" Elevation="1">
-        <MudDrawerHeader>
-            <MudText Typo="Typo.h6">Audio Web App</MudText>
-        </MudDrawerHeader>
+    <MudDrawer @bind-Open="_drawerOpen" Elevation="1" ClipMode="DrawerClipMode.Always">
         
         <NavMenu />
         
@@ -23,17 +22,67 @@
     <MudMainContent>
         <MudContainer MaxWidth="MaxWidth.ExtraLarge" Class="ma-0 pa-0">
                     @Body
+                @if (playerOpen == true)
+                {
+                    <div class="stickyplayer">
+                        <div class="d-flex flex-grow-1 gap-0">
+                            <MudPaper Class="flex-auto d-flex py-0 justify-center align-center"  Width="100%" Elevation="0">
+                                <MudText Style="font-size:15px; padding-top:4px; color:#587abc">@audioTitle</MudText>
+                            </MudPaper>
+                        </div>   
+                        <div class="d-flex flex-grow-1 gap-0">
+                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-start;" Width="50px" Elevation="0">
+                                <MudButton  Style="padding:0px; padding-top:4px; color:#9396A1" OnClick="TogglePlayer">Close</MudButton>
+                            </MudPaper>
+                            <MudPaper Class="flex-1 d-flex py-0"  Elevation="0">
+                                <BasicAudioPlayer AudioSource="@audioSource"  />
+                            </MudPaper> 
+                            <MudPaper Class="flex-none d-flex py-0 " Width="50px" Elevation="0"/>
+                        </div>
+                    </div>
+                }
         </MudContainer>
-       
-    </MudMainContent>  
+    </MudMainContent>
     </div>
 </MudLayout>
 
 @code {
+    
+    string? audioTitle;
+    string? audioSource;
+    private string audioLinkPrefix = "https://www.thenarrowpath.com/";
+    bool playerOpen = false;
     bool _drawerOpen = true;
 
     void DrawerToggle()
     {
         _drawerOpen = !_drawerOpen;
     }
+    void TogglePlayer()
+    {
+        playerOpen = !playerOpen;
+    }
+    protected override void OnInitialized()
+    {
+        SharedDataService.OnPlayerToggle += HandlePlayerToggle;
+    }
+    private void HandlePlayerToggle()
+    {
+        TogglePlayer();
+
+        if (!playerOpen)
+        {
+            audioTitle = "";
+            audioSource = "";
+        }
+        else
+        {
+            audioTitle = SharedDataService.AudioTitle;
+            audioSource = audioLinkPrefix + SharedDataService.AudioLink;
+        }
+
+        StateHasChanged();
+    }
+    
+
 }
