@@ -29,6 +29,8 @@ public class ApiService
 
     public async Task LoadData()
     {
+        if (Servers?.Count > 0) return;
+
         // Continue with is used to synchronously load XML data into data model, if necessary.
         await LoadXmlDataAsync()
             .ContinueWith((arg) =>
