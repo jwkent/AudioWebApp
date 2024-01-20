@@ -42,5 +42,12 @@
 
 	<ItemGroup>
 	  <_ContentIncludedByDefault Remove="Pages\Components\AudioCard.razor" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Pages\Components\TnpAudioPlayer.razor">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
 	</ItemGroup>
 </Project>

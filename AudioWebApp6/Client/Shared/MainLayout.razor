@@ -26,19 +26,23 @@
                 {
                     <div class="stickyplayer">
                         <div class="d-flex flex-grow-1 gap-0">
-                            <MudPaper Class="flex-auto d-flex py-0 justify-center align-center"  Width="100%" Elevation="0">
-                                <MudText Style="font-size:15px; padding-top:4px; color:#587abc">@audioTitle</MudText>
-                            </MudPaper>
-                        </div>   
-                        <div class="d-flex flex-grow-1 gap-0">
                             <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-start;" Width="50px" Elevation="0">
-                                <MudButton  Style="padding:0px; padding-top:4px; color:#9396A1" OnClick="TogglePlayer">Close</MudButton>
+                                <MudButton Style="padding:0px;color:#9396A1" OnClick="TogglePlayer">
+                                    <MudIcon Icon="@Icons.Material.Filled.Close" Title="close player"></MudIcon>
+                                </MudButton>
                             </MudPaper>
-                            <MudPaper Class="flex-1 d-flex py-0"  Elevation="0">
-                                <BasicAudioPlayer AudioSource="@audioSource"  />
-                            </MudPaper> 
-                            <MudPaper Class="flex-none d-flex py-0 " Width="50px" Elevation="0"/>
                         </div>
+                        <div class="d-flex flex-grow-1 gap-0">
+                            <MudPaper Class="flex-auto d-flex py-0 justify-center align-center"  Width="100%" Elevation="0">
+                                <MudText Style="font-size:15px; padding-top:2px; color:#587abc">@audioTitle</MudText>
+                            </MudPaper>
+                        </div>  
+                        <div class="flex-grow-1 gap-0">
+                            <MudPaper Class="flex-auto py-0 justify-center"  Width="100%" Elevation="0">
+                                <TnpAudioPlayer AudioSource="@audioSource"></TnpAudioPlayer>
+                            </MudPaper>
+                        </div>
+                            
                     </div>
                 }
         </MudContainer>
