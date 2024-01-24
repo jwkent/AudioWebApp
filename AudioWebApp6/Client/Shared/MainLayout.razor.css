@@ -10,8 +10,12 @@
     background-color: #D8E6FE;
     padding-right: 0px;
 }
-::deep .mud-icon-root{
-    color: #0840AA;
+::deep .mud-icon-root {
+    color: #5f76a6;
+}
+::deep .mud-typography {
+    font-size: 16px;
+    color: #587abc
 }
 ::deep .mud-main-content {
     background: rgb(216,230,254);
@@ -21,9 +25,9 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 180px;
-    background-color: rgba(0,0,0,0.86);
-    box-shadow: 0px -4px 3px 2px #0840AA;
+    height: 140px;
+    background-color: rgb(213 220 236);
+    box-shadow: 0px -4px 3px 0.5px #8797bb;
 }
 ::deep .mud-paper{
     background-color:transparent;
