@@ -4,12 +4,6 @@
 
 <div>
 <MudCardContent Height="100vh">
-        <MudPaper Class="d-flex pa-4 justify-center" Elevation="0">
-            <MudButton Variant="Variant.Filled"
-                       StartIcon="@Icons.Material.Filled.Phone"
-                       OnClick="@((e) => OpenDialog())">Call In </MudButton>
-        </MudPaper>
-    
     <MudPaper Class="d-flex justify-center align-center py-0 px-1" Elevation="0" Height="6vh">
         <p>The Narrow Path Live Radio Program is BroadCast</p> 
     </MudPaper>
@@ -21,28 +15,12 @@
                 <MudButton Style="color:#9396A1;" Href="https://truetalk800.com/listenlive" Target="_blank">Live</MudButton>
                 <MudButton Style="color:#9396A1;" Href="https://www.thenarrowpath.com/radio_archive.php" Target="_blank">Archive</MudButton>
             </MudButtonGroup>
-        </MudPaper>
-        <MudPaper Class="d-flex justify-center align-center py-0" Elevation="0" Height="12vh">
-            <p class="lead"> Latest Pre-Aired Show</p>
-        </MudPaper>
-        @if (dataReady == null)
-        {
-            <MudPaper Class="d-flex justify-center align-center" Elevation="0" Height="100vh">
-                <MudProgressCircular Style="color:#5F76A6; " Indeterminate="true" />
-            </MudPaper>
-        } 
-        else
-        {
-            <MudPaper Elevation="0" Height="100vh">
-                <MudList Clickable="true">
-                <MudListItem Text="@radioObject.Name" 
-                    @onclick="(e) => OpenAudio(radioObject.Name,radioObject.Source)" />
- 
-                </MudList>
-            </MudPaper>
-        }
+        </MudPaper>     
 </MudCardContent>
 </div>
+@code{
+
+}
 
     
 
