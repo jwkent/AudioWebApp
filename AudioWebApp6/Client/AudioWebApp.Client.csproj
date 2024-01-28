@@ -21,6 +21,12 @@
 	  <Content Update="wwwroot\favicon.ico">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="wwwroot\icon-512.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Update="wwwroot\IconLt.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="wwwroot\images\Asset6@2x.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>

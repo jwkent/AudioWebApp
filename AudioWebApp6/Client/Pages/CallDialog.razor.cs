@@ -8,6 +8,7 @@ namespace AudioWebApp.Client.Pages
         [CascadingParameter] MudDialogInstance MudDialog { get; set; }
 
         void Cancel() => MudDialog.Cancel();
-        private string telephoneNumber = "Tel:844-484-5737";
+        private string telephoneNumber = "Telephone: 844-484-5737";
+        private string telephoneNumberLink = "tel:8444845737";
     }
 }
