@@ -11,7 +11,7 @@
 }
 ::deep .mud-nested-list .mud-list-item {
     background: rgb(213,216,229);
-    background: linear-gradient(90deg, rgba(213,216,229,1) 0%, rgba(95,118,166,1) 80%);
+    background: linear-gradient(90deg, rgba(213,216,229,1) 0%, rgba(198 212 241) 80%);
 }
 ::deep .mud-icon-root.mud-svg-icon {
     color: #9396A1;
