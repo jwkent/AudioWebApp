@@ -1,5 +1,6 @@
 ﻿using AudioWebApp.Client.Models;
 using MudBlazor;
+using System.ComponentModel.Design;
 
 namespace AudioWebApp.Client.Services
 {
@@ -21,10 +22,22 @@ namespace AudioWebApp.Client.Services
             var serverLocation = servers.FirstOrDefault(id => id.Name == serverName);
             if (serverLocation != null)
             {
-                serverPath = serverLocation.Location;
+                serverPath = ReplaceHttpProtocolWithSecureProtocol(serverLocation.Location);
             }
 
             return serverPath;
+        }
+
+        private string ReplaceHttpProtocolWithSecureProtocol(string url)
+        {
+            var secureUrl = url;
+
+            if (url.StartsWith("http://"))
+            {
+                secureUrl = "https" + url.Substring(4);
+            }
+
+            return secureUrl;
         }
     }
 }
