@@ -1,4 +1,5 @@
 ﻿@using AudioWebApp.Client.Services
+@using System.Text.RegularExpressions
 @inherits LayoutComponentBase
 @inject SharedDataService SharedDataService
 <MudThemeProvider />
@@ -39,7 +40,7 @@
                         </div>  
                         <div class="d-flex flex-grow-1 gap-0">
                             <MudPaper Class="flex-auto d-flex py-3 justify-center align-center"  Width="100%" Elevation="0">
-                                <audio src="@audioSource" controls autoplay></audio>
+                                <audio id="audioPlayer"src="@audioSource" controls autoplay title="@audioTitle" artist="@artist" category="@category"></audio>
                             </MudPaper>
                         </div>
                     </div>
@@ -50,11 +51,14 @@
 </MudLayout>
 
 @code {
-
+    [Inject]
+    public IJSRuntime JSRuntime { get; set; }
     string? audioTitle;
     string? audioSource;
     bool playerOpen = false;
     bool _drawerOpen = true;
+    string artist = "The Narrow Path: Steve Gregg";
+    string category = "";
 
     void DrawerToggle()
     {
@@ -68,13 +72,27 @@
     {
         SharedDataService.OnPlayerToggle += HandlePlayerToggle;
     }
-    private void HandlePlayerToggle()
+    private async void HandlePlayerToggle()
     {
         playerOpen = true;
         audioTitle = SharedDataService.AudioTitle;
         audioSource = SharedDataService.AudioLink;
+        await JSRuntime.InvokeVoidAsync("getStartTime", audioSource);
+        category = GetCategory(audioSource);
         StateHasChanged();
     }
-    
+    private string GetCategory(string text)
+    {
+        Regex regex = new Regex(@"/([^/]+)/[^/]+$");
+        Match match = regex.Match(text);
+        if (match.Success)
+        {
+            return char.ToUpper(match.Groups[1].Value[0]) + match.Groups[1].Value.Substring(1);
+        }
+        else
+        {
+            return "NA";
+        }
+    }
 
 }
