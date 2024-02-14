@@ -1,0 +1,30 @@
+﻿::deep .mud-list-item {
+    background: rgb(216,230,254);
+    background: linear-gradient(90deg, rgba(216,230,254,1) 51%, rgba(213,216,229,1) 100%);
+}
+
+::deep .mud-list {
+    padding-top: 0px;
+}
+
+::deep .mud-paper {
+    width: 100%;
+    background-color: transparent;
+}
+
+::deep .mud-nested-list .mud-list-item {
+    background: rgba(225, 235, 255);
+    
+}
+
+::deep .mud-icon-root.mud-svg-icon {
+    color: #9396A1;
+}
+
+::deep .mud-card-content {
+    background-color: transparent;
+    height: 100%;
+    width: auto;
+    padding: 0px;
+    overflow: hidden;
+}

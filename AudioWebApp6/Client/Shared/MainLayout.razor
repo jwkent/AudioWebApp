@@ -2,6 +2,7 @@
 @using System.Text.RegularExpressions
 @inherits LayoutComponentBase
 @inject SharedDataService SharedDataService
+@inject FavoritesService FavoriteService
 <MudThemeProvider />
 <MudDialogProvider />
 <MudSnackbarProvider />
@@ -30,6 +31,11 @@
                             <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-start;" Width="50px" Elevation="0">
                                 <MudButton Style=" padding:0px; color:#9396A1" OnClick="ClosePlayer">
                                     <MudIcon Icon="@Icons.Material.Filled.Close" Title="close player"></MudIcon>
+                                </MudButton>
+                            </MudPaper>
+                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="75px" Elevation="0">
+                                <MudButton Style=" padding:0px; color:#9396A1" OnClick="AddToFavorites">
+                                    <MudIcon  Icon="@Icons.Material.Filled.FavoriteBorder"/>
                                 </MudButton>
                             </MudPaper>
                         </div>
@@ -94,5 +100,9 @@
             return "NA";
         }
     }
-
+    public async Task AddToFavorites()
+    {
+        await FavoriteService.AddToFavorites(audioTitle, audioSource);
+        // use the Mudsnack bar to alert it's been added.
+    }
 }

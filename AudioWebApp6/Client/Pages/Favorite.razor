@@ -1,0 +1,63 @@
+﻿@page "/favorite"
+@using AudioWebApp.Client.Services
+@inject FavoritesService favoritesService
+@inject SharedDataService sharedDataService
+
+<div>
+    <MudCardContent>
+        @if(dataReady == null)
+        {
+            <MudPaper Class="d-flex justify-center align-center" Elevation="0" Height="100vh">
+                <MudProgressCircular Style="color:#5F76A6; " Indeterminate="true" />
+            </MudPaper>
+        }
+        else
+        {
+            <MudPaper>
+                <MudList Clickable="true">
+                    @foreach(var fav in favoritesService.Favorites)
+                    {
+                        <MudGrid Spacing="0" Justify="Justify.FlexStart">
+                            <MudItem xs="1" Elevation="1" @onclick="(e) => RemoveFavorite(fav.Name)">
+                                <MudIcon  Icon="@Icons.Material.Filled.Delete" />
+                            </MudItem>
+                            <MudItem xs="11">
+                                <MudPaper Class="d-flex align-center justify-start mud-width-full py-2"
+                                   Elevation="0"  @onclick="(e) => OpenAudio(fav.Name, fav.Source)" >
+                                    <div>@fav.Name</div>
+                                </MudPaper>
+                            </MudItem>
+                            
+                        </MudGrid>
+                       
+                        
+                            
+                        
+                    }
+                </MudList>
+            </MudPaper>
+        }
+    </MudCardContent>
+</div>
+
+@code {
+    string? dataReady;
+    protected override async Task OnInitializedAsync()
+    {
+        await favoritesService.GetAllFavorites();
+        dataReady = "dataLoaded";
+    }
+    public void OpenAudio(string audioName,string audioLink)
+    {
+        //There may be an issue with the server path value
+        // which is built into the audio link from the original
+        // data???
+        sharedDataService.AudioTitle = audioName;
+        sharedDataService.AudioLink = audioLink;
+        sharedDataService.TogglePlayer();
+    }
+    public async Task RemoveFavorite(string key)
+    {
+        await favoritesService.RemoveFavorite(key);
+    }
+}
