@@ -4,37 +4,27 @@
 @inject SharedDataService sharedDataService
 
 <div>
-    <MudCardContent>
+    <MudCardContent >
         @if(dataReady == null)
         {
             <MudPaper Class="d-flex justify-center align-center" Elevation="0" Height="100vh">
-                <MudProgressCircular Style="color:#5F76A6; " Indeterminate="true" />
+                <MudProgressCircular Style="color:#0840aa; " Indeterminate="true" />
             </MudPaper>
         }
         else
         {
             <MudPaper>
-                <MudList Clickable="true">
-                    @foreach(var fav in favoritesService.Favorites)
-                    {
-                        <MudGrid Spacing="0" Justify="Justify.FlexStart">
-                            <MudItem xs="1" Elevation="1" @onclick="(e) => RemoveFavorite(fav.Name)">
-                                <MudIcon  Icon="@Icons.Material.Filled.Delete" />
-                            </MudItem>
-                            <MudItem xs="11">
-                                <MudPaper Class="d-flex align-center justify-start mud-width-full py-2"
-                                   Elevation="0"  @onclick="(e) => OpenAudio(fav.Name, fav.Source)" >
-                                    <div>@fav.Name</div>
-                                </MudPaper>
-                            </MudItem>
-                            
-                        </MudGrid>
-                       
-                        
-                            
-                        
-                    }
-                </MudList>
+                @foreach(var fav in favoritesService.Favorites)
+                {
+                    <MudStack Row>
+                        <MudButton @onclick="(e) => RemoveFavorite(fav.Name)">
+                            <MudIcon style="color:#0840aa" Icon="@Icons.Material.Filled.Delete" Title="close player"></MudIcon>
+                        </MudButton>
+                        <MudButton style="color:#9396A1" @onclick="(e) => OpenAudio(fav.Name, fav.Source)">
+                            <MudText style="font-size:16px;">@fav.Name</MudText>
+                        </MudButton>
+                    </MudStack> 
+                }
             </MudPaper>
         }
     </MudCardContent>
