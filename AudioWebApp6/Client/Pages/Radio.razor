@@ -2,29 +2,38 @@
 @using System.Threading.Channels
 @inject IDialogService DialogService
 
+
 <div>
-<MudCardContent >
-
-    <MudPaper>
-        <MudText Typo="Typo.h6" @onclick="(e) => OpenAudio()">Listen</MudText>
+<MudCardContent Height="100vh">
+    <MudPaper Class="d-flex justify-center align-center pt-4 px-1" Elevation="0" Height="6vh">
+        <p class="lead">The Narrow Path is BroadCast Live</p> 
     </MudPaper>
-
-<MudPaper Class="d-flex pa-4 justify-center" Elevation="0">
-    
-    <MudButton Variant="Variant.Filled"
-                       StartIcon="@Icons.Material.Filled.Phone"
-                       OnClick="@((e) => OpenDialog())">Call In </MudButton>
-</MudPaper>
- 
+    <MudPaper Class="d-flex justify-center align-center py-0 px-1 pb-4" Elevation="0" Height="6vh">
+        <p> Weekdays from 2:00 P.M. - 3:00 P.M. PST</p>
+    </MudPaper>
+        <MudPaper Class="d-flex justify-center align-center py-0 pt-4" Elevation="0" Height="20vh">
+            <MudButton Variant="Variant.Filled" Class="rounded-circle pa-7" style="color:green;" OnClick="@((e) => OpenDialog())">
+                <MudIcon Icon="@Icons.Material.Filled.Phone" Size="Size.Large" ></MudIcon>
+            </MudButton>
+        </MudPaper>
+    <MudPaper Class="d-flex justify-center align-center py-1 pt-2" Elevation="0" Height="15vh">
+        <MudButtonGroup Size="Size.Large" Variant="Variant.Filled">
+                <MudButton Style="color:#d8e6fe;" Href="https://podcasts.apple.com/us/podcast/the-narrow-path-radio-program-1-hour/id171641936" Target="_blank">Podcast</MudButton>
+                <MudButton Style="color:#d8e6fe;" Href="https://22963.live.streamtheworld.com/KPDQAM_SC" Target="_blank">Live</MudButton>
+        </MudButtonGroup>
+    </MudPaper>  
+    <MudPaper Height="100vh" Elevation="0"> </MudPaper>
 </MudCardContent>
 </div>
+@code{
 
-    
-
-
-
-
-
-
-
-
+    DialogOptions dialogOptions = new DialogOptions()
+        {
+            DisableBackdropClick = true,
+            MaxWidth = MaxWidth.Medium,
+            FullWidth = true
+        }; 
+    private void OpenDialog(){
+        DialogService.Show<CallDialog>("Call into radio program", dialogOptions);
+    }
+}

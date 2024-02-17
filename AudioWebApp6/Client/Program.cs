@@ -12,6 +12,7 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 builder.Services.AddMudServices();
 builder.Services.AddScoped<ApiService>();
 builder.Services.AddSingleton<SharedDataService>();
+builder.Services.AddScoped<FavoritesService>();
 
 builder.Services.AddMudBlazorDialog();
 

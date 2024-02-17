@@ -2,25 +2,27 @@
     background-color: transparent;
 }
 ::deep .mud-button {
-    color: #D8E6FE;
-    background-color: #5F76A6;
+    background-color: #5a912e;
 }
 ::deep .mud-icon-root{
     color:#D8E6FE !important;
 }
-::deep div .stickyfooter{
-    position: fixed;
-    bottom:0;
-    width:100%;
-    height:100px;
-    background-color: rgba(0,0,0,0.86);
-    z-index: 90;
+::deep .mud-list-item {
+    background: rgb(216,230,254);
+    background: linear-gradient(90deg, rgba(216,230,254,1) 51%, rgba(213,216,229,1) 100%);
 }
-::deep .mud-card-content{
-    background-color: transparent;
-    height:100%;
-    width:auto; 
-    padding:0px;
-    overflow:hidden;
+::deep .mud-list {
+    padding-top: 0px;
 }
+::deep p {
+    color: #D8E6FE;
+    font-size: 14px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::deep p.lead {
+    color: #D5D8E5;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 

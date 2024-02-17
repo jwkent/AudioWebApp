@@ -3,14 +3,54 @@
     <MudNavMenu Bordered="true">
         <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home"  >Home</MudNavLink>
         <MudNavLink Href="radio" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Radio" >Radio</MudNavLink>
-        <MudNavLink Href="topical" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Topic" >Topical</MudNavLink>
-        <MudNavLink Href="verse" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.BookOnline" >Verse by Verse</MudNavLink>
+        <MudNavLink Href="topical" Match="NavLinkMatch.Prefix" Icon="@topicalIcon">Topical</MudNavLink>
+        <MudNavLink Href="verse" Match="NavLinkMatch.Prefix" Icon="@vbvIcon" >Verse by Verse</MudNavLink>
+        <MudNavLink Href="favorite" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Favorite">Favorite</MudNavLink>
         <MudNavGroup Title="Extras" Expanded="false" >
             <MudNavLink Href="https://www.youtube.com/channel/UCxjboKtWGPrVVfzCfoMac7w" Icon="@Icons.Custom.Brands.YouTube" Target="_blank" >YouTube</MudNavLink>
             <MudNavLink Href="https://podcasts.apple.com/us/podcast/the-narrow-path-radio-program-1-hour/id171641936" Target="_blank" Icon="@Icons.Material.Filled.Podcasts" >Podcasts</MudNavLink>
-                <MudNavLink Href="https://opentheo.org/steve-gregg" Target="_blank" Icon="@Icons.Material.Filled.MenuBook">OpenTheo</MudNavLink>
-            <MudNavLink Href="https://www.thenarrowpath.com/" Icon="@Icons.Material.Filled.Circle" Target="_blank" >The Narrow Path</MudNavLink>
+                <MudNavLink Href="https://opentheo.org/steve-gregg" Target="_blank" Icon="@openTheosIcon">OpenTheo</MudNavLink>
+            <MudNavLink Href="https://www.thenarrowpath.com/" Icon="@tnpIcon" Target="_blank" >The Narrow Path</MudNavLink>
         </MudNavGroup>  
     </MudNavMenu>
 </MudPaper>
 </div>
+@code{
+
+    string tnpIcon = "<svg style=\"width:20px;height:20px\" viewBox=\"0 0 20 20\">" +
+    "<path d=\"M0,20.16V.24h20.16v19.92H0ZM9.08,19.12h2.03V7.17h4.42v-2.04h-4.49V1.28h-2v3.88h-4.4v2.08h4.44v11.87Z\"/>" +
+    "<path d=\"M20.16.24c-6.72,0-13.44,0-20.16,0C.08.16.16,0,.24,0c6.56-.01,13.12-.01,19.68,0,.08,0,.16.15.24.23Z\"/>"+
+    "<path d=\"M0,20.16h20.16c-.08.08-.16.23-.24.23-6.56.01-13.12.01-19.69,0-.08,0-.16-.15-.24-.23Z\"/>" + "</svg>";
+
+    string openTheosIcon = "<svg style=\"width:20px;height:20px\" viewBox=\"0 0 20 20\">" +
+    "<path d = \"M17.32,20H2.68c-1.48,0-2.68-1.2-2.68-2.68V2.68C0,1.2,1.2,0,2.68,0h14.63c1.48,0,2.68,1.2,2.68,2.68v14.63c0,1.48-1.2,2.68-2.68,2.68ZM10,2c-3.59,0-6.5,3.58-6.5,8s2.91,8,6.5,8,6.5-3.58,6.5-8S13.59,2,10,2Z\" style=\"stroke-width: 0px;\"/>" +
+    "<g>" +
+    "<ellipse cx = \"10\" cy=\"10\" rx=\"6\" ry=\"7.5\" style=\"stroke-width: 0px;\"/>" +
+    "<path d = \"M10,3c3.03,0,5.5,3.14,5.5,7s-2.47,7-5.5,7-5.5-3.14-5.5-7,2.47-7,5.5-7M10,2c-3.59,0-6.5,3.58-6.5,8s2.91,8,6.5,8,6.5-3.58,6.5-8S13.59,2,10,2h0Z\" style=\"fill: #fff; stroke-width: 0px;\"/>" +
+    "</g>" +
+    "</svg>";
+
+    string topicalIcon = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
+    "<svg id=\"Layer_7\" data-name=\"Layer 7\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 23.51 25\">" +
+      "<path d=\"M14.56,8.5c0,1.38-1.12,2.5-2.5,2.5s-2.5-1.12-2.5-2.5V2.5c0-1.38,1.12-2.5,2.5-2.5s2.5,1.12,2.5,2.5v6Z\" style=\"stroke-width: 0px;\"/>" +
+      "<path d=\"M17.02,7.5c0,2.76-2.24,5-5,5s-5-2.24-5-5\" style=\"fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 1.5px;\"/>" +
+      "<line x1=\"12.02\" y1=\"13\" x2=\"12.02\" y2=\"16\" style=\"fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 1.5px;\"/>" +
+      "<rect x=\"-.57\" y=\"18.59\" width=\"12\" height=\"2\" transform=\"translate(12.65 .59) rotate(36.29)\" style=\"stroke-width: 0px;\"/>" +
+      "<rect x=\"11.43\" y=\"21.59\" width=\"12\" height=\"2\" transform=\"translate(-3.22 2.9) rotate(-8.71)\" style=\"stroke-width: 0px;\"/>" +
+      "<circle cx=\"11.12\" cy=\"23.5\" r=\"1.5\" style=\"fill: #fff; stroke-width: 0px;\"/>" +
+      "<polygon points=\"3.12 14.5 6.32 14 10.95 17.71 18.35 16.79 21.62 19.17 11.12 20.5 3.12 14.5\" style=\"stroke: #000; stroke-miterlimit: 10;\"/>" +
+      "<line x1=\"12.02\" y1=\"17\" x2=\"12.02\" y2=\"19\" style=\"fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 1.5px;\"/>" +
+    "</svg>";
+
+    string vbvIcon = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
+    "<svg id=\"Layer_8\" data-name=\"Layer 8\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 21.46 19.1\">" +
+      "<path d=\"M10.38,4.8v12.97c0-2.83-7.14-4.15-7.14-4.15V.5c4.75,0,7.14,4.3,7.14,4.3Z\" style=\"fill: none; stroke: #0840AA; stroke-miterlimit: 10;\"/>" +
+      "<path d=\"M1.71,14.85l-.03-11.65v-1.1c.53,0,1.05.04,1.56.12v11.39\" style=\"fill: none; stroke: #0840AA; stroke-miterlimit: 10;\"/>" +
+      "<path d=\"M10.54,18.64c-.18-2.61-10.04-1.51-10.04-1.51V3.24c.68,0,.48-.13,1.18-.04l.03,11.65s8.64,1.05,8.83,3.79Z\" style=\"stroke: #0840AA; stroke-miterlimit: 10;\"/>" +
+      "<path d=\"M19.87.68v16.08s-4.39-1.46-9.5.37l.18-12.89s.56-3.55,9.33-3.55Z\" style=\"fill: none; stroke: #0840AA; stroke-miterlimit: 10;\"/>" +
+      "<path d=\"M20.96,2.14v15.71l-10.41.72c-.55-3.64,9.32-1.81,9.32-1.81V2.17c.36-.01.72-.02,1.1-.02Z\" style=\"stroke: #0840AA; stroke-miterlimit: 10;\"/>" +
+      "<line x1=\"14.75\" y1=\"3.61\" x2=\"14.75\" y2=\"14.2\" style=\"fill: none; stroke: #0840AA; stroke-miterlimit: 10;\"/>" +
+      "<line x1=\"12.19\" y1=\"5.8\" x2=\"17.31\" y2=\"5.8\" style=\"fill: none; stroke: #0840AA; stroke-miterlimit: 10;\"/>" +
+    "</svg>";
+
+}

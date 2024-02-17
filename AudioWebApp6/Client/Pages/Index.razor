@@ -2,18 +2,21 @@
 @inject NavigationManager NavigationManager
 <PageTitle>Index</PageTitle>
 <div>
- <MudCardContent  Style="background-color:transparent; height:100%; width:auto; padding:0px;">  
- <MudPaper Class="d-flex flex-grow-1 justify-center logo-image" Elevation="0" >
-    <img src="./images/Asset5.png" />
-</MudPaper>
- 
-<MudPaper Class="d-flex flex-grow-1 justify-center" Elevation="0">
-    <MudText Class="logo-text">@appTitle</MudText>
-</MudPaper>
-
-<MudPaper Class="d-flex flex-grow-1 justify-center sub-logo-text" Elevation="0">
-      <MudText Class="caption-text">Powered By The Narrow Path</MudText>
-</MudPaper>
+ <MudCardContent  Style="background-color:transparent; height:100vh; width:auto; padding:0px;">  
+     <MudPaper Class="d-flex flex-grow-1 justify-center logo-image" Elevation="0" >
+        <img src="./images/Asset5.png" />
+    </MudPaper>
+     
+    <MudPaper Class="d-flex flex-grow-1 justify-center" Elevation="0">
+        <MudText Class="logo-text">@appTitle</MudText>
+    </MudPaper>
+    
+    <MudPaper Class="d-flex flex-grow-1 justify-center" Elevation="0">
+          <p class="subText">@appCaption</p>    
+    </MudPaper>
+    <MudPaper Class="d-flex flex-grow-1 justify-center pt-2" Elevation="0">
+                <cite>@citation</cite>  
+    </MudPaper>
  </MudCardContent>
 </div>
 

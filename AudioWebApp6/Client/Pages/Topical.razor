@@ -1,7 +1,7 @@
 ﻿@page "/topical"
 @using AudioWebApp.Client.Services
 @inject NavigationManager NavigationManager
-@inject SharedDataService SharedDataService
+@inject SharedDataService sharedDataService
 @inject ApiService apiService
 
 <PageTitle>Topical</PageTitle>
@@ -10,7 +10,9 @@
         
         @if (dataReady == null)
         {
-            <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+            <MudPaper Class="d-flex justify-center align-center" Elevation="0" Height="100vh">
+                <MudProgressCircular Style="color:#5F76A6; " Indeterminate="true" />
+            </MudPaper>
         }
         else
         {
@@ -22,7 +24,7 @@
                             <NestedList>
                                 @foreach (var msg in topic.Messages)
                                 {
-                                    <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link)" />
+                                    <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server)" />
                                 }
                             </NestedList>
                         </MudListItem>
@@ -42,11 +44,13 @@
         dataReady = "dataLoaded";
     }
 
-    public void OpenAudio(object audioName, object audioLink)
+    public void OpenAudio(string audioName, string audioLink, string serverName)
     {
-        SharedDataService.AudioTitle = audioName.ToString();
-        SharedDataService.AudioLink = audioLink.ToString();
-        SharedDataService.TogglePlayer();
+        string serverPath = sharedDataService.GetServerPath(apiService.Servers, serverName);
+
+        sharedDataService.AudioTitle = audioName;
+        sharedDataService.AudioLink = Path.Combine(serverPath, audioLink);
+        sharedDataService.TogglePlayer();
     }
     
 }

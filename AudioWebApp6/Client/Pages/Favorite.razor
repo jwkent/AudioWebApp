@@ -1,0 +1,62 @@
+﻿@page "/favorite"
+@using AudioWebApp.Client.Services
+@inject ISnackbar Snackbar
+@inject FavoritesService favoritesService
+@inject SharedDataService sharedDataService
+
+<div>
+    <MudCardContent >
+        @if(dataReady == null)
+        {
+            <MudPaper Class="d-flex justify-center align-center" Elevation="0" Height="100vh">
+                <MudProgressCircular Style="color:#0840aa; " Indeterminate="true" />
+            </MudPaper>
+        }
+        else
+        {
+            <MudPaper>
+                @foreach(var fav in favoritesService.Favorites)
+                {
+                    <MudStack Row="true" Spacing="0" Justify="Justify.FlexStart">
+                        <MudButton @onclick="(e) => RemoveFavorite(fav.Name)">
+                            <MudIcon Icon="@favRemoveIcon" Title="Remove Favorite"></MudIcon>
+                        </MudButton>
+                        <MudButton style="color:#9396A1" @onclick="(e) => OpenAudio(fav.Name, fav.Source)">
+                            <MudText style="font-size:16px;">@fav.Name</MudText>
+                        </MudButton>
+                    </MudStack> 
+                }
+            </MudPaper>
+        }
+    </MudCardContent>
+</div>
+
+@code {
+    string? dataReady;
+    protected override async Task OnInitializedAsync()
+    {
+        await favoritesService.GetAllFavorites();
+        dataReady = "dataLoaded";
+    }
+    public void OpenAudio(string audioName,string audioLink)
+    {
+        //There may be an issue with the server path value
+        // which is built into the audio link from the original
+        // data???
+        sharedDataService.AudioTitle = audioName;
+        sharedDataService.AudioLink = audioLink;
+        sharedDataService.TogglePlayer();
+    }
+    public async Task RemoveFavorite(string key)
+    {
+        await favoritesService.RemoveFavorite(key);
+        Snackbar.Add("Removed from favorites.", Severity.Info);
+        Snackbar.Configuration.ShowCloseIcon = false;
+        Snackbar.Configuration.VisibleStateDuration = 1000;
+    }
+    public string favRemoveIcon = "<svg id=\"Layer_6\" data-name=\"Layer 6\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 22.5 19.41\">" +
+      "<path d = \"M1,6.63C1,3.09,3.67,1.07,5.67,1c3.33,0,5.83,1.69,5.83,4.13,0-2.44,2.5-4,5-4,2,0,5,1.5,5,5,0,4.5-10,12.05-10,12.05,0,0-10.5-7.09-10.5-11.55Z\" style=\"fill: none; stroke: #5f76a6; stroke-miterlimit: 10; stroke-width: 2px;\"/>" +
+      "<circle cx = \"15.66\" cy=\"12.56\" r=\"5.5\" style=\"stroke-width: 0px;\"/>" +
+      "<line x1 = \"12.16\" y1=\"12.56\" x2=\"19.16\" y2=\"12.56\" style=\"fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;\"/>" +
+    "</svg>";
+}

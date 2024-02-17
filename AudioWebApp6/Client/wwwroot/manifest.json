@@ -1,6 +1,6 @@
 {
-  "name": "AudioWebApp",
-  "short_name": "AudioWebApp",
+  "name": "The Narrow Path",
+  "short_name": "TheNarrowPath",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
