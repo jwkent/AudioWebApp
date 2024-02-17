@@ -2,6 +2,7 @@
 ::deep .mud-paper {
     width: 100%;
     background-color: transparent;
+    padding-bottom: 150px;
 }
 
 ::deep .mud-card-content {
