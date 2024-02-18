@@ -20,7 +20,39 @@ function timeStamper(storedValue) {
         navigator.mediaSession.metadata = new MediaMetadata({
             title: audioElement.getAttribute("title"),
             artist: audioElement.getAttribute("artist"),
-            album: audioElement.getAttribute("category")
+            album: audioElement.getAttribute("category"),
+            artwork: [
+                {
+                    src: "./images/TNPMedia96.png",
+                    sizes: "96x96",
+                    type: "image/png",
+                },
+                {
+                    src: "./images/TNPMedia128.png",
+                    sizes: "128x128",
+                    type: "image/png",
+                },
+                {
+                    src: "./images/TNPMedia192.png",
+                    sizes: "192x192",
+                    type: "image/png",
+                },
+                {
+                    src: "./images/TNPMedia256.png",
+                    sizes: "256x256",
+                    type: "image/png",
+                },
+                {
+                    src: "./images/TNPMedia384.png",
+                    sizes: "384x384",
+                    type: "image/png",
+                },
+                {
+                    src: "./images/TNPMedia512.png",
+                    sizes: "512x512",
+                    type: "image/png",
+                },
+            ],
         });
     }
 }
