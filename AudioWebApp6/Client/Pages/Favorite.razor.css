@@ -2,7 +2,6 @@
 ::deep .mud-paper {
     width: 100%;
     background-color: transparent;
-    padding-bottom: 150px;
 }
 
 ::deep .mud-card-content {
@@ -10,6 +9,7 @@
     background: linear-gradient(90deg, rgba(216,230,254,1) 51%, rgba(213,216,229,1) 100%);
     height: 400vh;
     width: auto;
+    padding-bottom:140px;
     padding: 0px;
     overflow: hidden;
 }
