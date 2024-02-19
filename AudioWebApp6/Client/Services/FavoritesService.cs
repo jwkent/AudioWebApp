@@ -9,7 +9,8 @@ namespace AudioWebApp.Client.Services
     public class FavoritesService
     {
         private readonly IJSRuntime _jSRuntime;
-        public ObservableCollection<Favorite>? Favorites;
+       
+        public IEnumerable<Favorite>? Favorites;
 
         public FavoritesService(IJSRuntime jSRuntime)
         {
@@ -18,7 +19,8 @@ namespace AudioWebApp.Client.Services
         public async Task GetAllFavorites()
         {
             var result = await _jSRuntime.InvokeAsync<string>("getAllFavorites");
-            Favorites = JsonConvert.DeserializeObject<ObservableCollection<Favorite>>(result);
+            Favorites = JsonConvert.DeserializeObject<ObservableCollection<Favorite>>(result)
+                .OrderByDescending(item => item.DateTimeStamp);
         }
         public async Task RemoveFavorite(string key)
         {
@@ -27,7 +29,8 @@ namespace AudioWebApp.Client.Services
         }
         public async Task AddToFavorites(string key, string value)
         {
-            await _jSRuntime.InvokeVoidAsync("setToFavorites", key, value);
+            Favorite fav = new Favorite(key,value,DateTime.Now);
+            await _jSRuntime.InvokeVoidAsync("setToFavorites", key, fav);
         }
     }
 }

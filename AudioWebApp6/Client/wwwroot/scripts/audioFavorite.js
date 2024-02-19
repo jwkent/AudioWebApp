@@ -11,7 +11,7 @@ function getAllFavorites() {
         name: "Favorites"
     });
     return faveStore.iterate((value, key, iterationNumber) => {
-        const fav = { Name: key, Source: value };
+        const fav = { Name: value.name, Source: value.source, TimeStamp: value.dateTimeStamp };
         keyNames.push(fav);
     }).then(() => {
         return (JSON.stringify(keyNames));
