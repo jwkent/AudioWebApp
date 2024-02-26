@@ -54,5 +54,11 @@ function timeStamper(storedValue) {
                 },
             ],
         });
+        navigator.mediaSession.setActionHandler('play', () => {
+            audioElement.play();
+        });
+        navigator.mediaSession.setActionHandler('pause', () => {
+            audioElement.pause();
+        });
     }
 }
