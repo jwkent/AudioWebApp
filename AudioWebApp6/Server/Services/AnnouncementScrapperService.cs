@@ -64,7 +64,7 @@ namespace AudioWebApp.Server.Services
             {
                 foreach(HtmlNode spanNode in spanElement )
                 {
-                    string result = FilterBodyText(string.Join("", spanNode.InnerText));
+                    string result = FilterBodyText(string.Join("", spanNode.InnerHtml));
                     body.Add(result);
                 }
             }
