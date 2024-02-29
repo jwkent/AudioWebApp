@@ -8,7 +8,7 @@ namespace AudioWebApp.Server.Utilities
     {
         private readonly HttpClient _httpClient;
 
-        const string fileName = "./File/announcementData.json";
+        const string fileName = "./Files/AnnouncementData.json";
         public AnnoucementsFileWriter()
         {
                 _httpClient = new HttpClient();
