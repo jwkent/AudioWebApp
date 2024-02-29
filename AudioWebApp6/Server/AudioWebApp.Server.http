@@ -1,0 +1,5 @@
+﻿@AudioWebApp.Server_HostAddress = https://localhost:8001
+
+GET {{AudioWebApp.Server_HostAddress}}/api/announcements/getannouncements
+
+###
