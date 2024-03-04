@@ -3,3 +3,11 @@
 GET {{AudioWebApp.Server_HostAddress}}/api/announcements/getannouncements
 
 ###
+
+GET {{AudioWebApp.Server_HostAddress}}/api/announcements/writeannouncements
+
+###
+
+GET {{AudioWebApp.Server_HostAddress}}/api/announcements/getlastupdateddate
+
+###
