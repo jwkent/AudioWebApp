@@ -28,7 +28,7 @@ namespace AudioWebApp.Server.Utilities
             if (File.Exists(filePath))
             {
                 DateTime creationDateTime = File.GetCreationTimeUtc(filePath);
-                
+
                 return isUpdate = creationDateTime > date ? true : false;
             }
             else

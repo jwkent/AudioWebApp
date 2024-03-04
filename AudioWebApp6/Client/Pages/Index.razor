@@ -5,7 +5,7 @@
 
 <PageTitle>Narrow Path</PageTitle>
 <div>
-    <MudCardContent >
+    <MudCardContent style="padding:6px;">
 
         @if (dataReady == null)
         {
@@ -17,15 +17,51 @@
         {
             @foreach (var announcement in announcementService.announcements)
             {
-                <MudCard Elevation="0">
-                    <MudCardContent>
-                        <MudText>@announcement.Title</MudText>
-                        <MudText Typo="Typo.body2">@announcement.BodyText</MudText>
-                    </MudCardContent>
-                    <MudCardActions>
-                        <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
-                    </MudCardActions>
-                </MudCard>
+                if (announcement.IsNew)
+                {
+                    <MudCard Elevation="0" class="announcement-card">
+                        <MudCardHeader>
+                            <CardHeaderContent>
+                                <MudText class="heading-text">@announcement.Title</MudText>
+                            </CardHeaderContent>
+                            <CardHeaderActions>
+                                <MudStack Row="true" Spacing="1">
+                                        <MudText Typo="Typo.h6">New</MudText>
+                                        <MudIcon Icon="@Icons.Material.Filled.NewReleases" Color="Color.Default" />
+                                </MudStack>
+                            </CardHeaderActions>
+                        </MudCardHeader>
+                        <MudCardContent>
+                                <MudText style="color:#405379; font-size:16px;">@announcement.BodyText</MudText>
+                        </MudCardContent>
+                        <MudCardActions>
+                            <MudButton Variant="Variant.Text" class="announcement-link" 
+                                           Href="https://www.thenarrowpath.com/announcements.php" Target="_blank">
+                                           Learn more
+                            </MudButton>
+                        </MudCardActions>
+                    </MudCard>
+                }
+                else
+                {
+                    <MudCard Elevation="0" class="announcement-card">
+                        <MudCardHeader>
+                            <CardHeaderContent>
+                                <MudText class="heading-text">@announcement.Title</MudText>
+                            </CardHeaderContent> 
+                        </MudCardHeader>
+                            <MudCardContent>
+                                <MudText style="color:#405379; font-size:16px;">@announcement.BodyText</MudText>
+                            </MudCardContent>
+                            <MudCardActions>
+                                <MudButton Variant="Variant.Text" class="announcement-link"
+                                           Href="https://www.thenarrowpath.com/announcements.php" Target="_blank">
+                                    Learn more
+                                </MudButton>
+                            </MudCardActions>
+                    </MudCard>
+                }
+                
             }
             
         }

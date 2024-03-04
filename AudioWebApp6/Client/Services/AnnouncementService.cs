@@ -96,7 +96,8 @@ namespace AudioWebApp.Client.Services
                 announcementDataDateStamp = content.value.DateStamp;
 
                 bool isUpdate = await CheckUpdate(announcementDataDateStamp);
-                // send isUpdate back so it can be processed.
+
+                if(isUpdate) { await GetAnnouncementsFile(); }
             }
             catch (Exception ex)
             {
