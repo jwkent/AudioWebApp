@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Data>
   <Configuration>
-    <LastUpdated dateTime="20231209170343" />
+    <LastUpdated dateTime="20240303171113" />
     <Servers>
       <Server name="theos" location="http://media.theos.org/Steve%20Gregg/" />
       <Server name="tnp" location="http://www.thenarrowpath.com/" />
@@ -21,7 +21,7 @@
       <Item link="audio/topical-lectures/authority-of-scriptures/09_Supernatural_Evidence.mp3" name="09. Supernatural Evidence" />
       <Item link="audio/topical-lectures/authority-of-scriptures/10_The_Teachings_of_Christ.mp3" name="10. The Teachings of Christ" />
       <Item link="audio/topical-lectures/authority-of-scriptures/11_The_Law_of Moses_and_the_Christian.mp3" name="11. The Law of Moses and the Christian" />
-      <Item link="audio/topical-lectures/authority-of-scriptures/12_The_Authority_of_Apastolic_Writings.mp3" name="12. The Authority of Apastolic Writings" />
+      <Item link="audio/topical-lectures/authority-of-scriptures/12_The_Authority_of_Apostolic_Writings.mp3" name="12. The Authority of Apostolic Writings" />
       <Item link="audio/topical-lectures/authority-of-scriptures/13_The_Word_of_God_and_Its_Rivals_Part_1.mp3" name="13. The Word of God and Its Rivals • Part 1" />
       <Item link="audio/topical-lectures/authority-of-scriptures/14_The_Word_of_God_and_Its_Rivals_Part_2.mp3" name="14. The Word of God and Its Rivals • Part 2" />
       <Item link="audio/topical-lectures/authority-of-scriptures/15_Tools_for_Biblical_Studies.mp3" name="15. Tools for Biblical Studies" />
@@ -246,6 +246,9 @@
     <Topic name="Original Sin And Depravity" server="tnp">
       <Item link="audio/topical-lectures/original-sin-and-depravity/01_2015_Original_Sin_and_Depravity_Part_1.mp3" name="01. Original Sin and Depravity • Part 1" />
       <Item link="audio/topical-lectures/original-sin-and-depravity/02_2015_Original_Sin_and_Depravity_Part_2.mp3" name="02. Original Sin and Depravity • Part 2" />
+    </Topic>
+    <Topic name="Relationships" server="tnp">
+      <Item link="audio/topical-lectures/relationships/Relationships_-_Introduction_2024.mp3" name="Relationships.  -  Introduction 2024" />
     </Topic>
     <Topic name="Sermon On The Mount" server="tnp">
       <Item link="audio/topical-lectures/sermon-on-the-mount/01_Introduction.mp3" name="01. Introduction" />
@@ -1431,5 +1434,216 @@
       <Item link="audio/verse-by-verse/revelation/18_2012_Revelation_20.mp3" name="18. Revelation 20" />
       <Item link="audio/verse-by-verse/revelation/19_2012_Revelation_21-22.mp3" name="19. Revelation 21 - 22" />
     </Book>
+  </Teaching>
+  <Teaching>
+    <Overviews name="01. Genesis Overview" server="tnp" />
+  </Teaching>
+  <Teaching>
+    <Debates name="01. Is Calvinism Biblical • Part 1, with Steve Gregg and Douglas Wilson  -  2001" server="tnp" />
+  </Teaching>
+  <Teaching>
+    <Teachings name="A. Chosen People" server="tnp" />
+  </Teaching>
+  <Teaching>
+    <Christ name="Volume Eight" server="tnp">
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/131_10_Lepers,_Day_of_the_Lord_Part_1.mp3" name="131. 10 Lepers, Day of the Lord • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/132_10_Lepers,_Day_of_the_Lord_Part_2.mp3" name="132. 10 Lepers, Day of the Lord • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/133_Lazarus_Part_1.mp3" name="133. Lazarus • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/134_Lazarus_Part_2.mp3" name="134. Lazarus • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/135_Children,_Rich_Young_Ruler_Part_1.mp3" name="135. Children, Rich Young Ruler • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/136_Children,_Rich_Young_Ruler_Part_2.mp3" name="136. Children, Rich Young Ruler • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/137_Ambitious_Leaders,_Barbimaeus_Part_1.mp3" name="137. Ambitious Leaders, Barbimaeus • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/138_Ambitious_Leaders,_Barbimaeus_Part_2.mp3" name="138. Ambitious Leaders, Barbimaeus • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/139_Zacchaeus,_10_Minas,_Triumphal_Entry_Part_1.mp3" name="139. Zacchaeus, 10 Minas, Triumphal Entry • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/140_Zacchaeus,_10_Minas,_Triumphal_Entry_Part_2.mp3" name="140. Zacchaeus, 10 Minas, Triumphal Entry • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/141_Cleansing_the_Temple,_Fig_Tree,_Grain_of_Wheat_Part_1.mp3" name="141. Cleansing the Temple, Fig Tree, Grain of Wheat • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/142_Cleansing_the_Temple,_Fig_Tree,_Grain_of_Wheat_Part_2.mp3" name="142. Cleansing the Temple, Fig Tree, Grain of Wheat • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/143_Two_Pointed_Parables_Part_1.mp3" name="143. Two Pointed Parables • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/144_Two_Pointed_Parables_Part_2.mp3" name="144. Two Pointed Parables • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/145_Wedding,_Render_Caeser,_Resurrection_Part_1.mp3" name="145. Wedding, Render Caeser, Resurrection • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/146_Wedding,_Render_Caeser,_Resurrection_Part_2.mp3" name="146. Wedding, Render Caeser, Resurrection • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/147_Confrontation_Continues_Part_1.mp3" name="147. Confrontation Continues • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/148_Confrontation_Continues_Part_2.mp3" name="148. Confrontation Continues • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/149_Woe_to_Scribes_and_Pharisees_Part_1.mp3" name="149. Woe to Scribes and Pharisees • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-eight/150_Woe_to_Scribes_and_Pharisees_Part_2.mp3" name="150. Woe to Scribes and Pharisees • Part 2" />
+    </Christ>
+    <Christ name="Volume Five" server="tnp">
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/071_Destiny_and_Value_of_the_Kingdom_Part_1.mp3" name="071. Destiny and Value of the Kingdom • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/072_Destiny_and_Value_of_the_Kingdom_Part_2.mp3" name="072. Destiny and Value of the Kingdom • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/073_Stilling_the_Storm_Part_1.mp3" name="073. Stilling the Storm • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/074_Stilling_the_Storm_Part_2.mp3" name="074. Stilling the Storm • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/075_Man_of_the_Tombs_Part_1.mp3" name="075. Man of the Tombs • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/076_Man_of_the_Tombs_Part_2.mp3" name="076. Man of the Tombs • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/077_Jairus_Daughter,_Issue_of_Blood_Part_1.mp3" name="077. Jairus Daughter, Issue of Blood • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/078_Jairus_Daughter,_Issue_of_Blood_Part_2.mp3" name="078. Jairus Daughter, Issue of Blood • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/079_Missionary_Discourse_Part_1.mp3" name="079. Missionary Discourse • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/080_Missionary_Discourse_Part_2.mp3" name="080. Missionary Discourse • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/081_Missionary_Discourse_Part_3.mp3" name="081. Missionary Discourse • Part 3" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/082_Missionary_Discourse_Part_4.mp3" name="082. Missionary Discourse • Part 4" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/083_Nazareth,_Johns_Death,_5,000_Fed_Part_1.mp3" name="083. Nazareth, Johns Death, 5,000 Fed • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/084_Nazareth,_Johns_Death,_5,000_Fed_Part_2.mp3" name="084. Nazareth, Johns Death, 5,000 Fed • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/085_Walking_on_Water,_Bread_of_Life_Part_1.mp3" name="085. Walking on Water, Bread of Life • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/086_Walking_on_Water,_Bread_of_Life_Part_2.mp3" name="086. Walking on Water, Bread of Life • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/087_Traditions_of_Men_Part_1.mp3" name="087. Traditions of Men • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/088_Traditions_of_Men_Part_2.mp3" name="088. Traditions of Men • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/089_Traditions_of_Men_Part_3.mp3" name="089. Traditions of Men • Part 3" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-five/090_Traditions_of_Men_Part_4.mp3" name="090. Traditions of Men • Part 4" />
+    </Christ>
+    <Christ name="Volume Four" server="tnp">
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/051_God_and_Mammon_Part_1.mp3" name="051. God and Mammon • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/052_God_and_Mammon_Part_2.mp3" name="052. God and Mammon • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/053_Worry_Part_1.mp3" name="053. Worry • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/054_Worry_Part_2.mp3" name="054. Worry • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/055_Judging_Part_1.mp3" name="055. Judging • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/056_Judging_Part_2.mp3" name="056. Judging • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/057_Two_Paths,_Two_Foundations_Part_1.mp3" name="057. Two Paths, Two Foundations • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/058_Two_Paths,_Two_Foundations_Part_2.mp3" name="058. Two Paths, Two Foundations • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/059_Miracles,_Eulogy_for_John_Part_1.mp3" name="059. Miracles, Eulogy for John • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/060_Miracles,_Eulogy_for_John_Part_2.mp3" name="060. Miracles, Eulogy for John • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/061_Elijah,_Sinful_Woman_Part_1.mp3" name="061. Elijah, Sinful Woman • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/062_Elijah,_Sinful_Woman_Part_2.mp3" name="062. Elijah, Sinful Woman • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/063_Sign_of_Jonah,_Christs_Brethren_Part_1.mp3" name="063. Sign of Jonah, Christs Brethren • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/064_Sign_of_Jonah,_Christs_Brethren_Part_2.mp3" name="064. Sign of Jonah, Christs Brethren • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/065_Blasphemy_of_the_Holy_Spirit_Part_1.mp3" name="065. Blasphemy of the Holy Spirit • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/066_Blasphemy_of_the_Holy_Spirit_Part_2.mp3" name="066. Blasphemy of the Holy Spirit • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/067_Two_Parables_of_Seeds_Growing_Part_1.mp3" name="067. Two Parables of Seeds Growing • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/068_Two_Parables_of_Seeds_Growing_Part_2.mp3" name="068. Two Parables of Seeds Growing • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/069_Wheat_and_Tares,_Dragnet_Part_1.mp3" name="069. Wheat and Tares, Dragnet • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-four/070_Wheat_and_Tares,_Dragnet_Part_2.mp3" name="070. Wheat and Tares, Dragnet • Part 2" />
+    </Christ>
+    <Christ name="Volume Nine" server="tnp">
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/151_Olivet_Discourse_Part_1.mp3" name="151. Olivet Discourse • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/152_Olivet_Discourse_Part_2.mp3" name="152. Olivet Discourse • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/153_Olivet_Discourse_Part_3.mp3" name="153. Olivet Discourse • Part 3" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/154_Olivet_Discourse_Part_4.mp3" name="154. Olivet Discourse • Part 4" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/155_Anointing,_Last_Supper_Part_1.mp3" name="155. Anointing, Last Supper • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/156_Anointing,_Last_Supper_Part_2.mp3" name="156. Anointing, Last Supper • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/157_Foot_Washing,_Leadership_Part_1.mp3" name="157. Foot Washing, Leadership • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/158_Foot_Washing,_Leadership_Part_2.mp3" name="158. Foot Washing, Leadership • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/159_Upper_Room_Discourse_Part_1.mp3" name="159. Upper Room Discourse • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/160_Upper_Room_Discourse_Part_2.mp3" name="160. Upper Room Discourse • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/161_Upper_Room_Discourse_Part_3.mp3" name="161. Upper Room Discourse • Part 3" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/162_Upper_Room_Discourse_Part_4.mp3" name="162. Upper Room Discourse • Part 4" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/163_Upper_Room_Discourse_Part_5.mp3" name="163. Upper Room Discourse • Part 5" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/164_Upper_Room_Discourse_Part_6.mp3" name="164. Upper Room Discourse • Part 6" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/165_Upper_Room_Discourse_Part_7.mp3" name="165. Upper Room Discourse • Part 7" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/166_Upper_Room_Discourse_Part_8.mp3" name="166. Upper Room Discourse • Part 8" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/167_Jesus_Prayer_for_the_Church_Part_1.mp3" name="167. Jesus Prayer for the Church • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/168_Jesus_Prayer_for_the_Church_Part_2.mp3" name="168. Jesus Prayer for the Church • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/169_Gethsemane_Part_1.mp3" name="169. Gethsemane • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-nine/170_Gethsemane_Part_2.mp3" name="170. Gethsemane • Part 2" />
+    </Christ>
+    <Christ name="Volume One" server="tnp">
+      <Item link="audio/the-life-and-teachings-of-christ/volume-one/001_Johns_Prologue_Part_1.mp3" name="001. Johns Prologue • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-one/002_Johns_Prologue_Part_2.mp3" name="002. Johns Prologue • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-one/003_The_Genealogy_of_Jesus.mp3" name="003. The Genealogy of Jesus" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-one/004_Gabriels_Announcement.mp3" name="004. Gabriels Announcement" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-one/005_Mary_visits_Elizabeth.mp3" name="005. Mary visits Elizabeth" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-one/006_Birth_and_Circumcision_of_Jesus.mp3" name="006. Birth and Circumcision of Jesus" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-one/007_Early_Recognition.mp3" name="007. Early Recognition" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-one/008_Childhood_of_Jesus.mp3" name="008. Childhood of Jesus" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-one/009_The_Ministry_of_John.mp3" name="009. The Ministry of John" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-one/010_Baptism_of_Jesus.mp3" name="010. Baptism of Jesus" />
+    </Christ>
+    <Christ name="Volume Seven" server="tnp">
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/111_A_Question_of_Pedegree_Part_1.mp3" name="111. A Question of Pedegree • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/112_A_Question_of_Pedegree_Part_2.mp3" name="112. A Question of Pedegree • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/113_Man_Born_Blind_Part_1.mp3" name="113. Man Born Blind • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/114_Man_Born_Blind_Part_2.mp3" name="114. Man Born Blind • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/115_Good_Shepherd,_Sending_the_70_Part_1.mp3" name="115. Good Shepherd, Sending the 70 • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/116_Good_Shepherd,_Sending_the_70_Part_2.mp3" name="116. Good Shepherd, Sending the 70 • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/117_The_Good_Samaritan_Part_1.mp3" name="117. The Good Samaritan • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/118_The_Good_Samaritan_Part_2.mp3" name="118. The Good Samaritan • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/119_Fear_of_Man_and_Fear_of_God_Part_1.mp3" name="119. Fear of Man and Fear of God • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/120_Fear_of_Man_and_Fear_of_God_Part_2.mp3" name="120. Fear of Man and Fear of God • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/121_Misc._Teachings,_Feast_of_Dedication_Part_1.mp3" name="121. Misc: Teachings, Feast of Dedication • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/122_Misc._Teachings,_Feast_of_Dedication_Part_2.mp3" name="122. Misc: Teachings, Feast of Dedication • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/123_Teachings_in_Perea_Part_1.mp3" name="123. Teachings in Perea • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/124_Teachings_in_Perea_Part_2.mp3" name="124. Teachings in Perea • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/125_Parables_of_Lost_Things_Part_1.mp3" name="125. Parables of Lost Things • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/126_Parables_of_Lost_Things_Part_2.mp3" name="126. Parables of Lost Things • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/127_Parables_of_Eternal_Destiny_Part_1.mp3" name="127. Parables of Eternal Destiny • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/128_Parables_of_Eternal_Destiny_Part_2.mp3" name="128. Parables of Eternal Destiny • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/129_No_Offense_Part_1.mp3" name="129. No Offense • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-seven/130_No_Offense_Part_2.mp3" name="130. No Offense • Part 2" />
+    </Christ>
+    <Christ name="Volume Six" server="tnp">
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/091_Syrophenician_Woman,_4,000_Fed_Part_1.mp3" name="091. Syrophenician Woman, 4,000 Fed • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/092_Syrophenician_Woman,_4,000_Fed_Part_2.mp3" name="092. Syrophenician Woman, 4,000 Fed • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/093_Signs,_Leaven,_Peters_Confession_Part_1.mp3" name="093. Signs, Leaven, Peters Confession • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/094_Signs,_Leaven,_Peters_Confession_Part_2.mp3" name="094. Signs, Leaven, Peters Confession • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/095_Caesarea_Philippi_Part_1.mp3" name="095. Caesarea Philippi • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/096_Caesarea_Philippi_Part_2.mp3" name="096. Caesarea Philippi • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/097_The_Transfiguration_Part_1.mp3" name="097. The Transfiguration • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/098_The_Transfiguration_Part_2.mp3" name="098. The Transfiguration • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/099_Demonized_Boy_Part_1.mp3" name="099. Demonized Boy • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/100_Demonized_Boy_Part_2.mp3" name="100. Demonized Boy • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/101_Peters_Fish,_Children_Part_1.mp3" name="101. Peters Fish, Children • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/102_Peters_Fish,_Children_Part_2.mp3" name="102. Peters Fish, Children • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/103_Reconciliation_Part_1.mp3" name="103. Reconciliation • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/104_Reconciliation_Part_2.mp3" name="104. Reconciliation • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/105_Three_Almost_Disciples_Part_1.mp3" name="105. Three Almost Disciples • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/106_Three_Almost_Disciples_Part_2.mp3" name="106. Three Almost Disciples • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/107_The_Feast_of_Tabernacles_Part_1.mp3" name="107. The Feast of Tabernacles • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/108_The_Feast_of_Tabernacles_Part_2.mp3" name="108. The Feast of Tabernacles • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/109_The_Woman_taken_in_Adultery_Part_1.mp3" name="109. The Woman taken in Adultery • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-six/110_The_Woman_taken_in_Adultery_Part_2.mp3" name="110. The Woman taken in Adultery • Part 2" />
+    </Christ>
+    <Christ name="Volume Ten" server="tnp">
+      <Item link="audio/the-life-and-teachings-of-christ/volume-ten/171_Jesus_on_Trial_Part_1.mp3" name="171. Jesus on Trial • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-ten/172_Jesus_on_Trial_Part_2.mp3" name="172. Jesus on Trial • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-ten/173_Condemned_by_Pilate_Part_1.mp3" name="173. Condemned by Pilate • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-ten/174_Condemned_by_Pilate_Part_2.mp3" name="174. Condemned by Pilate • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-ten/175_The_Crucifixion_and_Burial_Part_1.mp3" name="175. The Crucifixion and Burial • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-ten/176_The_Crucifixion_and_Burial_Part_2.mp3" name="176. The Crucifixion and Burial • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-ten/177_Resurrection_Appearances_Part_1.mp3" name="177. Resurrection Appearances • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-ten/178_Resurrection_Appearances_Part_2.mp3" name="178. Resurrection Appearances • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-ten/179_Sea_of_Galilee,_The_Great_Commission_Part_1.mp3" name="179. Sea of Galilee, The Great Commission • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-ten/180_Sea_of_Galilee,_The_Great_Commission_Part_2.mp3" name="180. Sea of Galilee, The Great Commission • Part 2" />
+    </Christ>
+    <Christ name="Volume Three" server="tnp">
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/031_Mercy_vs_Sacrifice_Part_1.mp3" name="031. Mercy vs Sacrifice • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/032_Mercy_vs_Sacrifice_Part_2.mp3" name="032. Mercy vs Sacrifice • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/033_Choosing_the_Twelve_Part_1.mp3" name="033. Choosing the Twelve • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/034_Choosing_the_Twelve_Part_2.mp3" name="034. Choosing the Twelve • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/035_Beatitudes_Part_1.mp3" name="035. Beatitudes • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/036_Beatitudes_Part_2.mp3" name="036. Beatitudes • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/037_Peace_and_Persecution,_Salt_and_Light_Part_1.mp3" name="037. Peace and Persecution, Salt and Light • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/038_Peace_and_Persecution,_Salt_and_Light_Part_2.mp3" name="038. Peace and Persecution, Salt and Light • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/039_Christ_and_the_Law,_Overview_Part_1.mp3" name="039. Christ and the Law, Overview • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/040_Christ_and_the_Law,_Overview_Part_2.mp3" name="040. Christ and the Law, Overview • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/041_Murder_and_Adultery_Part_1.mp3" name="041. Murder and Adultery • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/042_Murder_and_Adultery_Part_2.mp3" name="042. Murder and Adultery • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/043_Divorce_and_Oaths_Part_1.mp3" name="043. Divorce and Oaths • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/044_Divorce_and_Oaths_Part_2.mp3" name="044. Divorce and Oaths • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/045_Non-retaliation_and_Love_of_Enemies_Part_1.mp3" name="045. Non - retaliation and Love of Enemies • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/046_Non-retaliation_and_Love_of_Enemies_Part_2.mp3" name="046. Non - retaliation and Love of Enemies • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/047_Be_not_as_the_Hypocrites_Part_1.mp3" name="047. Be not as the Hypocrites • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/048_Be_not_as_the_Hypocrites_Part_2.mp3" name="048. Be not as the Hypocrites • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/049_Jesus_On_Prayer_Part_1.mp3" name="049. Jesus On Prayer • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-three/050_Jesus_On_Prayer_Part_2.mp3" name="050. Jesus On Prayer • Part 2" />
+    </Christ>
+    <Christ name="Volume Two" server="tnp">
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/011_Temptation_of_Jesus_Part_1.mp3" name="011. Temptation of Jesus • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/012_Temptation_of_Jesus_Part_2.mp3" name="012. Temptation of Jesus • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/013_The_First_Disciples_Part_1.mp3" name="013. The First Disciples • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/014_The_First_Disciples_Part_2.mp3" name="014. The First Disciples • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/015_Water_to_Wine_and_1st_Temple_Cleansing_Part_1.mp3" name="015. Water to Wine and 1st Temple Cleansing • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/016_Water_to_Wine_and_1st_Temple_Cleansing_Part_2.mp3" name="016. Water to Wine and 1st Temple Cleansing • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/017_Nicodemus_Part_1.mp3" name="017. Nicodemus • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/018_Nicodemus_Part_2.mp3" name="018. Nicodemus • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/019_John_Decreases,_Jesus_Increases_Part_1.mp3" name="019. John Decreases, Jesus Increases • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/020_John_Decreases,_Jesus_Increases_Part_2.mp3" name="020. John Decreases, Jesus Increases • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/021_Woman_at_the_Well_Part_1.mp3" name="021. Woman at the Well • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/022_Woman_at_the_Well_Part_2.mp3" name="022. Woman at the Well • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/023_Early_Galilean_Ministry_Part_1.mp3" name="023. Early Galilean Ministry • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/024_Early_Galilean_Ministry_Part_2.mp3" name="024. Early Galilean Ministry • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/025_1st_Sabbath_in_Capernaum_Part_1.mp3" name="025. 1st Sabbath in Capernaum • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/026_1st_Sabbath_in_Capernaum_Part_2.mp3" name="026. 1st Sabbath in Capernaum • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/027_Healings,_Galilean_Ministry_Part_1.mp3" name="027. Healings, Galilean Ministry • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/028_Healings,_Galilean_Ministry_Part_2.mp3" name="028. Healings, Galilean Ministry • Part 2" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/029_More_Sabbath_Controversies_Part_1.mp3" name="029. More Sabbath Controversies • Part 1" />
+      <Item link="audio/the-life-and-teachings-of-christ/volume-two/030_More_Sabbath_Controversies_Part_2.mp3" name="030. More Sabbath Controversies • Part 2" />
+    </Christ>
   </Teaching>
 </Data>

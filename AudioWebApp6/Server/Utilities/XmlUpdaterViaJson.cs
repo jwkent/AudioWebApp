@@ -17,7 +17,16 @@ namespace AudioWebApp.Server.Utilities
         /// <param name="seriesType"></param>
         void CreateSeriesXmlNodes(XmlDocument doc, XmlNode rootNode, string seriesType)
         {
-            var seriesQueryJson = seriesType == "Book" ? TnpWebService.GetVerseByVerseData() : TnpWebService.GetTopicalData();
+            List<Item> seriesQueryJson = new List<Item>();
+            switch (seriesType)
+            {
+                case "Topic": seriesQueryJson = TnpWebService.GetTopicalData(); break; 
+                case "Book": seriesQueryJson = TnpWebService.GetVerseByVerseData(); break; 
+                case "Overviews": seriesQueryJson = TnpWebService.GetBibleOverviewsData(); break; 
+                case "Debates": seriesQueryJson = TnpWebService.GetDebatesAndInterviewsData(); break; 
+                case "Teachings": seriesQueryJson = TnpWebService.GetIndividualTeachingsData(); break; 
+                case "Christ": seriesQueryJson = TnpWebService.GetTeachingsOfChristData(); break; 
+            }
 
             XmlNode teachingNode = doc.CreateNode(XmlNodeType.Element, "Teaching", null);
             rootNode.AppendChild(teachingNode);
@@ -25,8 +34,9 @@ namespace AudioWebApp.Server.Utilities
             foreach (var series in seriesQueryJson)
             {
                 // Don't update the xml file if the data is null.
-                if (series.Items == null
-                    || series.Path == null
+                //if (series.Items == null 
+                if (
+                       series.Path == null
                     || series.Title == null
                     || series.Type == null
                     || series.Url == null)
@@ -46,6 +56,7 @@ namespace AudioWebApp.Server.Utilities
                 serverAttribute.Value = serverName;
                 bookNode.Attributes.SetNamedItem(serverAttribute);
 
+                if (series.Items == null) return;
                 foreach (var m in series.Items.OrderBy(m => m.Sequence))
                 {
                     XmlNode itemNode = doc.CreateNode(XmlNodeType.Element, "Item", null);
@@ -111,6 +122,10 @@ namespace AudioWebApp.Server.Utilities
             // Build the book and topic sections in the XML file.
             CreateSeriesXmlNodes(doc, rootNode, "Topic");
             CreateSeriesXmlNodes(doc, rootNode, "Book");
+            CreateSeriesXmlNodes(doc, rootNode, "Overviews");
+            CreateSeriesXmlNodes(doc, rootNode, "Debates");
+            CreateSeriesXmlNodes(doc, rootNode, "Teachings");
+            CreateSeriesXmlNodes(doc, rootNode, "Christ");
 
             string xmlString = null;
             StringBuilder builder = new StringBuilder();
