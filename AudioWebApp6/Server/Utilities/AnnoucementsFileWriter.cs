@@ -23,11 +23,14 @@ namespace AudioWebApp.Server.Utilities
 
             Announcement[] announcements = await service.ScrapeAnnouncements();
 
-            AnnouncementData announcementData = new AnnouncementData(announcements);
+            AnnouncementData announcementData = new AnnouncementData(DateTime.Now, announcements);
 
             string json = JsonConvert.SerializeObject(announcementData);
 
             File.WriteAllText(fileName,json);
+
+            AnnouncementsManager announcementsManager = new AnnouncementsManager();
+
         }
     }
 }
