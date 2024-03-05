@@ -1,29 +1,31 @@
 ﻿
+::deep .mud-typography.logo-text {
+    color: rgb(177 227 227 / 50%);
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 5px;
+}
 
-::deep .mud-paper{
+::deep .mud-paper.logo-image {
+    background-color: transparent;
+    height: 300px;
+}
+
+::deep .mud-paper {
     background-color: transparent;
 }
 
-::deep .mud-card.announcement-card {
-    background-color: #D8E6FE;
-    margin-bottom: 4px;
-    box-shadow: rgba(156, 172, 203, 0.5) 0px 7px 29px 0px;
+::deep .subText {
+    width: 70%;
+    color: #dddddd;
+    padding-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
 }
-::deep .mud-button.announcement-link {
-    color: #0840AA;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+::deep cite {
+    width: 28%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
-    font-style: italic;
-}
-::deep p.mud-typography.mud-typography-body1.heading-text {
-    color: #0840AA;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    
-}
-::deep .mud-card-header-actions {
-    margin-top: 0px;
-}
-::deep div.mud-card-header {
-    background-color: #c2d2ed;
+    color: #5f76a6;
 }

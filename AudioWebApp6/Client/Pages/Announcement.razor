@@ -1,0 +1,65 @@
+﻿@page "/announcements"
+@using AudioWebApp.Client.Services
+@inject AnnouncementService announcementService
+
+<div>
+    <MudCardContent style="padding:6px;">
+
+        @if (dataReady == null)
+        {
+            <MudPaper Class="d-flex justify-center align-center" Elevation="0" Height="100vh">
+                <MudProgressCircular Style="color:#5F76A6; " Indeterminate="true" />
+            </MudPaper>
+        }
+        else
+        {
+            @foreach (var announcement in announcementService.announcements)
+            {
+                if (announcement.IsNew)
+                {
+                    <MudCard Elevation="0" class="announcement-card">
+                        <MudCardHeader>
+                            <CardHeaderContent>
+                                <MudText class="heading-text">@announcement.Title</MudText>
+                            </CardHeaderContent>
+                            <CardHeaderActions>
+                                <MudStack Row="true" Spacing="1">
+                                    <MudText Typo="Typo.h6">New</MudText>
+                                    <MudIcon Icon="@Icons.Material.Filled.NewReleases" Color="Color.Default" />
+                                </MudStack>
+                            </CardHeaderActions>
+                        </MudCardHeader>
+                        <MudCardContent>
+                            <MudText style="color:#405379; font-size:16px;">@announcement.BodyText</MudText>
+                        </MudCardContent> 
+                    </MudCard>
+                }
+                else
+                {
+                    <MudCard Elevation="0" class="announcement-card">
+                        <MudCardHeader>
+                            <CardHeaderContent>
+                                <MudText class="heading-text">@announcement.Title</MudText>
+                            </CardHeaderContent>
+                        </MudCardHeader>
+                        <MudCardContent>
+                            <MudText style="color:#405379; font-size:16px;">@announcement.BodyText</MudText>
+                        </MudCardContent>
+                    </MudCard>
+                }
+
+            }
+
+        }
+    </MudCardContent>
+
+</div>
+@code {
+    string? dataReady;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await announcementService.LoadAnnouncements();
+        dataReady = "dataLoaded";
+    }
+}

@@ -1,0 +1,26 @@
+﻿
+
+::deep .mud-paper {
+    background-color: transparent;
+}
+
+::deep .mud-card.announcement-card {
+    background-color: #D8E6FE;
+    margin-bottom: 4px;
+    box-shadow: rgba(156, 172, 203, 0.5) 0px 7px 29px 0px;
+}
+
+
+::deep p.mud-typography.mud-typography-body1.heading-text {
+    color: #0840AA;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+::deep .mud-card-header-actions {
+    margin-top: 0px;
+}
+
+::deep div.mud-card-header {
+    background-color: #c2d2ed;
+}
