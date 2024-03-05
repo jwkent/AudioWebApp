@@ -3,3 +3,15 @@
 GET {{AudioWebApp.Server_HostAddress}}/api/announcements/getannouncements
 
 ###
+
+GET {{AudioWebApp.Server_HostAddress}}/api/announcements/writeannouncements
+
+###
+
+GET {{AudioWebApp.Server_HostAddress}}/api/announcements/getlastupdateddate
+
+###
+
+GET {{AudioWebApp.Server_HostAddress}}/api/announcements/getupdate/2024-03-04T16:54:19.6770009+00:00
+
+###

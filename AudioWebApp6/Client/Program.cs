@@ -13,6 +13,7 @@ builder.Services.AddMudServices();
 builder.Services.AddScoped<ApiService>();
 builder.Services.AddSingleton<SharedDataService>();
 builder.Services.AddScoped<FavoritesService>();
+builder.Services.AddScoped<AnnouncementService>();
 
 builder.Services.AddMudBlazorDialog();
 

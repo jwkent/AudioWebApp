@@ -11,9 +11,9 @@ namespace AudioWebApp.Shared.Models
         public DateTime DateStamp { get; set; }
         public Announcement[] Announcements { get; set; }
 
-        public AnnouncementData( Announcement[] announcements)
+        public AnnouncementData(DateTime dateStamp, Announcement[] announcements)
         {
-            DateStamp = DateTime.Now;
+            DateStamp = dateStamp;
             Announcements = announcements;
         }
     }
