@@ -18,12 +18,13 @@ namespace AudioWebApp.Client.Services
         public AnnouncementService(IJSRuntime jSRuntime, HttpClient httpClient)
         {
             _httpClient = httpClient;
+            _httpClient.Timeout = TimeSpan.FromSeconds(5);
             _jsRuntime = jSRuntime;
         }
         const string server = "api/announcements/";
         private const string _getAnnouncementsEndpoint = $"{server}getannouncements";
         private const string _getAnnouncementsDate = $"{server}getlastupdateddate";
-        private const string _getUpdate = $"{server}/getupdate";
+        private const string _getUpdate = $"{server}getupdate/";
         public IEnumerable<Announcement> announcements = Array.Empty<Announcement>();
         public DateTime announcementDataDateStamp;
         /// <summary>
@@ -94,7 +95,7 @@ namespace AudioWebApp.Client.Services
                 }
                 announcements = announcementResults.ToArray();
                 announcementDataDateStamp = content.value.DateStamp;
-
+                // THIS Should be handled better ???
                 bool isUpdate = await CheckUpdate(announcementDataDateStamp);
 
                 if(isUpdate) { await GetAnnouncementsFile(); }
@@ -114,7 +115,9 @@ namespace AudioWebApp.Client.Services
         
         private async  Task<bool>  CheckUpdate(DateTime dateTime)
         {
-            bool.TryParse(await _httpClient.GetStringAsync($"{_getUpdate}/{dateTime}"), out var boolResult);
+            HttpClient httpClient = new HttpClient();
+            httpClient.BaseAddress = _httpClient.BaseAddress;
+            bool.TryParse(await httpClient.GetStringAsync($"{_getUpdate}{dateTime}"), out var boolResult);
             return boolResult;
         }
         /// <summary>
