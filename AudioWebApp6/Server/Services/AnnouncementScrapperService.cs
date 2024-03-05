@@ -7,7 +7,7 @@ namespace AudioWebApp.Server.Services
     public class AnnouncementScrapperService
     {
         private readonly HttpClient _httpClient;
-        string url = "https://wwww.thenarrowpath.com/announcements.php";
+        string url = "https://www.thenarrowpath.com/announcements.php";
 
         public AnnouncementScrapperService(HttpClient httpClient)
         {
