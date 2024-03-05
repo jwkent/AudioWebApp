@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Data>
   <Configuration>
-    <LastUpdated dateTime="20240303171113" />
+    <LastUpdated dateTime="20240304224953" />
     <Servers>
       <Server name="theos" location="http://media.theos.org/Steve%20Gregg/" />
       <Server name="tnp" location="http://www.thenarrowpath.com/" />
@@ -1436,13 +1436,276 @@
     </Book>
   </Teaching>
   <Teaching>
-    <Overviews name="01. Genesis Overview" server="tnp" />
+    <Overviews name="Overviews" server="tnp">
+      <Item link="audio/bible-book-overviews/01_Genesis_Overview.mp3" name="01. Genesis Overview" />
+      <Item link="audio/bible-book-overviews/02_Exodus_Overview.mp3" name="02. Exodus Overview" />
+      <Item link="audio/bible-book-overviews/03_Leviticus_Overview_Part_1.mp3" name="03. Leviticus Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/04_Leviticus_Overview_Part_2.mp3" name="04. Leviticus Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/05_Numbers_Overview.mp3" name="05. Numbers Overview" />
+      <Item link="audio/bible-book-overviews/06_Deuteronomy_Overview.mp3" name="06. Deuteronomy Overview" />
+      <Item link="audio/bible-book-overviews/07_Joshua_Overview_Part_1.mp3" name="07. Joshua Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/08_Joshua_Overview_Part_2.mp3" name="08. Joshua Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/09_Judges_Overview.mp3" name="09. Judges Overview" />
+      <Item link="audio/bible-book-overviews/10_Ruth_Overview_Part_1.mp3" name="10. Ruth Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/11_Ruth_Overview_Part_2.mp3" name="11. Ruth Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/12_1st_and_2nd_Samuel_Overview.mp3" name="12. 1st and 2nd Samuel Overview" />
+      <Item link="audio/bible-book-overviews/13_1st_Kings_Overview.mp3" name="13. 1st Kings Overview" />
+      <Item link="audio/bible-book-overviews/14_2nd_Kings_Overview.mp3" name="14. 2nd Kings Overview" />
+      <Item link="audio/bible-book-overviews/15_Chronicles_Overview_Part_1.mp3" name="15. Chronicles Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/16_Chronicles_Overview_Part_2.mp3" name="16. Chronicles Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/17_Ezra_Overview.mp3" name="17. Ezra Overview" />
+      <Item link="audio/bible-book-overviews/18_Nehemiah_Overview.mp3" name="18. Nehemiah Overview" />
+      <Item link="audio/bible-book-overviews/19_Esther_Overview.mp3" name="19. Esther Overview" />
+      <Item link="audio/bible-book-overviews/20_Job_Overview_Part_1.mp3" name="20. Job Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/21_Job_Overview_Part_2.mp3" name="21. Job Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/22_Job_Overview_Part_3_-_Q_and_A.mp3" name="22. Job Overview • Part 3  -  Q and A" />
+      <Item link="audio/bible-book-overviews/23_Psalms_Overview_Part_1.mp3" name="23. Psalms Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/24_Psalms_Overview_Part_2.mp3" name="24. Psalms Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/25_Proverbs_Overview_Part_1.mp3" name="25. Proverbs Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/26_Proverbs_Overview_Part_2.mp3" name="26. Proverbs Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/27_Ecclesiastes_Overview.mp3" name="27. Ecclesiastes Overview" />
+      <Item link="audio/bible-book-overviews/28_Song_of_Solomon_Overview.mp3" name="28. Song of Solomon Overview" />
+      <Item link="audio/bible-book-overviews/29_Isaiah_Overview_Part_1.mp3" name="29. Isaiah Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/30_Isaiah_Overview_Part_2.mp3" name="30. Isaiah Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/31_Jeremiah_Overview.mp3" name="31. Jeremiah Overview" />
+      <Item link="audio/bible-book-overviews/32_Lamentations_Overview.mp3" name="32. Lamentations Overview" />
+      <Item link="audio/bible-book-overviews/33_Ezekiel_Overview_Part_1.mp3" name="33. Ezekiel Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/34_Ezekiel_Overview_Part_2.mp3" name="34. Ezekiel Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/35_Daniel_Overview_Part_1.mp3" name="35. Daniel Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/36_Daniel_Overview_Part_2.mp3" name="36. Daniel Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/37_Hosea_Overview_Part_1.mp3" name="37. Hosea Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/38_Hosea_Overview_Part_2.mp3" name="38. Hosea Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/39_Joel_Overview_Part_1.mp3" name="39. Joel Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/40_Joel_Overview_Part_2.mp3" name="40. Joel Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/41_Amos_Overview_Part_1.mp3" name="41. Amos Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/42_Amos_Overview_Part_2.mp3" name="42. Amos Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/43_2020_Obadiah_Overview.mp3" name="43. Obadiah Overview" />
+      <Item link="audio/bible-book-overviews/44_2020_Jonah_Overview.mp3" name="44. Jonah Overview" />
+      <Item link="audio/bible-book-overviews/45_Micah_Overview.mp3" name="45. Micah Overview" />
+      <Item link="audio/bible-book-overviews/46_Nahum_Overview.mp3" name="46. Nahum Overview" />
+      <Item link="audio/bible-book-overviews/47_Habakkuk_Overview.mp3" name="47. Habakkuk Overview" />
+      <Item link="audio/bible-book-overviews/48_Zephaniah_Overview.mp3" name="48. Zephaniah Overview" />
+      <Item link="audio/bible-book-overviews/49_Haggai_Overview.mp3" name="49. Haggai Overview" />
+      <Item link="audio/bible-book-overviews/50_Zechariah_Overview_Part_1.mp3" name="50. Zechariah Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/51_Zechariah_Overview_Part_2.mp3" name="51. Zechariah Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/52_Malachi_Overview_Part_1.mp3" name="52. Malachi Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/53_Malachi_Overview_Part_2.mp3" name="53. Malachi Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/54_Matthew_Overview_Part_1.mp3" name="54. Matthew Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/55_Matthew_Overview_Part_2.mp3" name="55. Matthew Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/56_Mark_Overview.mp3" name="56. Mark Overview" />
+      <Item link="audio/bible-book-overviews/57_Luke_Overview.mp3" name="57. Luke Overview" />
+      <Item link="audio/bible-book-overviews/58_John_Overview_Part_1.mp3" name="58. John Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/60_Acts_Overview_Part_1.mp3" name="60. Acts Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/61_Acts_Overview_Part_2.mp3" name="61. Acts Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/62_Romans_Overview_Part_1.mp3" name="62. Romans Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/63_Romans_Overview_Part_2.mp3" name="63. Romans Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/64_Romans_Overview_Part_3.mp3" name="64. Romans Overview • Part 3" />
+      <Item link="audio/bible-book-overviews/65_Romans_Overview_Part_4.mp3" name="65. Romans Overview • Part 4" />
+      <Item link="audio/bible-book-overviews/66_1st_Corinthians_Overview_Part_1.mp3" name="66. 1st Corinthians Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/67_1st_Corinthians_Overview_Part_2.mp3" name="67. 1st Corinthians Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/68_2nd_Corinthians_Overview_Part_1.mp3" name="68. 2nd Corinthians Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/69_2nd_Corinthians_Overview_Part_2.mp3" name="69. 2nd Corinthians Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/70_Galatians_Overview_Part_1.mp3" name="70. Galatians Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/71_Galatians_Overview_Part_2.mp3" name="71. Galatians Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/72_Ephesians_Overview_Part_1.mp3" name="72. Ephesians Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/73_Ephesians_Overview_Part_2.mp3" name="73. Ephesians Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/74_Philippians_Overview_Part_1.mp3" name="74. Philippians Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/75_Philippians_Overview_Part_2.mp3" name="75. Philippians Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/76_Colossians_Overview_Part_1.mp3" name="76. Colossians Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/77_Colossians_Overview_Part_2.mp3" name="77. Colossians Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/78_1_and_2_Thessalonians_Overview_Part_1.mp3" name="78. 1 and 2 Thessalonians Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/79_1_and_2_Thessalonians_Overview_Part_2.mp3" name="79. 1 and 2 Thessalonians Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/80_The_Pastoral_Epistles_Overview.mp3" name="80. The Pastoral Epistles Overview" />
+      <Item link="audio/bible-book-overviews/81_1st_Timothy_Overview.mp3" name="81. 1st Timothy Overview" />
+      <Item link="audio/bible-book-overviews/82_2nd_Timothy_Overview.mp3" name="82. 2nd Timothy Overview" />
+    </Overviews>
   </Teaching>
   <Teaching>
-    <Debates name="01. Is Calvinism Biblical • Part 1, with Steve Gregg and Douglas Wilson  -  2001" server="tnp" />
+    <Debates name="Debates" server="tnp">
+      <Item link="audio/debates-and-interviews/01_Is_Calvinism_Biblical_Part_1,_with_Steve_Gregg_and_Douglas_Wilson_-_2001.mp3" name="01. Is Calvinism Biblical • Part 1, with Steve Gregg and Douglas Wilson  -  2001" />
+      <Item link="audio/debates-and-interviews/02_Is_Calvinism_Biblical_Part_2,_with_Steve_Gregg_and_Douglas_Wilson_-_2001.mp3" name="02. Is Calvinism Biblical • Part 2, with Steve Gregg and Douglas Wilson  -  2001" />
+      <Item link="audio/debates-and-interviews/03_Is_Calvinism_Biblical_Part_3,_with_Steve_Gregg_and_Douglas_Wilson_-_2001.mp3" name="03. Is Calvinism Biblical • Part 3, with Steve Gregg and Douglas Wilson  -  2001" />
+      <Item link="audio/debates-and-interviews/04_Is_Calvinism_Biblical_Part_4,_with_Steve_Gregg_and_Douglas_Wilson_-_2001.mp3" name="04. Is Calvinism Biblical • Part 4, with Steve Gregg and Douglas Wilson  -  2001" />
+      <Item link="audio/debates-and-interviews/05_Is_Calvinism_Biblical_Part_5,_with_Steve_Gregg_and_Douglas_Wilson_-_2001.mp3" name="05. Is Calvinism Biblical • Part 5, with Steve Gregg and Douglas Wilson  -  2001" />
+      <Item link="audio/debates-and-interviews/06_Is_Calvinism_Biblical_Part_6,_with_Steve_Gregg_and_Douglas_Wilson_-_2001.mp3" name="06. Is Calvinism Biblical • Part 6, with Steve Gregg and Douglas Wilson  -  2001" />
+      <Item link="audio/debates-and-interviews/07_Eternal_Security_Debate,_with_Steve_Gregg_and_Tom_Morris_-_2016.mp3" name="07. Eternal Security Debate, with Steve Gregg and Tom Morris  -  2016" />
+      <Item link="audio/debates-and-interviews/08_Olivet_Discourse_Debate_Part_1,_with_Steve_Gregg_and_Tom_Bertoli_-_2012.mp3" name="08. Olivet Discourse Debate • Part 1, with Steve Gregg and Tom Bertoli  -  2012" />
+      <Item link="audio/debates-and-interviews/09_Olivet_Discourse_Debate_Part_2,_with_Steve_Gregg_and_Tom_Bertoli_-_2012.mp3" name="09. Olivet Discourse Debate • Part 2, with Steve Gregg and Tom Bertoli  -  2012" />
+      <Item link="audio/debates-and-interviews/10_Eternal_Security_Debate_Part_1,_with_Steve_Gregg_and_Tom_Bertoli_-_2015.mp3" name="10. Eternal Security Debate • Part 1, with Steve Gregg and Tom Bertoli  -  2015" />
+      <Item link="audio/debates-and-interviews/11_Eternal_Security_Debate_Part_2,_with_Steve_Gregg_and_Tom_Bertoli_-_2015.mp3" name="11. Eternal Security Debate • Part 2, with Steve Gregg and Tom Bertoli  -  2015" />
+      <Item link="audio/debates-and-interviews/12_Debate_Broadcast_Part_1,_with_Steve_Gregg_and_Matt_Slick.mp3" name="12. Debate Broadcast • Part 1, with Steve Gregg and Matt Slick" />
+      <Item link="audio/debates-and-interviews/13_Debate_Broadcast_Part_2,_with_Steve_Gregg_and_Matt_Slick.mp3" name="13. Debate Broadcast • Part 2, with Steve Gregg and Matt Slick" />
+      <Item link="audio/debates-and-interviews/14_Full_Preterism_Part_1,_Don_Preston,_Affirmative_-_2013.mp3" name="14. Full Preterism • Part 1, Don Preston, Affirmative  -  2013" />
+      <Item link="audio/debates-and-interviews/15_Full_Preterism_Part_2,_Steve_Gregg,_Negative.mp3" name="15. Full Preterism • Part 2, Steve Gregg, Negative" />
+      <Item link="audio/debates-and-interviews/16_Full_Preterism_Part_3,_Don_Preston,_Affirmative.mp3" name="16. Full Preterism • Part 3, Don Preston, Affirmative" />
+      <Item link="audio/debates-and-interviews/17_Full_Preterism_Part_4,_Steve_Gregg,_Negative.mp3" name="17. Full Preterism • Part 4, Steve Gregg, Negative" />
+      <Item link="audio/debates-and-interviews/18_Full_Preterism_Part_5,_Don_Preston,_Affirmative.mp3" name="18. Full Preterism • Part 5, Don Preston, Affirmative" />
+      <Item link="audio/debates-and-interviews/19_Full_Preterism_Part_6,_Steve_Gregg,_Negative.mp3" name="19. Full Preterism • Part 6, Steve Gregg, Negative" />
+      <Item link="audio/debates-and-interviews/20_Full_Preterism_Part_7,_Steve_Gregg,_Affirmative.mp3" name="20. Full Preterism • Part 7, Steve Gregg, Affirmative" />
+      <Item link="audio/debates-and-interviews/21_Full_Preterism_Part_8,_Don_Preston,_Negative.mp3" name="21. Full Preterism • Part 8, Don Preston, Negative" />
+      <Item link="audio/debates-and-interviews/22_Full_Preterism_Part_9,_Steve_Gregg,_Affirmative.mp3" name="22. Full Preterism • Part 9, Steve Gregg, Affirmative" />
+      <Item link="audio/debates-and-interviews/23_Full_Preterism_Part_10,_Don_Preston,_Negative.mp3" name="23. Full Preterism • Part 10, Don Preston, Negative" />
+      <Item link="audio/debates-and-interviews/24_Full_Preterism_Part_11,_Steve_Gregg,_Affirmative.mp3" name="24. Full Preterism • Part 11, Steve Gregg, Affirmative" />
+      <Item link="audio/debates-and-interviews/25_Full_Preterism_Part_12,_Don_Preston,_Negative.mp3" name="25. Full Preterism • Part 12, Don Preston, Negative" />
+      <Item link="audio/debates-and-interviews/26_Full_Preterism_Part_13,_Q_and_A_Part_1.mp3" name="26. Full Preterism • Part 13, Q and A • Part 1" />
+      <Item link="audio/debates-and-interviews/27_Full_Preterism_Part_14,_Q_and_A_Part_2.mp3" name="27. Full Preterism • Part 14, Q and A • Part 2" />
+      <Item link="audio/debates-and-interviews/28_Catholicism_Part_1,_Final_Authority,_with_Steve_Gregg_and_Jimmy_Akin_-_2019.mp3" name="28. Catholicism • Part 1, Final Authority, with Steve Gregg and Jimmy Akin  -  2019" />
+      <Item link="audio/debates-and-interviews/29_Catholicism_Part_2,_The_Nature_of_the_Church,_with_Steve_Gregg_and_Jimmy_Akin_-_2019.mp3" name="29. Catholicism • Part 2, The Nature of the Church, with Steve Gregg and Jimmy Akin  -  2019" />
+      <Item link="audio/debates-and-interviews/30_Catholicism_Part_3,_Peters_Role_and_Apostolic_Succession,_with_Steve_Gregg_and_Jimmy_Akin_-_2019.mp3" name="30. Catholicism • Part 3, Peters Role and Apostolic Succession, with Steve Gregg and Jimmy Akin  -  2019" />
+      <Item link="audio/debates-and-interviews/31_Catholicism_Part_4,_Salvation_and_Sacraments,_with_Steve_Gregg_and_Jimmy_Akin_-_2019.mp3" name="31. Catholicism • Part 4, Salvation and Sacraments, with Steve Gregg and Jimmy Akin  -  2019" />
+      <Item link="audio/debates-and-interviews/32_Catholicism_Part_5,_Mary_and_the_Saints,_with_Steve_Gregg_and_Jimmy_Akin_-_2019.mp3" name="32. Catholicism • Part 5, Mary and the Saints, with Steve Gregg and Jimmy Akin  -  2019" />
+      <Item link="audio/debates-and-interviews/33_Replacement_Theology_Part 1,_with_Steve_Gregg_and_Tommy_Bertoli_.mp3" name="33. Replacement Theology • Part 1, with Steve Gregg and Tommy Bertoli " />
+      <Item link="audio/debates-and-interviews/34_Replacement_Theology_Part_2,_with_Steve_Gregg_and_Tommy_Bertoli.mp3" name="34. Replacement Theology • Part 2, with Steve Gregg and Tommy Bertoli" />
+      <Item link="audio/debates-and-interviews/35_The_Future_of_Israel,_with_Steve_Gregg_and_Michael_Brown_-_2012.mp3" name="35. The Future of Israel, with Steve Gregg and Michael Brown  -  2012" />
+      <Item link="audio/debates-and-interviews/36_Does_Modern_Science_Destroy_Christianity,_with_Steve_Gregg_and_Truman_Smith_-_2013.mp3" name="36. Does Modern Science Destroy Christianity, with Steve Gregg and Truman Smith  -  2013" />
+      <Item link="audio/debates-and-interviews/37_Concerning_Replacement_Theology_-_Steve_Gregg_Responds_to_Pastors_Hibbs,_Hitchcock,_and_Wilkinson_-_2016.mp3" name="37. Concerning Replacement Theology  -  Steve Gregg Responds to Pastors Hibbs, Hitchcock, and Wilkinson  -  2016" />
+      <Item link="audio/debates-and-interviews/38_Did_Christs_Law_Supercede_Mosaic_Law,_with_Steve_Gregg_and_Doug_Hamp_-_2016.mp3" name="38. Did Christs Law Supercede Mosaic Law, with Steve Gregg and Doug Hamp  -  2016" />
+      <Item link="audio/debates-and-interviews/39_Is_Sabbath_Binding_in_the_New_Covenant,_with_Steve_Gregg_and_Doug_Batchelor_-_2018.mp3" name="39. Is Sabbath Binding in the New Covenant, with Steve Gregg and Doug Batchelor  -  2018" />
+      <Item link="audio/debates-and-interviews/40_Catholicism_Debate_with_Steve_Gregg_and_Tim_Staples_Part_1_-_The_Authority_of_Scripture.mp3" name="40. Catholicism Debate with Steve Gregg and Tim Staples • Part 1  -  The Authority of Scripture" />
+      <Item link="audio/debates-and-interviews/41_Catholicism_Debate_with_Steve_Gregg_and_Tim_Staples_Part_2_-_The_Primacy_of_the_Pope.mp3" name="41. Catholicism Debate with Steve Gregg and Tim Staples • Part 2  -  The Primacy of the Pope" />
+      <Item link="audio/debates-and-interviews/42_Catholicism_Debate_with_Steve_Gregg_and_Tim_Staples_Part_3_-_The_Doctrine_of_Mary.mp3" name="42. Catholicism Debate with Steve Gregg and Tim Staples • Part 3  -  The Doctrine of Mary" />
+      <Item link="audio/debates-and-interviews/43_Catholicism_Debate_with_Steve_Gregg_and_Tim_Staples_Part_4_-_The_Eucharist.mp3" name="43. Catholicism Debate with Steve Gregg and Tim Staples • Part 4  -  The Eucharist" />
+      <Item link="audio/debates-and-interviews/44_Catholicism_Debate_with_Steve_Gregg_and_Tim_Staples_Part_5_-_Points_Revisited.mp3" name="44. Catholicism Debate with Steve Gregg and Tim Staples • Part 5  -  Points Revisited" />
+      <Item link="audio/debates-and-interviews/45_Calvinism_Debate_with_Steve_Gregg_and_James_White_Part_1_-_2015.mp3" name="45. Calvinism Debate with Steve Gregg and James White • Part 1  -  2015" />
+      <Item link="audio/debates-and-interviews/46_Calvinism_Debate_with_Steve_Gregg_and_James_White_Part_2_-_2015.mp3" name="46. Calvinism Debate with Steve Gregg and James White • Part 2  -  2015" />
+      <Item link="audio/debates-and-interviews/47_Calvinism_Debate_with_Steve_Gregg_and_James_White_Part_3_-_2015.mp3" name="47. Calvinism Debate with Steve Gregg and James White • Part 3  -  2015" />
+      <Item link="audio/debates-and-interviews/48_Calvinism_Debate_with_Steve_Gregg_and_James_White_Part_4_-_2015.mp3" name="48. Calvinism Debate with Steve Gregg and James White • Part 4  -  2015" />
+      <Item link="audio/debates-and-interviews/49_Calvinism_Debate_with_Steve_Gregg_and_James_White_Part_5_-_2015.mp3" name="49. Calvinism Debate with Steve Gregg and James White • Part 5  -  2015" />
+      <Item link="audio/debates-and-interviews/50_Theism_vs_Atheism_Debate_with_Steve_Gregg_and_William_Ramsey_-_2009.mp3" name="50. Theism vs Atheism Debate with Steve Gregg and William Ramsey  -  2009" />
+      <Item link="audio/debates-and-interviews/51_Calvinism_vs_Non_-_Calvinism_with_Gene_Cook_and_Steve_Gregg_Part_1_-_2004.mp3" name="51. Calvinism vs Non  -  Calvinism with Gene Cook and Steve Gregg • Part 1  -  2004" />
+      <Item link="audio/debates-and-interviews/52_Calvinism_vs_Non_-_Calvinism_with_Gene_Cook_and_Steve_Gregg_Part_2_-_2004.mp3" name="52. Calvinism vs Non  -  Calvinism with Gene Cook and Steve Gregg • Part 2  -  2004" />
+      <Item link="audio/debates-and-interviews/53_Calvinism_vs_Non_-_Calvinism_with_Gene_Cook_and_Steve_Gregg_Part_3_-_2004.mp3" name="53. Calvinism vs Non  -  Calvinism with Gene Cook and Steve Gregg • Part 3  -  2004" />
+      <Item link="audio/debates-and-interviews/54_Calvinism_vs_Non_-_Calvinism_with_Gene_Cook_and_Steve_Gregg_Part_4_-_2004.mp3" name="54. Calvinism vs Non  -  Calvinism with Gene Cook and Steve Gregg • Part 4  -  2004" />
+      <Item link="audio/debates-and-interviews/55_The_Church_is_the_Israel_of_God_-_Steve_Gregg_and_Chris_Date_-_2020.mp3" name="55. The Church is the Israel of God  -  Steve Gregg and Chris Date  -  2020" />
+      <Item link="audio/debates-and-interviews/56_Gods_Plan_for_Israel_-_Steve_Gregg_and_David_Preston_-_2024.mp3" name="56. Gods Plan for Israel  -  Steve Gregg and David Preston  -  2024" />
+      <Item link="audio/debates-and-interviews/57_Is_Christianity_True_-_Steve_Gregg_and_Max_the_Atheist_-_2024.mp3" name="57. Is Christianity True  -  Steve Gregg and Max the Atheist  -  2024" />
+    </Debates>
   </Teaching>
   <Teaching>
-    <Teachings name="A. Chosen People" server="tnp" />
+    <Teachings name="Teachings" server="tnp">
+      <Item link="audio/individual-topical-teachings/A_Chosen_People.mp3" name="A. Chosen People" />
+      <Item link="audio/individual-topical-teachings/A_Christian_Coping_with_Grief_-_2016.mp3" name="A. Christian Coping with Grief  -  2016" />
+      <Item link="audio/individual-topical-teachings/A_Teachable_Spirit.mp3" name="A. Teachable Spirit" />
+      <Item link="audio/individual-topical-teachings/A_Teachable_Spirit_-_2019.mp3" name="A. Teachable Spirit  -  2019" />
+      <Item link="audio/individual-topical-teachings/A_Vision_for_Children.mp3" name="A. Vision for Children" />
+      <Item link="audio/individual-topical-teachings/Abiding_in_Christ_-_2019.mp3" name="Abiding. in Christ  -  2019" />
+      <Item link="audio/individual-topical-teachings/Astrology.mp3" name="Astrology" />
+      <Item link="audio/individual-topical-teachings/Atheism_-_2018.mp3" name="Atheism.  -  2018" />
+      <Item link="audio/individual-topical-teachings/Authority_of_Scripture_-_A_Survey_-_2018.mp3" name="Authority. of Scripture  -  A Survey  -  2018" />
+      <Item link="audio/individual-topical-teachings/Backsliding.mp3" name="Backsliding" />
+      <Item link="audio/individual-topical-teachings/Battle_for_the_Truth_Part_1_-_2022.mp3" name="Battle. for the Truth • Part 1  -  2022" />
+      <Item link="audio/individual-topical-teachings/Battle_for_the_Truth_Part_2_-_2022.mp3" name="Battle. for the Truth • Part 2  -  2022" />
+      <Item link="audio/individual-topical-teachings/Becoming_a_Disciple_of_Christ_-_2018.mp3" name="Becoming. a Disciple of Christ  -  2018" />
+      <Item link="audio/individual-topical-teachings/Being_a_Disciple_in_the_Kingdom_of_God_-_2021.mp3" name="Being. a Disciple in the Kingdom of God  -  2021" />
+      <Item link="audio/individual-topical-teachings/Being_the_Church_-_2018.mp3" name="Being. the Church  -  2018" />
+      <Item link="audio/individual-topical-teachings/Blessed_are_the_Peacemakers_-_2018.mp3" name="Blessed. are the Peacemakers  -  2018" />
+      <Item link="audio/individual-topical-teachings/Blessed_are_the_Persecuted_-_2019.mp3" name="Blessed. are the Persecuted  -  2019" />
+      <Item link="audio/individual-topical-teachings/Bottom_Line_Interview_-_2017.mp3" name="Bottom. Line Interview  -  2017" />
+      <Item link="audio/individual-topical-teachings/Bottom_Line_Interview_-_2021.mp3" name="Bottom. Line Interview  -  2021" />
+      <Item link="audio/individual-topical-teachings/Cain_and_Abel.mp3" name="Cain. and Abel" />
+      <Item link="audio/individual-topical-teachings/Christian_Response_to_Gay_Marriage_-_2015.mp3" name="Christian. Response to Gay Marriage  -  2015" />
+      <Item link="audio/individual-topical-teachings/Communion_Part_1_-_2021.mp3" name="Communion. • Part 1  -  2021" />
+      <Item link="audio/individual-topical-teachings/Communion_Part_2_-_2021.mp3" name="Communion. • Part 2  -  2021" />
+      <Item link="audio/individual-topical-teachings/Cults_Part_1.mp3" name="Cults. • Part 1" />
+      <Item link="audio/individual-topical-teachings/Cults_Part_2_-_Mormonism.mp3" name="Cults. • Part 2  -  Mormonism" />
+      <Item link="audio/individual-topical-teachings/Deconstructing_Dispensationalism_-_2023.mp3" name="Deconstructing. Dispensationalism  -  2023" />
+      <Item link="audio/individual-topical-teachings/Demon_Possession_-_2015.mp3" name="Demon. Possession  -  2015" />
+      <Item link="audio/individual-topical-teachings/Demons_Part_1.mp3" name="Demons. • Part 1" />
+      <Item link="audio/individual-topical-teachings/Demons_Part_2.mp3" name="Demons. • Part 2" />
+      <Item link="audio/individual-topical-teachings/Disappointment_with_God.mp3" name="Disappointment. with God" />
+      <Item link="audio/individual-topical-teachings/Discipleship_-_2022.mp3" name="Discipleship.  -  2022" />
+      <Item link="audio/individual-topical-teachings/Drawing_Near_to_God_-_2023.mp3" name="Drawing. Near to God  -  2023" />
+      <Item link="audio/individual-topical-teachings/Faithfulness.mp3" name="Faithfulness" />
+      <Item link="audio/individual-topical-teachings/False_Prophets_-_2019.mp3" name="False. Prophets  -  2019" />
+      <Item link="audio/individual-topical-teachings/Forgiveness_-_2018.mp3" name="Forgiveness.  -  2018" />
+      <Item link="audio/individual-topical-teachings/Friendship.mp3" name="Friendship" />
+      <Item link="audio/individual-topical-teachings/Gifts_of_the_Holy_Spirit_Part_1_-_2018.mp3" name="Gifts. of the Holy Spirit • Part 1  -  2018" />
+      <Item link="audio/individual-topical-teachings/Gifts_of_the_Holy_Spirit_Part_2_-_2018.mp3" name="Gifts. of the Holy Spirit • Part 2  -  2018" />
+      <Item link="audio/individual-topical-teachings/Gifts_of_the_Holy_Spirit_Part_3_-_2018.mp3" name="Gifts. of the Holy Spirit • Part 3  -  2018" />
+      <Item link="audio/individual-topical-teachings/Gospel_in_the_Stars_-_2019.mp3" name="Gospel. in the Stars  -  2019" />
+      <Item link="audio/individual-topical-teachings/Hell_-_Three_Christian_Views_-_2019.mp3" name="Hell.  -  Three Christian Views  -  2019" />
+      <Item link="audio/individual-topical-teachings/How_to_Love_Your_Wife_-_2018.mp3" name="How. to Love Your Wife  -  2018" />
+      <Item link="audio/individual-topical-teachings/How_to_Study_the_Bible_Part_1.mp3" name="How. to Study the Bible • Part 1" />
+      <Item link="audio/individual-topical-teachings/How_to_Study_the_Bible_Part_2.mp3" name="How. to Study the Bible • Part 2" />
+      <Item link="audio/individual-topical-teachings/How_to_Walk_in_the_Spirit_-_2018.mp3" name="How. to Walk in the Spirit  -  2018" />
+      <Item link="audio/individual-topical-teachings/Humility_Part_1.mp3" name="Humility. • Part 1" />
+      <Item link="audio/individual-topical-teachings/Humility_Part_2.mp3" name="Humility. • Part 2" />
+      <Item link="audio/individual-topical-teachings/Idolatry.mp3" name="Idolatry" />
+      <Item link="audio/individual-topical-teachings/Improving_Our_Praying.mp3" name="Improving. Our Praying" />
+      <Item link="audio/individual-topical-teachings/Introduction_to_the_Book_of_Revelation_-_2019.mp3" name="Introduction. to the Book of Revelation  -  2019" />
+      <Item link="audio/individual-topical-teachings/Is_the_Bible_True_Part_1.mp3" name="Is. the Bible True • Part 1" />
+      <Item link="audio/individual-topical-teachings/Is_the_Bible_True_Part_2.mp3" name="Is. the Bible True • Part 2" />
+      <Item link="audio/individual-topical-teachings/James - The Man and His Book_-_2022.mp3" name="James.  -  The Man and His Book  -  2022" />
+      <Item link="audio/individual-topical-teachings/Justice_and_Social_Justice_-_2020.mp3" name="Justice. and Social Justice  -  2020" />
+      <Item link="audio/individual-topical-teachings/KSCO_Radio_Interview_With_Atheists_and_Agnostics_-_2019.mp3" name="KSCO. Radio Interview With Atheists and Agnostics  -  2019" />
+      <Item link="audio/individual-topical-teachings/Legalism_vs_Grace.mp3" name="Legalism. vs Grace" />
+      <Item link="audio/individual-topical-teachings/Lessons_on_the_Walk_to_Emmaus_-_2023.mp3" name="Lessons. on the Walk to Emmaus  -  2023" />
+      <Item link="audio/individual-topical-teachings/Living for the Glory of God.mp3" name="Living. for the Glory of God" />
+      <Item link="audio/individual-topical-teachings/Living_by_Faith_-_2019.mp3" name="Living. by Faith  -  2019" />
+      <Item link="audio/individual-topical-teachings/Living_by_Faith_-_2022.mp3" name="Living. by Faith  -  2022" />
+      <Item link="audio/individual-topical-teachings/Living_with_Your_Conscience.mp3" name="Living. with Your Conscience" />
+      <Item link="audio/individual-topical-teachings/Middle_East_Crisis_and_Dangers_of_Dispensationalism_Part_1.mp3" name="Middle. East Crisis and Dangers of Dispensationalism • Part 1" />
+      <Item link="audio/individual-topical-teachings/Middle_East_Crisis_and_Dangers_of_Dispensationalism_Part_2.mp3" name="Middle. East Crisis and Dangers of Dispensationalism • Part 2" />
+      <Item link="audio/individual-topical-teachings/Money.mp3" name="Money" />
+      <Item link="audio/individual-topical-teachings/Moving_from_Milk_to_Meat_-_2018.mp3" name="Moving. from Milk to Meat  -  2018" />
+      <Item link="audio/individual-topical-teachings/Olivet_Discourse.mp3" name="Olivet. Discourse" />
+      <Item link="audio/individual-topical-teachings/Origins_Part_1_-_2001.mp3" name="Origins. • Part 1  -  2001" />
+      <Item link="audio/individual-topical-teachings/Origins_Part_2_-_2001.mp3" name="Origins. • Part 2  -  2001" />
+      <Item link="audio/individual-topical-teachings/Overview_of_the_Bible_-_2018.mp3" name="Overview. of the Bible  -  2018" />
+      <Item link="audio/individual-topical-teachings/Preparing_for_Trial_-_2021.mp3" name="Preparing. for Trial  -  2021" />
+      <Item link="audio/individual-topical-teachings/Prepping_for_the_Future_-_2022.mp3" name="Prepping. for the Future  -  2022" />
+      <Item link="audio/individual-topical-teachings/Protecting_Our_Children_-_2022.mp3" name="Protecting. Our Children  -  2022" />
+      <Item link="audio/individual-topical-teachings/Psalm_1_-_Like_a_Tree_Planted_by_the_Rivers_of_Water_-_2021.mp3" name="Psalm. 1  -  Like a Tree Planted by the Rivers of Water  -  2021" />
+      <Item link="audio/individual-topical-teachings/Psalm_2_-_The_Power_of_the_Son_-_2022.mp3" name="Psalm. 2  -  The Power of the Son  -  2022" />
+      <Item link="audio/individual-topical-teachings/Psalm_3-4_-_2022.mp3" name="Psalm. 3 - 4  -  2022" />
+      <Item link="audio/individual-topical-teachings/Queen_of_Hart_Interview_-_2015.mp3" name="Queen. of Hart Interview  -  2015" />
+      <Item link="audio/individual-topical-teachings/Refuse_to_be_Offended_-_2021.mp3" name="Refuse. to be Offended  -  2021" />
+      <Item link="audio/individual-topical-teachings/Relationships - Intro.mp3" name="Relationships.  -  Intro" />
+      <Item link="audio/individual-topical-teachings/Revelation_Four_Views_Part_1_-_2017.mp3" name="Revelation. Four Views • Part 1  -  2017" />
+      <Item link="audio/individual-topical-teachings/Revelation_Four_Views_Part_2_-_2017.mp3" name="Revelation. Four Views • Part 2  -  2017" />
+      <Item link="audio/individual-topical-teachings/Sabbath_Keeping.mp3" name="Sabbath. Keeping" />
+      <Item link="audio/individual-topical-teachings/Salt_of_the_Earth_-_2019.mp3" name="Salt. of the Earth  -  2019" />
+      <Item link="audio/individual-topical-teachings/Salvation.mp3" name="Salvation" />
+      <Item link="audio/individual-topical-teachings/Self_Control.mp3" name="Self. Control" />
+      <Item link="audio/individual-topical-teachings/Sexual_Sanity_in_an_Age_of_Total_Confusion_2021.mp3" name="Sexual. Sanity in an Age of Total Confusion 2021" />
+      <Item link="audio/individual-topical-teachings/Some_Assembly_Required_-_Organic_Church_Forum_-_2011.mp3" name="Some. Assembly Required  -  Organic Church Forum  -  2011" />
+      <Item link="audio/individual-topical-teachings/Some_Assembly_Required_Part_1_-_2020.mp3" name="Some. Assembly Required • Part 1  -  2020" />
+      <Item link="audio/individual-topical-teachings/Some_Assembly_Required_Part_2_-_2020.mp3" name="Some. Assembly Required • Part 2  -  2020" />
+      <Item link="audio/individual-topical-teachings/State_of_the_Church_and_Doers_of_the_Word_-_2023.mp3" name="State. of the Church and Doers of the Word  -  2023" />
+      <Item link="audio/individual-topical-teachings/Steve_Gregg_Responds_to_Bart_Ehrman_-_2020.mp3" name="Steve. Gregg Responds to Bart Ehrman  -  2020" />
+      <Item link="audio/individual-topical-teachings/The_Bible_and_Gender_Identity_-_2018.mp3" name="The. Bible and Gender Identity  -  2018" />
+      <Item link="audio/individual-topical-teachings/The_Fatherhood_of_God_-_2019.mp3" name="The. Fatherhood of God  -  2019" />
+      <Item link="audio/individual-topical-teachings/The_Five_Points_of_Calvinism_-_An_Overview_-_2019.mp3" name="The. Five Points of Calvinism  -  An Overview  -  2019" />
+      <Item link="audio/individual-topical-teachings/The_Grace_of_Contentment_-_2018.mp3" name="The. Grace of Contentment  -  2018" />
+      <Item link="audio/individual-topical-teachings/The_Grace_of_Gratitude_-_2018.mp3" name="The. Grace of Gratitude  -  2018" />
+      <Item link="audio/individual-topical-teachings/The_Historical_Accuracy_of_Scripture_-_2019.mp3" name="The. Historical Accuracy of Scripture  -  2019" />
+      <Item link="audio/individual-topical-teachings/The_Kingdom_of_God_is_Not_Political_-_2020.mp3" name="The. Kingdom of God is Not Political  -  2020" />
+      <Item link="audio/individual-topical-teachings/The_Love_of_God.mp3" name="The. Love of God" />
+      <Item link="audio/individual-topical-teachings/The_Modern_State_of_Israel_-_2018.mp3" name="The. Modern State of Israel  -  2018" />
+      <Item link="audio/individual-topical-teachings/The_Preeminence_of_God_the_Father.mp3" name="The. Preeminence of God the Father" />
+      <Item link="audio/individual-topical-teachings/The_Priority_of_Prayer_-_2021.mp3" name="The. Priority of Prayer  -  2021" />
+      <Item link="audio/individual-topical-teachings/Toward_a_Radically_Christian_Counter_-_Culture_Part_1_-_2008.mp3" name="Toward. a Radically Christian Counter  -  Culture • Part 1  -  2008" />
+      <Item link="audio/individual-topical-teachings/Toward_a_Radically_Christian_Counter_-_Culture_Part_2_-_2008.mp3" name="Toward. a Radically Christian Counter  -  Culture • Part 2  -  2008" />
+      <Item link="audio/individual-topical-teachings/Toward_a_Radically_Christian_Counter_-_Culture_Part_3_-_2008.mp3" name="Toward. a Radically Christian Counter  -  Culture • Part 3  -  2008" />
+      <Item link="audio/individual-topical-teachings/Toward_a_Radically_Christian_Counter_-_Culture_Part_4_-_2008.mp3" name="Toward. a Radically Christian Counter  -  Culture • Part 4  -  2008" />
+      <Item link="audio/individual-topical-teachings/True_and_False_Assurance.mp3" name="True. and False Assurance" />
+      <Item link="audio/individual-topical-teachings/Understanding_the_Prophets_Part_1.mp3" name="Understanding. the Prophets • Part 1" />
+      <Item link="audio/individual-topical-teachings/Understanding_the_Prophets_Part_2.mp3" name="Understanding. the Prophets • Part 2" />
+      <Item link="audio/individual-topical-teachings/War_-_A_Christian_Perspective_Part_1.mp3" name="War.  -  A Christian Perspective • Part 1" />
+      <Item link="audio/individual-topical-teachings/War_-_A_Christian_Perspective_Part_2.mp3" name="War.  -  A Christian Perspective • Part 2" />
+      <Item link="audio/individual-topical-teachings/What_Has_Happened_to_the_Church_-_2021.mp3" name="What. Has Happened to the Church  -  2021" />
+      <Item link="audio/individual-topical-teachings/What_in_the_World_Was_Jesus_Talking_About_-_2019.mp3" name="What. in the World Was Jesus Talking About  -  2019" />
+      <Item link="audio/individual-topical-teachings/What_is_the_Gospel_-_2021.mp3" name="What. is the Gospel  -  2021" />
+      <Item link="audio/individual-topical-teachings/What_is_the_Tribulation_-_2019.mp3" name="What. is the Tribulation  -  2019" />
+      <Item link="audio/individual-topical-teachings/Why_I_Am_Still_a_Christian_Part_1_-_2020.mp3" name="Why. I Am Still a Christian • Part 1  -  2020" />
+      <Item link="audio/individual-topical-teachings/Why_I_Am_Still_a_Christian_Part_2_-_2020.mp3" name="Why. I Am Still a Christian • Part 2  -  2020" />
+      <Item link="audio/individual-topical-teachings/Why_We_Sing_-_2022.mp3" name="Why. We Sing  -  2022" />
+      <Item link="audio/individual-topical-teachings/Womanhood.mp3" name="Womanhood" />
+      <Item link="audio/individual-topical-teachings/Word_of_Faith_-_2019.mp3" name="Word. of Faith  -  2019" />
+      <Item link="audio/individual-topical-teachings/Worry.mp3" name="Worry" />
+      <Item link="audio/individual-topical-teachings/Zeitgeist_Refuted_Part_1_-_2004.mp3" name="Zeitgeist. Refuted • Part 1  -  2004" />
+      <Item link="audio/individual-topical-teachings/Zeitgeist_Refuted_Part_2_-_2004.mp3" name="Zeitgeist. Refuted • Part 2  -  2004" />
+    </Teachings>
   </Teaching>
   <Teaching>
     <Christ name="Volume Eight" server="tnp">

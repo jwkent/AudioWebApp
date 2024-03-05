@@ -20,23 +20,38 @@ namespace AudioWebApp.Server.Utilities
             List<Item> seriesQueryJson = new List<Item>();
             switch (seriesType)
             {
-                case "Topic": seriesQueryJson = TnpWebService.GetTopicalData(); break; 
-                case "Book": seriesQueryJson = TnpWebService.GetVerseByVerseData(); break; 
-                case "Overviews": seriesQueryJson = TnpWebService.GetBibleOverviewsData(); break; 
-                case "Debates": seriesQueryJson = TnpWebService.GetDebatesAndInterviewsData(); break; 
-                case "Teachings": seriesQueryJson = TnpWebService.GetIndividualTeachingsData(); break; 
-                case "Christ": seriesQueryJson = TnpWebService.GetTeachingsOfChristData(); break; 
+                case "Topic": seriesQueryJson = TnpWebService.GetTopicalData();
+                    CreateXml(doc, rootNode, seriesType, seriesQueryJson);
+                    break;
+                case "Book": seriesQueryJson = TnpWebService.GetVerseByVerseData();
+                    CreateXml(doc, rootNode, seriesType, seriesQueryJson);
+                    break;
+                case "Christ": seriesQueryJson = TnpWebService.GetTeachingsOfChristData(); 
+                    CreateXml(doc, rootNode, seriesType, seriesQueryJson);
+                    break;
+                
+                case "Overviews": seriesQueryJson = TnpWebService.GetBibleOverviewsData(); 
+                    CreateXmlSimple(doc, rootNode, seriesType, seriesQueryJson);
+                    break; 
+                case "Debates": seriesQueryJson = TnpWebService.GetDebatesAndInterviewsData(); 
+                    CreateXmlSimple(doc, rootNode, seriesType, seriesQueryJson);
+                    break;
+                case "Teachings": seriesQueryJson = TnpWebService.GetIndividualTeachingsData();
+                    CreateXmlSimple(doc, rootNode, seriesType, seriesQueryJson);
+                    break;
             }
+        }
 
+        private void CreateXml(XmlDocument doc, XmlNode rootNode, string seriesType, List<Item> seriesQueryJson)
+        {
             XmlNode teachingNode = doc.CreateNode(XmlNodeType.Element, "Teaching", null);
             rootNode.AppendChild(teachingNode);
 
             foreach (var series in seriesQueryJson)
             {
                 // Don't update the xml file if the data is null.
-                //if (series.Items == null 
-                if (
-                       series.Path == null
+                if (series.Items == null 
+                    || series.Path == null
                     || series.Title == null
                     || series.Type == null
                     || series.Url == null)
@@ -56,7 +71,6 @@ namespace AudioWebApp.Server.Utilities
                 serverAttribute.Value = serverName;
                 bookNode.Attributes.SetNamedItem(serverAttribute);
 
-                if (series.Items == null) return;
                 foreach (var m in series.Items.OrderBy(m => m.Sequence))
                 {
                     XmlNode itemNode = doc.CreateNode(XmlNodeType.Element, "Item", null);
@@ -71,6 +85,47 @@ namespace AudioWebApp.Server.Utilities
                     itemNameAttribute.Value = m.Title;
                     itemNode.Attributes.SetNamedItem(itemNameAttribute);
                 }
+            }
+        }
+        
+        private void CreateXmlSimple(XmlDocument doc, XmlNode rootNode, string seriesType, List<Item> seriesQueryJson)
+        {
+            // <Teaching>
+            XmlNode teachingNode = doc.CreateNode(XmlNodeType.Element, "Teaching", null);
+            rootNode.AppendChild(teachingNode);
+            
+            // <Topic> 
+            XmlNode bookNode = doc.CreateNode(XmlNodeType.Element, seriesType, null);
+            teachingNode.AppendChild(bookNode);
+                
+            // name="Authority" 
+            XmlAttribute nameAttribute = doc.CreateAttribute("name");
+            nameAttribute.Value = seriesType;
+            bookNode.Attributes.SetNamedItem(nameAttribute);
+            // server="tnp"
+            XmlAttribute serverAttribute = doc.CreateAttribute("server");
+            var serverName =  "tnp";
+            serverAttribute.Value = serverName;
+            bookNode.Attributes.SetNamedItem(serverAttribute);
+
+            foreach (var m in seriesQueryJson.OrderBy(m => m.Sequence))
+            {
+                // Don't update the xml file if the data is null.
+                if (m?.Path == null || m?.Title == null || m?.Type == null || m?.Url == null)
+                {
+                    return;
+                }
+                XmlNode itemNode = doc.CreateNode(XmlNodeType.Element, "Item", null);
+                bookNode.AppendChild(itemNode);
+
+                XmlAttribute itemLinkAttribute = doc.CreateAttribute("link");
+                var linkWithoutServerName = RemoveServerName(m.Url);
+                itemLinkAttribute.Value = linkWithoutServerName;
+                itemNode.Attributes.SetNamedItem(itemLinkAttribute);
+
+                XmlAttribute itemNameAttribute = doc.CreateAttribute("name");
+                itemNameAttribute.Value = m.Title;
+                itemNode.Attributes.SetNamedItem(itemNameAttribute);
             }
         }
 
