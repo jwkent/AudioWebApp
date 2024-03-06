@@ -9,13 +9,13 @@
 
 
 
-    @code {
+@code {
     public string? CurrentPageTitle ;
     protected override void OnInitialized()
     {
         NavigationManager.LocationChanged += HandleLocationChanged;
         UpdatePageTitle(NavigationManager.Uri);
-        
+
 
     }
     private void HandleLocationChanged(object sender, LocationChangedEventArgs e)
@@ -32,14 +32,41 @@
     {
         var segments = uri.Split('/');
         string? substring = segments.LastOrDefault();
-        if(substring == null || substring == "")
+        if (substring == null || substring == "")
         {
             return string.Empty;
         }
         else
         {
-            return substring.Substring(0, 1).ToUpper() + substring.Substring(1);
+            return RemoveHyphensAndCapitalize(substring.Substring(0));
         }
+    }
+    private string RemoveHyphensAndCapitalize(string title)
+    {
+        // Check if the input string contains '-'
+        if (title.Contains('-'))
+        {
+            string[] words = title.Split('-');
 
+            // Capitalize the first letter of each word
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (!string.IsNullOrEmpty(words[i]))
+                {
+                    words[i] = char.ToUpper(words[i][0]) + words[i].Substring(1);
+                }
+            }
+
+            // Join the words back together
+            string capitalizedString = string.Join(" ", words);
+
+            return capitalizedString;
+        }
+        else
+        {
+            // If no '-' found, just capitalize the first letter of the whole string
+            title = char.ToUpper(title[0]) + title.Substring(1);
+            return title;
+        }
     }
 }
