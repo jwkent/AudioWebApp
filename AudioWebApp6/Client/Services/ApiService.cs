@@ -16,6 +16,10 @@ public class ApiService
     public List<Server> Servers;
     public ObservableCollection<Series> Topics;
     public ObservableCollection<Series> Books;
+    public ObservableCollection<Series> Overviews;
+    public ObservableCollection<Series> Debates;
+    public ObservableCollection<Series> Teachings;
+    public ObservableCollection<Series> Christ;
 
     private readonly IJSRuntime jSRuntime;
 
@@ -36,8 +40,12 @@ public class ApiService
             .ContinueWith((arg) =>
             {   // Run after data is loaded either locally or from web service.
                 Servers = XmlReader.ReadServers(arg.Result);
-                Topics = XmlReader.ReadTopics(arg.Result);
-                Books = XmlReader.ReadBooks(arg.Result);
+                Topics = XmlReader.ReadData(arg.Result, "Topic");
+                Books = XmlReader.ReadData(arg.Result, "Book");
+                Overviews = XmlReader.ReadData(arg.Result, "Overviews");
+                Debates = XmlReader.ReadData(arg.Result, "Debates");
+                Teachings = XmlReader.ReadData(arg.Result, "Teachings");
+                Christ = XmlReader.ReadData(arg.Result, "Christ");
             });
     }
    

@@ -1,0 +1,52 @@
+﻿@page "/book-overviews"
+@using AudioWebApp.Client.Services
+@inject NavigationManager NavigationManager
+@inject SharedDataService sharedDataService
+@inject ApiService apiService
+
+<div>
+    <MudCardContent>
+
+        @if (dataReady == null)
+        {
+            <MudPaper Class="d-flex justify-center align-center" Elevation="0" Height="100vh">
+                <MudProgressCircular Style="color:#5F76A6; " Indeterminate="true" />
+            </MudPaper>
+        }
+        else
+        {
+            <MudPaper Elevation="0">
+                <MudList Clickable="true">
+                    @foreach (var topic in apiService.Books)
+                    {
+                        <MudListItem Text="@topic.Name">
+                            <NestedList>
+                                @foreach (var msg in topic.Messages)
+                                {
+                                    <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server)" />
+                                }
+                            </NestedList>
+                        </MudListItem>
+                    }
+                </MudList>
+            </MudPaper>
+        }
+    </MudCardContent>
+</div>
+@code {
+    string? dataReady;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await apiService.LoadData();
+        dataReady = "dataLoaded";
+    }
+    public void OpenAudio(string audioName, string audioLink, string serverName)
+    {
+        string serverPath = sharedDataService.GetServerPath(apiService.Servers, serverName);
+
+        sharedDataService.AudioTitle = audioName;
+        sharedDataService.AudioLink = Path.Combine(serverPath, audioLink);
+        sharedDataService.TogglePlayer();
+    }
+}

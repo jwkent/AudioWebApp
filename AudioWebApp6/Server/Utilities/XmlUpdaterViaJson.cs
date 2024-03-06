@@ -17,15 +17,40 @@ namespace AudioWebApp.Server.Utilities
         /// <param name="seriesType"></param>
         void CreateSeriesXmlNodes(XmlDocument doc, XmlNode rootNode, string seriesType)
         {
-            var seriesQueryJson = seriesType == "Book" ? TnpWebService.GetVerseByVerseData() : TnpWebService.GetTopicalData();
+            List<Item> seriesQueryJson = new List<Item>();
+            switch (seriesType)
+            {
+                case "Topic": seriesQueryJson = TnpWebService.GetTopicalData();
+                    CreateXml(doc, rootNode, seriesType, seriesQueryJson);
+                    break;
+                case "Book": seriesQueryJson = TnpWebService.GetVerseByVerseData();
+                    CreateXml(doc, rootNode, seriesType, seriesQueryJson);
+                    break;
+                case "Christ": seriesQueryJson = TnpWebService.GetTeachingsOfChristData(); 
+                    CreateXml(doc, rootNode, seriesType, seriesQueryJson);
+                    break;
+                
+                case "Overviews": seriesQueryJson = TnpWebService.GetBibleOverviewsData(); 
+                    CreateXmlSimple(doc, rootNode, seriesType, seriesQueryJson);
+                    break; 
+                case "Debates": seriesQueryJson = TnpWebService.GetDebatesAndInterviewsData(); 
+                    CreateXmlSimple(doc, rootNode, seriesType, seriesQueryJson);
+                    break;
+                case "Teachings": seriesQueryJson = TnpWebService.GetIndividualTeachingsData();
+                    CreateXmlSimple(doc, rootNode, seriesType, seriesQueryJson);
+                    break;
+            }
+        }
 
+        private void CreateXml(XmlDocument doc, XmlNode rootNode, string seriesType, List<Item> seriesQueryJson)
+        {
             XmlNode teachingNode = doc.CreateNode(XmlNodeType.Element, "Teaching", null);
             rootNode.AppendChild(teachingNode);
 
             foreach (var series in seriesQueryJson)
             {
                 // Don't update the xml file if the data is null.
-                if (series.Items == null
+                if (series.Items == null 
                     || series.Path == null
                     || series.Title == null
                     || series.Type == null
@@ -60,6 +85,47 @@ namespace AudioWebApp.Server.Utilities
                     itemNameAttribute.Value = m.Title;
                     itemNode.Attributes.SetNamedItem(itemNameAttribute);
                 }
+            }
+        }
+        
+        private void CreateXmlSimple(XmlDocument doc, XmlNode rootNode, string seriesType, List<Item> seriesQueryJson)
+        {
+            // <Teaching>
+            XmlNode teachingNode = doc.CreateNode(XmlNodeType.Element, "Teaching", null);
+            rootNode.AppendChild(teachingNode);
+            
+            // <Topic> 
+            XmlNode bookNode = doc.CreateNode(XmlNodeType.Element, seriesType, null);
+            teachingNode.AppendChild(bookNode);
+                
+            // name="Authority" 
+            XmlAttribute nameAttribute = doc.CreateAttribute("name");
+            nameAttribute.Value = seriesType;
+            bookNode.Attributes.SetNamedItem(nameAttribute);
+            // server="tnp"
+            XmlAttribute serverAttribute = doc.CreateAttribute("server");
+            var serverName =  "tnp";
+            serverAttribute.Value = serverName;
+            bookNode.Attributes.SetNamedItem(serverAttribute);
+
+            foreach (var m in seriesQueryJson.OrderBy(m => m.Sequence))
+            {
+                // Don't update the xml file if the data is null.
+                if (m?.Path == null || m?.Title == null || m?.Type == null || m?.Url == null)
+                {
+                    return;
+                }
+                XmlNode itemNode = doc.CreateNode(XmlNodeType.Element, "Item", null);
+                bookNode.AppendChild(itemNode);
+
+                XmlAttribute itemLinkAttribute = doc.CreateAttribute("link");
+                var linkWithoutServerName = RemoveServerName(m.Url);
+                itemLinkAttribute.Value = linkWithoutServerName;
+                itemNode.Attributes.SetNamedItem(itemLinkAttribute);
+
+                XmlAttribute itemNameAttribute = doc.CreateAttribute("name");
+                itemNameAttribute.Value = m.Title;
+                itemNode.Attributes.SetNamedItem(itemNameAttribute);
             }
         }
 
@@ -111,6 +177,10 @@ namespace AudioWebApp.Server.Utilities
             // Build the book and topic sections in the XML file.
             CreateSeriesXmlNodes(doc, rootNode, "Topic");
             CreateSeriesXmlNodes(doc, rootNode, "Book");
+            CreateSeriesXmlNodes(doc, rootNode, "Overviews");
+            CreateSeriesXmlNodes(doc, rootNode, "Debates");
+            CreateSeriesXmlNodes(doc, rootNode, "Teachings");
+            CreateSeriesXmlNodes(doc, rootNode, "Christ");
 
             string xmlString = null;
             StringBuilder builder = new StringBuilder();
