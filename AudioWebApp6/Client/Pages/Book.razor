@@ -17,9 +17,9 @@
         {
             <MudPaper Elevation="0">
                 <MudList Clickable="true">
-                    @foreach (var topic in apiService.Books)
+                    @foreach (var topic in apiService.Overviews)
                     {
-                        <MudListItem Text="@topic.Name">
+                        <MudListItem Text="@topic.Name" InitiallyExpanded="true">
                             <NestedList>
                                 @foreach (var msg in topic.Messages)
                                 {
