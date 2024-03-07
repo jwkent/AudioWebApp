@@ -11,13 +11,28 @@
         <MudNavLink Href="teachings" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.School">Teachings</MudNavLink>
         <MudNavLink Href="life-of-christ" Match="NavLinkMatch.Prefix" Icon="@tnpIcon">Life Of Christ</MudNavLink>
         <MudNavLink Href="favorites" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Favorite">Favorite</MudNavLink>
-        <MudNavGroup Title="Extras" Expanded="false" >
-            <MudNavLink Href="https://www.youtube.com/channel/UCxjboKtWGPrVVfzCfoMac7w" Icon="@Icons.Custom.Brands.YouTube" Target="_blank" >YouTube</MudNavLink>
+        <MudDivider Class="my-2"/>
+        <MudNavGroup Title="Extras" Expanded="false" Icon="@Icons.Material.Filled.More">
+            <MudNavGroup Title="YouTube" Icon="@Icons.Custom.Brands.YouTube">
+                    <MudNavLink Href="https://www.youtube.com/c/TheNarrowPath/videos" Icon="@Icons.Custom.Brands.YouTube" Target="_blank">TNP</MudNavLink>
+                    <MudNavLink Href="https://www.youtube.com/c/SteveGreggVideos/videos" Icon="@Icons.Custom.Brands.YouTube" Target="_blank">Steve Gregg</MudNavLink>
+            </MudNavGroup>
             <MudNavLink Href="https://podcasts.apple.com/us/podcast/the-narrow-path-radio-program-1-hour/id171641936" Target="_blank" Icon="@Icons.Material.Filled.Podcasts" >Podcasts</MudNavLink>
+                <MudNavLink Href="https://www.amazon.com/stores/Steve-Gregg/author/B00CUL970G" Target="_blank" >Amazon</MudNavLink>
             <MudNavLink Href="https://opentheo.org/steve-gregg" Target="_blank" Icon="@openTheosIcon">OpenTheo</MudNavLink>
             <MudNavLink Href="https://www.matthew713.com/" Target="_blank" Icon="@topicalIcon">Matthew713</MudNavLink>
             <MudNavLink Href="https://www.thenarrowpath.com/" Icon="@tnpIcon" Target="_blank" >The Narrow Path</MudNavLink>
-        </MudNavGroup>  
+        </MudNavGroup>
+        <MudDivider Class="my-2" />
+        <MudNavGroup Title="Contact" Expanded="false" Icon="@Icons.Material.Filled.ContactPage">
+                <MudNavLink Href="https://www.facebook.com/groups/45923991739" Icon="@Icons.Custom.Brands.Facebook" Target="_blank">Facebook</MudNavLink>
+                <MudNavLink Href="mailto:steve@thenarrowpath.com" Icon="@Icons.Material.Filled.Email">Email</MudNavLink>
+                <MudNavLink Href="https://github.com/jwkent/AudioWebApp/discussions" Icon="@Icons.Custom.Brands.GitHub" Target="_blank">App Feedback</MudNavLink>
+                <MudStack Justify="Justify.Center" style="padding-left:40px;padding-top: 20px;" >
+                    <MudText Typo="Typo.caption">Version 1.0.1</MudText>
+                </MudStack>
+                
+            </MudNavGroup>
     </MudNavMenu>
 </MudPaper>
 </div>
@@ -59,4 +74,5 @@
       "<line x1=\"12.19\" y1=\"5.8\" x2=\"17.31\" y2=\"5.8\" style=\"fill: none; stroke: #0840AA; stroke-miterlimit: 10;\"/>" +
     "</svg>";
 
+     
 }
