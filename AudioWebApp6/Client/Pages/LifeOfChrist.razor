@@ -1,8 +1,10 @@
 ﻿@page "/life-of-christ"
 @using AudioWebApp.Client.Services
+@using AudioWebApp.Client.Utilities;
 @inject NavigationManager NavigationManager
 @inject SharedDataService sharedDataService
 @inject ApiService apiService
+@inject CollectionFilter collectionFilter
 
 <div>
     <MudCardContent>
@@ -17,7 +19,7 @@
         {
             <MudPaper Elevation="0">
                 <MudList Clickable="true">
-                    @foreach (var topic in apiService.Christ)
+                    @foreach (var topic in collectionFilter.SeriesItems)
                     {
                         <MudListItem Text="@topic.Name">
                             <NestedList>
@@ -39,6 +41,7 @@
     protected override async Task OnInitializedAsync()
     {
         await apiService.LoadData();
+        collectionFilter.Reorder(apiService.Christ);
         dataReady = "dataLoaded";
     }
    

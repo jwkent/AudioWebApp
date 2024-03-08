@@ -1,5 +1,6 @@
 using AudioWebApp.Client;
 using AudioWebApp.Client.Services;
+using AudioWebApp.Client.Utilities;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
@@ -14,7 +15,7 @@ builder.Services.AddScoped<ApiService>();
 builder.Services.AddSingleton<SharedDataService>();
 builder.Services.AddScoped<FavoritesService>();
 builder.Services.AddScoped<AnnouncementService>();
-
+builder.Services.AddSingleton<CollectionFilter>();
 builder.Services.AddMudBlazorDialog();
 
 await builder.Build().RunAsync();
