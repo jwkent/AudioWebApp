@@ -1,46 +1,32 @@
-﻿::deep .mud-card-content.book-container {
+﻿::deep img.book-media-image{
+    height: 120px;
+    width: 120px;
+    
+}
+
+::deep .mud-card-content.book-container {
     background-color: transparent;
     height: 100%;
-    justify-content:center;
-    display:flex;
+    padding-left: 2px;
+    padding-right: 2px;
     padding-bottom: 140px; 
 }
-::deep .mud-card-content.book-text-container {
-    background-color: #d8e6fe
+::deep div.mud-list-item.mud-list-item-gutters.mud-list-item-clickable.mud-ripple.book-text-container {
+    background-color: #d8e6fe;
+    padding:0px;
+    margin-bottom:10px;
+    
 }
-::deep div.mud-paper.mud-elevation-0.mud-card.book-card {
-    background-color: #D8E6FE;
-    margin-bottom: 10px;
-    box-shadow: rgba(156, 172, 203, 0.5) 0px 7px 29px 0px;
+::deep div.mud-list-item-text{
+    margin:0px;
+    height:120px;
 }
-::deep p.mud-typography.mud-typography-body1.heading-text {
-    color: #0840AA;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
-}
-::deep p.mud-typography.mud-typography-body1.subheading-text {
-    color: #0840AA;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    margin-top: 4px;
-}
+
 ::deep p.mud-typography.mud-typography-body1.title-text {
     color: #0840AA;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 10px;
+    padding-top: 30px;
     
-}
-::deep svg.mud-icon-root.mud-svg-icon.mud-icon-size-medium {
-    color: #D5D8E5;
-}
-::deep span.mud-button-label {
-    color: #D5D8E5;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    margin-top: 4px;
-}
-::deep div.mud-card-actions.book-card-button-container {
-    background-color: #5f76a6;
-    justify-content: center;
 }

@@ -15,22 +15,22 @@
         }
         else
         {
-            <MudPaper Elevation="0" Width="350px">
-                <MudList Clickable="false">
+            <MudPaper Elevation="0" >
+                <MudList Clickable="true">
                     @foreach (var book in audioBookService.AudioBooks)
                     {
-                        <MudCard class="book-card" Elevation="0">
-                            <MudCardMedia Image="@book.ImageSource" Height="350" Width="320" />
-                            <MudCardContent class="book-text-container">
-                                <MudText class="heading-text">@book.SeriesTitle</MudText>
-                                <MudText class="subheading-text">@book.SeriesSubtitle</MudText>
-                                <MudText class="title-text">@book.BookTitle</MudText>
-                            </MudCardContent>
-                            <MudCardActions class="book-card-button-container">
-                                <MudButton class="book-card-button" StartIcon="@Icons.Material.Filled.PlayCircleOutline"
-                                           @onclick="(e) => OpenAudio(book.BookTitle, book.AudioSource)">Listen</MudButton>
-                            </MudCardActions>
-                        </MudCard>
+                        <MudListItem class="book-text-container" @onclick="(e) => OpenAudio(book.BookTitle, book.AudioSource)">
+                            <MudStack Row="true">
+                                <MudPaper Elevation="0">
+                                    <img Src="@book.ImageSource" class="book-media-image"/>
+                                </MudPaper>
+                                <MudPaper Elevation="0" >
+                                    <MudStack class="book-text-container">
+                                        <MudText class="title-text">@book.BookTitle</MudText>
+                                    </MudStack>
+                                </MudPaper>
+                            </MudStack>
+                        </MudListItem>
                     }
                 </MudList>
             </MudPaper>
