@@ -147,7 +147,6 @@ public class ApiService
             return doc;
         }
         return new XDocument();
-        // return XDocument.Load(xmlFilePath);
     }
 
     /// <summary>
@@ -156,16 +155,9 @@ public class ApiService
     /// <param name="xmlString">Xml string.</param>
     async void SaveXmlFile(string xmlString)
     {
-        Console.WriteLine("About to save xml.");
+        //Console.WriteLine("About to save xml.");
         await SetItemAsync("xmlString", xmlString);
-        Console.WriteLine("Done save xml.");
-
-        //var path = filesPath;
-        //if (!Directory.Exists(path))
-        //{
-        //    Directory.CreateDirectory(path);
-        //}
-        //File.WriteAllText(xmlFilePath, xmlString);
+        //Console.WriteLine("Done save xml.");
     }
 
     // Example method to set an item
@@ -179,39 +171,4 @@ public class ApiService
     {
         return await jSRuntime.InvokeAsync<string>("localforage.getItem", key);
     }
-
-    //private string dbName = "tnpDb";
-
-    //private async Task OpenDatabaseAsync()
-    //{
-    //    await jSRuntime.InvokeVoidAsync("indexedDBInterop.openDb", dbName, 1);
-    //}
-
-    //private async Task AddDataAsync(string xmlString)
-    //{
-    //    var db = await jSRuntime.InvokeAsync<object>("indexedDBInterop.openDb", dbName, 1);
-    //    await jSRuntime.InvokeVoidAsync("indexedDBInterop.addData", db, "xmlFile", xmlString);
-    //}
-
-    //private async Task<string> GetDataAsync()
-    //{
-    //    var db = await jSRuntime.InvokeAsync<object>("indexedDBInterop.openDb", dbName, 1);
-    //    var data = await jSRuntime.InvokeAsync<string>("indexedDBInterop.getData", db, "xmlFile", 1);
-    //    return data;
-    //}
-
-    //private async Task<bool> DatabaseExistsAsync()
-    //{
-    //    return await jSRuntime.InvokeAsync<bool>("indexedDBInterop.dbExists", dbName);
-    //}
-
-    //private async Task OpenOrCreateDatabaseAsync()
-    //{
-    //    bool dbExists = await DatabaseExistsAsync();
-    //    if (!dbExists)
-    //    {
-    //        // Logic to create a new database or perform first-time setup
-    //    }
-    //    // Open the database (assuming it exists or was just created)
-    //}
 }
