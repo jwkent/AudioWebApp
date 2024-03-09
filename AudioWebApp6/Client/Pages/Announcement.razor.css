@@ -1,4 +1,6 @@
-﻿
+﻿::deep .mud-card-content.announcement-container {
+    padding: 6px 6px 150px 6px;
+}
 
 ::deep .mud-paper {
     background-color: transparent;

@@ -1,0 +1,58 @@
+﻿@page "/books"
+@using AudioWebApp.Client.Services
+@inject SharedDataService sharedDataService
+@inject AudioBookService audioBookService
+@using System.Collections.ObjectModel
+
+<div>
+    <MudCardContent class="book-container">
+
+        @if (dataReady == null)
+        {
+            <MudPaper Class="d-flex justify-center align-center" Elevation="0" Height="100vh">
+                <MudProgressCircular Style="color:#5F76A6; " Indeterminate="true" />
+            </MudPaper>
+        }
+        else
+        {
+            <MudPaper Elevation="0" >
+                <MudList Clickable="true">
+                    @foreach (var book in audioBookService.AudioBooks)
+                    {
+                        <MudListItem class="book-text-container" @onclick="(e) => OpenAudio(book.BookTitle, book.AudioSource)">
+                            <MudStack Row="true">
+                                <MudPaper Elevation="0">
+                                    <img Src="@book.ImageSource" class="book-media-image"/>
+                                </MudPaper>
+                                <MudPaper Elevation="0" >
+                                    <MudStack class="book-text-container">
+                                        <MudText class="title-text">@book.BookTitle</MudText>
+                                    </MudStack>
+                                </MudPaper>
+                            </MudStack>
+                        </MudListItem>
+                    }
+                </MudList>
+            </MudPaper>
+        }
+    </MudCardContent>
+</div>
+
+@code {
+    
+    string? dataReady;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await audioBookService.GetAudioBooks();
+
+        dataReady = "dataLoaded";
+    }
+    public void OpenAudio(string audioName, string audioLink)
+    {
+        sharedDataService.AudioTitle = audioName;
+        sharedDataService.AudioLink = audioLink;
+        
+        sharedDataService.TogglePlayer();
+    }
+}

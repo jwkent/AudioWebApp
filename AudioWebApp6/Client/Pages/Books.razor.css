@@ -1,0 +1,32 @@
+﻿::deep img.book-media-image{
+    height: 120px;
+    width: 120px;
+    
+}
+
+::deep .mud-card-content.book-container {
+    background-color: transparent;
+    height: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 140px; 
+}
+::deep div.mud-list-item.mud-list-item-gutters.mud-list-item-clickable.mud-ripple.book-text-container {
+    background-color: #d8e6fe;
+    padding:0px;
+    margin-bottom:10px;
+    
+}
+::deep div.mud-list-item-text{
+    margin:0px;
+    height:120px;
+}
+
+::deep p.mud-typography.mud-typography-body1.title-text {
+    color: #0840AA;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    padding-top: 30px;
+    
+}

@@ -20,6 +20,7 @@
 ::deep .mud-main-content {
     background: rgb(216,230,254);
     background: linear-gradient(0deg, rgba(216,230,254,1) 10%, rgba(8,64,170,1) 100%);
+    min-height: 100vh;
 }
 ::deep div .stickyplayer {
     position: fixed;
