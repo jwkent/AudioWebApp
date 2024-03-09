@@ -1,8 +1,11 @@
 ﻿@page "/books"
+@using AudioWebApp.Client.Services
+@inject SharedDataService sharedDataService
+@inject AudioBookService audioBookService
 @using System.Collections.ObjectModel
 
 <div>
-    <MudCardContent>
+    <MudCardContent class="book-container">
 
         @if (dataReady == null)
         {
@@ -13,18 +16,18 @@
         else
         {
             <MudPaper Elevation="0" Width="350px">
-                <MudList Clickable="true">
-                    @foreach (var book in books)
+                <MudList Clickable="false">
+                    @foreach (var book in audioBookService.AudioBooks)
                     {
                         <MudCard class="book-card" Elevation="0">
                             <MudCardMedia Image="@book.ImageSource" Height="350" Width="320" />
-                            <MudCardContent style="background-color: #d8e6fe">
+                            <MudCardContent class="book-text-container">
                                 <MudText class="heading-text">@book.SeriesTitle</MudText>
                                 <MudText class="subheading-text">@book.SeriesSubtitle</MudText>
                                 <MudText class="title-text">@book.BookTitle</MudText>
                             </MudCardContent>
-                            <MudCardActions  style="background-color: #d8e6fe; justify-content:center;">
-                                <MudButton class="book-card-button" StartIcon="@Icons.Material.Filled.PlayCircle" 
+                            <MudCardActions class="book-card-button-container">
+                                <MudButton class="book-card-button" StartIcon="@Icons.Material.Filled.PlayCircleOutline"
                                            @onclick="(e) => OpenAudio(book.BookTitle, book.AudioSource)">Listen</MudButton>
                             </MudCardActions>
                         </MudCard>
@@ -36,46 +39,20 @@
 </div>
 
 @code {
-    ObservableCollection<AudioBook> books = new ObservableCollection<AudioBook>();
+    
     string? dataReady;
+
     protected override async Task OnInitializedAsync()
     {
-        books.Add(new AudioBook
-            {
-                SeriesTitle = "Empire of the Risen Son:",
-                SeriesSubtitle = "A Treatise on the Kingdom of God - What it is any Why it Matters",
-                BookTitle = "Book One: There is Another King",
-                AudioSource = "https://theos.s3.us-west-1.amazonaws.com/books/1_Complete+Audiobook-Empire_of_the_Risen_Son_Book_1.mp3",
-                ImageSource = "./images/empireoftheson_book1.jpg"
-            });
-        books.Add(new AudioBook
-        {
-            SeriesTitle = "Empire of the Risen Son:",
-            SeriesSubtitle = "A Treatise on the Kingdom of God - What it is any Why it Matters",
-            BookTitle = "Book Two: All the King's Men",
-            AudioSource = "https://theos.s3.us-west-1.amazonaws.com/books/Empire_of_the_Risen_Son-Book_2-by_Steve_Gregg.mp3",
-            ImageSource = "./images/empireoftheson_book2.jpg"
-        });
+        await audioBookService.GetAudioBooks();
 
         dataReady = "dataLoaded";
     }
     public void OpenAudio(string audioName, string audioLink)
     {
-        Console.WriteLine("opening media");
-        //string serverPath = sharedDataService.GetServerPath(apiService.Servers, serverName);
-
-        //sharedDataService.AudioTitle = audioName;
-        //sharedDataService.AudioLink = Path.Combine(serverPath, audioLink);
+        sharedDataService.AudioTitle = audioName;
+        sharedDataService.AudioLink = audioLink;
         
-        //sharedDataService.TogglePlayer();
-    }
-
-    public class AudioBook{
-        public string? SeriesTitle { get; set; }
-        public string? SeriesSubtitle { get; set; }
-        public string? BookTitle { get; set; }
-        public string? AudioSource { get; set; }
-        public string? ImageSource { get; set; }
-        public string? Link { get; set; }
+        sharedDataService.TogglePlayer();
     }
 }
