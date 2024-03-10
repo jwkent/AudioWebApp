@@ -5,7 +5,7 @@
 
 <PageTitle>Narrow Path</PageTitle>
 <div>
-    <MudCardContent Style="background-color:transparent; height:100vh; width:auto; padding:0px;">
+    <MudCardContent Style="background-color:transparent; min-height:100vh; width:auto; padding:0px; padding-bottom:150px;">
         <MudPaper Class="d-flex flex-grow-1 justify-center logo-image" Elevation="0">
             <img src="./images/Asset5.png" />
         </MudPaper>
@@ -20,8 +20,14 @@
         <MudPaper Class="d-flex flex-grow-1 justify-center pt-2" Elevation="0">
             <cite>@citation</cite>
         </MudPaper>
+        <MudPaper Class="d-flex flex-grow-1 justify-center mt-8" Elevation="0" >
+            <MudButton Elevation="4" Variant="Variant.Filled" Size="Size.Large" StartIcon="@Icons.Material.Filled.Menu"   class="nav-show-button"
+                @onclick="ShowContent">
+                View Content
+            </MudButton>
+        </MudPaper>
     </MudCardContent>
-    
+      
 </div>
 
   

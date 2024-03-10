@@ -29,3 +29,17 @@
     font-size: 12px;
     color: #5f76a6;
 }
+
+::deep button.mud-button-root.mud-button.mud-button-filled.mud-button-filled-default.mud-button-filled-size-large.mud-ripple.nav-show-button{
+    background-color: #D8E6FE;
+    color: #9396A1;
+    width:300px;
+    height:100px;
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::deep svg.mud-icon-root.mud-svg-icon.mud-icon-size-large {
+    margin-right: 10px;
+    font-size: 30px;
+    color: #979ba6;
+}
