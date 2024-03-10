@@ -1,0 +1,67 @@
+﻿@page "/how-to"
+
+
+<div>
+<MudCarousel Class="mud-width-full" Style="height:450px; margin-top:20px;" ShowArrows="@arrows" ShowBullets="@bullets" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" AutoCycleTime="@autoCycleTime" TData="object">
+        <MudCarouselItem Transition="transition" style="background-color:#4F6288">
+            <MudStack AlignItems="AlignItems.Center"  >
+                <MudPaper Class="pa-3" Elevation="0">
+                    <MudText style="font-size:36px; color:#D5D8E5;">Coming Soon</MudText>
+                </MudPaper>
+                <MudPaper Class="pa-3" Elevation="0">
+                    <MudText style="font-size:24px; color:#D5D8E5;">Create a Quick link.</MudText>
+                </MudPaper>
+                <MudPaper Class="pa-3" Elevation="0">
+                    <MudText style="font-size:18px; color:#D5D8E5;">Go directly to the content in a snap.</MudText>
+                </MudPaper>
+                <MudPaper Class="pa-3" Elevation="0">
+                    <MudIcon Class="mx-auto my-auto" Icon="@Icons.Material.Filled.School" Size="@Size.Large" />
+                </MudPaper>
+            </MudStack>
+    </MudCarouselItem>
+        <MudCarouselItem Transition="transition" style="background-color:#3E4F70;">
+            <MudStack AlignItems="AlignItems.Center">
+                <MudPaper Class="pa-3" Elevation="0">
+                    <MudText style="font-size:36px; color:#D5D8E5;" >Coming Soon</MudText>
+                </MudPaper>
+                <MudPaper Class="pa-3" Elevation="0">
+                    <MudText style="font-size:24px; color:#D5D8E5;">How to Add a favorite.</MudText>
+                </MudPaper>
+                <MudPaper Class="pa-3" Elevation="0">
+                    <MudText style="font-size:18px; color:#D5D8E5;">Easy to find on your device.</MudText>
+                </MudPaper>
+                <MudPaper Class="pa-3" Elevation="0">
+                    <MudIcon Class="mx-auto my-auto" Icon="@Icons.Material.Filled.School" Size="@Size.Large" />
+                </MudPaper>
+            </MudStack>
+        
+    </MudCarouselItem>
+        <MudCarouselItem Transition="transition" style="background-color:#243F77">
+            <MudStack AlignItems="AlignItems.Center">
+                <MudPaper Class="pa-3" Elevation="0">
+                    <MudText style="font-size:36px; color:#D5D8E5;">Coming Soon</MudText>
+                </MudPaper>
+                <MudPaper Class="pa-3" Elevation="0">
+                    <MudText style="font-size:24px; color:#D5D8E5;">How to Remove a Favorite.</MudText>
+                </MudPaper>
+                <MudPaper Class="pa-3" Elevation="0">
+                    <MudText style="font-size:18px; color:#D5D8E5;">Take charge of your content.</MudText>
+                </MudPaper>
+                <MudPaper Class="pa-3" Elevation="0">
+                    <MudIcon Class="mx-auto my-auto" Icon="@Icons.Material.Filled.School" Size="@Size.Large" />
+                </MudPaper>
+            </MudStack>
+        
+    </MudCarouselItem>
+</MudCarousel>
+</div>
+
+
+@code {
+    private bool arrows = true;
+    private bool bullets = true;
+    private bool enableSwipeGesture = true;
+    private bool autocycle = true;
+    private Transition transition = Transition.Slide;
+    TimeSpan autoCycleTime = TimeSpan.FromSeconds(5);
+}
