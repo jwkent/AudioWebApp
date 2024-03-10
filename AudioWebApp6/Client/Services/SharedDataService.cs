@@ -9,12 +9,16 @@ namespace AudioWebApp.Client.Services
         public string? AudioLink { get; set; }
         public string? AudioTitle { get; set; }
         public event Action OnPlayerToggle;
+        public event Action OnShowContent;
 
         public void TogglePlayer()
         {
             OnPlayerToggle?.Invoke();
         }
-
+        public void ShowMenu()
+        {
+            OnShowContent?.Invoke();
+        } 
         public string GetServerPath(List<Server> servers, string serverName)
         {
             string serverPath = string.Empty;

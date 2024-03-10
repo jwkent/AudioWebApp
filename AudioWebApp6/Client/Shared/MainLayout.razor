@@ -30,7 +30,7 @@
                     <div class="stickyplayer">
                         <div class="d-flex flex-grow-1 gap-0" style="padding-top:3px;">
                             <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-start;" Width="50px" Elevation="0">
-                                <MudButton Style=" padding:0px; color:#9396A1" OnClick="ClosePlayer">
+                                <MudButton Style=" padding:0px; color:#9396A1" OnClick="ClosePlayer" >
                                     <MudIcon Icon="@Icons.Material.Filled.Close" Title="Close player"></MudIcon>
                                 </MudButton>
                             </MudPaper>
@@ -75,9 +75,22 @@
     {
         playerOpen = false;
     }
+    public void HandleShowMenu()
+    {
+        Console.WriteLine($"in main {_drawerOpen}");
+        //DrawerToggle();
+        if(_drawerOpen == false){
+            DrawerToggle();
+            StateHasChanged();
+        }
+
+        
+
+    }
     protected override void OnInitialized()
     {
         SharedDataService.OnPlayerToggle += HandlePlayerToggle;
+        SharedDataService.OnShowContent += HandleShowMenu;
     }
     private async void HandlePlayerToggle()
     {
