@@ -2,58 +2,62 @@
 
 
 <div>
-<MudCarousel Class="mud-width-full" Style="height:450px; margin-top:20px;" ShowArrows="@arrows" ShowBullets="@bullets" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" AutoCycleTime="@autoCycleTime" TData="object">
-        <MudCarouselItem Transition="transition" style="background-color:#4F6288">
-            <MudStack AlignItems="AlignItems.Center"  >
-                <MudPaper Class="pa-3" Elevation="0">
-                    <MudText style="font-size:36px; color:#D5D8E5;">Coming Soon</MudText>
-                </MudPaper>
-                <MudPaper Class="pa-3" Elevation="0">
-                    <MudText style="font-size:24px; color:#D5D8E5;">Create a Quick link.</MudText>
-                </MudPaper>
-                <MudPaper Class="pa-3" Elevation="0">
-                    <MudText style="font-size:18px; color:#D5D8E5;">Go directly to the content in a snap.</MudText>
-                </MudPaper>
-                <MudPaper Class="pa-3" Elevation="0">
-                    <MudIcon Class="mx-auto my-auto" Icon="@Icons.Material.Filled.School" Size="@Size.Large" />
-                </MudPaper>
-            </MudStack>
-    </MudCarouselItem>
-        <MudCarouselItem Transition="transition" style="background-color:#3E4F70;">
-            <MudStack AlignItems="AlignItems.Center">
-                <MudPaper Class="pa-3" Elevation="0">
-                    <MudText style="font-size:36px; color:#D5D8E5;" >Coming Soon</MudText>
-                </MudPaper>
-                <MudPaper Class="pa-3" Elevation="0">
-                    <MudText style="font-size:24px; color:#D5D8E5;">How to Add a favorite.</MudText>
-                </MudPaper>
-                <MudPaper Class="pa-3" Elevation="0">
-                    <MudText style="font-size:18px; color:#D5D8E5;">Easy to find on your device.</MudText>
-                </MudPaper>
-                <MudPaper Class="pa-3" Elevation="0">
-                    <MudIcon Class="mx-auto my-auto" Icon="@Icons.Material.Filled.School" Size="@Size.Large" />
-                </MudPaper>
-            </MudStack>
-        
-    </MudCarouselItem>
+    <MudCarousel Class="mud-width-full" Style="height:675px; margin-top:20px;" ShowArrows="@arrows" 
+                ShowBullets="@bullets" EnableSwipeGesture="@enableSwipeGesture" AutoCycle="@autocycle" AutoCycleTime="@autoCycleTime" TData="object">
+
         <MudCarouselItem Transition="transition" style="background-color:#243F77">
             <MudStack AlignItems="AlignItems.Center">
                 <MudPaper Class="pa-3" Elevation="0">
-                    <MudText style="font-size:36px; color:#D5D8E5;">Coming Soon</MudText>
+                    <MudText style="font-size:36px; color:#D5D8E5;">Why a new web app?</MudText>
                 </MudPaper>
-                <MudPaper Class="pa-3" Elevation="0">
-                    <MudText style="font-size:24px; color:#D5D8E5;">How to Remove a Favorite.</MudText>
+                <MudPaper Class="pa-3" Elevation="1">
+                    <MudText style="font-size:20px; color:#D5D8E5;">
+                        This audio web app focuses on playing narrow path audio lectures!  <br /><br />
+                        Any lecture you listen to is automatically remembered and the 
+                        exact location restored when you come back to listen to it later. 
+                        This was the most requested feature.
+                    </MudText>
                 </MudPaper>
+            </MudStack>
+        </MudCarouselItem>
+
+        <MudCarouselItem Transition="transition" style="background-color:#243F77;">
+            <MudStack AlignItems="AlignItems.Center">
                 <MudPaper Class="pa-3" Elevation="0">
-                    <MudText style="font-size:18px; color:#D5D8E5;">Take charge of your content.</MudText>
+                    <MudText style="font-size:36px; color:#D5D8E5;">Save to favorite</MudText>
                 </MudPaper>
-                <MudPaper Class="pa-3" Elevation="0">
-                    <MudIcon Class="mx-auto my-auto" Icon="@Icons.Material.Filled.School" Size="@Size.Large" />
+
+                <MudImage Src="images/books-screenshot-square.png" Width="240" Height="240" Alt="Favorite" Elevation="1" Class="rounded-lg ma-4" />
+
+                <MudPaper Class="pa-3" Elevation="2">
+                    <MudText style="font-size:20px; color:#D5D8E5;">
+                        When listening to a lecture that you want to favovite, click on the heart "+" button to save it to the favorites collection.<br /><br />
+                        Then later navigate in the menu drawer and click on the "Favorite" button to view favorited lectures. Click on a lecture to continue listening.
+                    </MudText>
                 </MudPaper>
             </MudStack>
         
-    </MudCarouselItem>
-</MudCarousel>
+        </MudCarouselItem>
+
+        <MudCarouselItem Transition="transition" style="background-color:#243F77">
+            <MudStack AlignItems="AlignItems.Center">
+                <MudPaper Class="pa-3" Elevation="0">
+                    <MudText style="font-size:36px; color:#D5D8E5;">Remove from favorite</MudText>
+                </MudPaper>
+
+                <MudImage Src="images/favorite-removal.png" Width="240" Height="240" Alt="Favorite" Elevation="1" Class="rounded-lg ma-4" />
+
+                <MudPaper Class="pa-3" Elevation="2">
+                    <MudText style="font-size:20px; color:#D5D8E5;">
+                        When you no longer want an audio lecture in the favorites collection, navigate in the menu drawer and click on "Favorite".<br /><br />
+                        Then click on the heart "-" button to remove a lecture from the favorites collection.
+                    </MudText>
+                </MudPaper>
+            </MudStack>
+        
+        </MudCarouselItem>
+
+    </MudCarousel>
 </div>
 
 
@@ -63,5 +67,5 @@
     private bool enableSwipeGesture = true;
     private bool autocycle = true;
     private Transition transition = Transition.Slide;
-    TimeSpan autoCycleTime = TimeSpan.FromSeconds(5);
+    TimeSpan autoCycleTime = TimeSpan.FromSeconds(20);
 }
