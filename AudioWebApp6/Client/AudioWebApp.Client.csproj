@@ -52,6 +52,9 @@
 	  <Content Update="wwwroot\images\Favorite-Removal.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="wwwroot\images\HowToSaveHomeScreen.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="wwwroot\images\steve_gregg.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
