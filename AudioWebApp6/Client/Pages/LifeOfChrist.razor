@@ -22,6 +22,12 @@
                     @foreach (var topic in collectionFilter.SeriesItems)
                     {
                         <MudListItem Text="@topic.Name">
+                            <ChildContent>
+                                <MudStack Row="true">
+                                    <a class="topicNameText">@topic.Name</a>
+                                    <a class="topicMessageCountText">@topic.Messages.Count()</a>
+                                </MudStack>
+                            </ChildContent>
                             <NestedList>
                                 @foreach (var msg in topic.Messages)
                                 {

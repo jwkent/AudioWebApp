@@ -28,4 +28,15 @@
     padding-bottom: 140px;
     overflow: hidden;
 }
+::deep a.topicNameText {
+    color: #0840aa;
+    font-size: 18px;
+}
 
+::deep a.topicMessageCountText {
+    color: #80889782;
+    font-size: 14px;
+    padding-top: 4px;
+    padding-left: 10px;
+    
+}
