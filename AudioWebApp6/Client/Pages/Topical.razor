@@ -20,7 +20,13 @@
                 <MudList Clickable="true">
                     @foreach (var topic in apiService.Topics)
                     {
-                        <MudListItem Text="@topic.Name">
+                        <MudListItem >
+                            <ChildContent>
+                                <MudStack Row="true">
+                                    <a class="topicNameText">@topic.Name</a>
+                                    <a class="topicMessageCountText">@topic.Messages.Count()</a>
+                                </MudStack>
+                            </ChildContent>
                             <NestedList>
                                 @foreach (var msg in topic.Messages)
                                 {
