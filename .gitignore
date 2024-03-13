@@ -18,3 +18,5 @@ AudioWebApp8/AudioWebApp/obj
 AudioWebApp8/AudioWebApp.Client/bin
 AudioWebApp8/AudioWebApp.Client/obj
 *.user
+/AudioWebApp6/TestClientWebAudioApp/bin/Debug/net6.0
+/AudioWebApp6/TestClientWebAudioApp/obj
