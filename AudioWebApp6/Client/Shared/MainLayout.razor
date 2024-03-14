@@ -42,11 +42,11 @@
                         </div>
                         <div class="d-flex flex-grow-1 gap-0">
                             <MudPaper Class="flex-auto d-flex py-0 justify-center align-center"  Width="100%" Elevation="0">
-                                <MudText>@audioTitle</MudText>
+                                <MudText class="audioTitleText">@audioTitle</MudText>
                             </MudPaper>
                         </div>  
                         <div class="d-flex flex-grow-1 gap-0">
-                            <MudPaper Class="flex-auto d-flex py-3 justify-center align-center"  Width="100%" Elevation="0">
+                            <MudPaper Class="flex-auto d-flex py-1 justify-center align-center"  Width="100%" Elevation="0">
                                 <audio id="audioPlayer"src="@audioSource" controls autoplay title="@audioTitle" artist="@artist" category="@category"></audio>
                             </MudPaper>
                         </div>
