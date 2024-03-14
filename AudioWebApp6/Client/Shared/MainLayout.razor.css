@@ -35,3 +35,7 @@
     align-content: center;
     justify-content: center;
 }
+::deep p.mud-typography.mud-typography-body1.audioTitleText{
+    font-size:14px;
+    padding-left:6px;
+}
