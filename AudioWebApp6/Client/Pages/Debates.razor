@@ -29,7 +29,7 @@
                             <NestedList>
                                 @foreach (var msg in topic.Messages)
                                 {
-                                    <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server)" />
+                                    <MudListItem style="padding-right:20px;" Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server)" />
                                 }
                             </NestedList>
                         </MudListItem>
