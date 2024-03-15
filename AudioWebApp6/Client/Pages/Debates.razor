@@ -1,8 +1,11 @@
 ﻿@page "/debates"
 @using AudioWebApp.Client.Services
+@using AudioWebApp.Client.Utilities
 @inject NavigationManager NavigationManager
 @inject SharedDataService sharedDataService
 @inject ApiService apiService
+@inject DebateGrouperUtility debateGrouper
+
 
 <div>
     <MudCardContent>
@@ -17,9 +20,9 @@
         {
             <MudPaper Elevation="0">
                 <MudList Clickable="true" >
-                    @foreach (var topic in apiService.Debates)
+                    @foreach (var topic in debateGrouper.DebateCollection)
                     {
-                        <MudListItem InitiallyExpanded="true">
+                        <MudListItem InitiallyExpanded="false">
                             <ChildContent >
                                 <MudStack Row="true" >
                                     <a class="topicNameText">@topic.Name</a>
@@ -45,6 +48,7 @@
     protected override async Task OnInitializedAsync()
     {
         await apiService.LoadData();
+        debateGrouper.CreateCategories(apiService.Debates);
         dataReady = "dataLoaded";
     }
     public void OpenAudio(string audioName, string audioLink, string serverName)
