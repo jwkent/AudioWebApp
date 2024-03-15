@@ -8,14 +8,13 @@ namespace AudioWebApp.Client.Utilities
     public class DebateGrouperUtility
     {
         private Dictionary<string, List<Message>> _DebateGroups = new Dictionary<string, List<Message>>();
-        public ObservableCollection<DebateGroup> DebateCollection { get; set; } 
-        public ObservableCollection<Series> OriginalSeriesCollection { get; set; }
+        public ObservableCollection<Series> DebateCollection { get; set; }
+        
         private bool IsValidCollection = false;
         private string collectionServer;
         private string collectionAbbr;
         public void CreateCategories(ObservableCollection<Series> collection)
         {
-
             if(collection.Count == 0)
             {
                 IsValidCollection = false;             
@@ -23,14 +22,15 @@ namespace AudioWebApp.Client.Utilities
             else
             {
                 IsValidCollection = true;
-                DebateCollection = new ObservableCollection<DebateGroup>();
+                DebateCollection = new ObservableCollection<Series>();
                 collectionServer = collection[0].Server;
                 collectionAbbr = collection[0].Abbr;
             }
-
+            //Give back the Original Collection
             if (!IsValidCollection)
             {
-                Console.WriteLine($"Sorry the collection of Debates is empty.");
+                
+                DebateCollection = collection;
             }
             else
             {
@@ -58,15 +58,14 @@ namespace AudioWebApp.Client.Utilities
 
                 CreateDebateGroup(_DebateGroups, collectionServer, collectionAbbr);
             }
-           
         }
         private void CreateDebateGroup(Dictionary<string, List<Message>> categories, string server, string abbr )
         {
             foreach (var dgo in categories)
             {
-                DebateCollection.Add(new DebateGroup
+                DebateCollection.Add(new Series
                 {
-                    DebateTopic = dgo.Key,
+                    Name = dgo.Key,
                     Server = server,
                     Abbr = abbr,
                     Messages = new List<Message>(dgo.Value)
