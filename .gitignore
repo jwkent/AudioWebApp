@@ -20,3 +20,4 @@ AudioWebApp8/AudioWebApp.Client/obj
 *.user
 /AudioWebApp6/TestClientWebAudioApp/bin/Debug/net6.0
 /AudioWebApp6/TestClientWebAudioApp/obj
+AudioWebApp6/TestClientWebAudioApp/bin
