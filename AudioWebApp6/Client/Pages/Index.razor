@@ -3,6 +3,7 @@
 @inject NavigationManager NavigationManager
 @inject AnnouncementService announcementService
 
+
 <PageTitle>Narrow Path</PageTitle>
 <div>
     <MudCardContent Style="background-color:transparent; min-height:100vh; width:auto; padding:0px; padding-bottom:150px;">
@@ -26,6 +27,53 @@
                 View Content
             </MudButton>
         </MudPaper>
+        <MudHidden Breakpoint="Breakpoint.SmAndDown" Invert="true">
+            <MudStack Row="true">
+
+            
+            <MudCard >
+                <MudCardContent>
+                    <MudText>Auto Saving</MudText>
+                    <MudText Typo="Typo.body2">
+                        This feature was so important to listeners we had to made it a top priority. 
+                        When you are listening to an audio track and select a different one or simply return to it later the app will
+                        automaticly start from that same last position. No need to remember where you left off, just keep exploring and enjoying. 
+                        </MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+                </MudCardActions>
+            </MudCard>
+            <MudCard>
+                <MudCardContent>
+                    <MudText>TNP Radio</MudText>
+                    <MudText Typo="Typo.body2">This time we have embedded the radio station in the app, no extra websites just a player without popups and
+                        notification reqests. The radio station is available without any fuss or extra effort. Enjoy listening any time. 
+                    </MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+                </MudCardActions>
+            </MudCard>
+
+            </MudStack>
+        </MudHidden>
+        <MudCard>
+            <MudCardContent>
+                <MudText>Explore & Listen</MudText>
+                <MudText Typo="Typo.body2">
+                    Another top reqest, to explore content and keep listening while exploring other content. The audio player - when playing - remains open
+                    and in your full control even when you navigate to a different area of the app. Now if you want to close it, that you can do. 
+                    Just reopen it by selecting a different or the same audio. Remember, it now remembers the time point you were last listening to. 
+                    Enjoy and Explore. 
+                </MudText>
+            </MudCardContent>
+            <MudCardActions>
+                <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+            </MudCardActions>
+        </MudCard>
+
+        
     </MudCardContent>
       
 </div>
