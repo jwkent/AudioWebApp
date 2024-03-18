@@ -24,10 +24,9 @@
 }
 
 ::deep cite {
-
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
-    color: #5f76a6;
+    color: #bdc7db;
 }
 
 ::deep button.mud-button-root.mud-button.mud-button-filled.mud-button-filled-default.mud-button-filled-size-large.mud-ripple.nav-show-button{
@@ -37,9 +36,39 @@
     height:100px;
     font-size:20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom:40px;
 }
 ::deep svg.mud-icon-root.mud-svg-icon.mud-icon-size-large {
     margin-right: 10px;
     font-size: 30px;
     color: #979ba6;
+}
+::deep p.mud-typography.mud-typography-body1.feature-text-heading {
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom:10px;
+}
+::deep p.mud-typography.mud-typography-body1.feature-text-body{
+    font-size: 16px;
+
+}
+::deep div.mud-paper.mud-elevation-1.mud-card.feature-card {
+    width: 250px;
+    height:400px;
+    background-color: #D8E6FE;
+
+}
+::deep div.mud-card-actions.feature-card-action-container{
+    position:relative;
+    height:50px;
+}
+
+
+::deep button.mud-button-root.mud-button.mud-button-text.mud-ripple.feature-link-button {
+    color: #9396A1;
+    border: 1px solid #9396A1;
+    background-color: #c7d9f7;
+    width:230px;
+    position: absolute;
+    bottom:10px;
 }
