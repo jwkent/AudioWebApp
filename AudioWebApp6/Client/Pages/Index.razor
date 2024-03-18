@@ -27,11 +27,14 @@
                 View Content
             </MudButton>
         </MudPaper>
+        <MudPaper Class="d-flex flex-grow-1 justify-center pt-2" Elevation="0">
+            <p class="features-label-header">Features</p>
+        </MudPaper>
        <MudPaper Class="d-flex flex-wrap gap-4" MaxWidth="100%" Elevation="0">
 
             <MudCard class="feature-card">
                 <MudCardMedia Height="100" Image="./images/Asset6@2x.png"/>
-                <MudCardContent>
+                <MudCardContent class="feature-card-text-container">
                     <MudText class="feature-text-heading">Auto Saving</MudText>
                     <MudText class="feature-text-body">
                         When you are listening to an audio track and select a different one, or simply return to it later, the message will
@@ -42,7 +45,7 @@
 
             <MudCard class="feature-card">
                 <MudCardMedia Height="100" Image="./images/Asset6@2x.png" />
-                <MudCardContent>
+                <MudCardContent class="feature-card-text-container">
                     <MudText class="feature-text-heading">TNP Radio</MudText>
                     <MudText class="feature-text-body">
                         The radio station is embedded in the app, no extra websites, popups, or
@@ -50,25 +53,26 @@
                     </MudText>
                 </MudCardContent>
                 <MudCardActions class="feature-card-action-container">
-                    <MudButton  class="feature-link-button">Radio</MudButton>
+                    <MudButton class="feature-link-button" @onclick="() => FeatureNavigateToRadio()" >
+                        Radio
+                    </MudButton>
                 </MudCardActions>
             </MudCard>
 
             <MudCard class="feature-card">
                 <MudCardMedia Height="100" Image="./images/Asset6@2x.png" />
-            <MudCardContent>
+            <MudCardContent class="feature-card-text-container">
                     <MudText class="feature-text-heading">Explore & Listen</MudText>
                 <MudText class="feature-text-body">
                     While listening, the audio player remains open
                     and in your full control, even when navigating to a different area of the app. 
-                     
                 </MudText>
             </MudCardContent>
             
             </MudCard >
             <MudCard class="feature-card">
                 <MudCardMedia Height="100" Image="./images/Asset6@2x.png" />
-                <MudCardContent>
+                <MudCardContent class="feature-card-text-container">
                     <MudText class="feature-text-heading">Curate</MudText>
                     <MudText class="feature-text-body">
                         Create your own library by adding audio to your favorites' area.
@@ -76,13 +80,15 @@
                     </MudText>
                 </MudCardContent>
                 <MudCardActions class="feature-card-action-container">
-                    <MudButton  class="feature-link-button">How to: Add a Favorite</MudButton>
+                    <MudButton class="feature-link-button" @onclick="() => FeatureNavigateToHowTo()">
+                        How to: Add a Favorite
+                    </MudButton>
                 </MudCardActions>
             </MudCard>
 
             <MudCard class="feature-card">
                 <MudCardMedia Height="100" Image="./images/Asset6@2x.png" />
-                <MudCardContent>
+                <MudCardContent class="feature-card-text-container">
                     <MudText class="feature-text-heading">Audio Books</MudText>
                     <MudText class="feature-text-body">
                         Steve Gregg has provided direct access to two of his audio books. Enjoy listening  
@@ -90,7 +96,9 @@
                     </MudText>
                 </MudCardContent>
                 <MudCardActions class="feature-card-action-container">
-                    <MudButton  class="feature-link-button">Audio Books</MudButton>
+                    <MudButton class="feature-link-button" @onclick="() => FeatureNavigateToAudioBooks()">
+                        Audio Books
+                    </MudButton>
                 </MudCardActions>
             </MudCard>
        </MudPaper>

@@ -43,6 +43,13 @@
     font-size: 30px;
     color: #979ba6;
 }
+
+::deep p.features-label-header {
+    font-size: 48px;
+    color: #d8e6fe;
+    padding-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 ::deep p.mud-typography.mud-typography-body1.feature-text-heading {
     font-size: 24px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -59,16 +66,19 @@
 
 }
 ::deep div.mud-card-actions.feature-card-action-container{
-    position:relative;
-    height:50px;
+    position: relative;
+    height: 50px;
+}
+::deep div.mud-card-content.feature-card-text-container{
+    height:250px;
 }
 
-
 ::deep button.mud-button-root.mud-button.mud-button-text.mud-ripple.feature-link-button {
-    color: #9396A1;
-    border: 1px solid #9396A1;
-    background-color: #c7d9f7;
-    width:230px;
+    color: #fbfcfd;
+    border: 1px solid #fbfcfd;
+    background-color: #829dd1;
+    width: 230px;
     position: absolute;
-    bottom:10px;
+    bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
