@@ -43,7 +43,7 @@
     font-size: 30px;
     color: #979ba6;
 }
-
+/*Feature card*/
 ::deep p.features-label-header {
     font-size: 48px;
     color: #d8e6fe;
@@ -57,13 +57,11 @@
 }
 ::deep p.mud-typography.mud-typography-body1.feature-text-body{
     font-size: 16px;
-
 }
 ::deep div.mud-paper.mud-elevation-1.mud-card.feature-card {
     width: 250px;
     height:400px;
     background-color: #D8E6FE;
-
 }
 ::deep div.mud-card-actions.feature-card-action-container{
     position: relative;
