@@ -14,7 +14,7 @@ builder.Services.AddMudServices();
 builder.Services.AddScoped<ApiService>();
 builder.Services.AddSingleton<SharedDataService>();
 builder.Services.AddScoped<FavoritesService>();
-builder.Services.AddScoped<AnnouncementService>();
+
 builder.Services.AddSingleton<CollectionFilter>();
 builder.Services.AddScoped<AudioBookService>();
 builder.Services.AddSingleton<DebateGrouperUtility>();
