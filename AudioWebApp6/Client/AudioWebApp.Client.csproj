@@ -85,6 +85,9 @@
 	  <None Include="wwwroot\scripts\audioObserver.js">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
+		<None Include="wwwroot\scripts\audioControlAddition.js">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 
 
