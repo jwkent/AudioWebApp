@@ -39,6 +39,16 @@
                                     <MudIcon  Icon="@favAddIcon" Title="Add Favorite"/>
                                 </MudButton>
                             </MudPaper>
+                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="75px" Elevation="0">
+                                <MudButton Style=" padding:0px;  color:#9396A1" OnClick="AudioReverse">
+                                    <MudIcon Icon="@Icons.Material.Filled.Replay10" Title="Reverse" />
+                                </MudButton>
+                            </MudPaper>
+                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="75px" Elevation="0">
+                                <MudButton Style=" padding:0px;  color:#9396A1" OnClick="AudioForward">
+                                    <MudIcon Icon="@Icons.Material.Filled.Forward10" Title="Forward" />
+                                </MudButton>
+                            </MudPaper>
                         </div>
                         <div class="d-flex flex-grow-1 gap-0">
                             <MudPaper Class="flex-auto d-flex py-0 justify-center align-center"  Width="100%" Elevation="0">
@@ -84,7 +94,7 @@
             StateHasChanged();
         }
 
-        
+
 
     }
     protected override void OnInitialized()
@@ -122,6 +132,15 @@
         Snackbar.Configuration.ShowCloseIcon = false;
         Snackbar.Configuration.VisibleStateDuration = 1000;
 
+    }
+
+    private async Task AudioForward()
+    {
+        await JSRuntime.InvokeVoidAsync("audioForward");
+    }
+    private async Task AudioReverse()
+    {
+        await JSRuntime.InvokeVoidAsync("audioReverse");
     }
 
     public string favAddIcon = "<svg id=\"Layer_6\" data-name=\"Layer 6\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 22.5 19.41\">" +

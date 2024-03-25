@@ -60,5 +60,11 @@ function timeStamper(storedValue) {
         navigator.mediaSession.setActionHandler('pause', () => {
             audioElement.pause();
         });
+        navigator.mediaSession.setActionHandler('seekforward', () => {
+            audioForward();
+        });
+        navigator.mediaSession.setActionHandler('seekbackward', () => {
+            audioReverse();
+        })
     }
 }

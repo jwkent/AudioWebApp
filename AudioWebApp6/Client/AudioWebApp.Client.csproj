@@ -64,6 +64,9 @@
 	  <Content Update="wwwroot\images\Favorite-Removal.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="wwwroot\images\HowToSaveAndroid.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="wwwroot\images\HowToSaveHomeScreen.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
@@ -100,9 +103,9 @@
 	  <None Include="wwwroot\scripts\audioObserver.js">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
-	  <None Include="wwwroot\scripts\getAnnouncements.js">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
+		<None Include="wwwroot\scripts\audioControlAddition.js">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 
 

@@ -8,11 +8,11 @@
         <MudCarouselItem Transition="transition" style="background-color:#243F77">
             <MudStack AlignItems="AlignItems.Center">
                 <MudPaper Class="pa-3" Elevation="0">
-                    <MudText style="font-size:36px; color:#D5D8E5;">Why a new web app?</MudText>
+                    <MudText style="font-size:26px; color:#D5D8E5;">Why a new web app?</MudText>
                 </MudPaper>
                 <MudPaper Class="pa-3" Elevation="1">
                     <MudText style="font-size:18px; color:#D5D8E5;">
-                        This audio web app focuses on playing narrow path audio lectures!  <br /><br />
+                        This audio web app focuses on playing The Narrow Path audio lectures!  <br /><br />
                         Any lecture you listen to is automatically remembered and the 
                         exact location restored when you come back to listen to it later. 
                         This was the most requested feature.
@@ -25,7 +25,18 @@
         <MudCarouselItem Transition="transition" style="background-color:#243F77;">
             <MudStack AlignItems="AlignItems.Center">
                 <MudPaper Class="pa-3" Elevation="0">
-                    <MudText style="font-size:36px; color:#D5D8E5;">Add to home screen</MudText>
+                    <MudStack Row="false" Justify="Justify.Center">
+                        <MudPaper Elevation="0" Class="d-flex justify-center">
+                            <MudIcon style="font-size:26px; color:#D5D8E5;" Icon="@Icons.Custom.Brands.Apple"></MudIcon>
+                        </MudPaper>
+                        <MudPaper Elevation="0">
+                            <MudText style="font-size:26px; color:#D5D8E5;">
+                                Add to home screen<br/>
+                                Apple Devices
+                                </MudText>
+                        </MudPaper>
+                    </MudStack>
+                   
                 </MudPaper>
 
                 <MudImage Src="images/howtosavehomescreen.png" Height="240" Alt="Favorite" Elevation="1" Class="rounded-lg ma-4" />
@@ -42,11 +53,44 @@
             </MudStack>
 
         </MudCarouselItem>
+        <MudCarouselItem Transition="transition" style="background-color:#243F77;">
+            <MudStack AlignItems="AlignItems.Center">
+                <MudPaper Class="pa-3" Elevation="0">
+                    <MudStack Row="false" Justify="Justify.Center">
+                        <MudPaper Elevation="0" Class="d-flex justify-center">
+                            <MudIcon style="font-size:26px; color:#3ddc84;" Icon="@Icons.Material.Filled.Android"></MudIcon>
+                        </MudPaper>
+                        <MudPaper Elevation="0">
+                            <MudText style="font-size:26px; color:#D5D8E5;">
+                                Add to home screen <br />
+                                Android Devices
+                            </MudText>
+                        </MudPaper>
+                        
+                    </MudStack>
+                    
+                </MudPaper>
+
+                <MudImage Src="images/HowToSaveAndroid.png" Height="240" Alt="Favorite" Elevation="1" Class="rounded-lg ma-4" />
+
+                <MudPaper Class="pa-3" Elevation="2">
+                    <MudText style="font-size:18px; color:#D5D8E5;">
+                        Follow these steps to add to home screen.<br />
+                        1. Press the three dots on the top right corner.<br />
+                        2. Press "Install app" in the menu options.<br />
+                        3. Press "Install" to install the app.<br />
+                        4. Press "Add to home screen".<br/>
+                        5. Navigate to home screen and launch TheNarrowPath.
+                    </MudText>
+                </MudPaper>
+            </MudStack>
+
+        </MudCarouselItem>
 
         <MudCarouselItem Transition="transition" style="background-color:#243F77;">
             <MudStack AlignItems="AlignItems.Center">
                 <MudPaper Class="pa-3" Elevation="0">
-                    <MudText style="font-size:36px; color:#D5D8E5;">Save to favorite</MudText>
+                    <MudText style="font-size:26px; color:#D5D8E5;">Save to favorite</MudText>
                 </MudPaper>
 
                 <MudImage Src="images/books-screenshot-square.png" Width="240" Height="240" Alt="Favorite" Elevation="1" Class="rounded-lg ma-4" />
@@ -64,7 +108,7 @@
         <MudCarouselItem Transition="transition" style="background-color:#243F77">
             <MudStack AlignItems="AlignItems.Center">
                 <MudPaper Class="pa-3" Elevation="0">
-                    <MudText style="font-size:36px; color:#D5D8E5;">Remove from favorite</MudText>
+                    <MudText style="font-size:26px; color:#D5D8E5;">Remove from favorite</MudText>
                 </MudPaper>
 
                 <MudImage Src="images/favorite-removal.png" Width="240" Height="240" Alt="Favorite" Elevation="1" Class="rounded-lg ma-4" />
