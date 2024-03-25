@@ -1,6 +1,7 @@
 ﻿@page "/"
 @inject NavigationManager NavigationManager
 
+
 <PageTitle>Narrow Path</PageTitle>
 <div>
     <MudCardContent Style="background-color:transparent; min-height:100vh; width:auto; padding:0px; padding-bottom:150px;">
@@ -24,6 +25,83 @@
                 View Content
             </MudButton>
         </MudPaper>
+        <MudPaper Class="d-flex flex-grow-1 justify-center pt-2" Elevation="0">
+            <p class="features-label-header">Features</p>
+        </MudPaper>
+       <MudPaper Class="d-flex flex-wrap gap-4" MaxWidth="100%" Elevation="0">
+
+            <MudCard class="feature-card">
+                <MudCardMedia Height="100" Image="./images/autosaveFeature.png"/>
+                <MudCardContent class="feature-card-text-container">
+                    <MudText class="feature-text-heading">Auto Saving</MudText>
+                    <MudText class="feature-text-body">
+                        When you are listening to an audio track and select a different one, or simply return to it later, the message will
+                        automatically start from the same point. No need to remember where you left off.
+                        </MudText>
+                </MudCardContent>
+            </MudCard>
+
+            <MudCard class="feature-card">
+                <MudCardMedia Height="100" Image="./images/radioFeature.png" />
+                <MudCardContent class="feature-card-text-container">
+                    <MudText class="feature-text-heading">TNP Radio</MudText>
+                    <MudText class="feature-text-body">
+                        The radio station is streamed directly, no extra websites, popups, or
+                        notification requests. Enjoy listening any time. 
+                    </MudText>
+                </MudCardContent>
+                <MudCardActions class="feature-card-action-container">
+                    <MudButton class="feature-link-button" @onclick="() => FeatureNavigateToRadio()" >
+                        Radio
+                    </MudButton>
+                </MudCardActions>
+            </MudCard>
+
+            <MudCard class="feature-card">
+                <MudCardMedia Height="100" Image="./images/exploreFeature.png" />
+            <MudCardContent class="feature-card-text-container">
+                    <MudText class="feature-text-heading">Explore & Listen</MudText>
+                <MudText class="feature-text-body">
+                    While listening, the audio player remains open
+                    and in your full control, even when navigating to a different area of the app. 
+                </MudText>
+            </MudCardContent>
+            
+            </MudCard >
+            <MudCard class="feature-card">
+                <MudCardMedia Height="100" Image="./images/curateFeature.png" />
+                <MudCardContent class="feature-card-text-container">
+                    <MudText class="feature-text-heading">Favorite</MudText>
+                    <MudText class="feature-text-body">
+                        Build your own library by adding audio to your favorites' area.
+                        Manage your favorites' tab with messages, make a list for later, or quickly return to a message you didn't finish.
+                    </MudText>
+                </MudCardContent>
+                <MudCardActions class="feature-card-action-container">
+                    <MudButton class="feature-link-button" @onclick="() => FeatureNavigateToHowTo()">
+                        How to: Add a Favorite
+                    </MudButton>
+                </MudCardActions>
+            </MudCard>
+
+            <MudCard class="feature-card">
+                <MudCardMedia Height="100" Image="./images/audiobooksFeature.png" />
+                <MudCardContent class="feature-card-text-container">
+                    <MudText class="feature-text-heading">Audio Books</MudText>
+                    <MudText class="feature-text-body">
+                        Steve Gregg has provided direct access to two of his audio books. Enjoy listening  
+                        directly in the app. There are no signup requirements or trial subscriptions.
+                    </MudText>
+                </MudCardContent>
+                <MudCardActions class="feature-card-action-container">
+                    <MudButton class="feature-link-button" @onclick="() => FeatureNavigateToAudioBooks()">
+                        Audio Books
+                    </MudButton>
+                </MudCardActions>
+            </MudCard>
+       </MudPaper>
+       
+        
     </MudCardContent>
       
 </div>
