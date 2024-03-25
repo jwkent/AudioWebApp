@@ -67,6 +67,9 @@
 	  <Content Update="wwwroot\images\HowToSaveAndroid.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="wwwroot\images\HowToSaveAndroidMobile.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="wwwroot\images\HowToSaveHomeScreen.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
