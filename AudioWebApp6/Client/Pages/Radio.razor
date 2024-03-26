@@ -1,6 +1,7 @@
 ﻿@page "/radio"
 @using System.Threading.Channels
 @inject IDialogService DialogService
+@inject IJSRuntime jsRuntime
 
 
 <div>
@@ -22,7 +23,10 @@
     <MudPaper Class="d-flex justify-center align-center" style="padding-top:30px;" Elevation="0" >
         <MudButtonGroup Size="Size.Large"  Variant="Variant.Filled">
                 <MudButton Style="color:#d8e6fe;" Href="https://podcasts.apple.com/us/podcast/the-narrow-path-radio-program-1-hour/id171641936" Target="_blank">Podcast</MudButton>
-                <MudButton Style="color:#d8e6fe;" Href="https://22963.live.streamtheworld.com/KPDQAM_SC" Target="_blank">Live</MudButton>
+                <MudBadge id="livebadge" Color="@Color" Origin="@Origin" Overlap="@Overlap" >
+                    <MudButton Style="@textColorLive" Href="https://22963.live.streamtheworld.com/KPDQAM_SC" Target="_blank">Live</MudButton>
+                </MudBadge>
+                
                 <MudButton Style="color:#d8E6Fe;" Href="https://www.matthew713.com/search" Target="_blank" StartIcon="@Icons.Material.Filled.Search" >Search</MudButton>
         </MudButtonGroup>
     </MudPaper>  
@@ -30,7 +34,10 @@
 </MudCardContent>
 </div>
 @code{
-
+    private Origin Origin { get; set; } = Origin.TopCenter;
+    private Color Color { get; set; } 
+    private bool Overlap { get; set; } = false;
+    private string textColorLive { get; set; }
     DialogOptions dialogOptions = new DialogOptions()
         {
             DisableBackdropClick = true,
@@ -39,5 +46,38 @@
         }; 
     private void OpenDialog(){
         DialogService.Show<CallDialog>("Call into radio program", dialogOptions);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        DateTime now = DateTime.Now;
+        //await IsWeekdayBetween2and3();
+        var timer = new System.Threading.Timer((e) =>
+        {
+            Console.WriteLine($"Checking at: {now}");
+            IsWeekdayBetween2and3();
+
+        }, null, TimeSpan.Zero, TimeSpan.FromMinutes(2));
+    }
+
+
+    private async Task IsWeekdayBetween2and3()
+    {
+        // get the date time
+        DateTime now = DateTime.Now;
+
+        // Check if it's a weekday
+        if(now.DayOfWeek >= DayOfWeek.Monday && now.DayOfWeek <= DayOfWeek.Friday)
+        {
+
+            Console.WriteLine("checking time");
+            bool onAir = await jsRuntime.InvokeAsync<bool>("isBetweenTwoAndThreeOnWeekdaysPacificTime");
+            Console.WriteLine(onAir);
+
+            Color = onAir ? Color.Success : Color.Success;
+            textColorLive = onAir ? "color:green;" : "color:green;";
+            StateHasChanged();
+        }
+        return;
     }
 }
