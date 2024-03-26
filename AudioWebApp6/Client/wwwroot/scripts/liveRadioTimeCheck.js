@@ -1,4 +1,4 @@
-function isBetweenTwoAndThreeOnWeekdaysPacificTime() {
+function GetLiveTime() {
 
     // Get current date and time in UTC
     var nowUtc = new Date();
@@ -15,9 +15,9 @@ function isBetweenTwoAndThreeOnWeekdaysPacificTime() {
         // Check if it's between 2:00 and 3:00
         var hours = nowPacific.getHours();
         var minutes = nowPacific.getMinutes();
-        console.log("it is not " + hours);
-        //if (hours === 2 && minutes >= 0 || hours === 3 && minutes <= 0) {
-        if (hours === 12 && minutes >= 0 || hours === 13 && minutes <= 0) {
+        
+        // 7-UTC = 2pm / 8-UTC = 3pm
+        if(hours === 7 && minutes >= 0 || hours === 8 && minutes <= 0) {
             // Time is between 2:00 and 3:00
             return true;
         }
