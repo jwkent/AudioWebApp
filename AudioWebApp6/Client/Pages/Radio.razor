@@ -29,7 +29,9 @@
                 @if (@IsLive)
                 {
                     <MudBadge id="livebadge" Color="@Color" Origin="@Origin" Overlap="@Overlap" Dot="@Dot">
-                        <MudButton Style="color:#00c853;" Href="https://22963.live.streamtheworld.com/KPDQAM_SC" Target="_blank">Live</MudButton>
+                        <MudButton Style="color:#00c853;"  Href="https://22963.live.streamtheworld.com/KPDQAM_SC" Target="_blank">
+                            <span class="mud-button-label" style="padding-bottom:5px;">Live</span>
+                            </MudButton>
                     </MudBadge>
                 }
                 else{
@@ -47,9 +49,9 @@
     private Color Color = Color.Success;
     private bool Dot { get; set; } = true;
     private bool Overlap { get; set; } = true;
+
     private bool IsLive { get; set; }
-    private bool OnRadioPage { get; set; } = true;
-    private Timer timer;
+    private Timer timer { get; set; }
 
     DialogOptions dialogOptions = new DialogOptions()
         {
@@ -57,43 +59,35 @@
             MaxWidth = MaxWidth.Medium,
             FullWidth = true
         }; 
-    private void OpenDialog(){
+    private void OpenDialog()
+    {
         DialogService.Show<CallDialog>("Call into radio program", dialogOptions);
     }
 
     protected override async Task OnInitializedAsync()
     {
-        NavigationManager.LocationChanged += LocationChanged;
         await StartIsLiveCheck();
+    }
 
-    }
-    void LocationChanged(object sender, LocationChangedEventArgs e)
-    {
-        OnRadioPage = false;
-    }
     void IDisposable.Dispose()
     {
         timer.Dispose();
-        if(jsRuntime != null)
-        {
-            jsRuntime = null;
-        }
-        NavigationManager.LocationChanged -= LocationChanged;
     }
     private async Task StartIsLiveCheck()
     {
         DateTime now = DateTime.Now;
         Console.WriteLine($"Start at: {now}");
-        timer =  new System.Threading.Timer( async (e) =>
-        {
-            if(OnRadioPage){
-                DateTime now2 = DateTime.Now; 
-                Console.WriteLine($"Checking at: {now2}");
-                IsLive = await jsRuntime.InvokeAsync<bool>("GetLiveTime");
-                Console.WriteLine($"The Show is on: {IsLive}");
-                StateHasChanged();
-            }
 
+        await Task.Delay(TimeSpan.Zero);
+
+        timer = new System.Threading.Timer(async (e) =>
+        {
+            DateTime now2 = DateTime.Now; 
+            Console.WriteLine($"Checking at: {now2}");
+            IsLive = await jsRuntime.InvokeAsync<bool>("GetLiveTime");
+            Console.WriteLine($"The Show is on: {IsLive}");
+            StateHasChanged();
+            
         }, null, TimeSpan.Zero, TimeSpan.FromMinutes(2));
     }
 
