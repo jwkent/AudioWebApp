@@ -25,8 +25,15 @@
 ::deep p.mud-typography.mud-typography-body1.title-text {
     color: #0840AA;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 10px;
-    padding-top: 30px;
+    padding-top:10px;
+    
+}
+::deep p.mud-typography.mud-typography-body1.narrator-text {
+    color: #0840AA;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
     
 }
