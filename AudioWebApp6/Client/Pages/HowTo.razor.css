@@ -1,9 +1,17 @@
-﻿::deep div.mud-paper.mud-elevation-1.howtoContainer {
+﻿::deep div.mud-card-content.howTo-main-container{
+    padding:4px 4px 150px 4px;
+}
+::deep div.mud-paper.mud-elevation-1.howtoContainer {
     background-color: #b0c6ee;
 
 }
+::deep div.mud-paper.mud-elevation-0.d-flex.flex-wrap.gap-4{
+    padding-top: 10px;
+    padding-bottom:10px;
+}
 ::deep div.mud-collapse-wrapper-inner {
     background-color: #6481b9;
+    width:100%;
 }
 ::deep li.mud-treeview-item.labelHeader p.mud-typography.mud-typography-body1.mud-treeview-item-label {
     font-size: 20px;
@@ -20,4 +28,23 @@
 }
 ::deep li.mud-treeview-item.subLabelHeader svg.mud-icon-root.mud-svg-icon.mud-icon-size-medium {
     color: #d8e6fe;
+}
+
+::deep div.mud-paper.mud-elevation-1.mud-card.howTo-Card {
+    width: 280px;
+    background-color: #d2def3;
+}
+::deep div.mud-card-content.howTo-card-text-container {
+    padding:8px;
+}
+::deep p.mud-typography.mud-typography-body1.howTo-card-header-text {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom:5px;
+    
+}
+::deep p.mud-typography.mud-typography-body2 {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 6px;
 }

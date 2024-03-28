@@ -2,99 +2,100 @@
 
 
 <div>
-    <MudCardContent>
+    <MudCardContent class="howTo-main-container">
         <MudPaper class="howtoContainer">
             <MudTreeView T="string" ExpandOnClick="true">
                 <MudTreeViewItem Value="@("Add to home screen")" class="labelHeader">
-                    <MudTreeViewItem Value="@("Android")" class="subLabelHeader">
+                    <MudTreeViewItem Value="@("Android")" Icon="@Icons.Material.Filled.Android" IconColor="Color.Success" class="subLabelHeader">
                         <MudPaper Class="d-flex flex-wrap gap-4" MaxWidth="100%" Elevation="0">
-                            <MudCard>
+                            <MudCard class="howTo-Card">
                                 <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                                <MudCardContent>
-                                    <MudText Typo="Typo.h5">Step: 1</MudText>
-                                    <MudText Typo="Typo.body2">Press the three dots at the top right corner.</MudText>
-                                    <MudText Typo="Typo.body2">A drop down menu is now shown.</MudText>
+                                <MudCardContent class="howTo-card-text-container">
+                                    <MudText class="howTo-card-header-text">Step: 1</MudText>
+                                    <MudText class="howTo-card-body-text">Press the three dots at the top right corner.</MudText>
+                                    <MudText class="howTo-card-body-text">A drop down menu is now shown.</MudText>
                                 </MudCardContent>
                             </MudCard>
-                            <MudCard>
+                            <MudCard class="howTo-Card">
                                 <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                                <MudCardContent>
-                                    <MudText Typo="Typo.h5">Step: 2</MudText>
-                                    <MudText Typo="Typo.body2">Press "Install app" in the menu options.</MudText>
+                                <MudCardContent class="howTo-card-text-container">
+                                    <MudText class="howTo-card-header-text" >Step: 2</MudText>
+                                    <MudText class="howTo-card-body-text">Press "Install app" in the menu options.</MudText>
                                 </MudCardContent>
                             </MudCard>
-                            <MudCard>
+                            <MudCard class="howTo-Card">
                                 <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                                <MudCardContent>
-                                    <MudText Typo="Typo.h5">Step: 3</MudText>
-                                    <MudText Typo="Typo.body2">Press "Install to install the app."</MudText>
+                                <MudCardContent class="howTo-card-text-container">
+                                    <MudText class="howTo-card-header-text">Step: 3</MudText>
+                                    <MudText class="howTo-card-body-text">Press "Install to install the app."</MudText>
                                     
                                 </MudCardContent>
                             </MudCard>
-                            <MudCard>
+                            <MudCard class="howTo-Card">
                                 <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                                <MudCardContent>
-                                    <MudText Typo="Typo.h5">Step: 4</MudText>
-                                    <MudText Typo="Typo.body2">Press "Add to home screen".</MudText>
+                                <MudCardContent class="howTo-card-text-container">
+                                    <MudText class="howTo-card-header-text">Step: 4</MudText>
+                                    <MudText class="howTo-card-body-text">Press "Add to home screen".</MudText>
                                     
                                 </MudCardContent>
                             </MudCard>
-                            <MudCard>
+                            <MudCard class="howTo-Card">
                                 <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                                <MudCardContent>
-                                    <MudText Typo="Typo.h5">Step: 5</MudText>
-                                    <MudText Typo="Typo.body2">Navigate to the home screen.</MudText>
-                                    <MudText Typo="Typo.body2">The app is now available to launch from the home screen.</MudText>
+                                <MudCardContent class="howTo-card-text-container">
+                                    <MudText class="howTo-card-header-text">Step: 5</MudText>
+                                    <MudText class="howTo-card-body-text">Navigate to the home screen.</MudText>
+                                    <MudText class="howTo-card-body-text">The app is now available to launch from the home screen.</MudText>
 
                                 </MudCardContent>
                             </MudCard>
-                            <MudCard>
+                            <MudCard class="howTo-Card">
                                 <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                                <MudCardContent>
-                                    <MudText Typo="Typo.h5">Step: 6</MudText>
-                                    <MudText Typo="Typo.body2">Press this icon to launch The Narrow Path</MudText>
+                                <MudCardContent class="howTo-card-text-container">
+                                    <MudText class="howTo-card-header-text">Step: 6</MudText>
+                                    <MudText class="howTo-card-body-text">Press this icon to launch The Narrow Path.</MudText>
                                     
                                 </MudCardContent>
                             </MudCard>
                         </MudPaper>
                     </MudTreeViewItem>
-                    <MudTreeViewItem Value="@("Apple")" class="subLabelHeader">
+                    <MudDivider/>
+                    <MudTreeViewItem Value="@("Apple")" Icon="@Icons.Custom.Brands.Apple" class="subLabelHeader">
                         <MudPaper Class="d-flex flex-wrap gap-4" MaxWidth="100%" Elevation="0">
-                            <MudCard>
+                            <MudCard class="howTo-Card">
                                 <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                                <MudCardContent>
-                                    <MudText Typo="Typo.h5">Step: 1</MudText>
-                                    <MudText Typo="Typo.body2">In the browser press the "Share" icon.</MudText>
+                                <MudCardContent class="howTo-card-text-container">
+                                    <MudText class="howTo-card-header-text">Step: 1</MudText>
+                                    <MudText class="howTo-card-body-text">In the browser press the "Share" icon.</MudText>
                                 </MudCardContent>
                             </MudCard>
-                            <MudCard>
+                            <MudCard class="howTo-Card">
                                 <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                                <MudCardContent>
-                                    <MudText Typo="Typo.h5">Step: 2</MudText>
-                                    <MudText Typo="Typo.body2">Press "Add to Home Screen".</MudText>
+                                <MudCardContent class="howTo-card-text-container">
+                                    <MudText class="howTo-card-header-text">Step: 2</MudText>
+                                    <MudText class="howTo-card-body-text">Press "Add to Home Screen".</MudText>
                                    
                                 </MudCardContent>
                             </MudCard>
-                            <MudCard>
+                            <MudCard class="howTo-Card">
                                 <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                                <MudCardContent>
-                                    <MudText Typo="Typo.h5">Step: 3</MudText>
-                                    <MudText Typo="Typo.body2">Press "Add".</MudText>
+                                <MudCardContent class="howTo-card-text-container">
+                                    <MudText class="howTo-card-header-text">Step: 3</MudText>
+                                    <MudText class="howTo-card-body-text">Press "Add".</MudText>
                                 </MudCardContent>
                             </MudCard>
-                            <MudCard>
+                            <MudCard class="howTo-Card">
                                 <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                                <MudCardContent>
-                                    <MudText Typo="Typo.h5">Step: 4</MudText>
-                                    <MudText Typo="Typo.body2">Navigate to the home screen.</MudText>
-                                    <MudText Typo="Typo.body2">The app is now added to the home screen.</MudText>
+                                <MudCardContent class="howTo-card-text-container">
+                                    <MudText class="howTo-card-header-text">Step: 4</MudText>
+                                    <MudText class="howTo-card-body-text">Navigate to the home screen.</MudText>
+                                    <MudText class="howTo-card-body-text">The app is now added to the home screen.</MudText>
                                 </MudCardContent>
                             </MudCard>
-                            <MudCard>
+                            <MudCard class="howTo-Card">
                                 <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                                <MudCardContent>
-                                    <MudText Typo="Typo.h5">Apple</MudText>
-                                    <MudText Typo="Typo.body2">Press this icon to launch The Narrow Path.</MudText>
+                                <MudCardContent class="howTo-card-text-container">
+                                    <MudText class="howTo-card-header-text">Step: 5</MudText>
+                                    <MudText class="howTo-card-body-text">Press this icon to launch The Narrow Path.</MudText>
                                     
                                 </MudCardContent>
                             </MudCard>
@@ -103,38 +104,38 @@
                 </MudTreeViewItem>
                 <MudTreeViewItem Value="@("Add a favorite")" class="labelHeader">
                     <MudPaper Class="d-flex flex-wrap gap-4" MaxWidth="100%" Elevation="0">
-                        <MudCard>
+                        <MudCard class="howTo-Card">
                             <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                            <MudCardContent>
-                                <MudText Typo="Typo.h5">Step: 1</MudText>
-                                <MudText Typo="Typo.body2">When listening to a favorite, click the heart "+" button. </MudText>
-                                <MudText Typo="Typo.body2">This will to save the message to your favorites collection.</MudText>
+                            <MudCardContent class="howTo-card-text-container">
+                                <MudText class="howTo-card-header-text">Step: 1</MudText>
+                                <MudText class="howTo-card-body-text">When listening to a favorite, click the heart "+" button. </MudText>
+                                <MudText class="howTo-card-body-text">This will to save the message to your favorites collection.</MudText>
                             </MudCardContent>
                         </MudCard>
-                        <MudCard>
+                        <MudCard class="howTo-Card">
                             <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                            <MudCardContent>
-                                <MudText Typo="Typo.h5">Step: 2</MudText>
-                                <MudText Typo="Typo.body2">Then later navigate in the menu and click on the "Favorite" button to view favorited lectures.</MudText>
-                                <MudText Typo="Typo.body2">Click on a lecture to continue listening.</MudText>
+                            <MudCardContent class="howTo-card-text-container">
+                                <MudText class="howTo-card-header-text">Step: 2</MudText>
+                                <MudText class="howTo-card-body-text">Then later navigate in the menu and click on the "Favorite" button to view your favorite lectures.</MudText>
+                                <MudText class="howTo-card-body-text">Click on a lecture to continue listening.</MudText>
                             </MudCardContent>
                         </MudCard>
                     </MudPaper>
                 </MudTreeViewItem>
                 <MudTreeViewItem Value="@("Remove a favorite")" class="labelHeader">
                     <MudPaper Class="d-flex flex-wrap gap-4" MaxWidth="100%" Elevation="0">
-                        <MudCard>
+                        <MudCard class="howTo-Card">
                             <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                            <MudCardContent>
-                                <MudText Typo="Typo.h5">Step: 1</MudText>
-                                <MudText Typo="Typo.body2"> When you no longer want an audio lecture in the favorites collection, navigate in the menu and click on "Favorite".</MudText>
+                            <MudCardContent class="howTo-card-text-container">
+                                <MudText class="howTo-card-header-text">Step: 1</MudText>
+                                <MudText class="howTo-card-body-text"> When you no longer want an audio lecture in the favorites collection, navigate in the menu and click on "Favorite".</MudText>
                             </MudCardContent>
                         </MudCard>
-                        <MudCard>
+                        <MudCard class="howTo-Card">
                             <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                            <MudCardContent>
-                                <MudText Typo="Typo.h5">Step: 2</MudText>
-                                <MudText Typo="Typo.body2">Then click on the heart "-" button to remove a lecture from the favorites collection.</MudText>
+                            <MudCardContent class="howTo-card-text-container">
+                                <MudText class="howTo-card-header-text">Step: 2</MudText>
+                                <MudText class="howTo-card-body-text">Then click on the heart "-" button to remove a lecture from the favorites collection.</MudText>
                                 
                             </MudCardContent>
                         </MudCard>
@@ -142,40 +143,39 @@
                 </MudTreeViewItem>
                 <MudTreeViewItem Value="@("Check app version")" class="labelHeader">
                     <MudPaper Class="d-flex flex-wrap gap-4" MaxWidth="100%" Elevation="0">
-                        <MudCard>
+                        <MudCard class="howTo-Card">
                             <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                            <MudCardContent>
-                                <MudText Typo="Typo.h5">Step: 1</MudText>
-                                <MudText Typo="Typo.body2">Press the menu button in the top left corner.</MudText>
-                                <MudText Typo="Typo.body2">This will show all the content in the menu.</MudText>
+                            <MudCardContent class="howTo-card-text-container">
+                                <MudText class="howTo-card-header-text">Step: 1</MudText>
+                                <MudText class="howTo-card-body-text">Press the menu button in the top left corner.</MudText>
+                                <MudText class="howTo-card-body-text">This will show all the content in the menu.</MudText>
                             </MudCardContent>
                         </MudCard>
-                        <MudCard>
+                        <MudCard class="howTo-Card">
                             <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                            <MudCardContent>
-                                <MudText Typo="Typo.h5">Step: 2</MudText>
-                                <MudText Typo="Typo.body2">Scroll down and press the "Contact" menu item. </MudText>
-                                <MudText Typo="Typo.body2">The "Version" of the application is shown at the bottom the menu.</MudText>
-                            </MudCardContent>
+                            <MudCardContent class="howTo-card-text-container">
+                                <MudText class="howTo-card-header-text">Step: 2</MudText>
+                                <MudText class="howTo-card-body-text">Scroll down and press the "Contact" menu item. </MudText>
+                                <MudText class="howTo-card-body-text">The "Version" of the application is shown at the bottom the menu.</MudText>
+                            </MudCardContent >
                         </MudCard>
                     </MudPaper>
                 </MudTreeViewItem>
-                <MudTreeViewItem Value="@("Update the application")" class="labelHeader">
+                <MudTreeViewItem Value="@("Update the app (if needed)")" class="labelHeader">
                     <MudPaper Class="d-flex flex-wrap gap-4" MaxWidth="100%" Elevation="0">
-                        <MudCard>
+                        <MudCard class="howTo-Card">
                             <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                            <MudCardContent>
-                                <MudText Typo="Typo.h5">Step: 1</MudText>
-                                <MudText Typo="Typo.body2">Press and hold the app icon on the home screen.</MudText>
-                                <MudText Typo="Typo.body2">When prompted, select delete or uninstall, depending on your device.</MudText>
+                            <MudCardContent class="howTo-card-text-container">
+                                <MudText class="howTo-card-header-text">Step: 1</MudText>
+                                <MudText class="howTo-card-body-text">Press and hold the app icon on the home screen.</MudText>
+                                <MudText class="howTo-card-body-text">When prompted, select delete or uninstall depending on your device.</MudText>
                             </MudCardContent>
                         </MudCard>
-                        <MudCard>
+                        <MudCard class="howTo-Card">
                             <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
-                            <MudCardContent>
-                                <MudText Typo="Typo.h5">Step: 2</MudText>
-                                <MudText Typo="Typo.body2">Re-install the app using the steps above.</MudText>
-                                <MudText Typo="Typo.body2">In the "Add To Home Screen" tutorial.</MudText>
+                            <MudCardContent class="howTo-card-text-container">
+                                <MudText class="howTo-card-header-text">Step: 2</MudText>
+                                <MudText class="howTo-card-body-text">Re-install the app using the steps in the "Add to home screen" tutorial.</MudText>
                             </MudCardContent>
                         </MudCard>
                     </MudPaper>
