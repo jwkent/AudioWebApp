@@ -3,10 +3,10 @@
 
 <div>
     <MudCardContent>
-        <MudPaper>
+        <MudPaper class="howtoContainer">
             <MudTreeView T="string" ExpandOnClick="true">
-                <MudTreeViewItem Value="@("Add To Home Screen")">
-                    <MudTreeViewItem Value="@("Android")" >
+                <MudTreeViewItem Value="@("Add to home screen")" class="labelHeader">
+                    <MudTreeViewItem Value="@("Android")" class="subLabelHeader">
                         <MudPaper Class="d-flex flex-wrap gap-4" MaxWidth="100%" Elevation="0">
                             <MudCard>
                                 <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
@@ -58,7 +58,7 @@
                             </MudCard>
                         </MudPaper>
                     </MudTreeViewItem>
-                    <MudTreeViewItem Value="@("Apple")">
+                    <MudTreeViewItem Value="@("Apple")" class="subLabelHeader">
                         <MudPaper Class="d-flex flex-wrap gap-4" MaxWidth="100%" Elevation="0">
                             <MudCard>
                                 <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
@@ -101,7 +101,7 @@
                         </MudPaper>
                     </MudTreeViewItem>
                 </MudTreeViewItem>
-                <MudTreeViewItem Value="@("Add a favorite")">
+                <MudTreeViewItem Value="@("Add a favorite")" class="labelHeader">
                     <MudPaper Class="d-flex flex-wrap gap-4" MaxWidth="100%" Elevation="0">
                         <MudCard>
                             <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
@@ -121,14 +121,13 @@
                         </MudCard>
                     </MudPaper>
                 </MudTreeViewItem>
-                <MudTreeViewItem Value="@("Remove a favorite")">
+                <MudTreeViewItem Value="@("Remove a favorite")" class="labelHeader">
                     <MudPaper Class="d-flex flex-wrap gap-4" MaxWidth="100%" Elevation="0">
                         <MudCard>
                             <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
                             <MudCardContent>
                                 <MudText Typo="Typo.h5">Step: 1</MudText>
                                 <MudText Typo="Typo.body2"> When you no longer want an audio lecture in the favorites collection, navigate in the menu and click on "Favorite".</MudText>
-                                <MudText Typo="Typo.body2">Then click on the heart "-" button to remove a lecture from the favorites collection.</MudText>
                             </MudCardContent>
                         </MudCard>
                         <MudCard>
@@ -141,14 +140,14 @@
                         </MudCard>
                     </MudPaper>
                 </MudTreeViewItem>
-                <MudTreeViewItem Value="@("Check app version")">
+                <MudTreeViewItem Value="@("Check app version")" class="labelHeader">
                     <MudPaper Class="d-flex flex-wrap gap-4" MaxWidth="100%" Elevation="0">
                         <MudCard>
                             <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
                             <MudCardContent>
                                 <MudText Typo="Typo.h5">Step: 1</MudText>
                                 <MudText Typo="Typo.body2">Press the menu button in the top left corner.</MudText>
-                                <MudText Typo="Typo.body2">This will show all the content.</MudText>
+                                <MudText Typo="Typo.body2">This will show all the content in the menu.</MudText>
                             </MudCardContent>
                         </MudCard>
                         <MudCard>
@@ -156,12 +155,12 @@
                             <MudCardContent>
                                 <MudText Typo="Typo.h5">Step: 2</MudText>
                                 <MudText Typo="Typo.body2">Scroll down and press the "Contact" menu item. </MudText>
-                                <MudText Typo="Typo.body2">The "Version" of the application is shown at the bottom of the list.</MudText>
+                                <MudText Typo="Typo.body2">The "Version" of the application is shown at the bottom the menu.</MudText>
                             </MudCardContent>
                         </MudCard>
                     </MudPaper>
                 </MudTreeViewItem>
-                <MudTreeViewItem Value="@("Update the application")">
+                <MudTreeViewItem Value="@("Update the application")" class="labelHeader">
                     <MudPaper Class="d-flex flex-wrap gap-4" MaxWidth="100%" Elevation="0">
                         <MudCard>
                             <MudCardMedia Image="./images/autosaveFeature.png" Height="200" />
@@ -311,12 +310,12 @@
 
 
 @code {
-    private bool arrows = true;
-    private bool bullets = true;
-    private bool enableSwipeGesture = true;
-    private bool autocycle = true;
-    private Transition transition = Transition.Slide;
-    TimeSpan autoCycleTime = TimeSpan.FromSeconds(20);
+    // private bool arrows = true;
+    // private bool bullets = true;
+    // private bool enableSwipeGesture = true;
+    // private bool autocycle = true;
+    // private Transition transition = Transition.Slide;
+    // TimeSpan autoCycleTime = TimeSpan.FromSeconds(20);
 
     private bool _expanded = false;
     private void OnExpandCollapseClick()

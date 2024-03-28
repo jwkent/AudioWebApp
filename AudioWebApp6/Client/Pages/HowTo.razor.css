@@ -1,0 +1,23 @@
+﻿::deep div.mud-paper.mud-elevation-1.howtoContainer {
+    background-color: #b0c6ee;
+
+}
+::deep div.mud-collapse-wrapper-inner {
+    background-color: #6481b9;
+}
+::deep li.mud-treeview-item.labelHeader p.mud-typography.mud-typography-body1.mud-treeview-item-label {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:10px;
+}
+::deep li.mud-treeview-item.labelHeader svg.mud-icon-root.mud-svg-icon.mud-icon-size-medium {
+    color: #587abc;
+}
+::deep li.mud-treeview-item.subLabelHeader p.mud-typography.mud-typography-body1.mud-treeview-item-label {
+    color: #d8e6fe;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::deep li.mud-treeview-item.subLabelHeader svg.mud-icon-root.mud-svg-icon.mud-icon-size-medium {
+    color: #d8e6fe;
+}
