@@ -84,7 +84,7 @@
 	  <Content Update="wwwroot\images\radioFeature.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Update="wwwroot\images\steve_gregg.png">
+	  <Content Update="wwwroot\images\steve_gregg_20240328.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Update="wwwroot\images\TNPMedia128.png">
