@@ -1,28 +1,24 @@
 function GetLiveTime() {
 
-    // Get current date and time in UTC
-    var nowUtc = new Date();
+    // Get the current date and time
+    const date = new Date();
 
-    // Get Pacific Timezone offset in milliseconds
-    var pacificOffsetMs = -7 * 60 * 60 * 1000; // PST is UTC-7
+    // Get the current timezone offset in minutes
+    const timezoneOffset = date.getTimezoneOffset();
 
-    // Adjust current time with Pacific Timezone offset
-    var nowPacific = new Date(nowUtc.getTime() + pacificOffsetMs);
+    // Calculate the UTC time
+    const utcTime = date.getTime() - (timezoneOffset * 60 * 1000);
 
-    // Check if it's Monday through Friday (1-5 represent Monday-Friday in JavaScript)
-    var dayOfWeek = nowPacific.getDay(); // Sunday is 0, Monday is 1, ..., Saturday is 6
-    if (dayOfWeek >= 1 && dayOfWeek <= 5) {
-        // Check if it's between 2:00 and 3:00
-        var hours = nowPacific.getHours();
-        var minutes = nowPacific.getMinutes();
-        
-        // 7-UTC = 2pm / 8-UTC = 3pm
-        if(hours === 7 && minutes >= 0 || hours === 8 && minutes <= 0) {
-            // Time is between 2:00 and 3:00
-            return true;
-        }
-    }
+    // Convert the UTC time to a Date object
+    const utcDate = new Date(utcTime);
 
-    // If not within the specified range or on a weekday, return false
-    return false;
+    // Check if it is the 2PM hour in Los Angeles
+    const is2PMHour = (utcDate.getHours() === 14 - (timezoneOffset / 60)); // Adjust 2PM hour based on timezone offset);
+
+    // Check if it's a weekday
+    const isWeekday = (utcDate.getDay() >= 1 && utcDate.getDay() <= 5);
+
+    // Return true if it is the 2PM hour and a weekday
+    return (is2PMHour && isWeekday);
+
 }
