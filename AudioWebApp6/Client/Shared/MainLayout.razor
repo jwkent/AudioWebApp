@@ -50,7 +50,7 @@
                                 </MudButton>
                             </MudPaper>
                             <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="75px" Elevation="0">
-                                <MudMenu Icon="@Icons.Material.Filled.Speed" Title="Speed" AnchorOrigin="Origin.CenterLeft" TransformOrigin="Origin.CenterLeft">
+                                <MudMenu Icon="@Icons.Material.Filled.Speed" Title="Speed" AnchorOrigin="Origin.BottomCenter" TransformOrigin="Origin.CenterRight">
                                     <MudMenuItem OnClick="(e) =>AdjustSpeed(0.9)" OnTouch="(e) =>AdjustSpeed(0.9)">0.9</MudMenuItem>
                                     <MudMenuItem OnClick="(e) =>AdjustSpeed(1.0)" OnTouch="(e) =>AdjustSpeed(1.0)">1.0</MudMenuItem>
                                     <MudMenuItem OnClick="(e) =>AdjustSpeed(1.25)" OnTouch="(e) =>AdjustSpeed(1.25)">1.25</MudMenuItem>
@@ -150,9 +150,7 @@
     }
     private async Task AdjustSpeed(double speed)
     {
-        //Snackbar.Add($"Playback speed updated {speed}",Severity.Success);
-        Console.WriteLine($"The speed is {speed}");
-        await JSRuntime.InvokeVoidAsync("audioRate");
+        await JSRuntime.InvokeVoidAsync("audioPlaybackRate",speed);
     }
 
     public string favAddIcon = "<svg id=\"Layer_6\" data-name=\"Layer 6\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 22.5 19.41\">" +
