@@ -49,6 +49,14 @@
                                     <MudIcon Icon="@Icons.Material.Filled.Forward10" Title="Forward" />
                                 </MudButton>
                             </MudPaper>
+                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="75px" Elevation="0">
+                                <MudMenu Icon="@Icons.Material.Filled.Speed" Title="Speed" AnchorOrigin="Origin.CenterLeft" TransformOrigin="Origin.CenterLeft">
+                                    <MudMenuItem OnClick="(e) =>AdjustSpeed(0.9)" OnTouch="(e) =>AdjustSpeed(0.9)">0.9</MudMenuItem>
+                                    <MudMenuItem OnClick="(e) =>AdjustSpeed(1.0)" OnTouch="(e) =>AdjustSpeed(1.0)">1.0</MudMenuItem>
+                                    <MudMenuItem OnClick="(e) =>AdjustSpeed(1.25)" OnTouch="(e) =>AdjustSpeed(1.25)">1.25</MudMenuItem>
+                                    <MudMenuItem OnClick="(e) =>AdjustSpeed(1.50)" OnTouch="(e) =>AdjustSpeed(1.50)">1.50</MudMenuItem>
+                                </MudMenu>
+                            </MudPaper>
                         </div>
                         <div class="d-flex flex-grow-1 gap-0">
                             <MudPaper Class="flex-auto d-flex py-0 justify-center align-center"  Width="100%" Elevation="0">
@@ -93,8 +101,6 @@
             DrawerToggle();
             StateHasChanged();
         }
-
-
 
     }
     protected override void OnInitialized()
@@ -141,6 +147,12 @@
     private async Task AudioReverse()
     {
         await JSRuntime.InvokeVoidAsync("audioReverse");
+    }
+    private async Task AdjustSpeed(double speed)
+    {
+        //Snackbar.Add($"Playback speed updated {speed}",Severity.Success);
+        Console.WriteLine($"The speed is {speed}");
+        await JSRuntime.InvokeVoidAsync("audioRate");
     }
 
     public string favAddIcon = "<svg id=\"Layer_6\" data-name=\"Layer 6\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 22.5 19.41\">" +
