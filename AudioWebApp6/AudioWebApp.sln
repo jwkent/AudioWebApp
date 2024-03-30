@@ -8,7 +8,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AudioWebApp.Client", "Clien
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AudioWebApp.Shared", "Shared\AudioWebApp.Shared.csproj", "{0FA4F269-41CF-46C4-B034-7B7B2DBD1A48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClientWebAudioApp", "TestClientWebAudioApp\TestClientWebAudioApp.csproj", "{22D38D72-A468-4868-8002-4A4BB41388F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestClientWebAudioApp", "TestClientWebAudioApp\TestClientWebAudioApp.csproj", "{22D38D72-A468-4868-8002-4A4BB41388F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
