@@ -58,7 +58,7 @@
                                     <div class="d-flex flex-column">
                                         @foreach (var s in speeds)
                                         {
-                                            <MudButton style="color:#2f40aa;" OnClick="(e) =>SetPlaybackSpeed(s)">@s x</MudButton>
+                                            <MudButton style="color:#2f40aa;" OnClick="(e) =>SetPlaybackSpeed(s)">@String.Format("{0:.00}",@s)</MudButton>
                                         }
                                         <MudButton OnClick="@OpenPlaybackSpeedControls" Class="ml-auto mb-1" style="color:#6e83ae;">Close</MudButton>
                                     </div>
