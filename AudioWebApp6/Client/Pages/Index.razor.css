@@ -59,6 +59,7 @@
     font-size: 16px;
 }
 ::deep div.mud-paper.mud-elevation-1.mud-card.feature-card {
+    align-content: start;
     width: 250px;
     height:400px;
     background-color: #D8E6FE;
