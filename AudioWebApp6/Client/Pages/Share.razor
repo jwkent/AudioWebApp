@@ -9,9 +9,14 @@
         <MudPaper Class="d-flex flex-grow-1 justify-center" Elevation="0">
             <p class="subText">@appCaption</p>
         </MudPaper>
+        <MudPaper Class="d-flex flex-grow-1 justify-center" Elevation="0">
+            <p class="shareText">@sharingHelp</p>
+        </MudPaper>
     </MudCardContent>
 </div>
 
 @code {
-    string appCaption = "thenarrowpath.app";
+    string appCaption = "theNarrowPath.app";
+
+    string sharingHelp = "To share the 'Narrow Path' web app with a friend, simply have them scan this barcode with their mobile device's camera and tap the link that appears.";
 }
