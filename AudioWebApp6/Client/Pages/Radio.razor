@@ -41,7 +41,9 @@
                 <MudButton Style="color:#d8E6Fe;" Href="https://www.matthew713.com/search" Target="_blank" StartIcon="@Icons.Material.Filled.Search" >Search</MudButton>
         </MudButtonGroup>
     </MudPaper>  
-    
+    <MudPaper Class="d-flex flex-grow-1 justify-center" Elevation="0">
+            <p class="radioDisclaimerText">@radioDisclaimer</p>
+    </MudPaper>
 </MudCardContent>
 </div>
 @code{
@@ -53,6 +55,7 @@
     private bool IsLive { get; set; }
     private Timer timer { get; set; }
 
+    string radioDisclaimer = "Please be aware that any advertising you encounter within this free streaming service is not endorsed or promoted by Steve Gregg or this application. Neither Steve Gregg nor this application benefits financially from the advertisers. Thank you for your understanding and continued use of the free streaming service.";
     DialogOptions dialogOptions = new DialogOptions()
         {
             DisableBackdropClick = true,
