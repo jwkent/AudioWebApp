@@ -1,0 +1,17 @@
+﻿@page "/share"
+
+<div>
+    <MudCardContent>
+        <MudPaper Class="d-flex justify-center align-center py-8" 
+        Elevation="0">
+            <MudImage Src="./images/tnpQrShare.png"/>
+        </MudPaper>
+        <MudPaper Class="d-flex flex-grow-1 justify-center" Elevation="0">
+            <p class="subText">@appCaption</p>
+        </MudPaper>
+    </MudCardContent>
+</div>
+
+@code {
+    string appCaption = "thenarrowpath.app";
+}
