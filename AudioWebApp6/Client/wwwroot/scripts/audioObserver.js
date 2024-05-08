@@ -84,18 +84,15 @@ function installIOSPatchIfRequired() {
     const isPWA = window.matchMedia("(display-mode: standalone)").matches;
 
     if (isIOS && isPWA) {
-        const audioElement = document.getElementById("audioPlayer");
-        let silenceElement = document.getElementById("silencePlayer");
-        if (!silenceElement) {
-            silenceElement = document.createElement('audio');
+        if (!document.getElementById("silencePlayer")) {
+            const silenceElement = document.createElement('audio');
             silenceElement.id = "silencePlayer";
             silenceElement.autoplay = true;
             silenceElement.playbackRate = 0.0;
-
             // 16 samples of silence, encoded as an unsigned 8 bit PCM WAV via Audacity, then converted to base64.
-            const silentDataURI = 'data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEARKwAAESsAAABAAgAZGF0YRAAAACAgICAgICAgICAgICAgICA';
-            silenceElement.setAttribute('src', silentDataURI);
-
+            silenceElement.src = 'data:audio/wav;base64,UklGRjQAAABXQVZFZm10IBAAAAABAAEARKwAAESsAAABAAgAZGF0YRAAAACAgICAgICAgICAgICAgICA';
+            
+            const audioElement = document.getElementById("audioPlayer");
             audioElement.parentElement.appendChild(silenceElement);
         }
     }
