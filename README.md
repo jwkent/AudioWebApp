@@ -1,5 +1,5 @@
-# Audio Web App
-This Blazor Server project is an attempt to organize and enhance access to Steve Gregg's audio teachings, lectures, and sermons. The goal is to provide a straightforward interface with organized access to content through one responsive code base. 
+# The Narrow Path Web App
+This Blazor Server project provides organized and enhanced access to Steve Gregg's audio teachings, lectures, and sermons. The goal is to provide a straightforward interface with organized access to content through one responsive code base. 
 The current web app hosted at [thenarrowpath.app](https://thenarrowpath.app).
 # Considerations
 This project is not profiting from or attempting to monetize Steve Gregg's content. Neither is any attempt being made to replace or undermine his ministries many established web resources and online presence. Simply it is an attempt to provide a focused connection to this content freely available on his website and other well established social media platforms. 
