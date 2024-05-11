@@ -7,10 +7,10 @@ All source code, time, hosting, and assets contained within are freely given to 
 
 # Contributing
 We encourage anyone with programming knowledge to participate in improving any aspect of this application. We take user feedback very seriously within the focus of this applications stated goals. Please feel free to fork this application or offer suggestion or insights in the [Discussion Forum](https://github.com/jwkent/AudioWebApp/discussions) that will improve or enhance this application. 
-## Conduct
+# Conduct
 All comments, suggestions, and contribution must be kept within the stated goals of the application development. Any aggressive, abusive, or obstructive conduct will not be tolerated. Likewise, being respectful of other contributors technical skill level and programing knowledge is also mandatory.   
 # Code Base
-### We have chosen to use a Blazor Server application based on its responsive design framework and strong back end support. 
+We have chosen to use a Blazor Server application based on its responsive design framework and strong back end support. 
 ### Frameworks and Libraries:
 * .NET 6.0 
 * Blazor Server
