@@ -1,12 +1,74 @@
-﻿@page "/sharedplayer/{Title}/{Source}"
+﻿@page "/sharedplayer/{Title}/{Source}/{PageHeaderTitle}"
 @page "/sharedplayer"
-<h3>SharedLinkPlayer</h3>
-<p>@Title</p>
-<p>@Source</p>
-@code {
-    [Parameter] public string Title { get; set; }
-    [Parameter] public string Source { get; set; }
-    string server = "https://thenarrowpath.com/";
-    string fileType = ".mp3";
+@using System.Web
+@using AudioWebApp.Client.Services
+@inject LinkShareService LinkShare
+@inject SharedDataService sharedDataService
+<PageTitle>Shared Link</PageTitle>
+<div>
+    <MudCardContent>
+        
+        @if (dataReady == null)
+        {
+            <MudPaper Class="d-flex justify-center align-center" Elevation="0" Height="100vh">
+                <MudProgressCircular Style="color:#5F76A6; " Indeterminate="true" />
+            </MudPaper>
+        }
+        else
+        {
+            <MudPaper Elevation="0">
+                <h3>SharedLinkPlayer</h3>
+                <p>@title</p>
+                <p>@source</p>
+                <p>@initii</p>
+                <MudIconButton Icon="@Icons.Material.Outlined.PlayCircle" Color="Color.Primary" aria-label="Play" OnClick="OpenAudio"></MudIconButton>
+            </MudPaper>  
+        }
+        </MudCardContent>
+</div>
 
+@code {
+    string? dataReady;
+    [Parameter] public string PageHeaderTitle { get; set; }
+    private string source;
+    private string title;
+    public string initii;
+    [Parameter] public string Title
+    {
+        get => title;
+        set
+        {
+            title = HttpUtility.UrlDecode(value);
+        }
+    }
+    [Parameter] public string Source
+    {
+        get => source;
+        set
+        {
+            source = $"{server}{HttpUtility.UrlDecode(value)}.mp3";
+        }
+    }
+    string server = "https://thenarrowpath.com/";
+    
+
+    protected override async Task OnInitializedAsync()
+    {
+        if(string.IsNullOrWhiteSpace(source))
+        {
+            dataReady = "dataLoaded";
+        }
+        else
+        {
+            dataReady = "dataLoaded";
+           
+        }
+        
+    }
+    public void OpenAudio()
+    {
+        sharedDataService.AudioTitle = title;
+        sharedDataService.AudioLink = source;
+        sharedDataService.TogglePlayer();
+    }
 }
