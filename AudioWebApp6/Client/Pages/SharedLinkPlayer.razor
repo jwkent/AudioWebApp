@@ -1,0 +1,11 @@
+﻿@page "/sharedplayer/{Title}/{Source}"
+@page "/sharedplayer"
+<h3>SharedLinkPlayer</h3>
+<p>@Title</p>
+<p>@Source</p>
+@code {
+    [Parameter] public string Title { get; set; }
+    [Parameter] public string Source { get; set; }
+
+
+}

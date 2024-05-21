@@ -146,7 +146,7 @@
 	  </Content>
 	</ItemGroup>
 
-	<ItemGroup>
+	<ItemGroup>	  
 	  <None Include="wwwroot\scripts\audioFavorite.js">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
@@ -161,7 +161,7 @@
 		</None>
 	</ItemGroup>
 
-
-
 	
+
+
 </Project>
