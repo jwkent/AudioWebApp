@@ -1,10 +1,11 @@
-﻿@page "/sharedplayer/{Title}/{Source}/{PageHeaderTitle}"
+﻿@page "/sharedplayer/{Title}/{ServerFlag}/{Source}/{StaticHeaderTitle}"
 @page "/sharedplayer"
 @using System.Web
+@using System.Globalization
 @using AudioWebApp.Client.Services
 @inject LinkShareService LinkShare
 @inject SharedDataService sharedDataService
-<PageTitle>Shared Link</PageTitle>
+<PageTitle>Shared</PageTitle>
 <div>
     <MudCardContent>
         
@@ -17,11 +18,11 @@
         else
         {
             <MudPaper Elevation="0">
-                <h3>SharedLinkPlayer</h3>
-                <p>@title</p>
+                <h3>@title</h3>
+                <p>@category</p>
                 <p>@source</p>
-                <p>@initii</p>
-                <MudIconButton Icon="@Icons.Material.Outlined.PlayCircle" Color="Color.Primary" aria-label="Play" OnClick="OpenAudio"></MudIconButton>
+                
+                <MudIconButton Style="font-size: 25px;" Icon="@Icons.Material.Outlined.PlayCircle" Color="Color.Primary" aria-label="Play" OnClick="OpenAudio"></MudIconButton>
             </MudPaper>  
         }
         </MudCardContent>
@@ -29,10 +30,11 @@
 
 @code {
     string? dataReady;
-    [Parameter] public string PageHeaderTitle { get; set; }
+    [Parameter] public string StaticHeaderTitle { get; set; }
+    [Parameter] public string ServerFlag{ get; set; }
     private string source;
     private string title;
-    public string initii;
+    public string category;
     [Parameter] public string Title
     {
         get => title;
@@ -46,11 +48,17 @@
         get => source;
         set
         {
-            source = $"{server}{HttpUtility.UrlDecode(value)}.mp3";
+            if(ServerFlag == "one"){
+                source = $"{audioBookServer}{HttpUtility.UrlDecode(value)}.mp3";
+            }
+            else{
+                source = $"{server}{HttpUtility.UrlDecode(value)}.mp3";
+            }
+
         }
     }
-    string server = "https://thenarrowpath.com/";
-    
+    string server = "https://thenarrowpath.com";
+    string audioBookServer = "https://theos.s3.us-west-1.amazonaws.com";
 
     protected override async Task OnInitializedAsync()
     {
@@ -61,14 +69,39 @@
         else
         {
             dataReady = "dataLoaded";
-           
+            category = GenerateCategoryFromSource(source);
         }
-        
+
     }
     public void OpenAudio()
     {
         sharedDataService.AudioTitle = title;
         sharedDataService.AudioLink = source;
         sharedDataService.TogglePlayer();
+    }
+    public string GenerateCategoryFromSource(string value)
+    {
+
+        string cleanedValue = RemoveMemeType(value);
+
+        string[] segments = cleanedValue.Split('/');
+        string rawCategory = segments[4].Replace("-", " ");
+        string finishedCategory = rawCategory.Replace("_", " ");
+
+        TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+        string category = textInfo.ToTitleCase(finishedCategory);
+
+        return category;
+    }
+    public string RemoveMemeType(string value)
+    {
+        if (value.EndsWith(".mp3"))
+        {
+            return value.Substring(0, value.Length - 4);
+        }
+        else
+        {
+            return value;
+        }
     }
 }

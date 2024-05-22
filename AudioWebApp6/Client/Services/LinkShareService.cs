@@ -17,13 +17,14 @@ namespace AudioWebApp.Client.Services
         }
         public async Task CopyAudioLinkToClipboard(string title, string source)
         {
+            string sourceFlag = CheckSource(source);
             string editedSource = RemoveCharacters(source);
 
             string unicodeSource = HttpUtility.UrlEncode(editedSource);
             string unicodeTitle = HttpUtility.UrlEncode(title);
             
-            string linkParams = $"{unicodeTitle}/{unicodeSource}";
-            string link = "https://localhost:8001/sharedplayer/" + linkParams + "/Shared";
+            string linkParams = $"{unicodeTitle}/{sourceFlag}/{unicodeSource}/Shared";
+            string link = "https://localhost:8001/sharedplayer/" + linkParams ;
         
             await _jsruntime.InvokeVoidAsync("shareAudioLink", link); 
             
@@ -35,6 +36,17 @@ namespace AudioWebApp.Client.Services
             string pattern1 = @"\.mp3";
             string result1 = Regex.Replace(result, pattern1, "");
             return result1;
+        }
+        public string CheckSource(string value)
+        {
+            if (value.Contains("theos"))
+            {
+                return "one";
+            }
+            else
+            {
+                return "zero";
+            }
         }
     }
 }
