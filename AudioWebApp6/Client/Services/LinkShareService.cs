@@ -4,6 +4,7 @@ using System.Reflection;
 using System;
 using System.Web;
 using System.Text.RegularExpressions;
+using Microsoft.Extensions.FileSystemGlobbing.Internal;
 
 namespace AudioWebApp.Client.Services
 {
@@ -15,38 +16,13 @@ namespace AudioWebApp.Client.Services
         {
             _jsruntime = jSRuntime;
         }
-        public async Task CopyAudioLinkToClipboard(string title, string source)
-        {
-            string sourceFlag = CheckSource(source);
-            string editedSource = RemoveCharacters(source);
-
-            string unicodeSource = HttpUtility.UrlEncode(editedSource);
-            string unicodeTitle = HttpUtility.UrlEncode(title);
-            
-            string linkParams = $"{unicodeTitle}/{sourceFlag}/{unicodeSource}/Shared";
-            string link = "https://localhost:8001/sharedplayer/" + linkParams ;
+        public async Task CopyAudioLinkToClipboard(string source,string title)
+        { 
+            var encodedUrl = Uri.EscapeDataString(source);
+            var link = $"https://localhost:8001/sharedplayer?url={encodedUrl}&title={title}";
         
-            await _jsruntime.InvokeVoidAsync("shareAudioLink", link); 
-            
-        }
-        public string RemoveCharacters(string url)
-        {
-            string pattern = @"^.+\.com";
-            string result = Regex.Replace(url, pattern, "");
-            string pattern1 = @"\.mp3";
-            string result1 = Regex.Replace(result, pattern1, "");
-            return result1;
-        }
-        public string CheckSource(string value)
-        {
-            if (value.Contains("theos"))
-            {
-                return "one";
-            }
-            else
-            {
-                return "zero";
-            }
+            await _jsruntime.InvokeVoidAsync("shareAudioLink", link);   
         }
     }
+   
 }

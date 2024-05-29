@@ -11,3 +11,12 @@ function audioPlaybackRate(speed) {
     audioPlayer.playbackRate = speed;
 
 }
+function shareAudioLink(link) {
+    navigator.clipboard.writeText(link)
+}
+function sendSMS(source, title) {
+    window.open('sms:${phoneNumber}?body=${endcodeURIComponent(message)}');
+}
+function sendEmail(source, title) {
+    window.open(`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
+}

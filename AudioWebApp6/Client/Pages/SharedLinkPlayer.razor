@@ -1,11 +1,16 @@
-﻿@page "/sharedplayer/{Title}/{ServerFlag}/{Source}/{StaticHeaderTitle}"
+﻿
 @page "/sharedplayer"
 @using System.Web
 @using System.Globalization
 @using AudioWebApp.Client.Services
+@using AudioWebApp.Shared
+@using Microsoft.AspNetCore.Components
+@using System.Text.RegularExpressions
 @inject LinkShareService LinkShare
 @inject SharedDataService sharedDataService
-<PageTitle>Shared</PageTitle>
+@inject NavigationManager navigationManager
+
+<PageTitle>Shared Player</PageTitle>
 <div>
     <MudCardContent>
         
@@ -17,91 +22,54 @@
         }
         else
         {
-            <MudPaper Elevation="0">
-                <h3>@title</h3>
-                <p>@category</p>
-                <p>@source</p>
-                
-                <MudIconButton Style="font-size: 25px;" Icon="@Icons.Material.Outlined.PlayCircle" Color="Color.Primary" aria-label="Play" OnClick="OpenAudio"></MudIconButton>
-            </MudPaper>  
+              
         }
         </MudCardContent>
 </div>
 
 @code {
-    string? dataReady;
-    [Parameter] public string StaticHeaderTitle { get; set; }
-    [Parameter] public string ServerFlag{ get; set; }
-    private string source;
-    private string title;
-    public string category;
-    [Parameter] public string Title
-    {
-        get => title;
-        set
-        {
-            title = HttpUtility.UrlDecode(value);
-        }
-    }
-    [Parameter] public string Source
-    {
-        get => source;
-        set
-        {
-            if(ServerFlag == "one"){
-                source = $"{audioBookServer}{HttpUtility.UrlDecode(value)}.mp3";
-            }
-            else{
-                source = $"{server}{HttpUtility.UrlDecode(value)}.mp3";
-            }
 
-        }
-    }
-    string server = "https://thenarrowpath.com";
-    string audioBookServer = "https://theos.s3.us-west-1.amazonaws.com";
+    [Parameter] [SupplyParameterFromQuery(Name = "url")] public string Url { get; set; }
+    [Parameter] [SupplyParameterFromQuery(Name = "title")] public string Title { get; set; }
+    string? dataReady;
+
 
     protected override async Task OnInitializedAsync()
     {
-        if(string.IsNullOrWhiteSpace(source))
+        if(string.IsNullOrWhiteSpace(Url))
         {
-            dataReady = "dataLoaded";
+
+            // Error check and display source is not valid
         }
         else
         {
             dataReady = "dataLoaded";
-            category = GenerateCategoryFromSource(source);
         }
-
     }
     public void OpenAudio()
     {
-        sharedDataService.AudioTitle = title;
-        sharedDataService.AudioLink = source;
+        sharedDataService.AudioTitle = Title;
+        sharedDataService.AudioLink = Url;
         sharedDataService.TogglePlayer();
     }
-    public string GenerateCategoryFromSource(string value)
-    {
 
-        string cleanedValue = RemoveMemeType(value);
-
-        string[] segments = cleanedValue.Split('/');
-        string rawCategory = segments[4].Replace("-", " ");
-        string finishedCategory = rawCategory.Replace("_", " ");
-
-        TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
-        string category = textInfo.ToTitleCase(finishedCategory);
-
-        return category;
-    }
-    public string RemoveMemeType(string value)
-    {
-        if (value.EndsWith(".mp3"))
+    protected override void OnParametersSet(){
+        if(!string.IsNullOrEmpty(Url))
         {
-            return value.Substring(0, value.Length - 4);
-        }
-        else
-        {
-            return value;
+
+            Url = Uri.UnescapeDataString(Url);
+
+            if (Title.Length <= 99)
+            {
+                OpenAudio();
+            }
         }
     }
+    protected override void OnAfterRender(bool firstRender) 
+    {
+        navigationManager.NavigateTo("/");
+    }
+
+    
+    // https://www.thenarrowpath.com/audio/verse-by-verse/joshua/01_2011_Historical_Books_Introduction_Part_1.mp3
 }
