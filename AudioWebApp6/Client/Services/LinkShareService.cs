@@ -23,6 +23,13 @@ namespace AudioWebApp.Client.Services
         
             await _jsruntime.InvokeVoidAsync("shareAudioLink", link);   
         }
+        public async Task SendAudioLinkSMS(string source, string title)
+        {
+            var encodedUrl = Uri.EscapeDataString(source);
+            var link = $"https://localhost:8001/sharedplayer?url={encodedUrl}&title={title}";
+            await _jsruntime.InvokeVoidAsync("sendSMS", link);
+        }
+       
     }
    
 }
