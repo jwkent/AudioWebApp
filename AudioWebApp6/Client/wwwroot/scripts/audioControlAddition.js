@@ -12,7 +12,13 @@ function audioPlaybackRate(speed) {
 
 }
 function shareAudioLink(link) {
-    navigator.clipboard.writeText(link)
+    navigator.clipboard.writeText(link).then(function () {
+        // Success callback
+        console.log('Text copied to clipboard successfully!');
+    }).catch(function (error) {
+        // Error callback
+        console.error('Could not copy text: ', error);
+    });
 }
 function sendSMS(source, title) {
     var phoneNumber = "";

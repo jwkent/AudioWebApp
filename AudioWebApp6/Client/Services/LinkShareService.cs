@@ -1,10 +1,5 @@
 ﻿using Microsoft.JSInterop;
-using System.Reflection;
-
-using System;
 using System.Web;
-using System.Text.RegularExpressions;
-using Microsoft.Extensions.FileSystemGlobbing.Internal;
 
 namespace AudioWebApp.Client.Services
 {
@@ -16,20 +11,33 @@ namespace AudioWebApp.Client.Services
         {
             _jsruntime = jSRuntime;
         }
+
         public async Task CopyAudioLinkToClipboard(string source,string title)
-        { 
-            var encodedUrl = Uri.EscapeDataString(source);
-            var link = $"https://localhost:8001/sharedplayer?url={encodedUrl}&title={title}";
-        
-            await _jsruntime.InvokeVoidAsync("shareAudioLink", link);   
+        {
+            string link = BuildLink(source, title);
+
+            await _jsruntime.InvokeVoidAsync("shareAudioLink", link);
         }
+
         public async Task SendAudioLinkSMS(string source, string title)
         {
-            var encodedUrl = Uri.EscapeDataString(source);
-            var link = $"https://localhost:8001/sharedplayer?url={encodedUrl}&title={title}";
+            string link = BuildLink(source, title);
+
             await _jsruntime.InvokeVoidAsync("sendSMS", link);
         }
-       
+
+        private string BuildLink(string source, string title)
+        {
+            string appName = "theNarrowPath.wvss.biz";  // "theNarrowPath.app"
+            string protocol = "http";   // "https"
+
+            var encodedUrl = Uri.EscapeDataString(source);
+            var encodeTitle = HttpUtility.UrlEncode(title);
+
+            var link = $"{protocol}://{appName}/sharedplayer?url={encodedUrl}&title={encodeTitle}";
+
+            return link;
+        }
     }
    
 }
