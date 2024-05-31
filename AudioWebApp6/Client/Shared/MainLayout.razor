@@ -66,16 +66,9 @@
                                 </MudPopover>
                             </MudPaper>
                             <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="50px" Elevation="0">
-                                <MudButton Style="padding:0px; color:#9396A1" OnClick="@OpenLinkShareControls">
-                                    <MudIcon Icon="@Icons.Material.Filled.Share" Title="Share Audio"/>
+                                <MudButton Style="padding:0px; color:#9396A1" OnClick="@ShareAudioSMS">
+                                    <MudIcon Icon="@Icons.Material.Outlined.Textsms" Title="Text SMS"/>
                                 </MudButton>
-                                <MudPopover Open="_linkShare" Fixed="true" Square="false" Class="px-4 pt-4" Style="background-color:#d5dcec;" AnchorOrigin="Origin.TopCenter" TransformOrigin="Origin.BottomCenter">
-                                    <div Class="d-flex flex-column">
-                                        @* <MudButton style="color:#2f40aa" OnClick="@ShareAudioLink">Link</MudButton> *@
-                                        <MudButton style="color:#2f40aa" OnClick="@ShareAudioSMS">Message</MudButton>
-                                        <MudButton OnClick="@OpenLinkShareControls" Class="ml-auto mb-1" style="color:#6e83ae;">Close</MudButton>
-                                    </div>
-                                </MudPopover>
                             </MudPaper>
                         </div>
                         <div class="d-flex flex-grow-1 gap-0">
@@ -107,7 +100,7 @@
     string category = "";
     List<double> speeds = new List<double> {0.7, 0.8, 0.9, 1, 1.25, 1.50, 1.75, 2.0 };
     private bool _speedControls;
-    private bool _linkShare;
+    
     void DrawerToggle()
     {
         _drawerOpen = !_drawerOpen;
@@ -185,11 +178,6 @@
             _speedControls = true;
     }
 
-    private void OpenLinkShareControls()
-    {
-        _linkShare = _linkShare ? false : true;
-
-    }
     private async void ShareAudioLink()
     {
         await LinkShare.CopyAudioLinkToClipboard(audioSource, audioTitle);
