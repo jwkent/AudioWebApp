@@ -1,12 +1,6 @@
-﻿
-@page "/sharedplayer"
-@using System.Web
-@using System.Globalization
+﻿@page "/sharedplayer"
+
 @using AudioWebApp.Client.Services
-@using AudioWebApp.Shared
-@using Microsoft.AspNetCore.Components
-@using System.Text.RegularExpressions
-@inject LinkShareService LinkShare
 @inject SharedDataService sharedDataService
 @inject NavigationManager navigationManager
 
@@ -20,10 +14,6 @@
                 <MudProgressCircular Style="color:#5F76A6; " Indeterminate="true" />
             </MudPaper>
         }
-        else
-        {
-              
-        }
         </MudCardContent>
 </div>
 
@@ -33,12 +23,10 @@
     [Parameter] [SupplyParameterFromQuery(Name = "title")] public string Title { get; set; }
     string? dataReady;
 
-
     protected override async Task OnInitializedAsync()
     {
         if(string.IsNullOrWhiteSpace(Url))
         {
-
             // Error check and display source is not valid
         }
         else
@@ -69,7 +57,4 @@
     {
         navigationManager.NavigateTo("/");
     }
-
-    
-    // https://www.thenarrowpath.com/audio/verse-by-verse/joshua/01_2011_Historical_Books_Introduction_Part_1.mp3
 }

@@ -22,6 +22,6 @@ function shareAudioLink(link) {
 }
 function sendSMS(source, title) {
     var phoneNumber = "";
-    console.log("in js sendSMS");
+    //console.log("in js sendSMS");
     window.open(`sms:${phoneNumber}?body=${encodeURIComponent(source)}`);
 }

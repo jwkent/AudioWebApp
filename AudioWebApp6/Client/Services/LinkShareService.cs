@@ -26,15 +26,20 @@ namespace AudioWebApp.Client.Services
             await _jsruntime.InvokeVoidAsync("sendSMS", link);
         }
 
+        public async Task ShareAppSMS(string link)
+        {
+            await _jsruntime.InvokeVoidAsync("sendSMS", link);
+        }
+
         private string BuildLink(string source, string title)
         {
-            string appName = "theNarrowPath.wvss.biz";  // "theNarrowPath.app"
-            string protocol = "http";   // "https"
+            string appName = "theNarrowPath.app"; // "theNarrowPath.wvss.biz";  
+            string protocol = "https";   // "http"
 
             var encodedUrl = Uri.EscapeDataString(source);
             var encodeTitle = HttpUtility.UrlEncode(title);
 
-            var link = $"{protocol}://{appName}/sharedplayer?url={encodedUrl}&title={encodeTitle}";
+            var link = $"{title} {protocol}://{appName}/sharedplayer?url={encodedUrl}&title={encodeTitle}";
 
             return link;
         }

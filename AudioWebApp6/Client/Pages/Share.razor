@@ -1,9 +1,12 @@
 ﻿@page "/share"
+
+@using AudioWebApp.Client.Services
+@inject LinkShareService LinkShare
+
 <PageTitle>Share App</PageTitle>
 <div>
     <MudCardContent>
-        <MudPaper Class="d-flex justify-center align-center py-8" 
-        Elevation="0">
+        <MudPaper Class="d-flex justify-center align-center py-8" Elevation="0">
             <MudImage Src="./images/tnpQrShare.png"/>
         </MudPaper>
         <MudPaper Class="d-flex flex-grow-1 justify-center" Elevation="0">
@@ -12,11 +15,26 @@
         <MudPaper Class="d-flex flex-grow-1 justify-center" Elevation="0">
             <p class="shareText">@sharingHelp</p>
         </MudPaper>
+        <MudPaper Class="d-flex flex-grow-1 justify-center" Elevation="0">
+            <MudButton Color="Color.Info" Variant="Variant.Outlined" @onclick="SendShareSMS">Share via SMS</MudButton>
+        </MudPaper>
+
+        <MudPaper Class="d-flex flex-grow-1 justify-center" Elevation="0">
+            <p class="shareText">@sharingHelpSMS</p>
+        </MudPaper>
+
     </MudCardContent>
 </div>
 
 @code {
     string appCaption = "theNarrowPath.app";
 
-    string sharingHelp = "To share the 'Narrow Path' web app with a friend, simply have them scan this barcode with their mobile device's camera and tap the link that appears.";
+    string sharingHelp = "To share the 'Narrow Path' web app with a friend, simply have them scan this barcode with their mobile device's camera and press the link that appears.";
+    string sharingHelpSMS = "Or, to share the 'Narrow Path' web app with a friend, via SMS, press the 'SHARE VIA SMS' button, enter the friend's name and press the send icon.";
+    
+    private void SendShareSMS()
+    {
+        LinkShare.ShareAppSMS($"Check out the narrow path web app for understandable Bible teaching. https://{appCaption}");
+    }
+
 }
