@@ -144,9 +144,12 @@
 	  <Content Update="wwwroot\images\tnpQrShare.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="wwwroot\scripts\mastTitle.js">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	</ItemGroup>
 
-	<ItemGroup>
+	<ItemGroup>	  
 	  <None Include="wwwroot\scripts\audioFavorite.js">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
@@ -161,7 +164,7 @@
 		</None>
 	</ItemGroup>
 
-
-
 	
+
+
 </Project>

@@ -1,0 +1,60 @@
+﻿@page "/sharedplayer"
+
+@using AudioWebApp.Client.Services
+@inject SharedDataService sharedDataService
+@inject NavigationManager navigationManager
+
+<PageTitle>Shared Player</PageTitle>
+<div>
+    <MudCardContent>
+        
+        @if (dataReady == null)
+        {
+            <MudPaper Class="d-flex justify-center align-center" Elevation="0" Height="100vh">
+                <MudProgressCircular Style="color:#5F76A6; " Indeterminate="true" />
+            </MudPaper>
+        }
+        </MudCardContent>
+</div>
+
+@code {
+
+    [Parameter] [SupplyParameterFromQuery(Name = "url")] public string Url { get; set; }
+    [Parameter] [SupplyParameterFromQuery(Name = "title")] public string Title { get; set; }
+    string? dataReady;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if(string.IsNullOrWhiteSpace(Url))
+        {
+            // Error check and display source is not valid
+        }
+        else
+        {
+            dataReady = "dataLoaded";
+        }
+    }
+    public void OpenAudio()
+    {
+        sharedDataService.AudioTitle = Title;
+        sharedDataService.AudioLink = Url;
+        sharedDataService.TogglePlayer();
+    }
+
+    protected override void OnParametersSet(){
+        if(!string.IsNullOrEmpty(Url))
+        {
+
+            Url = Uri.UnescapeDataString(Url);
+
+            if (Title.Length <= 99)
+            {
+                OpenAudio();
+            }
+        }
+    }
+    protected override void OnAfterRender(bool firstRender) 
+    {
+        navigationManager.NavigateTo("/");
+    }
+}

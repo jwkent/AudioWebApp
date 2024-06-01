@@ -3,6 +3,7 @@
 @inherits LayoutComponentBase
 @inject SharedDataService SharedDataService
 @inject FavoritesService FavoriteService
+@inject LinkShareService LinkShare
 @inject ISnackbar Snackbar
 @inject IDialogService DialogService
 <MudThemeProvider />
@@ -40,17 +41,17 @@
                                     <MudIcon  Icon="@favAddIcon" Title="Add Favorite"/>
                                 </MudButton>
                             </MudPaper>
-                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="75px" Elevation="0">
+                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="50px" Elevation="0">
                                 <MudButton Style=" padding:0px;  color:#9396A1" OnClick="AudioReverse">
                                     <MudIcon Icon="@Icons.Material.Filled.Replay10" Title="Reverse" />
                                 </MudButton>
                             </MudPaper>
-                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="75px" Elevation="0">
+                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="50px" Elevation="0">
                                 <MudButton Style=" padding:0px;  color:#9396A1" OnClick="AudioForward">
                                     <MudIcon Icon="@Icons.Material.Filled.Forward10" Title="Forward" />
                                 </MudButton>
                             </MudPaper>
-                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="75px" Elevation="0">
+                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="50px" Elevation="0">
                                 <MudButton Style=" padding:0px;  color:#9396A1" OnClick="@OpenPlaybackSpeedControls">
                                     <MudIcon Icon="@Icons.Material.Filled.Speed" Title="Playback Speed" />
                                 </MudButton>
@@ -63,6 +64,11 @@
                                         <MudButton OnClick="@OpenPlaybackSpeedControls" Class="ml-auto mb-1" style="color:#6e83ae;">Close</MudButton>
                                     </div>
                                 </MudPopover>
+                            </MudPaper>
+                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="50px" Elevation="0">
+                                <MudButton Style="padding:0px; color:#9396A1" OnClick="@ShareAudioSMS">
+                                    <MudIcon Icon="@Icons.Material.Outlined.Textsms" Title="Share via SMS"/>
+                                </MudButton>
                             </MudPaper>
                         </div>
                         <div class="d-flex flex-grow-1 gap-0">
@@ -85,6 +91,7 @@
 @code {
     [Inject]
     public IJSRuntime JSRuntime { get; set; }
+
     string? audioTitle;
     string? audioSource;
     bool playerOpen = false;
@@ -93,6 +100,7 @@
     string category = "";
     List<double> speeds = new List<double> {0.7, 0.8, 0.9, 1, 1.25, 1.50, 1.75, 2.0 };
     private bool _speedControls;
+    
     void DrawerToggle()
     {
         _drawerOpen = !_drawerOpen;
@@ -170,6 +178,16 @@
             _speedControls = true;
     }
 
+    private async void ShareAudioLink()
+    {
+        await LinkShare.CopyAudioLinkToClipboard(audioSource, audioTitle);
+    }
+    private async void ShareAudioSMS()
+    {
+        await LinkShare.SendAudioLinkSMS(audioSource, audioTitle);
+    }
+
+   
     public string favAddIcon = "<svg id=\"Layer_6\" data-name=\"Layer 6\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 22.5 19.41\">" +
     "<path d = \"M1,6.63C1,3.09,3.67,1.07,5.67,1c3.33,0,5.83,1.69,5.83,4.13,0-2.44,2.5-4,5-4,2,0,5,1.5,5,5,0,4.5-10,12.05-10,12.05,0,0-10.5-7.09-10.5-11.55Z\" style=\"fill: none; stroke: #5f76a6; stroke-miterlimit: 10; stroke-width: 2px;\"/>" +
       "<circle cx = \"15.66\" cy=\"12.56\" r=\"5.5\" style=\"stroke-width: 0px;\"/>" +

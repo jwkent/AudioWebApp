@@ -1,4 +1,5 @@
 ﻿@inject NavigationManager NavigationManager
+@inject IJSRuntime jsRuntime
 
 <MudPaper Class="d-flex" Elevation="0" Height="100%" Width="50%" Style=" justify-content:right;">
     <span Class="masthead-text"> @CurrentPageTitle </span>
@@ -14,59 +15,20 @@
     protected override void OnInitialized()
     {
         NavigationManager.LocationChanged += HandleLocationChanged;
-        UpdatePageTitle(NavigationManager.Uri);
-
-
+        
+        if (string.IsNullOrWhiteSpace(CurrentPageTitle))
+        {
+            GetPageTitle();
+        }
     }
     private void HandleLocationChanged(object sender, LocationChangedEventArgs e)
     {
-        UpdatePageTitle(e.Location);
+        GetPageTitle();
     }
-    private void UpdatePageTitle(string uri)
+    private async void GetPageTitle()
     {
-        CurrentPageTitle = GetPageTitleFromUri(uri);
-        Console.WriteLine(CurrentPageTitle);
+        CurrentPageTitle = await jsRuntime.InvokeAsync<string>("getTitleProperty");
         StateHasChanged();
     }
-    private string GetPageTitleFromUri(string uri)
-    {
-        var segments = uri.Split('/');
-        string? substring = segments.LastOrDefault();
-        if (substring == null || substring == "")
-        {
-            return string.Empty;
-        }
-        else
-        {
-            return RemoveHyphensAndCapitalize(substring.Substring(0));
-        }
-    }
-    private string RemoveHyphensAndCapitalize(string title)
-    {
-        // Check if the input string contains '-'
-        if (title.Contains('-'))
-        {
-            string[] words = title.Split('-');
-
-            // Capitalize the first letter of each word
-            for (int i = 0; i < words.Length; i++)
-            {
-                if (!string.IsNullOrEmpty(words[i]))
-                {
-                    words[i] = char.ToUpper(words[i][0]) + words[i].Substring(1);
-                }
-            }
-
-            // Join the words back together
-            string capitalizedString = string.Join(" ", words);
-
-            return capitalizedString;
-        }
-        else
-        {
-            // If no '-' found, just capitalize the first letter of the whole string
-            title = char.ToUpper(title[0]) + title.Substring(1);
-            return title;
-        }
-    }
+    
 }
