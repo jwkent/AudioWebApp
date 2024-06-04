@@ -100,7 +100,7 @@
     string category = "";
     List<double> speeds = new List<double> {0.7, 0.8, 0.9, 1, 1.25, 1.50, 1.75, 2.0 };
     private bool _speedControls;
-    
+
     void DrawerToggle()
     {
         _drawerOpen = !_drawerOpen;
@@ -131,6 +131,7 @@
         audioTitle = SharedDataService.AudioTitle;
         audioSource = SharedDataService.AudioLink;
         await JSRuntime.InvokeVoidAsync("getStartTime", audioSource);
+        await JSRuntime.InvokeVoidAsync("getPlaybackSpeed"); 
         category = GetCategory(audioSource);
         StateHasChanged();
     }
