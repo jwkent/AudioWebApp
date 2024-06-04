@@ -1,6 +1,5 @@
 ﻿::deep .subText {
     color: #315087;
-    padding-top: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 32px;
 }
@@ -10,4 +9,24 @@
     padding-top: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
+}
+::deep .shareButton {
+    background-color: #49669b;
+    color: #d8e6fe;
+    width: 200px;
+}
+::deep .shareButton:hover {
+    background-color: #173671;
+}
+::deep span.mud-button-label {
+    padding: 8px;
+    margin-right: 5px;
+    font-family: 'Segoe UI', Tahoma, Verdana, Geneva, sans-serif;
+    border-color: navy;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px;
+}
+::deep svg.mud-icon-root.mud-svg-icon.mud-icon-size-medium{
+    color:#d8e6fe;
 }
