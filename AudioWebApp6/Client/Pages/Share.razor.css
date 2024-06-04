@@ -11,20 +11,23 @@
     font-size: 16px;
 }
 ::deep .shareButton {
-    background-color: #49669b;
+    background-color: #89669b;
     color: #d8e6fe;
     width: 200px;
 }
 ::deep .shareButton:hover {
     background-color: #173671;
 }
-::deep span.mud-button-label {
-    padding: 8px;
-    margin-right: 5px;
+::deep .feature-link-button {
+    color: lightslategray;
+    border: 2px solid #08265b;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px 10px 2px 5px ; 
+}
+::deep .mud-button-label {
     font-family: 'Segoe UI', Tahoma, Verdana, Geneva, sans-serif;
-    border-color: navy;
-    border-width: 2px;
-    border-radius: 10px;
+    
     padding: 10px;
 }
 ::deep svg.mud-icon-root.mud-svg-icon.mud-icon-size-medium{
