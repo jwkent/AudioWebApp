@@ -43,5 +43,11 @@ namespace AudioWebApp.Client.Services
 
             return secureUrl;
         }
+        public List<Message> QueuedMessages { get; set; }
+        public void GenerateQueue(List<Message> queue, string message)
+        {
+            QueuedMessages = queue.SkipWhile(item => item.Name != message).Skip(1).ToList();
+            foreach(var i in QueuedMessages) { Console.WriteLine(i.Name); }
+        }
     }
 }

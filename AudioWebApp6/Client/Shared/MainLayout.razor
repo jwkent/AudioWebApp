@@ -36,22 +36,27 @@
                                     <MudIcon Icon="@Icons.Material.Filled.Close" Title="Close player"></MudIcon>
                                 </MudButton>
                             </MudPaper>
-                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="75px" Elevation="0">
+                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="60px" Elevation="0">
                                 <MudButton Style=" padding:0px;  color:#9396A1" OnClick="AddToFavorites">
                                     <MudIcon  Icon="@favAddIcon" Title="Add Favorite"/>
                                 </MudButton>
                             </MudPaper>
-                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="50px" Elevation="0">
+                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="45px" Elevation="0">
                                 <MudButton Style=" padding:0px;  color:#9396A1" OnClick="AudioReverse">
                                     <MudIcon Icon="@Icons.Material.Filled.Replay10" Title="Reverse" />
                                 </MudButton>
                             </MudPaper>
-                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="50px" Elevation="0">
+                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="45px" Elevation="0">
                                 <MudButton Style=" padding:0px;  color:#9396A1" OnClick="AudioForward">
                                     <MudIcon Icon="@Icons.Material.Filled.Forward10" Title="Forward" />
                                 </MudButton>
                             </MudPaper>
-                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="50px" Elevation="0">
+                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="45px" Elevation="0">
+                                <MudButton Style="padding:0px; color:#9396A1" OnClick="PlayNextQueue">
+                                    <MudIcon Icon="@Icons.Material.Filled.SkipNext" Title="Next"/>
+                                </MudButton>
+                            </MudPaper>
+                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="45px" Elevation="0">
                                 <MudButton Style=" padding:0px;  color:#9396A1" OnClick="@OpenPlaybackSpeedControls">
                                     <MudIcon Icon="@Icons.Material.Filled.Speed" Title="Playback Speed" />
                                 </MudButton>
@@ -65,11 +70,12 @@
                                     </div>
                                 </MudPopover>
                             </MudPaper>
-                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="50px" Elevation="0">
+                            <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-end;" Width="45px" Elevation="0">
                                 <MudButton Style="padding:0px; color:#9396A1" OnClick="@ShareAudioSMS">
                                     <MudIcon Icon="@Icons.Material.Outlined.Textsms" Title="Share via SMS"/>
                                 </MudButton>
                             </MudPaper>
+
                         </div>
                         <div class="d-flex flex-grow-1 gap-0">
                             <MudPaper Class="flex-auto d-flex py-0 justify-center align-center"  Width="100%" Elevation="0">
@@ -187,8 +193,15 @@
     {
         await LinkShare.SendAudioLinkSMS(audioSource, audioTitle);
     }
+    private async void PlayNextQueue()
+    {
+        var nextMessage = SharedDataService.QueuedMessages[0];
+        SharedDataService.AudioTitle = nextMessage.Name;
+        SharedDataService.AudioLink = nextMessage.Link;
 
-   
+
+    }
+
     public string favAddIcon = "<svg id=\"Layer_6\" data-name=\"Layer 6\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 22.5 19.41\">" +
     "<path d = \"M1,6.63C1,3.09,3.67,1.07,5.67,1c3.33,0,5.83,1.69,5.83,4.13,0-2.44,2.5-4,5-4,2,0,5,1.5,5,5,0,4.5-10,12.05-10,12.05,0,0-10.5-7.09-10.5-11.55Z\" style=\"fill: none; stroke: #5f76a6; stroke-miterlimit: 10; stroke-width: 2px;\"/>" +
       "<circle cx = \"15.66\" cy=\"12.56\" r=\"5.5\" style=\"stroke-width: 0px;\"/>" +
