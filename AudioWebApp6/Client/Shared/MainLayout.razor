@@ -106,7 +106,7 @@
     string category = "";
     List<double> speeds = new List<double> {0.7, 0.8, 0.9, 1, 1.25, 1.50, 1.75, 2.0 };
     private bool _speedControls;
-
+    
     void DrawerToggle()
     {
         _drawerOpen = !_drawerOpen;
@@ -195,10 +195,19 @@
     }
     private async void PlayNextQueue()
     {
-        var nextMessage = SharedDataService.QueuedMessages[0];
-        SharedDataService.AudioTitle = nextMessage.Name;
-        SharedDataService.AudioLink = nextMessage.Link;
+        if(SharedDataService.QueuedMessages.Count != 0)
+        {
+            var nextMessage = SharedDataService.QueuedMessages[0];
+            SharedDataService.AudioTitle = nextMessage.Name;
+            SharedDataService.AudioLink = Path.Combine(SharedDataService.QueuedMessagesServerPath, nextMessage.Link);
 
+            HandlePlayerToggle();
+            SharedDataService.QueuedMessages.RemoveAt(0);
+        }
+        else
+        {
+            return;
+        }
 
     }
 

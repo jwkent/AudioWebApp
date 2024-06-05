@@ -1,6 +1,7 @@
 ﻿@page "/debates"
 @using AudioWebApp.Client.Services
 @using AudioWebApp.Client.Utilities
+@using AudioWebApp.Client.Models
 @inject NavigationManager NavigationManager
 @inject SharedDataService sharedDataService
 @inject ApiService apiService
@@ -32,7 +33,7 @@
                             <NestedList>
                                 @foreach (var msg in topic.Messages)
                                 {
-                                    <MudListItem style="padding-right:20px;" Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server,topic.Messages)" />
+                                    <MudListItem style="padding-right:20px;" Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server, topic.Messages)" />
                                 }
                             </NestedList>
                         </MudListItem>
@@ -51,13 +52,13 @@
         debateGrouper.CreateCategories(apiService.Debates);
         dataReady = "dataLoaded";
     }
-    public void OpenAudio(string audioName, string audioLink, string serverName, List<AudioWebApp.Client.Models.Message> queue)
+    public void OpenAudio(string audioName, string audioLink, string serverName, List<Message> queue)
     {
         string serverPath = sharedDataService.GetServerPath(apiService.Servers, serverName);
 
         sharedDataService.AudioTitle = audioName;
         sharedDataService.AudioLink = Path.Combine(serverPath, audioLink);
-        sharedDataService.GenerateQueue(queue, audioName);
+        sharedDataService.GenerateQueue(queue, audioName, serverPath);
         sharedDataService.TogglePlayer();
     }
 }
