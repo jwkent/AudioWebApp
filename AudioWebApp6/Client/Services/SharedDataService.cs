@@ -10,7 +10,8 @@ namespace AudioWebApp.Client.Services
         public string? AudioTitle { get; set; }
         public event Action OnPlayerToggle;
         public event Action OnShowContent;
-
+        public string? QueuedMessagesServerPath { get; set; }
+        
         public void TogglePlayer()
         {
             OnPlayerToggle?.Invoke();
@@ -42,6 +43,12 @@ namespace AudioWebApp.Client.Services
             }
 
             return secureUrl;
+        }
+        public List<Message> QueuedMessages { get; set; }
+        public void GenerateQueue(List<Message> queue, string message, string serverPath)
+        {
+            QueuedMessagesServerPath = serverPath;
+            QueuedMessages = queue.SkipWhile(item => item.Name != message).Skip(1).ToList();
         }
     }
 }

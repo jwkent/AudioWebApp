@@ -1,5 +1,6 @@
 ﻿@page "/verse-by-verse"
 @using AudioWebApp.Client.Services
+@using AudioWebApp.Client.Models
 @inject SharedDataService sharedDataService
 @inject ApiService apiService
 
@@ -29,7 +30,7 @@
                             <NestedList>
                                 @foreach (var msg in book.Messages)
                                 {
-                                    <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, book.Server)" />
+                                    <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, book.Server, book.Messages)" />
                                 }
                             </NestedList>
                         </MudListItem>
@@ -49,12 +50,13 @@
         dataReady = "dataLoaded";
     }
 
-    public void OpenAudio(string audioName, string audioLink, string serverName)
+    public void OpenAudio(string audioName, string audioLink, string serverName, List<Message> queue)
     {
         string serverPath = sharedDataService.GetServerPath(apiService.Servers, serverName);
 
         sharedDataService.AudioTitle = audioName;
         sharedDataService.AudioLink = Path.Combine(serverPath, audioLink);
+        sharedDataService.GenerateQueue(queue, audioName, serverPath);
         sharedDataService.TogglePlayer();
     }
     
