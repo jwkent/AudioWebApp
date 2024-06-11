@@ -1,4 +1,5 @@
 ﻿using AudioWebApp.Client.Models;
+using Microsoft.AspNetCore.Components;
 using MudBlazor;
 using System.ComponentModel.Design;
 
@@ -49,6 +50,35 @@ namespace AudioWebApp.Client.Services
         {
             QueuedMessagesServerPath = serverPath;
             QueuedMessages = queue.SkipWhile(item => item.Name != message).Skip(1).ToList();
+        }
+
+
+        public void GenerateFavoriteQueue(FavoritesService fs)
+        {
+            Console.WriteLine(AudioTitle  + " " + AudioLink);
+            
+            IEnumerable<Favorite>? queue = fs.Favorites;
+
+            List<Message> favoritesAsMessages = new List<Message>();
+
+            if (queue != null)
+            {
+                foreach (var q in queue)
+                {
+                    Message message = new Message
+                    {
+                        Name = q.Name,
+                        Link = q.Source
+                    };
+                    favoritesAsMessages.Add(message);
+                }
+            }
+            else
+            {
+                QueuedMessages = new List<Message>();
+            }
+            GenerateQueue(favoritesAsMessages, AudioTitle, AudioLink);
+
         }
     }
 }
