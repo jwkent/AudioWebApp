@@ -133,6 +133,8 @@
     }
     private async void HandlePlayerToggle()
     {
+        Console.WriteLine($"AudioTitle: {SharedDataService.AudioTitle}");
+        Console.WriteLine($"AudioSource: {SharedDataService.AudioLink}");
         playerOpen = true;
         audioTitle = SharedDataService.AudioTitle;
         audioSource = SharedDataService.AudioLink;

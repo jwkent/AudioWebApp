@@ -47,17 +47,24 @@ namespace AudioWebApp.Client.Services
         public List<Message>? QueuedMessages { get; set; }
         public void GenerateQueue(List<Message> queue, string message, string serverPath)
         {
+            
             QueuedMessages = queue.SkipWhile(item => item.Name != message).Skip(1).ToList();
             foreach(var q in queue)
             {
                 q.Link = Path.Combine(serverPath, q.Link);
             }
+
+            foreach(var i in QueuedMessages)
+            {
+                Console.WriteLine($"THis is the link: {i.Link}");
+            }
         }
 
         public void GenerateFavoriteQueue(FavoritesService fs,string audioName)
         {
-            IEnumerable<Favorite>? queue = fs.Favorites;
 
+            IEnumerable<Favorite>? queue = fs.Favorites;
+            
             List<Message> favoritesAsMessages = new List<Message>();
 
             if (queue != null)
