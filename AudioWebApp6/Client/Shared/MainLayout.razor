@@ -201,7 +201,7 @@
         {
             var nextMessage = SharedDataService.QueuedMessages[0];
             SharedDataService.AudioTitle = nextMessage.Name;
-            SharedDataService.AudioLink = nextMessage.Link;
+            SharedDataService.AudioLink = Path.Combine(SharedDataService.QueuedMessagesServerPath, nextMessage.Link);
             HandlePlayerToggle();
             SharedDataService.QueuedMessages.RemoveAt(0);
         }

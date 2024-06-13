@@ -40,7 +40,7 @@
 </div>
 
 @code {
-    
+
     string? dataReady;
 
     protected override async Task OnInitializedAsync()
@@ -53,7 +53,8 @@
     {
         sharedDataService.AudioTitle = audioName;
         sharedDataService.AudioLink = audioLink;
-        
+        sharedDataService.QueuedMessages = new List<Models.Message>();
+        sharedDataService.QueuedMessagesServerPath = string.Empty;
         sharedDataService.TogglePlayer();
     }
 }
