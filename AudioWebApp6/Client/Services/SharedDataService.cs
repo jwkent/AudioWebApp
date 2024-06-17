@@ -52,30 +52,19 @@ namespace AudioWebApp.Client.Services
             
         }
 
-        public void GenerateFavoriteQueue(FavoritesService fs,string audioName)
+        public async Task GenerateQueueFavorite(FavoritesService fs, string audioName)
         {
             QueuedMessagesServerPath = string.Empty;
-            IEnumerable<Favorite>? queue = fs.Favorites;
-            
-            List<Message> favoritesAsMessages = new List<Message>();
-
-            if (queue != null)
+            IEnumerable<Message> messages = await fs.GetFavoriteQueue(audioName);
+            if(messages != null)
             {
-                foreach (var q in queue)
-                {
-                    Message message = new Message
-                    {
-                        Name = q.Name,
-                        Link = q.Source
-                    };
-                    favoritesAsMessages.Add(message);
-                }
-                QueuedMessages = favoritesAsMessages.SkipWhile(item => item.Name != audioName).Skip(1).ToList();
+                QueuedMessages = messages.ToList();
             }
             else
             {
                 QueuedMessages = new List<Message>();
             }
+
         }
     }
 }

@@ -45,7 +45,7 @@
     {  
         sharedDataService.AudioTitle = audioName;
         sharedDataService.AudioLink = audioLink;
-        sharedDataService.GenerateFavoriteQueue(favoritesService,audioName);
+        sharedDataService.GenerateQueueFavorite(favoritesService, audioName);
         sharedDataService.TogglePlayer();
     }
     public async Task RemoveFavorite(string key)

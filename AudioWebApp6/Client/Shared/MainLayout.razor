@@ -133,8 +133,6 @@
     }
     private async void HandlePlayerToggle()
     {
-        Console.WriteLine($"AudioTitle: {SharedDataService.AudioTitle}");
-        Console.WriteLine($"AudioSource: {SharedDataService.AudioLink}");
         playerOpen = true;
         audioTitle = SharedDataService.AudioTitle;
         audioSource = SharedDataService.AudioLink;
@@ -158,7 +156,7 @@
     }
     public async Task AddToFavorites()
     {
-        await FavoriteService.AddToFavorites(audioTitle, audioSource);
+        await FavoriteService.AddToFavorites(audioTitle, audioSource, SharedDataService);
         // use the Mudsnack bar to alert it's been added.
         Snackbar.Add("Added to favorites.", Severity.Success);
         Snackbar.Configuration.ShowCloseIcon = false;
@@ -207,6 +205,10 @@
         }
         else
         {
+            Snackbar.Add("You have reached the end of this series.", Severity.Success);
+            
+            Snackbar.Configuration.ShowCloseIcon = false;
+            Snackbar.Configuration.VisibleStateDuration = 1000;
             return;
         }
 
