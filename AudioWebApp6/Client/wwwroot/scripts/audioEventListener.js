@@ -24,22 +24,31 @@ function setListener(element) {
     })
 }
 function storeCompletedMessage(audioElement) {
+    var category = audioElement.getAttribute("category");
+    var title = audioElement.getAttribute("title");
+    var completedMessages = [];
     var completedStore = localforage.createInstance({
         name: "Complete"
     });
-    try {
-        const existingValues = await completedStore.getItem(audioElement.getAttribute("category"));
-        if (existingValues) {
-            existingValues.push(audioElement.getAttribute("title"));
-            await completedStore.setItem(audioElement.getAttribute("category"), audioElement.getAttribute("title"));
-
+    completedStore.getItem(category).then((value) => {
+        if (value == null) {
+            console.log("the value: " + value);
+            
+            completedMessages.push(title);
         } else {
-            await localforage.setItem(audioElement.getAttribute("category"), [audioElement.getAttribute("title")]);
+            for (var i = 0; i < value.length; i++) {
+                if (value[i] !== title) {
+                    completedMessages.push(value[i]);
+                } else {
+                    completedMessages.pop(value[i]);
+                }
+            } 
+            completedMessages.push(title);
         }
-
-        console.log(`Value '${value}' updated or stored successfully for key '${key}'.`);
-    } catch (error) {
-        console.error(`Error updating or storing value for key '${key}': ${error.message}`);
-    }
+    }).then(() => {
+        completedStore.setItem(category, completedMessages); 
+    }).catch((err) => {
+        console.log(err);
+    })
 }
 
