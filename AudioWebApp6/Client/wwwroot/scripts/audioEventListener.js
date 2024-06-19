@@ -5,45 +5,31 @@
         setListener(audioElement);
     } else {
         setTimeout(() => {
-            console.log("Delayed exe after 1 second");
             listenForEndOfMessage();
         }, 1000);
     }
 }
 function setListener(element) {
     console.log("setting listener for " + element.getAttribute("title")); 
-    element.addEventListener('ended', () => {
-        console.log("The message has ended...");
-        //var completedMessageStore = localforage.createInstance({
-        //    name: "Completed"
-        //});
-        
-        //completedMessageStore.setItem(element.getAttribute("category"), element.getAttribute("title"));
-        storeCompletedMessage(element);
-        
-    })
+    element.addEventListener('ended', () => { storeCompletedMessage(element); })
 }
 function storeCompletedMessage(audioElement) {
     var category = audioElement.getAttribute("category");
     var title = audioElement.getAttribute("title");
     var completedMessages = [];
     var completedStore = localforage.createInstance({
-        name: "Complete"
+        name: "Completed"
     });
     completedStore.getItem(category).then((value) => {
         if (value == null) {
-            console.log("the value: " + value);
-            
             completedMessages.push(title);
         } else {
-            for (var i = 0; i < value.length; i++) {
-                if (value[i] !== title) {
-                    completedMessages.push(value[i]);
-                } else {
-                    completedMessages.pop(value[i]);
-                }
-            } 
-            completedMessages.push(title);
+            if (!value.includes(title)) {
+                completedMessages = value;
+                completedMessages.push(title);
+            } else {
+                completedMessages = value;
+            }
         }
     }).then(() => {
         completedStore.setItem(category, completedMessages); 
