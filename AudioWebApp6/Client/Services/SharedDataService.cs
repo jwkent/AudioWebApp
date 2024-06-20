@@ -7,7 +7,9 @@ namespace AudioWebApp.Client.Services
     public class SharedDataService
     {
         public string? AudioLink { get; set; }
-        public string? AudioTitle { get; set; }
+        public string? AudioTitle { get; set; } 
+        public string? AudioSeries { get; set; }
+
         public event Action OnPlayerToggle;
         public event Action OnShowContent;
         public string? QueuedMessagesServerPath { get; set; }

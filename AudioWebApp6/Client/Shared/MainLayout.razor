@@ -84,7 +84,7 @@
                         </div>  
                         <div class="d-flex flex-grow-1 gap-0">
                             <MudPaper Class="flex-auto d-flex py-1 justify-center align-center"  Width="100%" Elevation="0">
-                                <audio id="audioPlayer"src="@audioSource" controls autoplay title="@audioTitle" artist="@artist" category="@category"></audio>
+                                <audio id="audioPlayer"src="@audioSource" controls autoplay title="@audioTitle" artist="@artist" category="@category" series="@audioSeries"></audio>
                             </MudPaper>
                         </div>
                     </div>
@@ -100,6 +100,7 @@
 
     string? audioTitle;
     string? audioSource;
+    string? audioSeries;
     bool playerOpen = false;
     bool _drawerOpen = true;
     string artist = "The Narrow Path: Steve Gregg";
@@ -136,6 +137,7 @@
         playerOpen = true;
         audioTitle = SharedDataService.AudioTitle;
         audioSource = SharedDataService.AudioLink;
+        audioSeries = SharedDataService.AudioSeries;
         await JSRuntime.InvokeVoidAsync("getStartTime", audioSource);
         await JSRuntime.InvokeVoidAsync("getPlaybackSpeed");
         await JSRuntime.InvokeVoidAsync("listenForEndOfMessage");

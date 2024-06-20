@@ -4,6 +4,7 @@
 @inject NavigationManager NavigationManager
 @inject SharedDataService sharedDataService
 @inject ApiService apiService
+@inject CompletedService completedService
 
 <PageTitle>Topical</PageTitle>
 <div>
@@ -57,8 +58,17 @@
 
         sharedDataService.AudioTitle = audioName;
         sharedDataService.AudioLink = Path.Combine(serverPath, audioLink);
+        sharedDataService.AudioSeries = "Topical";
         sharedDataService.GenerateQueue(queue, audioName, serverPath);
         sharedDataService.TogglePlayer();
     }
-    
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        // See if a topic name is a key with data. 
+        // if a key is present get the msg.Name values to compare. 
+        // change the ui css to something if it exists.
+        completedService.CheckForCompleted("Topical");
+        // need to get a list of apiService.Topics
+
+    }
 }
