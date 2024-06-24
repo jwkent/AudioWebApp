@@ -80,7 +80,8 @@ function checkSeriesForCategoryTitle(key, category, title, value, instance) {
     var storedCollection = []
     for (var i = 0; i < value.length; i++) {
         console.log(value[i].categoryTitle);
-        var cat = { categoryTitle: value[i].categoryTitle, completedMessages: value[i].completedMessages } // store the value 
+
+        var cat = { categoryTitle: value[i].categoryTitle, completedMessages: value[i].completedMessages } // store the values 
         storedCollection.push(cat);
         categoryTitles.push(value[i].categoryTitle); //Use this to see if Category is already in db 
     }
@@ -92,6 +93,53 @@ function checkSeriesForCategoryTitle(key, category, title, value, instance) {
         
         instance.setItem(key, storedCollection);
     } else {
-        console.log("already got this category lets check if the title is there " + title); 
+        console.log("already got this category lets check if the title is there " + title);
+        checkCategoryTitle(key, category, title, value, instance);
+
     }
+}
+function checkCategoryTitle(key, category, title, value, instance) {
+    console.log("In CCT: " + title);
+    console.log("Checking Category: " + category);
+    // get all the titles for a category;
+    completedMessagesTitles = []; // store all the Titles
+    storedCollection = []; 
+    for (var i = 0; i < value.length; i++) {
+        //var cat = { categoryTitle: value[i].categoryTitle, completedMessages: value[i].completedMessages } // store the values;
+        //storedCollection.push(cat);
+        if (value[i].categoryTitle == category) {       // Matching a CATEGORY here....
+            console.log("Category: " + value[i].categoryTitle + " has " + value[i].completedMessages);
+            if (!value[i].completedMessages.includes(title)) {
+                console.log("nope");
+                // add the title to the storedCollection
+                // value[i].completedMessages has the list of messages ... Add the message title to that list. 
+                console.log(value[i].completedMessages);
+                console.log(value[i].completedMessages.length);
+                for (var r = 0; r < value[i].completedMessages.length; r++) {
+                    console.log("CompM: " + value[i].completedMessages[r]);
+                    completedMessagesTitles.push(value[i].completedMessages[r]);
+                }
+                completedMessagesTitles.push(title); 
+                var matchCat = { checkCategoryTitle: value[i].categoryTitle, completedMessages: completedMessagesTitles };
+                console.log("MCAt: " + matchCat.completedMessages);
+                storedCollection.push(matchCat);
+                console.log("SCol: " + storedCollection.completedMessages);
+                
+            } else {
+                console.log("yep");
+                // dont bother to touch the value[i].completedMessages array.
+                var matchCat = { categoryTitle: value[i].categoryTitle, completedMessages: value[i].completedMessages };
+                storedCollection.push(matchCat);
+            }
+            
+        } else {
+            var cat = { categoryTitle: value[i].categoryTitle, completedMessages: value[i].completedMessages };
+            storedCollection.push(cat);
+            //return;
+        }
+    }
+    
+    
+    
+
 }
