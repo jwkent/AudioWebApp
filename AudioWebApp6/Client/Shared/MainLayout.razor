@@ -28,7 +28,12 @@
         <MudContainer MaxWidth="MaxWidth.ExtraLarge" Class="ma-0 pa-0">
                     @Body
                 @if (playerOpen == true)
-                {
+                { 
+                    <div id=playerErrors style="visibility:hidden; height:100px; width:100%; position:fixed; z-index:2; bottom:10px;">
+                        <MudPaper Class="d-flex justify-center align-center" Elevation="0" Height="100px">
+                            <MudProgressCircular Style="color:#5f76a6; " Indeterminate="true" />
+                        </MudPaper>
+                    </div>
                     <div class="stickyplayer">
                         <div class="d-flex flex-grow-1 gap-0" style="padding-top:3px;">
                             <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-start;" Width="50px" Elevation="0">
@@ -137,7 +142,8 @@
         audioTitle = SharedDataService.AudioTitle;
         audioSource = SharedDataService.AudioLink;
         await JSRuntime.InvokeVoidAsync("getStartTime", audioSource);
-        await JSRuntime.InvokeVoidAsync("getPlaybackSpeed"); 
+        await JSRuntime.InvokeVoidAsync("getPlaybackSpeed");
+        await JSRuntime.InvokeVoidAsync("listenForErrors");
         category = GetCategory(audioSource);
         StateHasChanged();
     }

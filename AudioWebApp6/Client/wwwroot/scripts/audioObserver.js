@@ -1,3 +1,51 @@
+function listenForErrors() {
+    const audioElement = document.getElementById("audioPlayer");
+    const errorElement = document.getElementById("playerErrors");
+    if (audioElement === null) {
+        setTimeout(() => {
+            listenForErrors()
+        }, 1000);
+    }
+    else {
+        audioElement.addEventListener("play", (event) => {
+            console.log("The media is in play.");
+            //errorElement.style.visibility = 'hidden';
+        });
+        audioElement.addEventListener("playing", (event) => {
+            errorElement.style.visibility = 'hidden';
+        })
+        audioElement.addEventListener("canplay", (event) => {
+            console.log("The media CanPlay. ");
+        })
+        audioElement.onplaying = (event) => {
+            console.log("The media has began playing.");
+            //errorElement.style.visibility = 'hidden';
+        }
+        audioElement.onloadeddata = (event) => {
+            console.log("The media meta data is loaded.");
+            errorElement.style.visibility = 'hidden';
+        }
+         
+        //fired when the resource could not be loaded due to an error (for example, a network connectivity problem).
+        audioElement.addEventListener("error", (event) => { console.log("Error loading media"); });
+
+        // fired when the user agent is trying to fetch media data, but data is unexpectedly not forthcoming
+        audioElement.addEventListener("stalled", (event) => { console.log("The media is stalled."); });
+
+        // fired when media data loading has been suspended
+        audioElement.addEventListener("suspend", (event) => {
+            console.log("The media is suspended.");
+            errorElement.style.visibility = 'visible';
+            if (audioElement.onplaying) {
+                console.log("suspended Cancelled");
+                errorElement.style.visibility = 'hidden';
+            }
+        });
+
+        //fired when playback has stopped because of a temporary lack of data.
+        audioElement.addEventListener("waiting", (event) => { console.log("The media is waiting...lack of data"); });
+    }
+}
 function getStartTime(key) {
     localforage.getItem(key).then((value) => {
         let storedValue = value !== null ? value : 0;
