@@ -38,7 +38,7 @@ function listenForErrors() {
             errorElement.style.visibility = 'visible';
             if (audioElement.onplaying) {
                 console.log("suspended Cancelled");
-                errorElement.style.visibility = 'hidden';
+                setTimeout(() => { errorElement.style.visibility = 'hidden'; }, 500);
             }
         });
 
