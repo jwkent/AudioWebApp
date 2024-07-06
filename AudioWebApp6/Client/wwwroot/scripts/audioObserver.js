@@ -7,9 +7,13 @@ function listenForErrors() {
         }, 1000);
     }
     else {
+        var source = audioElement.getAttribute('src');
+        var title = audioElement.getAttribute('title');
+        var category = audioElement.getAttribute('category');
+
         audioElement.addEventListener("play", (event) => {
             console.log("The media is in play.");
-            //errorElement.style.visibility = 'hidden';
+            errorElement.style.visibility = 'hidden';
         });
         audioElement.addEventListener("playing", (event) => {
             errorElement.style.visibility = 'hidden';
@@ -19,7 +23,7 @@ function listenForErrors() {
         })
         audioElement.onplaying = (event) => {
             console.log("The media has began playing.");
-            //errorElement.style.visibility = 'hidden';
+            errorElement.style.visibility = 'hidden';
         }
         audioElement.onloadeddata = (event) => {
             console.log("The media meta data is loaded.");
@@ -27,7 +31,10 @@ function listenForErrors() {
         }
          
         //fired when the resource could not be loaded due to an error (for example, a network connectivity problem).
-        audioElement.addEventListener("error", (event) => { console.log("Error loading media"); });
+        audioElement.addEventListener("error", (event) => {
+            console.log("Error loading media");
+
+        });
 
         // fired when the user agent is trying to fetch media data, but data is unexpectedly not forthcoming
         audioElement.addEventListener("stalled", (event) => { console.log("The media is stalled."); });
