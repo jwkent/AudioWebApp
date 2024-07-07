@@ -7,9 +7,9 @@ function listenForErrors() {
         }, 1000);
     }
     else {
-        var source = audioElement.getAttribute('src');
-        var title = audioElement.getAttribute('title');
-        var category = audioElement.getAttribute('category');
+        var  audiosource = audioElement.getAttribute('src');
+        const audiotitle = audioElement.getAttribute('title');
+        const audiocategory = audioElement.getAttribute('category');
 
         audioElement.addEventListener("play", (event) => {
             console.log("The media is in play.");
@@ -37,20 +37,35 @@ function listenForErrors() {
         });
 
         // fired when the user agent is trying to fetch media data, but data is unexpectedly not forthcoming
-        audioElement.addEventListener("stalled", (event) => { console.log("The media is stalled."); });
+        audioElement.addEventListener("stalled", (event) => {
+            console.log("The media is stalled.");
+            errorElement.style.visiblity = 'visible';
+            if (audioElement.onplaying) {
+                console.log("Stalled Cancelled");
+                errorElement.style.visibility = 'hidden';
+            }
+        });
 
         // fired when media data loading has been suspended
         audioElement.addEventListener("suspend", (event) => {
-            console.log("The media is suspended.");
+            console.log("The media is suspended." + audiotitle);
             errorElement.style.visibility = 'visible';
             if (audioElement.onplaying) {
-                console.log("suspended Cancelled");
+                console.log("Suspended Cancelled");
                 setTimeout(() => { errorElement.style.visibility = 'hidden'; }, 500);
             }
         });
 
         //fired when playback has stopped because of a temporary lack of data.
-        audioElement.addEventListener("waiting", (event) => { console.log("The media is waiting...lack of data"); });
+        audioElement.addEventListener("waiting", (event) => {
+            console.log("The media is waiting." + audiotitle);
+            console.log("The media is waiting...lack of data");
+            errorElement.style.visibility = 'visible';
+            if (audioElement.onplaying) {
+                console.log("Waiting Cancelled");
+                setTimeout(() => { errorElement.style.visibility = 'hidden'; }, 500);
+            }
+        });
     }
 }
 function getStartTime(key) {
