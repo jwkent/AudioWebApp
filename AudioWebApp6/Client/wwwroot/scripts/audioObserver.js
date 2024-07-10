@@ -7,9 +7,8 @@ function listenForErrors(mainLayoutComponent) {
         }, 1000);
     }
     else {
-        var  audiosource = audioElement.getAttribute('src');
+        
         const audiotitle = audioElement.getAttribute('title');
-        const audiocategory = audioElement.getAttribute('category');
 
         audioElement.addEventListener("play", (event) => {
             console.log("The media is in play.");
@@ -29,37 +28,23 @@ function listenForErrors(mainLayoutComponent) {
             console.log("The media meta data is loaded.");
             errorElement.style.visibility = 'hidden';
         }
-
+        
+        const controller = new AbortController();
         const errorHandler = (event) => {
+            
             if (mainLayoutComponent === undefined) {
                 setTimeout(() => {
                     audioElement.dispatchEvent(new Event("error"));
                 }, 500);
-            } else{
-                //audioElement.removeEventListener("error", errorHandler);
+            } else {
                 controller.abort();
-                handleAudioError(mainLayoutComponent, audioElement, audiosource);
+                handleAudioError(mainLayoutComponent);
             } 
+
         }
         //fired when the resource could not be loaded due to an error (for example, a network connectivity problem).
-
-        //audioElement.addEventListener("error", errorHandler);
-
-        const controller = new AbortController();
         audioElement.addEventListener("error", errorHandler, { 'signal': controller.signal });
-        //audioElement.addEventListener("error", (event) => {
-
-        //    //if (mainLayoutComponent === undefined) {
-        //    //    setTimeout(() => {
-        //    //        const errorEvent = new Event("error");
-        //    //        audioElement.dispatchEvent(errorEvent);
-        //    //    },2000);
-        //    //} else {
-        //    //    audioElement.removeEventListener("error", (event) => { console.log("done") });
-        //    //    handleAudioError(mainLayoutComponent,audioElement,audiosource);
-        //    //}
-        //});
-
+        
         // fired when the user agent is trying to fetch media data, but data is unexpectedly not forthcoming
         audioElement.addEventListener("stalled", (event) => {
             console.log("The media is stalled.");
@@ -90,12 +75,20 @@ function listenForErrors(mainLayoutComponent) {
                 setTimeout(() => { errorElement.style.visibility = 'hidden'; }, 500);
             }
         });
+        // fired when the browser has started to load a resource
+        audioElement.addEventListener("loadstart", (event) => {
+            errorElement.style.visibility = 'visible';
+            if (audioElement.onplaying) {
+                console.log("LoadStart Cancelled");
+                setTimeout(() => { errorElement.style.visiblity = 'hidden'; }, 500);
+            }
+        });
     }
-    
+
 }
-function handleAudioError(dotNetObject,audioElement) {
-    console.log("Handle: " + dotNetObject);
-    dotNetObject.invokeMethodAsync('AudioReload');
+function handleAudioError(mainLayoutComponent) {
+        
+    mainLayoutComponent.invokeMethodAsync('AudioReload');  
 }
 function getStartTime(key) {
     localforage.getItem(key).then((value) => {

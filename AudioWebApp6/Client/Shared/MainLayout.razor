@@ -95,7 +95,20 @@
                         </div>
                     </div>
                 }
-        </MudContainer>
+                @if (showPlayerError)
+                {
+                    <MudCard style="width:100%; height:83px; position:fixed; bottom:150px; background-color: #5c7bb7;">
+                        <MudCardContent>
+                            <MudText style="color:#fcfdff">An error has occured</MudText>
+                            <MudText style="color:#fcfdff" Typo="Typo.body2">Media cannot be played.</MudText>
+                        </MudCardContent>
+                        <MudCardActions style="height:40px; background-color: #5c7bb7;">
+                            <MudButton Variant="Variant.Text" style="color:#fcfdff" OnClick="ClosePlayerError">close</MudButton>
+                            <MudButton Variant="Variant.Text" style="color:#fcfdff" OnClick="Retry">retry</MudButton>
+                        </MudCardActions>
+                    </MudCard>
+                }
+            </MudContainer>
     </MudMainContent>
     </div>
 </MudLayout>
@@ -108,6 +121,7 @@
     string? audioSource;
     bool playerOpen = false;
     bool _drawerOpen = true;
+    bool showPlayerError = false;
     string artist = "The Narrow Path: Steve Gregg";
     string category = "";
     List<double> speeds = new List<double> {0.7, 0.8, 0.9, 1, 1.25, 1.50, 1.75, 2.0 };
@@ -141,6 +155,7 @@
     private async void HandlePlayerToggle()
     {
         playerOpen = true;
+        showPlayerError = false; 
         audioTitle = SharedDataService.AudioTitle;
         audioSource = SharedDataService.AudioLink;
         await JSRuntime.InvokeVoidAsync("getStartTime", audioSource);
@@ -224,14 +239,22 @@
         }
 
     }
+    private void ClosePlayerError()
+    {
+        showPlayerError = false;
+    }
+    private void Retry()
+    {
+        ClosePlayerError();
+        HandlePlayerToggle();
+    }
     private DotNetObjectReference<MainLayout> _mainLayoutReference;
     [JSInvokable("AudioReload")]
     public void AudioReload()
     {
-        Console.WriteLine("HIDN: " + audioSource + " TITLE: " + audioTitle);
         playerOpen = false;
+        showPlayerError = true;
         StateHasChanged();
-
     }
     void  IDisposable.Dispose ()
             => _mainLayoutReference?.Dispose();
