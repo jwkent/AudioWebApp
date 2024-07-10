@@ -1,4 +1,4 @@
-function listenForErrors() {
+function listenForErrors(mainLayoutComponent) {
     const audioElement = document.getElementById("audioPlayer");
     const errorElement = document.getElementById("playerErrors");
     if (audioElement === null) {
@@ -29,12 +29,36 @@ function listenForErrors() {
             console.log("The media meta data is loaded.");
             errorElement.style.visibility = 'hidden';
         }
-         
-        //fired when the resource could not be loaded due to an error (for example, a network connectivity problem).
-        audioElement.addEventListener("error", (event) => {
-            console.log("Error loading media");
 
-        });
+        const errorHandler = (event) => {
+            if (mainLayoutComponent === undefined) {
+                setTimeout(() => {
+                    audioElement.dispatchEvent(new Event("error"));
+                }, 500);
+            } else{
+                //audioElement.removeEventListener("error", errorHandler);
+                controller.abort();
+                handleAudioError(mainLayoutComponent, audioElement, audiosource);
+            } 
+        }
+        //fired when the resource could not be loaded due to an error (for example, a network connectivity problem).
+
+        //audioElement.addEventListener("error", errorHandler);
+
+        const controller = new AbortController();
+        audioElement.addEventListener("error", errorHandler, { 'signal': controller.signal });
+        //audioElement.addEventListener("error", (event) => {
+
+        //    //if (mainLayoutComponent === undefined) {
+        //    //    setTimeout(() => {
+        //    //        const errorEvent = new Event("error");
+        //    //        audioElement.dispatchEvent(errorEvent);
+        //    //    },2000);
+        //    //} else {
+        //    //    audioElement.removeEventListener("error", (event) => { console.log("done") });
+        //    //    handleAudioError(mainLayoutComponent,audioElement,audiosource);
+        //    //}
+        //});
 
         // fired when the user agent is trying to fetch media data, but data is unexpectedly not forthcoming
         audioElement.addEventListener("stalled", (event) => {
@@ -67,6 +91,11 @@ function listenForErrors() {
             }
         });
     }
+    
+}
+function handleAudioError(dotNetObject,audioElement) {
+    console.log("Handle: " + dotNetObject);
+    dotNetObject.invokeMethodAsync('AudioReload');
 }
 function getStartTime(key) {
     localforage.getItem(key).then((value) => {

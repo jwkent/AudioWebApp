@@ -1,5 +1,6 @@
 ﻿@using AudioWebApp.Client.Services
 @using System.Text.RegularExpressions
+@implements IDisposable
 @inherits LayoutComponentBase
 @inject SharedDataService SharedDataService
 @inject FavoritesService FavoriteService
@@ -135,6 +136,7 @@
     {
         SharedDataService.OnPlayerToggle += HandlePlayerToggle;
         SharedDataService.OnShowContent += HandleShowMenu;
+        _mainLayoutReference = DotNetObjectReference.Create(this);
     }
     private async void HandlePlayerToggle()
     {
@@ -143,9 +145,11 @@
         audioSource = SharedDataService.AudioLink;
         await JSRuntime.InvokeVoidAsync("getStartTime", audioSource);
         await JSRuntime.InvokeVoidAsync("getPlaybackSpeed");
-        
+
         category = GetCategory(audioSource);
-        await JSRuntime.InvokeVoidAsync("listenForErrors");
+        //await JSRuntime.InvokeVoidAsync("listenForErrors");
+        //_mainLayoutReference = DotNetObjectReference.Create(this);
+        await JSRuntime.InvokeVoidAsync("listenForErrors", _mainLayoutReference);
         StateHasChanged();
     }
     private string GetCategory(string text)
@@ -213,14 +217,25 @@
         else
         {
             Snackbar.Add("You have reached the end of this series.", Severity.Success);
-            
+
             Snackbar.Configuration.ShowCloseIcon = false;
             Snackbar.Configuration.VisibleStateDuration = 1000;
             return;
         }
 
     }
+    private DotNetObjectReference<MainLayout> _mainLayoutReference;
+    [JSInvokable("AudioReload")]
+    public void AudioReload()
+    {
+        Console.WriteLine("HIDN: " + audioSource + " TITLE: " + audioTitle);
+        playerOpen = false;
+        StateHasChanged();
 
+    }
+    void  IDisposable.Dispose ()
+            => _mainLayoutReference?.Dispose();
+    
     public string favAddIcon = "<svg id=\"Layer_6\" data-name=\"Layer 6\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 22.5 19.41\">" +
     "<path d = \"M1,6.63C1,3.09,3.67,1.07,5.67,1c3.33,0,5.83,1.69,5.83,4.13,0-2.44,2.5-4,5-4,2,0,5,1.5,5,5,0,4.5-10,12.05-10,12.05,0,0-10.5-7.09-10.5-11.55Z\" style=\"fill: none; stroke: #5f76a6; stroke-miterlimit: 10; stroke-width: 2px;\"/>" +
       "<circle cx = \"15.66\" cy=\"12.56\" r=\"5.5\" style=\"stroke-width: 0px;\"/>" +
