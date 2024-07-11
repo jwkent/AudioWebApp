@@ -152,6 +152,12 @@
         SharedDataService.OnShowContent += HandleShowMenu;
         _mainLayoutReference = DotNetObjectReference.Create(this);
     }
+    protected override async Task OnInitializedAsync()
+    {
+        _objReference = DotNetObjectReference.Create(this);
+        await JSRuntime.InvokeVoidAsync("networkStatus.onDisconnected",_objReference);
+        await JSRuntime.InvokeVoidAsync("networkStatus.onConnected",_objReference);
+    }
     private async void HandlePlayerToggle()
     {
         playerOpen = true;
@@ -256,9 +262,29 @@
         showPlayerError = true;
         StateHasChanged();
     }
-    void  IDisposable.Dispose ()
-            => _mainLayoutReference?.Dispose();
-    
+    void  IDisposable.Dispose()
+    {
+        _objReference?.Dispose();
+        _mainLayoutReference?.Dispose();
+    } 
+
+    private DotNetObjectReference<MainLayout> _objReference;
+    [JSInvokable]
+    public void OnDisconnected()
+    {
+        Console.WriteLine("disconnected");
+        playerOpen = false;
+        showPlayerError = true;
+        StateHasChanged();
+    }
+    [JSInvokable]
+    public void OnConnected()
+    {
+        Console.WriteLine("Connected");
+        //showPlayerError = false;
+        Retry();
+        StateHasChanged();
+    }
     public string favAddIcon = "<svg id=\"Layer_6\" data-name=\"Layer 6\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 22.5 19.41\">" +
     "<path d = \"M1,6.63C1,3.09,3.67,1.07,5.67,1c3.33,0,5.83,1.69,5.83,4.13,0-2.44,2.5-4,5-4,2,0,5,1.5,5,5,0,4.5-10,12.05-10,12.05,0,0-10.5-7.09-10.5-11.55Z\" style=\"fill: none; stroke: #5f76a6; stroke-miterlimit: 10; stroke-width: 2px;\"/>" +
       "<circle cx = \"15.66\" cy=\"12.56\" r=\"5.5\" style=\"stroke-width: 0px;\"/>" +
