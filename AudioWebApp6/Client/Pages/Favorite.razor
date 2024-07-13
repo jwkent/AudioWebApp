@@ -1,5 +1,6 @@
 ﻿@page "/favorites"
 @using AudioWebApp.Client.Services
+@using AudioWebApp.Client.Models
 @using System.Text.RegularExpressions
 @inject ISnackbar Snackbar
 @inject FavoritesService favoritesService
@@ -22,7 +23,7 @@
                         <MudButton @onclick="(e) => RemoveFavorite(fav.Name)">
                             <MudIcon Icon="@favRemoveIcon" Title="Remove Favorite"></MudIcon>
                         </MudButton>
-                        <MudCardContent style="height:auto; width:100%; margin-bottom:10px; cursor:pointer;" @onclick="(e) => OpenAudio(fav.Name, fav.Source)">
+                                <MudCardContent style="height:auto; width:100%; margin-bottom:10px; cursor:pointer;" @onclick="(e) => OpenAudio(fav.Name, fav.Source)">
                             <MudText style="font-size:16px;">@fav.Name</MudText>
                             <MudText style="font-size:10px;">@GetCategory(@fav.Source)</MudText>
                         </MudCardContent> 
@@ -44,6 +45,7 @@
     {  
         sharedDataService.AudioTitle = audioName;
         sharedDataService.AudioLink = audioLink;
+        sharedDataService.GenerateQueueFavorite(favoritesService, audioName);
         sharedDataService.TogglePlayer();
     }
     public async Task RemoveFavorite(string key)

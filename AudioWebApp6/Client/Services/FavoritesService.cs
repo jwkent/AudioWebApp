@@ -11,7 +11,7 @@ namespace AudioWebApp.Client.Services
         private readonly IJSRuntime _jSRuntime;
        
         public IEnumerable<Favorite>? Favorites;
-
+        public IEnumerable<Message>? Queue;
         public FavoritesService(IJSRuntime jSRuntime)
         {
             _jSRuntime = jSRuntime;
@@ -27,10 +27,31 @@ namespace AudioWebApp.Client.Services
             await _jSRuntime.InvokeVoidAsync("removeFavorite", key);
             await GetAllFavorites();
         }
-        public async Task AddToFavorites(string key, string value)
+        public async Task AddToFavorites(string key, string value, SharedDataService sharedDataService)
         {
-            Favorite fav = new Favorite(key,value,DateTime.Now);
+            List<Message> queuedFavorites = new List<Message>();
+            foreach(var item in sharedDataService.QueuedMessages)
+            {
+                Message message = new Message()
+                {
+                    Name = item.Name,
+                    Link = Path.Combine(sharedDataService.QueuedMessagesServerPath, item.Link)
+                };
+                queuedFavorites.Add(message);
+            }
+             
+            Favorite fav = new Favorite(key,value,DateTime.Now, queuedFavorites);
             await _jSRuntime.InvokeVoidAsync("setToFavorites", key, fav);
+        }
+        public async Task<IEnumerable<Message>> GetFavoriteQueue(string key)
+        {
+            var result = await _jSRuntime.InvokeAsync<string>("getFavoriteQueue",key);
+
+            Queue = JsonConvert.DeserializeObject<ObservableCollection<Message>>(result);
+           
+            return Queue;
+           
+            
         }
     }
 }

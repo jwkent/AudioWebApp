@@ -1,5 +1,6 @@
 ﻿@using AudioWebApp.Client.Services
 @using System.Text.RegularExpressions
+@implements IDisposable
 @inherits LayoutComponentBase
 @inject SharedDataService SharedDataService
 @inject FavoritesService FavoriteService
@@ -28,7 +29,12 @@
         <MudContainer MaxWidth="MaxWidth.ExtraLarge" Class="ma-0 pa-0">
                     @Body
                 @if (playerOpen == true)
-                {
+                { 
+                    <div id=playerErrors style="visibility:hidden; height:100px; width:100%; position:fixed; z-index:2; bottom:10px;">
+                        <MudPaper Class="d-flex justify-center align-center" Elevation="0" Height="100px">
+                            <MudProgressCircular Style="color:#5f76a6; " Indeterminate="true" />
+                        </MudPaper>
+                    </div>
                     <div class="stickyplayer">
                         <div class="d-flex flex-grow-1 gap-0" style="padding-top:3px;">
                             <MudPaper Class="flex-none d-flex py-0 align-bottom" Style="justify-content:flex-start;" Width="50px" Elevation="0">
@@ -89,7 +95,20 @@
                         </div>
                     </div>
                 }
-        </MudContainer>
+                @if (showPlayerError)
+                {
+                    <MudCard style="background-color:black; bottom:0px; position:fixed; z-index:2; height:100vh; width:100%; background-color:#406cbec2;">
+                        <MudCardContent style="width:100%; height:83px; position:fixed; bottom:150px; background-color: #5c7bb7;">
+                            <MudText style="color:#fcfdff">An error has occured</MudText>
+                            <MudText style="color:#fcfdff" Typo="Typo.body2">Media cannot be played.</MudText>
+                        </MudCardContent>
+                        <MudCardActions style="width:100%; height:102px; position:fixed; bottom:50px;background-color: #5c7bb7;">
+                            <MudButton Variant="Variant.Text" style="color:#fcfdff" OnClick="ClosePlayerError">close</MudButton>
+                            <MudButton Variant="Variant.Text" style="color:#fcfdff" OnClick="Retry">retry</MudButton>
+                        </MudCardActions>
+                    </MudCard>
+                }
+            </MudContainer>
     </MudMainContent>
     </div>
 </MudLayout>
@@ -102,11 +121,13 @@
     string? audioSource;
     bool playerOpen = false;
     bool _drawerOpen = true;
+    bool showPlayerError = false;
+    bool networkStatusOk = true;
     string artist = "The Narrow Path: Steve Gregg";
     string category = "";
     List<double> speeds = new List<double> {0.7, 0.8, 0.9, 1, 1.25, 1.50, 1.75, 2.0 };
     private bool _speedControls;
-    
+
     void DrawerToggle()
     {
         _drawerOpen = !_drawerOpen;
@@ -130,15 +151,35 @@
     {
         SharedDataService.OnPlayerToggle += HandlePlayerToggle;
         SharedDataService.OnShowContent += HandleShowMenu;
+        _mainLayoutReference = DotNetObjectReference.Create(this);
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        _objReference = DotNetObjectReference.Create(this);
+        await JSRuntime.InvokeVoidAsync("networkStatus.onDisconnected",_objReference);
+        await JSRuntime.InvokeVoidAsync("networkStatus.onConnected",_objReference);
     }
     private async void HandlePlayerToggle()
     {
         playerOpen = true;
-        audioTitle = SharedDataService.AudioTitle;
-        audioSource = SharedDataService.AudioLink;
-        await JSRuntime.InvokeVoidAsync("getStartTime", audioSource);
-        await JSRuntime.InvokeVoidAsync("getPlaybackSpeed"); 
-        category = GetCategory(audioSource);
+        ClosePlayerError();
+        if (!networkStatusOk)
+        {
+            showPlayerError = true;
+            playerOpen = false;
+        }
+        else
+        {
+            audioTitle = SharedDataService.AudioTitle;
+            audioSource = SharedDataService.AudioLink;
+            await JSRuntime.InvokeVoidAsync("getStartTime", audioSource);
+            await JSRuntime.InvokeVoidAsync("getPlaybackSpeed");
+
+            category = GetCategory(audioSource);
+
+            await JSRuntime.InvokeVoidAsync("listenForErrors", _mainLayoutReference);
+        }
+        
         StateHasChanged();
     }
     private string GetCategory(string text)
@@ -156,7 +197,7 @@
     }
     public async Task AddToFavorites()
     {
-        await FavoriteService.AddToFavorites(audioTitle, audioSource);
+        await FavoriteService.AddToFavorites(audioTitle, audioSource, SharedDataService);
         // use the Mudsnack bar to alert it's been added.
         Snackbar.Add("Added to favorites.", Severity.Success);
         Snackbar.Configuration.ShowCloseIcon = false;
@@ -200,17 +241,55 @@
             var nextMessage = SharedDataService.QueuedMessages[0];
             SharedDataService.AudioTitle = nextMessage.Name;
             SharedDataService.AudioLink = Path.Combine(SharedDataService.QueuedMessagesServerPath, nextMessage.Link);
-
             HandlePlayerToggle();
             SharedDataService.QueuedMessages.RemoveAt(0);
         }
         else
         {
+            Snackbar.Add("You have reached the end of this series.", Severity.Success);
+
+            Snackbar.Configuration.ShowCloseIcon = false;
+            Snackbar.Configuration.VisibleStateDuration = 1000;
             return;
         }
 
     }
+    private void ClosePlayerError()
+    {
+        showPlayerError = false;
+    }
+    private void Retry()
+    {
+        ClosePlayerError();
+        HandlePlayerToggle();
+    }
+    private DotNetObjectReference<MainLayout> _mainLayoutReference;
+    [JSInvokable("AudioReload")]
+    public void AudioReload()
+    {
+        playerOpen = false;
+        showPlayerError = true;
+        StateHasChanged();
+    }
+    void  IDisposable.Dispose()
+    {
+        _objReference?.Dispose();
+        _mainLayoutReference?.Dispose();
+    } 
 
+    private DotNetObjectReference<MainLayout> _objReference;
+    [JSInvokable]
+    public void OnDisconnected()
+    {
+        networkStatusOk = false;
+        StateHasChanged();
+    }
+    [JSInvokable]
+    public void OnConnected()
+    {
+        networkStatusOk = true;
+        StateHasChanged();
+    }
     public string favAddIcon = "<svg id=\"Layer_6\" data-name=\"Layer 6\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 22.5 19.41\">" +
     "<path d = \"M1,6.63C1,3.09,3.67,1.07,5.67,1c3.33,0,5.83,1.69,5.83,4.13,0-2.44,2.5-4,5-4,2,0,5,1.5,5,5,0,4.5-10,12.05-10,12.05,0,0-10.5-7.09-10.5-11.55Z\" style=\"fill: none; stroke: #5f76a6; stroke-miterlimit: 10; stroke-width: 2px;\"/>" +
       "<circle cx = \"15.66\" cy=\"12.56\" r=\"5.5\" style=\"stroke-width: 0px;\"/>" +
