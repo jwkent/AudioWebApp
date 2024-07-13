@@ -282,14 +282,12 @@
     public void OnDisconnected()
     {
         networkStatusOk = false;
-        Console.WriteLine("disconnected");
         StateHasChanged();
     }
     [JSInvokable]
     public void OnConnected()
     {
         networkStatusOk = true;
-        Console.WriteLine("Connected");
         StateHasChanged();
     }
     public string favAddIcon = "<svg id=\"Layer_6\" data-name=\"Layer 6\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 22.5 19.41\">" +

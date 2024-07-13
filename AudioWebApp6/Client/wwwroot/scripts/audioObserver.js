@@ -7,31 +7,25 @@ function listenForErrors(mainLayoutComponent) {
         }, 1000);
     }
     else {
-        
-        const audiotitle = audioElement.getAttribute('title');
 
         audioElement.addEventListener("play", (event) => {
-            console.log("The media is in play.");
             errorElement.style.visibility = 'hidden';
         });
         audioElement.addEventListener("playing", (event) => {
             errorElement.style.visibility = 'hidden';
-        })
+        });
         audioElement.addEventListener("canplay", (event) => {
-            console.log("The media CanPlay. ");
-        })
+        });
         audioElement.onplaying = (event) => {
-            console.log("The media has began playing.");
             errorElement.style.visibility = 'hidden';
         }
         audioElement.onloadeddata = (event) => {
-            console.log("The media meta data is loaded.");
             errorElement.style.visibility = 'hidden';
         }
-        
+
         const controller = new AbortController();
         const errorHandler = (event) => {
-            
+
             if (mainLayoutComponent === undefined) {
                 setTimeout(() => {
                     audioElement.dispatchEvent(new Event("error"));
@@ -39,53 +33,35 @@ function listenForErrors(mainLayoutComponent) {
             } else {
                 controller.abort();
                 handleAudioError(mainLayoutComponent);
-            } 
+            }
 
         }
-        //fired when the resource could not be loaded due to an error (for example, a network connectivity problem).
         audioElement.addEventListener("error", errorHandler, { 'signal': controller.signal });
-        
-        // fired when the user agent is trying to fetch media data, but data is unexpectedly not forthcoming
+
         audioElement.addEventListener("stalled", (event) => {
-            console.log("The media is stalled.");
-            errorElement.style.visiblity = 'visible';
-            if (audioElement.onplaying) {
-                console.log("Stalled Cancelled");
-                errorElement.style.visibility = 'hidden';
-            }
+            toggleLoadingElement(errorElement, audioElement);
         });
 
-        // fired when media data loading has been suspended
         audioElement.addEventListener("suspend", (event) => {
-            console.log("The media is suspended." + audiotitle);
-            errorElement.style.visibility = 'visible';
-            if (audioElement.onplaying) {
-                console.log("Suspended Cancelled");
-                setTimeout(() => { errorElement.style.visibility = 'hidden'; }, 500);
-            }
+            toggleLoadingElement(errorElement, audioElement);
         });
 
-        //fired when playback has stopped because of a temporary lack of data.
         audioElement.addEventListener("waiting", (event) => {
-            console.log("The media is waiting." + audiotitle);
-            console.log("The media is waiting...lack of data");
-            errorElement.style.visibility = 'visible';
-            if (audioElement.onplaying) {
-                console.log("Waiting Cancelled");
-                setTimeout(() => { errorElement.style.visibility = 'hidden'; }, 500);
-            }
+            toggleLoadingElement(errorElement, audioElement);
         });
-        // fired when the browser has started to load a resource
+       
         audioElement.addEventListener("loadstart", (event) => {
-            errorElement.style.visibility = 'visible';
-            if (audioElement.onplaying) {
-                console.log("LoadStart Cancelled");
-                setTimeout(() => { errorElement.style.visiblity = 'hidden'; }, 500);
-            }
-        }); 
+            toggleLoadingElement(errorElement, audioElement);
+        });
     }
-
 }
+function toggleLoadingElement(errorElement, audioElement) {
+
+    errorElement.style.visibility = 'visible';
+    if (audioElement.onplaying) {
+        setTimeout(() => { errorElement.style.visibility = 'hidden'; }, 500);
+    }
+};
 function handleAudioError(mainLayoutComponent) {
         
     mainLayoutComponent.invokeMethodAsync('AudioReload');  
