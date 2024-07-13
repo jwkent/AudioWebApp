@@ -82,7 +82,7 @@ function listenForErrors(mainLayoutComponent) {
                 console.log("LoadStart Cancelled");
                 setTimeout(() => { errorElement.style.visiblity = 'hidden'; }, 500);
             }
-        });
+        }); 
     }
 
 }
