@@ -56,6 +56,7 @@
 
         sharedDataService.AudioTitle = audioName;
         sharedDataService.AudioLink = Path.Combine(serverPath, audioLink);
+        sharedDataService.AudioSeries = "VerseByVerse";
         sharedDataService.GenerateQueue(queue, audioName, serverPath);
         sharedDataService.TogglePlayer();
     }
