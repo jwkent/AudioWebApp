@@ -93,3 +93,29 @@ function update(key, categoryMessages, storedValues, dbInstance) {
         console.error('error savingData', err);
     })
 }
+function getCompletedSeries(series) {
+
+    var completedCategories = [];
+
+    var completedStore = localforage.createInstance({
+        name: "CompletedStore"
+    });
+    
+    return completedStore.getItem(series).then((value) => { 
+        for (var i = 0; i < value.length; i++) {
+            const completed = {
+                CategoryTitle: value[i].categoryTitle,
+                MessageTitles: value[i].messageTitles
+            }
+            completedCategories.push(completed);
+        }
+        
+        
+    }).then(() => {
+        console.log(completedCategories);
+        return (JSON.stringify(completedCategories));
+    }).catch((err) => {
+        console.log(err);
+        return [];
+    })
+}

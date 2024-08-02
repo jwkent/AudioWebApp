@@ -1,6 +1,7 @@
 ﻿using AudioWebApp.Client.Models;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
+using Newtonsoft.Json;
 using System.Collections.ObjectModel;
 
 namespace AudioWebApp.Client.Services
@@ -9,16 +10,25 @@ namespace AudioWebApp.Client.Services
     {
         private readonly IJSRuntime _jsruntime;
         
-
+        public ObservableCollection<CompletedMessages>? Completed;
         public CompletedService(IJSRuntime JSRuntime) 
         {
             _jsruntime = JSRuntime;
         }
-        public async void CheckForCompleted(string seriesName)
+        public async Task GetCompletedMessages(string seriesName)
         {
-           // generate a list of completed categroy messages via key seriesName
-            // javascript with seriesName as key to look up.
-
+            // Data : key is audioSeries ---> returned value
+            // is an IEnumerable of CompletedMessages [ CategoryTitle, [MessageTitles] ] 
+            var result = await _jsruntime.InvokeAsync<string>("getCompletedSeries",seriesName);
+            Completed = JsonConvert.DeserializeObject<ObservableCollection<CompletedMessages>>(result);
+            
         }
+    }
+    public class CompletedMessages
+    {
+        public string? CategoryTitle { get; set; }
+        //public string[]? MessageTitles { get; set; }
+        public List<string>? MessageTitles { get; set; }
+        
     }
 }
