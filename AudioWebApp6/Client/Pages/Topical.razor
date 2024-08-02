@@ -33,19 +33,16 @@
                             <NestedList>
                                 @foreach (var msg in topic.Messages)
                                 {
-                                    @* @if(messages.Any(s => s == @msg.Name))
+                                    @if(messages.Any(s => s == msg.Name))
                                     {
-                                        <MudListItem style="color:red;" Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server, topic.Messages)" />
+
+                                        <MudListItem style="background-color: #c3d2f1;" IconSize="Size.Small" Icon="@Icons.Material.Filled.Check" Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server, topic.Messages)" />
 
                                     }
                                     else
                                     {
                                         <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server, topic.Messages)" />
-
-                                    } *@
-                                    <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server, topic.Messages)" />
-
-                                    
+                                    }
                                 }
                             </NestedList>
                         </MudListItem>
@@ -60,28 +57,23 @@
     string? dataReady;
     List<string>? messages;
 
-
     protected override async Task OnInitializedAsync()
     {
         await apiService.LoadData();
         await completedService.GetCompletedMessages("Topical");
         if(completedService.Completed?.Any() == true)
         {
+            messages = new List<string>();
             foreach(var completed in completedService.Completed)
             {
-                Console.WriteLine(completed.CategoryTitle);
                 foreach(var m in completed.MessageTitles)
                 {
-                    Console.WriteLine(m);
-                    // get the message titles into a list of strings that can be used. 
-
+                    messages.Add(m);
                 }
             }
         }
 
         dataReady = "dataLoaded";
-
-        
 
     }
 
