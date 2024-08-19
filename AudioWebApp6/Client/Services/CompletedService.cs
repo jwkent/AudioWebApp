@@ -23,6 +23,18 @@ namespace AudioWebApp.Client.Services
             Completed = JsonConvert.DeserializeObject<ObservableCollection<CompletedMessages>>(result);
             
         }
+        public List<string> GenerateMessageList()
+        {
+            List<string> data = new List<string>();
+            foreach(var completed in Completed)
+            {
+                foreach(var message in completed.MessageTitles)
+                {
+                    data.Add(message);
+                }
+            }
+            return data;
+        }
     }
     public class CompletedMessages
     {
@@ -31,4 +43,5 @@ namespace AudioWebApp.Client.Services
         public List<string>? MessageTitles { get; set; }
         
     }
+
 }

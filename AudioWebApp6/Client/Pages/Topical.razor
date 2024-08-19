@@ -63,14 +63,7 @@
         await completedService.GetCompletedMessages("Topical");
         if(completedService.Completed?.Any() == true)
         {
-            messages = new List<string>();
-            foreach(var completed in completedService.Completed)
-            {
-                foreach(var m in completed.MessageTitles)
-                {
-                    messages.Add(m);
-                }
-            }
+            messages = completedService.GenerateMessageList();
         }
 
         dataReady = "dataLoaded";
