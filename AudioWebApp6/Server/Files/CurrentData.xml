@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Data>
   <Configuration>
-    <LastUpdated dateTime="20240304224953" />
+    <LastUpdated dateTime="20240817193826" />
     <Servers>
       <Server name="theos" location="http://media.theos.org/Steve%20Gregg/" />
       <Server name="tnp" location="http://www.thenarrowpath.com/" />
@@ -176,22 +176,36 @@
       <Item link="audio/topical-lectures/introduction-to-the-life-of-christ-1993/03_1993_Introduction_to_the_Life_of_Christ_Part_3,_Jewish_and_Pagan_Records.mp3" name="03. Introduction to the Life of Christ • Part 3, Jewish and Pagan Records" />
       <Item link="audio/topical-lectures/introduction-to-the-life-of-christ-1993/04_1993_Introduction_to_the_Life_of_Christ_Part_4,_Introduction_to_Gospel_of_John.mp3" name="04. Introduction to the Life of Christ • Part 4, Introduction to Gospel of John" />
     </Topic>
-    <Topic name="Isaiah A Topical Look At Isaiah" server="tnp">
-      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/01_Introduction.mp3" name="01. Introduction" />
-      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/02_Survey_1-23.mp3" name="02. Survey 1 - 23" />
-      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/03_Survey_24-66.mp3" name="03. Survey 24 - 66" />
-      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/04_Symbols_of_Nations.mp3" name="04. Symbols of Nations" />
-      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/05_Warfare,_Judgment,_Redemption.mp3" name="05. Warfare, Judgment, Redemption" />
-      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/06_Imagery_of_the_Exodus.mp3" name="06. Imagery of the Exodus" />
-      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/07_Fruitlessness.mp3" name="07. Fruitlessness" />
-      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/08_Gods_Complaint.mp3" name="08. Gods Complaint" />
-      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/09_Fall_of_Jerusalem_Part_1.mp3" name="09. Fall of Jerusalem • Part 1" />
-      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/10_Fall_of_Jerusalem_Part_2.mp3" name="10. Fall of Jerusalem • Part 2" />
-      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/11_The_Remnant.mp3" name="11. The Remnant" />
-      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/12_Restoration_Images.mp3" name="12. Restoration Images" />
-      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/13_The_Servant_of_Jehovah.mp3" name="13. The Servant of Jehovah" />
-      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/14_The_King_and_His_Kingdom.mp3" name="14. The King and His Kingdom" />
-      <Item link="audio/topical-lectures/isaiah-a-topical-look-at-isaiah/15_Gods_Sovereignty_and_Foreknowledge.mp3" name="15. Gods Sovereignty and Foreknowledge" />
+    <Topic name="Isaiah   A Topical Look At Isaiah" server="tnp">
+      <Item link="audio/topical-lectures/isaiah---a-topical-look-at-isaiah/01_Introduction.mp3" name="01. Introduction" />
+      <Item link="audio/topical-lectures/isaiah---a-topical-look-at-isaiah/02_Survey_1-23.mp3" name="02. Survey 1 - 23" />
+      <Item link="audio/topical-lectures/isaiah---a-topical-look-at-isaiah/03_Survey_24-66.mp3" name="03. Survey 24 - 66" />
+      <Item link="audio/topical-lectures/isaiah---a-topical-look-at-isaiah/04_Symbols_of_Nations.mp3" name="04. Symbols of Nations" />
+      <Item link="audio/topical-lectures/isaiah---a-topical-look-at-isaiah/05_Warfare,_Judgment,_Redemption.mp3" name="05. Warfare, Judgment, Redemption" />
+      <Item link="audio/topical-lectures/isaiah---a-topical-look-at-isaiah/06_Imagery_of_the_Exodus.mp3" name="06. Imagery of the Exodus" />
+      <Item link="audio/topical-lectures/isaiah---a-topical-look-at-isaiah/07_Fruitlessness.mp3" name="07. Fruitlessness" />
+      <Item link="audio/topical-lectures/isaiah---a-topical-look-at-isaiah/08_Gods_Complaint.mp3" name="08. Gods Complaint" />
+      <Item link="audio/topical-lectures/isaiah---a-topical-look-at-isaiah/09_Fall_of_Jerusalem_Part_1.mp3" name="09. Fall of Jerusalem • Part 1" />
+      <Item link="audio/topical-lectures/isaiah---a-topical-look-at-isaiah/10_Fall_of_Jerusalem_Part_2.mp3" name="10. Fall of Jerusalem • Part 2" />
+      <Item link="audio/topical-lectures/isaiah---a-topical-look-at-isaiah/11_The_Remnant.mp3" name="11. The Remnant" />
+      <Item link="audio/topical-lectures/isaiah---a-topical-look-at-isaiah/12_Restoration_Images.mp3" name="12. Restoration Images" />
+      <Item link="audio/topical-lectures/isaiah---a-topical-look-at-isaiah/13_The_Servant_of_Jehovah.mp3" name="13. The Servant of Jehovah" />
+      <Item link="audio/topical-lectures/isaiah---a-topical-look-at-isaiah/14_The_King_and_His_Kingdom.mp3" name="14. The King and His Kingdom" />
+      <Item link="audio/topical-lectures/isaiah---a-topical-look-at-isaiah/15_Gods_Sovereignty_and_Foreknowledge.mp3" name="15. Gods Sovereignty and Foreknowledge" />
+    </Topic>
+    <Topic name="Israel   What Are We To Make Of Israel" server="tnp">
+      <Item link="audio/topical-lectures/israel---what-are-we-to-make-of-israel/01_2015_What_is_Replacement_Theology.mp3" name="01. What is Replacement Theology" />
+      <Item link="audio/topical-lectures/israel---what-are-we-to-make-of-israel/02_2015_Abrahamic_Covenant_Part_1.mp3" name="02. Abrahamic Covenant • Part 1" />
+      <Item link="audio/topical-lectures/israel---what-are-we-to-make-of-israel/03_2015_Abrahamic_Covenant_Part_2.mp3" name="03. Abrahamic Covenant • Part 2" />
+      <Item link="audio/topical-lectures/israel---what-are-we-to-make-of-israel/04_2015_The_Sinaitic_Covenant.mp3" name="04. The Sinaitic Covenant" />
+      <Item link="audio/topical-lectures/israel---what-are-we-to-make-of-israel/05_2015_The_Davidic_Covenant.mp3" name="05. The Davidic Covenant" />
+      <Item link="audio/topical-lectures/israel---what-are-we-to-make-of-israel/06_2015_The Future_of_Israel_Part_1.mp3" name="06. The Future of Israel • Part 1" />
+      <Item link="audio/topical-lectures/israel---what-are-we-to-make-of-israel/07_2015_The Future_of_Israel_Part_2.mp3" name="07. The Future of Israel • Part 2" />
+      <Item link="audio/topical-lectures/israel---what-are-we-to-make-of-israel/08_2015_The Future_of_Israel_Part_3.mp3" name="08. The Future of Israel • Part 3" />
+      <Item link="audio/topical-lectures/israel---what-are-we-to-make-of-israel/09_2015_The_70_Weeks_of_Daniel_Part_1.mp3" name="09. The 70 Weeks of Daniel • Part 1" />
+      <Item link="audio/topical-lectures/israel---what-are-we-to-make-of-israel/10_2015_The_70_Weeks_of_Daniel_Part_2.mp3" name="10. The 70 Weeks of Daniel • Part 2" />
+      <Item link="audio/topical-lectures/israel---what-are-we-to-make-of-israel/11_2015_The_Modern_State_of_Israel_Part_1.mp3" name="11. The Modern State of Israel • Part 1" />
+      <Item link="audio/topical-lectures/israel---what-are-we-to-make-of-israel/12_2015_The_Modern_State_of_Israel_Part_2.mp3" name="12. The Modern State of Israel • Part 2" />
     </Topic>
     <Topic name="Jewish Roots" server="tnp">
       <Item link="audio/topical-lectures/jewish-roots/01_0000_Jewish_Roots_Part_1.mp3" name="01. Jewish Roots • Part 1" />
@@ -388,20 +402,6 @@
       <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/26_2008_Toward_a_Radically_Christian_Counter_-_Culture_Part_2_-_2008.mp3" name="26. Toward a Radically Christian Counter  -  Culture • Part 2  -  2008" />
       <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/27_2008_Toward_a_Radically_Christian_Counter_-_Culture_Part_3_-_2008.mp3" name="27. Toward a Radically Christian Counter  -  Culture • Part 3  -  2008" />
       <Item link="audio/topical-lectures/toward-a-radically-christian-counterculture/28_2008_Toward_a_Radically_Christian_Counter_-_Culture_Part_4_-_2008.mp3" name="28. Toward a Radically Christian Counter  -  Culture • Part 4  -  2008" />
-    </Topic>
-    <Topic name="What Are We To Make Of Israel" server="tnp">
-      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/01_2015_What_is_Replacement_Theology.mp3" name="01. What is Replacement Theology" />
-      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/02_2015_Abrahamic_Covenant_Part_1.mp3" name="02. Abrahamic Covenant • Part 1" />
-      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/03_2015_Abrahamic_Covenant_Part_2.mp3" name="03. Abrahamic Covenant • Part 2" />
-      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/04_2015_The_Sinaitic_Covenant.mp3" name="04. The Sinaitic Covenant" />
-      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/05_2015_The_Davidic_Covenant.mp3" name="05. The Davidic Covenant" />
-      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/06_2015_The Future_of_Israel_Part_1.mp3" name="06. The Future of Israel • Part 1" />
-      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/07_2015_The Future_of_Israel_Part_2.mp3" name="07. The Future of Israel • Part 2" />
-      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/08_2015_The Future_of_Israel_Part_3.mp3" name="08. The Future of Israel • Part 3" />
-      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/09_2015_The_70_Weeks_of_Daniel_Part_1.mp3" name="09. The 70 Weeks of Daniel • Part 1" />
-      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/10_2015_The_70_Weeks_of_Daniel_Part_2.mp3" name="10. The 70 Weeks of Daniel • Part 2" />
-      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/11_2015_The_Modern_State_of_Israel_Part_1.mp3" name="11. The Modern State of Israel • Part 1" />
-      <Item link="audio/topical-lectures/what-are-we-to-make-of-israel/12_2015_The_Modern_State_of_Israel_Part_2.mp3" name="12. The Modern State of Israel • Part 2" />
     </Topic>
     <Topic name="What You Absolutely Need To Know Before You Get Married" server="tnp">
       <Item link="audio/topical-lectures/what-you-absolutely-need-to-know-before-you-get-married/0000_01_What_You_Absolutely_Need_to_Know_Before_You_Get_Married_Part_1.mp3" name="01. What You Absolutely Need to Know Before You Get Married • Part 1" />
@@ -1518,6 +1518,13 @@
       <Item link="audio/bible-book-overviews/80_The_Pastoral_Epistles_Overview.mp3" name="80. The Pastoral Epistles Overview" />
       <Item link="audio/bible-book-overviews/81_1st_Timothy_Overview.mp3" name="81. 1st Timothy Overview" />
       <Item link="audio/bible-book-overviews/82_2nd_Timothy_Overview.mp3" name="82. 2nd Timothy Overview" />
+      <Item link="audio/bible-book-overviews/83_Titus_Overview_Part_1.mp3" name="83. Titus Overview • Part 1" />
+      <Item link="audio/bible-book-overviews/84_Titus_Overview_Part_2.mp3" name="84. Titus Overview • Part 2" />
+      <Item link="audio/bible-book-overviews/85_Philemon_Overview.mp3" name="85. Philemon Overview" />
+      <Item link="audio/bible-book-overviews/86_Hebrews_Introduction.mp3" name="86. Hebrews Introduction" />
+      <Item link="audio/bible-book-overviews/87_Hebrews_Overview_(chapters_1_-_4).mp3" name="87. Hebrews Overview (chapters 1  -  4)" />
+      <Item link="audio/bible-book-overviews/88_Hebrews_Overview_(chapters_5_-_7).mp3.mp3" name="88. Hebrews Overview (chapters 5  -  7)" />
+      <Item link="audio/bible-book-overviews/89_Hebrews_Overview_(chapters_8_-_13).mp3.mp3" name="89. Hebrews Overview (chapters 8  -  13)" />
     </Overviews>
   </Teaching>
   <Teaching>
@@ -1579,6 +1586,8 @@
       <Item link="audio/debates-and-interviews/55_The_Church_is_the_Israel_of_God_-_Steve_Gregg_and_Chris_Date_-_2020.mp3" name="55. The Church is the Israel of God  -  Steve Gregg and Chris Date  -  2020" />
       <Item link="audio/debates-and-interviews/56_Gods_Plan_for_Israel_-_Steve_Gregg_and_David_Preston_-_2024.mp3" name="56. Gods Plan for Israel  -  Steve Gregg and David Preston  -  2024" />
       <Item link="audio/debates-and-interviews/57_Is_Christianity_True_-_Steve_Gregg_and_Max_the_Atheist_-_2024.mp3" name="57. Is Christianity True  -  Steve Gregg and Max the Atheist  -  2024" />
+      <Item link="audio/debates-and-interviews/58_Eschatology_ Forum_ -_Thomas_Ice,_Charles_Cooper,_Steve_Gregg_-_2008.mp3" name="58. Eschatology  Forum   -  Thomas Ice, Charles Cooper, Steve Gregg  -  2008" />
+      <Item link="audio/debates-and-interviews/59_Amill_vs_Premill_-_Pheelan_McPhalen_and_Steve_Gregg_-_2024.mp3" name="59. Amill vs Premill  -  Pheelan McPhalen and Steve Gregg  -  2024" />
     </Debates>
   </Teaching>
   <Teaching>
@@ -1608,6 +1617,7 @@
       <Item link="audio/individual-topical-teachings/Communion_Part_2_-_2021.mp3" name="Communion. • Part 2  -  2021" />
       <Item link="audio/individual-topical-teachings/Cults_Part_1.mp3" name="Cults. • Part 1" />
       <Item link="audio/individual-topical-teachings/Cults_Part_2_-_Mormonism.mp3" name="Cults. • Part 2  -  Mormonism" />
+      <Item link="audio/individual-topical-teachings/Dating_Revelation_-_2010.mp3" name="Dating. Revelation  -  2010" />
       <Item link="audio/individual-topical-teachings/Deconstructing_Dispensationalism_-_2023.mp3" name="Deconstructing. Dispensationalism  -  2023" />
       <Item link="audio/individual-topical-teachings/Demon_Possession_-_2015.mp3" name="Demon. Possession  -  2015" />
       <Item link="audio/individual-topical-teachings/Demons_Part_1.mp3" name="Demons. • Part 1" />
@@ -1660,7 +1670,12 @@
       <Item link="audio/individual-topical-teachings/Psalm_3-4_-_2022.mp3" name="Psalm. 3 - 4  -  2022" />
       <Item link="audio/individual-topical-teachings/Queen_of_Hart_Interview_-_2015.mp3" name="Queen. of Hart Interview  -  2015" />
       <Item link="audio/individual-topical-teachings/Refuse_to_be_Offended_-_2021.mp3" name="Refuse. to be Offended  -  2021" />
-      <Item link="audio/individual-topical-teachings/Relationships - Intro.mp3" name="Relationships.  -  Intro" />
+      <Item link="audio/individual-topical-teachings/Relationships_-_Intro_-_2024.mp3" name="Relationships.  -  Intro  -  2024" />
+      <Item link="audio/individual-topical-teachings/Relationships_-_The_Way_of_Peace_Part_1_-_2024.mp3" name="Relationships.  -  The Way of Peace • Part 1  -  2024" />
+      <Item link="audio/individual-topical-teachings/Relationships_-_The_Way_of_Peace_Part_2_-_2024.mp3" name="Relationships.  -  The Way of Peace • Part 2  -  2024" />
+      <Item link="audio/individual-topical-teachings/Relationships_-_The_Way_of_Peace_Part_3_-_2024.mp3" name="Relationships.  -  The Way of Peace • Part 3  -  2024" />
+      <Item link="audio/individual-topical-teachings/Relationships_-_The_Way_of_Peace_Part_4_(Forgiveness)_-_2024.m4a" name="Relationships.  -  The Way of Peace • Part 4 (Forgiveness)  -  2024:m4a" />
+      <Item link="audio/individual-topical-teachings/Relationships_-_The_Way_of_Peace_Part_4_(Forgiveness)_-_2024.mp3" name="Relationships.  -  The Way of Peace • Part 4 (Forgiveness)  -  2024" />
       <Item link="audio/individual-topical-teachings/Revelation_Four_Views_Part_1_-_2017.mp3" name="Revelation. Four Views • Part 1  -  2017" />
       <Item link="audio/individual-topical-teachings/Revelation_Four_Views_Part_2_-_2017.mp3" name="Revelation. Four Views • Part 2  -  2017" />
       <Item link="audio/individual-topical-teachings/Sabbath_Keeping.mp3" name="Sabbath. Keeping" />
@@ -1691,6 +1706,7 @@
       <Item link="audio/individual-topical-teachings/True_and_False_Assurance.mp3" name="True. and False Assurance" />
       <Item link="audio/individual-topical-teachings/Understanding_the_Prophets_Part_1.mp3" name="Understanding. the Prophets • Part 1" />
       <Item link="audio/individual-topical-teachings/Understanding_the_Prophets_Part_2.mp3" name="Understanding. the Prophets • Part 2" />
+      <Item link="audio/individual-topical-teachings/Victory_through_Martyrdom_-_2024.mp3" name="Victory. through Martyrdom  -  2024" />
       <Item link="audio/individual-topical-teachings/War_-_A_Christian_Perspective_Part_1.mp3" name="War.  -  A Christian Perspective • Part 1" />
       <Item link="audio/individual-topical-teachings/War_-_A_Christian_Perspective_Part_2.mp3" name="War.  -  A Christian Perspective • Part 2" />
       <Item link="audio/individual-topical-teachings/What_Has_Happened_to_the_Church_-_2021.mp3" name="What. Has Happened to the Church  -  2021" />
@@ -1700,6 +1716,7 @@
       <Item link="audio/individual-topical-teachings/Why_I_Am_Still_a_Christian_Part_1_-_2020.mp3" name="Why. I Am Still a Christian • Part 1  -  2020" />
       <Item link="audio/individual-topical-teachings/Why_I_Am_Still_a_Christian_Part_2_-_2020.mp3" name="Why. I Am Still a Christian • Part 2  -  2020" />
       <Item link="audio/individual-topical-teachings/Why_We_Sing_-_2022.mp3" name="Why. We Sing  -  2022" />
+      <Item link="audio/individual-topical-teachings/Woke_and_Works_-_2023.mp3" name="Woke. and Works  -  2023" />
       <Item link="audio/individual-topical-teachings/Womanhood.mp3" name="Womanhood" />
       <Item link="audio/individual-topical-teachings/Word_of_Faith_-_2019.mp3" name="Word. of Faith  -  2019" />
       <Item link="audio/individual-topical-teachings/Worry.mp3" name="Worry" />
