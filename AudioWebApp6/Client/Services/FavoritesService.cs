@@ -27,9 +27,9 @@ namespace AudioWebApp.Client.Services
             await _jSRuntime.InvokeVoidAsync("removeFavorite", key);
             await GetAllFavorites();
         }
-        public async Task AddToFavorites(string key, string value)
+        public async Task AddToFavorites(string key, string category, string source)
         {
-            Favorite fav = new Favorite(key,value,DateTime.Now);
+            Favorite fav = new Favorite(key,category,source,DateTime.Now);
             await _jSRuntime.InvokeVoidAsync("setToFavorites", key, fav);
         }
     }

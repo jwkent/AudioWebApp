@@ -3,6 +3,7 @@
 @using AudioWebApp.Client.Models
 @inject SharedDataService sharedDataService
 @inject ApiService apiService
+@inject CompletedService completedService
 
 <PageTitle>Verse by Verse</PageTitle>
 <div>
@@ -30,7 +31,16 @@
                             <NestedList>
                                 @foreach (var msg in book.Messages)
                                 {
-                                    <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, book.Server, book.Messages)" />
+                                    @if(messages.Any(s => s == msg.Name))
+                                    {
+                                        <MudListItem style="background-color: #c3d2f1;" IconSize="Size.Small" Icon="@Icons.Material.Filled.Check" 
+                                        Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, book.Server, book.Messages)" />
+                                    }
+                                    else
+                                    {
+                                        <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, book.Server, book.Messages)" />
+                                    }
+                                    
                                 }
                             </NestedList>
                         </MudListItem>
@@ -43,10 +53,15 @@
 @code
 {
     string? dataReady;
-
+    List<string>? messages;
     protected override async Task OnInitializedAsync()
     {
         await apiService.LoadData();
+        await completedService.GetCompletedMessages("VerseByVerse");
+        if(completedService.Completed?.Any() == true)
+        {
+            messages = completedService.GenerateMessageList(); 
+        }
         dataReady = "dataLoaded";
     }
 

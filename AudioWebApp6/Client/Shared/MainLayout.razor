@@ -159,7 +159,7 @@
     }
     public async Task AddToFavorites()
     {
-        await FavoriteService.AddToFavorites(audioTitle, audioSource);
+        await FavoriteService.AddToFavorites(audioTitle, audioSeries, audioSource);
         // use the Mudsnack bar to alert it's been added.
         Snackbar.Add("Added to favorites.", Severity.Success);
         Snackbar.Configuration.ShowCloseIcon = false;

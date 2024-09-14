@@ -2,6 +2,7 @@ function setToFavorites(key, value) {
     var faveStore = localforage.createInstance({
         name: "Favorites"
     });
+   
     faveStore.setItem(key, value);
 }
 
@@ -11,7 +12,7 @@ function getAllFavorites() {
         name: "Favorites"
     });
     return faveStore.iterate((value, key, iterationNumber) => {
-        const fav = { Name: value.name, Source: value.source, TimeStamp: value.dateTimeStamp };
+        const fav = { Name: value.name, Source: value.source, Series: value.series, TimeStamp: value.dateTimeStamp };
         keyNames.push(fav);
     }).then(() => {
         return (JSON.stringify(keyNames));
