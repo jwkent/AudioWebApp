@@ -6,6 +6,7 @@
 @inject SharedDataService sharedDataService
 @inject ApiService apiService
 @inject CollectionFilter collectionFilter
+@inject CompletedService completedService
 <PageTitle>Life of Christ</PageTitle>
 <div>
     <MudCardContent>
@@ -32,7 +33,7 @@
                             <NestedList>
                                 @foreach (var msg in topic.Messages)
                                 {
-                                    <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server, topic.Messages)" />
+                                    <MudListItem class="@((completedService.IsCompleted(msg.Name) ? "completedMessage" : ""))" Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server, topic.Messages)" />
                                 }
                             </NestedList>
                         </MudListItem>
@@ -49,6 +50,7 @@
     {
         await apiService.LoadData();
         collectionFilter.Reorder(apiService.Christ);
+        await completedService.GetCompletedMessages("LifeOfChrist");
         dataReady = "dataLoaded";
     }
 

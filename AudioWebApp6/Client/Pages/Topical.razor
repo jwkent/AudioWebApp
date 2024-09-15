@@ -33,16 +33,7 @@
                             <NestedList>
                                 @foreach (var msg in topic.Messages)
                                 {
-                                    @if(messages.Any(s => s == msg.Name))
-                                    {
-
-                                        <MudListItem style="background-color: #c3d2f1;" IconSize="Size.Small" Icon="@Icons.Material.Filled.Check" Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server, topic.Messages)" />
-
-                                    }
-                                    else
-                                    {
-                                        <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server, topic.Messages)" />
-                                    }
+                                    <MudListItem class="@((completedService.IsCompleted(msg.Name) ? "completedMessage" : ""))" Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server, topic.Messages)" />
                                 }
                             </NestedList>
                         </MudListItem>
@@ -55,16 +46,11 @@
 @code
 {
     string? dataReady;
-    List<string>? messages;
-
+ 
     protected override async Task OnInitializedAsync()
     {
         await apiService.LoadData();
         await completedService.GetCompletedMessages("Topical");
-        if(completedService.Completed?.Any() == true)
-        {
-            messages = completedService.GenerateMessageList();
-        }
 
         dataReady = "dataLoaded";
 

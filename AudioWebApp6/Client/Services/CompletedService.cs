@@ -11,6 +11,7 @@ namespace AudioWebApp.Client.Services
         private readonly IJSRuntime _jsruntime;
         
         public ObservableCollection<CompletedMessages>? Completed;
+        public List<string>? completedMessages;
         public CompletedService(IJSRuntime JSRuntime) 
         {
             _jsruntime = JSRuntime;
@@ -23,23 +24,22 @@ namespace AudioWebApp.Client.Services
             Completed = JsonConvert.DeserializeObject<ObservableCollection<CompletedMessages>>(result);
             
         }
-        public List<string> GenerateMessageList()
+        
+        public bool IsCompleted(string message)
         {
-            List<string> data = new List<string>();
-            foreach(var completed in Completed)
+            if(Completed == null || !Completed.Any())
             {
-                foreach(var message in completed.MessageTitles)
-                {
-                    data.Add(message);
-                }
+                return false;
             }
-            return data;
+            else
+            {
+                return Completed.Any(cm => cm.MessageTitles.Any(mt => mt.Equals(message, StringComparison.OrdinalIgnoreCase)));
+            }
         }
     }
     public class CompletedMessages
     {
         public string? CategoryTitle { get; set; }
-        //public string[]? MessageTitles { get; set; }
         public List<string>? MessageTitles { get; set; }
         
     }

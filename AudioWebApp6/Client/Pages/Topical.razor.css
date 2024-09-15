@@ -34,3 +34,10 @@
     padding-top: 4px;
     padding-left: 10px;
 }
+::deep div.mud-list-item.mud-list-item-gutters.mud-list-item-clickable.mud-ripple.completedMessage div.mud-list-item-text p.mud-typography.mud-typography-body1 {
+    font-weight: bold;
+}
+
+::deep div.mud-list-item.mud-list-item-gutters.mud-list-item-clickable.mud-ripple.completedMessage {
+    background-color: #ccd9f3;
+}
