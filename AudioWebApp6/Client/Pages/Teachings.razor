@@ -4,6 +4,7 @@
 @inject NavigationManager NavigationManager
 @inject SharedDataService sharedDataService
 @inject ApiService apiService
+@inject CompletedService completedService
 <PageTitle>Teachings</PageTitle>
 <div>
     <MudCardContent>
@@ -30,7 +31,8 @@
                             <NestedList>
                                 @foreach (var msg in topic.Messages)
                                 {
-                                    <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server, topic.Messages)" />
+                                    <MudListItem class="@((completedService.IsCompleted(msg.Name) ? "completedMessage" : ""))" 
+                                    Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server, topic.Messages)" />
                                 }
                             </NestedList>
                         </MudListItem>
@@ -46,6 +48,7 @@
     protected override async Task OnInitializedAsync()
     {
         await apiService.LoadData();
+        await completedService.GetCompletedMessages("Teachings");
         dataReady = "dataLoaded";
     }
     public void OpenAudio(string audioName, string audioLink, string serverName, List<Message> queue)
@@ -54,6 +57,7 @@
 
         sharedDataService.AudioTitle = audioName;
         sharedDataService.AudioLink = Path.Combine(serverPath, audioLink);
+        sharedDataService.AudioSeries = "Teachings";
         sharedDataService.GenerateQueue(queue, audioName, serverPath);
         sharedDataService.TogglePlayer();
     }

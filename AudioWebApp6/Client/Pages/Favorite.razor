@@ -22,7 +22,7 @@
                         <MudButton @onclick="(e) => RemoveFavorite(fav.Name)">
                             <MudIcon Icon="@favRemoveIcon" Title="Remove Favorite"></MudIcon>
                         </MudButton>
-                        <MudCardContent style="height:auto; width:100%; margin-bottom:10px; cursor:pointer;" @onclick="(e) => OpenAudio(fav.Name, fav.Source)">
+                        <MudCardContent style="height:auto; width:100%; margin-bottom:10px; cursor:pointer;" @onclick="(e) => OpenAudio(fav.Name, fav.Source, fav.Series)">
                             <MudText style="font-size:16px;">@fav.Name</MudText>
                             <MudText style="font-size:10px;">@GetCategory(@fav.Source)</MudText>
                         </MudCardContent> 
@@ -40,10 +40,11 @@
         await favoritesService.GetAllFavorites();
         dataReady = "dataLoaded";
     }
-    public void OpenAudio(string audioName,string audioLink)
+    public void OpenAudio(string audioName,string audioLink, string audioSeries)
     {  
         sharedDataService.AudioTitle = audioName;
         sharedDataService.AudioLink = audioLink;
+        sharedDataService.AudioSeries = audioSeries;
         sharedDataService.TogglePlayer();
     }
     public async Task RemoveFavorite(string key)

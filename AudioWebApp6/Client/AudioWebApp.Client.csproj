@@ -7,10 +7,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Content Remove="wwwroot\scripts\audioEventListener.js" />
 	  <Content Remove="wwwroot\scripts\liveRadioTimeCheck.js" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <_ContentIncludedByDefault Remove="wwwroot\scripts\audioEventListener.js" />
 	  <_ContentIncludedByDefault Remove="wwwroot\scripts\liveRadioTimeCheck.js" />
 	</ItemGroup>
 
@@ -150,6 +152,9 @@
 	</ItemGroup>
 
 	<ItemGroup>	  
+	  <None Include="wwwroot\scripts\audioEventListener.js">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>	  
 	  <None Include="wwwroot\scripts\audioFavorite.js">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>

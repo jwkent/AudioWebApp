@@ -3,6 +3,7 @@
 @using AudioWebApp.Client.Models
 @inject SharedDataService sharedDataService
 @inject ApiService apiService
+@inject CompletedService completedService
 
 <PageTitle>Verse by Verse</PageTitle>
 <div>
@@ -30,7 +31,10 @@
                             <NestedList>
                                 @foreach (var msg in book.Messages)
                                 {
-                                    <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, book.Server, book.Messages)" />
+        
+                                    <MudListItem class="@((completedService.IsCompleted(msg.Name) ? "completedMessage" : ""))" 
+                                        Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, book.Server, book.Messages)" />
+
                                 }
                             </NestedList>
                         </MudListItem>
@@ -43,10 +47,12 @@
 @code
 {
     string? dataReady;
-
+    
     protected override async Task OnInitializedAsync()
     {
         await apiService.LoadData();
+        await completedService.GetCompletedMessages("VerseByVerse");
+
         dataReady = "dataLoaded";
     }
 
@@ -56,6 +62,7 @@
 
         sharedDataService.AudioTitle = audioName;
         sharedDataService.AudioLink = Path.Combine(serverPath, audioLink);
+        sharedDataService.AudioSeries = "VerseByVerse";
         sharedDataService.GenerateQueue(queue, audioName, serverPath);
         sharedDataService.TogglePlayer();
     }

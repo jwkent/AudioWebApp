@@ -1,9 +1,11 @@
 ﻿@page "/topical"
 @using AudioWebApp.Client.Services
 @using AudioWebApp.Client.Models
+@using System.Collections.ObjectModel
 @inject NavigationManager NavigationManager
 @inject SharedDataService sharedDataService
 @inject ApiService apiService
+@inject CompletedService completedService
 
 <PageTitle>Topical</PageTitle>
 <div>
@@ -31,7 +33,7 @@
                             <NestedList>
                                 @foreach (var msg in topic.Messages)
                                 {
-                                    <MudListItem Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server, topic.Messages)" />
+                                    <MudListItem class="@((completedService.IsCompleted(msg.Name) ? "completedMessage" : ""))" Text="@msg.Name" @onclick="(e) => OpenAudio(msg.Name, msg.Link, topic.Server, topic.Messages)" />
                                 }
                             </NestedList>
                         </MudListItem>
@@ -44,11 +46,14 @@
 @code
 {
     string? dataReady;
-
+ 
     protected override async Task OnInitializedAsync()
     {
         await apiService.LoadData();
+        await completedService.GetCompletedMessages("Topical");
+
         dataReady = "dataLoaded";
+
     }
 
     public void OpenAudio(string audioName, string audioLink, string serverName, List<Message> queue)
@@ -57,8 +62,10 @@
 
         sharedDataService.AudioTitle = audioName;
         sharedDataService.AudioLink = Path.Combine(serverPath, audioLink);
+        sharedDataService.AudioSeries = "Topical";
         sharedDataService.GenerateQueue(queue, audioName, serverPath);
         sharedDataService.TogglePlayer();
     }
+
     
 }

@@ -19,6 +19,7 @@ builder.Services.AddScoped<LinkShareService>();
 builder.Services.AddSingleton<CollectionFilter>();
 builder.Services.AddScoped<AudioBookService>();
 builder.Services.AddSingleton<DebateGrouperUtility>();
+builder.Services.AddScoped<CompletedService>();
 builder.Services.AddMudBlazorDialog();
 
 await builder.Build().RunAsync();
