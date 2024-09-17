@@ -53,7 +53,7 @@ function checkAndCreateCategory(seriesTitle, categoryTitle, messageTitle, stored
 
         data.push({ categoryTitle: categoryTitle, messageTitles: messageTitle ? [messageTitle] : [] });
         dbInstance.setItem(seriesTitle, data).then(function () {
-            console.log('category added successfully');
+            //console.log('category added successfully');
         }).catch(function (err) {
             console.error('Error saving data', err);
         });
@@ -88,7 +88,7 @@ function update(key, categoryMessages, storedValues, dbInstance) {
     updatedStore.push(categoryMessages);
     
     dbInstance.setItem(key, updatedStore).then(function () {
-        console.log("series updated");
+        //console.log("series updated");
     }).catch(function (err) {
         console.error('error savingData', err);
     })
@@ -112,7 +112,7 @@ function getCompletedSeries(series) {
         
         
     }).then(() => {
-        console.log(completedCategories);
+        //console.log(completedCategories);
         return (JSON.stringify(completedCategories));
     }).catch((err) => {
         console.log(err);
