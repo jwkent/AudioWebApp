@@ -29,6 +29,15 @@ namespace AudioWebApp.Client.Services
                     Narrator = "Teagan Moore",
                     AudioSource = "https://theos.s3.us-west-1.amazonaws.com/books/Empire_of_the_Risen_Son-Book_2-by_Steve_Gregg.mp3",
                     ImageSource = "./images/empireoftheson_book2.jpg"
+                },
+                new AudioBook
+                {
+                    SeriesTitle = "",
+                    SeriesSubtitle = "",
+                    BookTitle = "Why Not Full Preterism?: A Partial Preterist response to a Novel Theological Innovation",
+                    Narrator = "Teagan Moore",
+                    AudioSource = "https://www.thenarrowpath.com/audio/audio-books/why-not-full-preterism/Full-Book_Steve-Gregg_Audiobook_Why-Not-Full-Preterism.mp3",
+                    ImageSource = "./images/WhyNotFullPreterism_book.jpg"
                 }
             };
 

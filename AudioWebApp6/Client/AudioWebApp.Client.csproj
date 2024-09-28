@@ -144,6 +144,9 @@
 	  <Content Update="wwwroot\images\tnpQrShare.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Update="wwwroot\images\WhyNotFullPreterism_book.jpg">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Update="wwwroot\scripts\mastTitle.js">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
