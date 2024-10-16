@@ -13,6 +13,7 @@ namespace AudioWebApp.Client.Utilities
         private bool IsValidCollection = false;
         private string collectionServer;
         private string collectionAbbr;
+        
         public void CreateCategories(ObservableCollection<Series> collection)
         {
             if(collection.Count == 0)
@@ -53,7 +54,12 @@ namespace AudioWebApp.Client.Utilities
                     {
                         _DebateGroups[category] = new List<Message>();
                     }
-                    _DebateGroups[category].Add(str);
+                    // check if the message alrady exists in the group
+                    if (!_DebateGroups[category].Any(m => m.Name == str.Name && m.Link == str.Link))
+                    {
+                        _DebateGroups[category].Add(str);
+                    }
+                    //_DebateGroups[category].Add(str);
                 }
 
                 CreateDebateGroup(_DebateGroups, collectionServer, collectionAbbr);
