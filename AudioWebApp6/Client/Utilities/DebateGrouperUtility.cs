@@ -54,12 +54,8 @@ namespace AudioWebApp.Client.Utilities
                     {
                         _DebateGroups[category] = new List<Message>();
                     }
-                    // check if the message alrady exists in the group
-                    if (!_DebateGroups[category].Any(m => m.Name == str.Name && m.Link == str.Link))
-                    {
-                        _DebateGroups[category].Add(str);
-                    }
-                    //_DebateGroups[category].Add(str);
+
+                    _DebateGroups[category].Add(str);
                 }
 
                 CreateDebateGroup(_DebateGroups, collectionServer, collectionAbbr);
