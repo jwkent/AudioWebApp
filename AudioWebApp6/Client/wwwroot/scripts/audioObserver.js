@@ -1,3 +1,71 @@
+function listenForErrors(mainLayoutComponent) {
+    const audioElement = document.getElementById("audioPlayer");
+    const errorElement = document.getElementById("playerErrors");
+    if (audioElement === null) {
+        setTimeout(() => {
+            listenForErrors()
+        }, 1000);
+    }
+    else {
+
+        audioElement.addEventListener("play", (event) => {
+            errorElement.style.visibility = 'hidden';
+        });
+        audioElement.addEventListener("playing", (event) => {
+            errorElement.style.visibility = 'hidden';
+        });
+        audioElement.addEventListener("canplay", (event) => {
+        });
+        audioElement.onplaying = (event) => {
+            errorElement.style.visibility = 'hidden';
+        }
+        audioElement.onloadeddata = (event) => {
+            errorElement.style.visibility = 'hidden';
+        }
+
+        const controller = new AbortController();
+        const errorHandler = (event) => {
+
+            if (mainLayoutComponent === undefined) {
+                setTimeout(() => {
+                    audioElement.dispatchEvent(new Event("error"));
+                }, 500);
+            } else {
+                controller.abort();
+                handleAudioError(mainLayoutComponent);
+            }
+
+        }
+        audioElement.addEventListener("error", errorHandler, { 'signal': controller.signal });
+
+        audioElement.addEventListener("stalled", (event) => {
+            toggleLoadingElement(errorElement, audioElement);
+        });
+
+        audioElement.addEventListener("suspend", (event) => {
+            toggleLoadingElement(errorElement, audioElement);
+        });
+
+        audioElement.addEventListener("waiting", (event) => {
+            toggleLoadingElement(errorElement, audioElement);
+        });
+       
+        audioElement.addEventListener("loadstart", (event) => {
+            toggleLoadingElement(errorElement, audioElement);
+        });
+    }
+}
+function toggleLoadingElement(errorElement, audioElement) {
+
+    errorElement.style.visibility = 'visible';
+    if (audioElement.onplaying) {
+        setTimeout(() => { errorElement.style.visibility = 'hidden'; }, 500);
+    }
+};
+function handleAudioError(mainLayoutComponent) {
+        
+    mainLayoutComponent.invokeMethodAsync('AudioReload');  
+}
 function getStartTime(key) {
     localforage.getItem(key).then((value) => {
         let storedValue = value !== null ? value : 0;

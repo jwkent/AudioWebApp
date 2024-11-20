@@ -1,4 +1,5 @@
 ﻿using AudioWebApp.Client.Models;
+using Microsoft.AspNetCore.Components;
 using MudBlazor;
 using System.ComponentModel.Design;
 
@@ -11,7 +12,6 @@ namespace AudioWebApp.Client.Services
         public event Action OnPlayerToggle;
         public event Action OnShowContent;
         public string? QueuedMessagesServerPath { get; set; }
-        
         public void TogglePlayer()
         {
             OnPlayerToggle?.Invoke();
@@ -44,11 +44,27 @@ namespace AudioWebApp.Client.Services
 
             return secureUrl;
         }
-        public List<Message> QueuedMessages { get; set; }
+        public List<Message>? QueuedMessages { get; set; }
         public void GenerateQueue(List<Message> queue, string message, string serverPath)
         {
             QueuedMessagesServerPath = serverPath;
             QueuedMessages = queue.SkipWhile(item => item.Name != message).Skip(1).ToList();
+            
+        }
+
+        public async Task GenerateQueueFavorite(FavoritesService fs, string audioName)
+        {
+            QueuedMessagesServerPath = string.Empty;
+            IEnumerable<Message> messages = await fs.GetFavoriteQueue(audioName);
+            if(messages != null)
+            {
+                QueuedMessages = messages.ToList();
+            }
+            else
+            {
+                QueuedMessages = new List<Message>();
+            }
+
         }
     }
 }
